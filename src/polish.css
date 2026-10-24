@@ -1,0 +1,485 @@
+/* Coordinated A–Z interaction layer: instant response, short travel-like settles. */
+:root {
+  --motion-quick: 120ms;
+  --motion-base: 220ms;
+  --motion-enter: 380ms;
+  --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --motion-spring: cubic-bezier(0.2, 0.9, 0.3, 1.14);
+}
+.press-surface {
+  position: relative;
+}
+.press-feedback {
+  overflow: hidden;
+  isolation: isolate;
+}
+.touch-wave {
+  position: absolute;
+  border-radius: 50%;
+  background: currentColor;
+  pointer-events: none;
+  z-index: 2;
+  contain: strict;
+}
+/* No visibility gating: content remains accessible if JS or observers are unavailable. */
+@media (prefers-reduced-motion: no-preference) {
+  .route-scene {
+    animation: scene-enter var(--motion-enter) var(--motion-ease) both;
+  }
+  .route-scene .page,
+  .route-scene .chat-page {
+    animation: none;
+  }
+  .feed-greeting,
+  .page-heading,
+  .chat-heading {
+    animation: detail-enter 360ms var(--motion-ease) both;
+  }
+  .feed-intro-copy,
+  .feed-capture,
+  .nearby-controls,
+  .profile-content {
+    animation: detail-enter 460ms var(--motion-ease) both;
+  }
+  .feed-intro-copy {
+    animation-delay: 40ms;
+  }
+  .journey-landscape {
+    animation: postcard-enter 650ms var(--motion-spring) both;
+    transform-origin: center 65%;
+  }
+  .feed-intro-copy .button-primary {
+    animation: action-enter 600ms var(--motion-spring) both;
+  }
+  [data-motion-reveal="arrive"] {
+    animation: detail-enter 400ms var(--motion-ease) both;
+  }
+  .feed-event:nth-child(2),
+  .cuisine-card:nth-child(2),
+  .place-card:nth-child(2) {
+    animation-delay: 35ms;
+  }
+  .feed-event:nth-child(3),
+  .cuisine-card:nth-child(3),
+  .place-card:nth-child(3) {
+    animation-delay: 65ms;
+  }
+  .feed-event:nth-child(4),
+  .cuisine-card:nth-child(4),
+  .place-card:nth-child(4) {
+    animation-delay: 90ms;
+  }
+  :is(button, .button, .nav-link, .journey-pill, .chip, .destination-choice) {
+    transition:
+      background-color var(--motion-base) var(--motion-ease),
+      color var(--motion-quick) ease,
+      border-color var(--motion-base) ease,
+      box-shadow var(--motion-base) ease,
+      scale var(--motion-quick) var(--motion-ease),
+      translate var(--motion-base) var(--motion-spring);
+  }
+  :is(button, .button, .nav-link):active:not(:disabled):not(
+      [aria-disabled="true"]
+    ) {
+    scale: 0.965;
+  }
+  :is(button, .button):disabled {
+    transition: opacity var(--motion-base) ease;
+  }
+  :is(button, .button)[aria-busy="true"] {
+    cursor: progress;
+    scale: 1;
+  }
+  :is(button, .button, .nav-link) > svg {
+    transition:
+      translate var(--motion-base) var(--motion-spring),
+      rotate var(--motion-base) var(--motion-ease),
+      scale var(--motion-base) var(--motion-spring);
+  }
+  .nav-link.active svg {
+    animation: icon-land 360ms var(--motion-spring) both;
+  }
+  :is(
+    .chip,
+    .feed-filters button,
+    .capture-kinds button,
+    .destination-choice
+  )[aria-pressed="true"],
+  .pill-tabs button.active,
+  .segmented button.active {
+    animation: selection-settle 260ms var(--motion-spring);
+  }
+  .destination-choice img,
+  .trip-avatar {
+    transition:
+      scale 420ms var(--motion-ease),
+      filter 300ms ease;
+  }
+  .destination-choice.is-selected .destination-choice-check {
+    animation: icon-land 300ms var(--motion-spring);
+  }
+  .journey-pill .trip-avatar {
+    animation: avatar-arrive 420ms var(--motion-spring) both;
+  }
+  .feed-event,
+  .place-card,
+  .cuisine-card,
+  .consent-card,
+  .journey-list button,
+  .conversation-list > div,
+  .profile-sidebar nav button {
+    transition:
+      background-color var(--motion-base) ease,
+      border-color var(--motion-base) ease,
+      box-shadow var(--motion-base) ease,
+      translate var(--motion-base) var(--motion-ease);
+  }
+  .feed-event-symbol {
+    transition:
+      rotate var(--motion-base) var(--motion-spring),
+      scale var(--motion-base) var(--motion-spring);
+  }
+  .feed-capture {
+    transition:
+      box-shadow 240ms ease,
+      border-color 240ms ease;
+  }
+  .feed-capture:focus-within {
+    box-shadow:
+      0 0 0 4px #f2c84b55,
+      0 16px 32px -20px #004d5466;
+  }
+  :is(.feed-composer, .chat-composer, .input-icon, .photo-drop) {
+    transition:
+      box-shadow var(--motion-base) ease,
+      border-color var(--motion-base) ease;
+  }
+  :is(.feed-composer, .chat-composer):focus-within {
+    box-shadow: 0 0 0 3px #f2c84b77 !important;
+  }
+  :is(input, textarea, select) {
+    transition:
+      border-color var(--motion-quick) ease,
+      box-shadow var(--motion-base) ease,
+      background-color var(--motion-base) ease;
+  }
+  :is(input, textarea, select):focus {
+    border-color: var(--travel-ocean);
+    box-shadow: 0 0 0 3px #006e7312;
+  }
+  .form-stack label {
+    transition: color var(--motion-base) ease;
+  }
+  .form-stack label:focus-within {
+    color: var(--travel-ocean);
+  }
+  .more-details,
+  .wizard-question,
+  .voice-translation,
+  .photo-preview,
+  .destination-preview,
+  .journey-range-pop {
+    animation: detail-enter 260ms var(--motion-ease) both;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    transition: scale var(--motion-quick) var(--motion-spring);
+  }
+  input[type="checkbox"]:active,
+  input[type="radio"]:active {
+    scale: 0.9;
+  }
+  .switch span,
+  .toggle span,
+  .toggle-switch span,
+  .wizard-bar i {
+    transition:
+      transform 260ms var(--motion-spring),
+      width 320ms var(--motion-ease),
+      background-color 220ms ease;
+  }
+  .modal-overlay[data-state="open"] {
+    animation: overlay-in 180ms ease both;
+  }
+  .modal-card[data-state="open"] {
+    animation: dialog-in 320ms var(--motion-spring) both;
+  }
+  .modal-overlay[data-state="closed"] {
+    animation: overlay-out 160ms ease both;
+  }
+  .modal-card[data-state="closed"] {
+    animation: dialog-out 180ms ease both;
+  }
+  .modal-card .form-stack > :is(label, .destination-options, .entry-type-row) {
+    animation: detail-enter 320ms var(--motion-ease) both;
+  }
+  .modal-close > svg {
+    transition: rotate 220ms var(--motion-ease);
+  }
+  .modal-close:hover > svg {
+    rotate: 90deg;
+  }
+  .toast {
+    animation: toast-land 420ms var(--motion-spring) both;
+  }
+  .toast > svg {
+    animation: icon-land 450ms var(--motion-spring) both;
+  }
+  .error-box {
+    animation: detail-enter 220ms ease both;
+  }
+  .message-row {
+    animation: message-arrive 260ms var(--motion-ease) both;
+  }
+  .message-row.user {
+    transform-origin: bottom right;
+  }
+  .message-row.assistant {
+    transform-origin: bottom left;
+  }
+  .thinking {
+    animation: detail-enter 220ms ease both;
+  }
+  .voice-main,
+  .voice-orbit {
+    transition:
+      scale 280ms var(--motion-spring),
+      box-shadow 280ms ease,
+      background-color 280ms ease;
+  }
+  .voice-main:active {
+    scale: 0.94;
+  }
+  .photo-drop:focus-within {
+    box-shadow: 0 0 0 3px #f2c84b66;
+  }
+  .rhythm-section {
+    transform-origin: top center;
+  }
+  .answer-details[open] > :not(summary) {
+    animation: detail-enter 240ms var(--motion-ease) both;
+  }
+  .answer-details summary::marker {
+    color: var(--travel-ocean);
+  }
+  .sidebar,
+  .sidebar.mobile-open {
+    transition: transform 280ms var(--motion-ease);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    :is(.button-primary, .companion-cta, .journey-pill):hover:not(:disabled) {
+      translate: 0 -2px;
+      box-shadow: 0 9px 22px #004d541b;
+    }
+    :is(.button-primary, .companion-cta, .subtle-link):hover > svg:last-child {
+      translate: 3px -1px;
+    }
+    .nav-link:hover > svg {
+      translate: 0 -2px;
+      scale: 1.08;
+    }
+    .capture-kinds button:hover > svg {
+      rotate: -7deg;
+      scale: 1.12;
+    }
+    .journey-landscape {
+      transition:
+        scale 600ms var(--motion-ease),
+        rotate 600ms var(--motion-ease);
+    }
+    .journey-landscape:hover {
+      scale: 1.015;
+      rotate: -0.6deg;
+    }
+    .destination-choice:hover {
+      translate: 0 -3px;
+    }
+    .destination-choice:hover img {
+      scale: 1.04;
+    }
+    :is(.feed-event, .place-card, .cuisine-card):hover {
+      translate: 0 -2px;
+    }
+    .feed-event:hover .feed-event-symbol {
+      rotate: -5deg;
+      scale: 1.08;
+    }
+    .feed-event:hover .entry-edit {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .chat-prompts button:hover,
+    .conversation-list > div:hover {
+      translate: 0 -2px;
+    }
+    .profile-sidebar nav button:hover > svg {
+      translate: 2px 0;
+    }
+    .photo-drop:hover {
+      border-color: var(--travel-ocean);
+      box-shadow: 0 5px 20px #006e7310;
+    }
+  }
+}
+@keyframes scene-enter {
+  from {
+    opacity: 0.65;
+    translate: 0 7px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes detail-enter {
+  from {
+    opacity: 0.45;
+    translate: 0 9px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes postcard-enter {
+  from {
+    opacity: 0.5;
+    scale: 0.965;
+    rotate: 1.2deg;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    rotate: 0deg;
+  }
+}
+@keyframes action-enter {
+  from {
+    opacity: 0.7;
+    scale: 0.96;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes selection-settle {
+  0% {
+    scale: 0.95;
+  }
+  65% {
+    scale: 1.025;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes icon-land {
+  from {
+    scale: 0.7;
+    rotate: -12deg;
+    opacity: 0.6;
+  }
+  to {
+    scale: 1;
+    rotate: 0deg;
+    opacity: 1;
+  }
+}
+@keyframes avatar-arrive {
+  from {
+    scale: 0.85;
+    opacity: 0.5;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes overlay-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes dialog-in {
+  from {
+    opacity: 0.3;
+    translate: 0 14px;
+    scale: 0.97;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes dialog-out {
+  from {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    translate: 0 5px;
+    scale: 0.985;
+  }
+}
+@keyframes toast-land {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+    scale: 0.96;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+@keyframes message-arrive {
+  from {
+    opacity: 0.5;
+    translate: 0 6px;
+    scale: 0.99;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+/* Keep device/OS preference authoritative, including existing legacy animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .touch-wave {
+    display: none !important;
+  }
+}
+
+/* Form labels remain readable on the warm dialog surface. */
+.modal-card label {
+  color: var(--text) !important;
+}
+.modal-card .modal-description,
+.modal-card .muted,
+.modal-card label .muted {
+  color: var(--muted) !important;
+}

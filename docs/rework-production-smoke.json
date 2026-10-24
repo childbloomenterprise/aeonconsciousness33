@@ -1,0 +1,74 @@
+{
+  "tested_at": "2026-10-18T18:02:57.903Z",
+  "deployment": "dpl_4Va9rHdYBht1PSsRhLzKW7eT5GSZ",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/journey",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/chat",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/nearby",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/profile",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "/api/status",
+      "status": 200,
+      "cache": "no-store",
+      "body": {
+        "auth": true,
+        "ai": true,
+        "private_ai": true,
+        "nearby": false,
+        "nearby_demo": false,
+        "account_deletion": true
+      }
+    },
+    {
+      "path": "/api/events",
+      "status": 401,
+      "cache": "no-store"
+    },
+    {
+      "path": "/api/journeys",
+      "status": 401,
+      "cache": "no-store"
+    },
+    {
+      "path": "/api/conversations",
+      "status": 401,
+      "cache": "no-store"
+    }
+  ]
+}

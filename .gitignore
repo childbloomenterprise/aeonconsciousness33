@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.vercel/
+coverage/
+*.tsbuildinfo
+.local/
+
+.vercel
+.env*
+
+# Local handoff notes may contain real credentials; never commit them.
+docs/CONTINUATION-PROMPT.txt

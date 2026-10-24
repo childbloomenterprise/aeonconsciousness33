@@ -1,0 +1,328 @@
+/* LINC33 travel motion: light, depth and short, coordinated gestures. */
+.fx-surface {
+  position: relative;
+}
+.card-light {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(
+    240px circle at var(--light-x, 50%) var(--light-y, 50%),
+    #f4ce5b26,
+    transparent 75%
+  );
+  opacity: 0;
+  transition: opacity 240ms ease;
+  z-index: 1;
+}
+[data-light-active="true"] > .card-light {
+  opacity: 1;
+}
+.travel-aura {
+  position: absolute;
+  width: min(48vw, 560px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.aura-sun {
+  top: -22%;
+  right: -10%;
+  background: radial-gradient(circle, #efbd4d32, transparent 68%);
+}
+.aura-ocean {
+  bottom: -28%;
+  left: -14%;
+  background: radial-gradient(circle, #3f9d9a20, transparent 68%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion-reveal="arrive"] {
+    animation: fx-unfold 560ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--reveal-delay, 0ms);
+  }
+  .route-scene {
+    animation: fx-page 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .travel-aura {
+    animation: fx-drift 14s ease-in-out infinite alternate;
+  }
+  .aura-ocean {
+    animation-delay: -7s;
+    animation-direction: alternate-reverse;
+  }
+  .feed-intro h1 span {
+    background: linear-gradient(
+      110deg,
+      var(--travel-ocean, #006e73) 15%,
+      #549991 42%,
+      var(--travel-ocean, #006e73) 68%
+    );
+    background-size: 240% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fx-title-light 3s ease-out 1;
+  }
+  .journey-landscape,
+  .journey-cover {
+    overflow: hidden;
+  }
+  .journey-landscape img,
+  .journey-cover img {
+    animation: fx-postcard 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    transition: scale 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .landscape-label,
+  .landscape-note,
+  .journey-cover-copy {
+    animation: fx-caption 650ms cubic-bezier(0.16, 1, 0.3, 1) 130ms both;
+  }
+  .capture-kinds > button,
+  .feed-filters > button,
+  .chat-prompts > button,
+  .profile-sidebar nav > button,
+  .journey-sidebar > button {
+    animation: fx-unfold 440ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  :is(
+      .capture-kinds,
+      .feed-filters,
+      .chat-prompts,
+      .profile-sidebar nav,
+      .journey-sidebar
+    )
+    > :nth-child(2) {
+    animation-delay: 45ms;
+  }
+  :is(
+      .capture-kinds,
+      .feed-filters,
+      .chat-prompts,
+      .profile-sidebar nav,
+      .journey-sidebar
+    )
+    > :nth-child(3) {
+    animation-delay: 90ms;
+  }
+  :is(
+      .capture-kinds,
+      .feed-filters,
+      .chat-prompts,
+      .profile-sidebar nav,
+      .journey-sidebar
+    )
+    > :nth-child(4) {
+    animation-delay: 135ms;
+  }
+  .composer-star {
+    animation: fx-star 1.4s ease-out 1;
+    transform-origin: center;
+  }
+  .feed-saved svg,
+  .destination-choice-check svg {
+    animation: fx-check 400ms cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  }
+  .feed-saved {
+    animation: fx-unfold 350ms ease-out both;
+  }
+  .timeline-event {
+    animation: fx-unfold 450ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .modal-card[data-state="open"] {
+    animation: fx-modal 360ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .modal-overlay {
+    backdrop-filter: blur(6px);
+  }
+  :is(
+    .cuisine-card,
+    .place-card,
+    .journey-card,
+    .destination-choice,
+    .feed-event
+  ) {
+    transition:
+      box-shadow 260ms ease,
+      border-color 260ms ease,
+      translate 260ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .button-primary,
+  .composer-send,
+  .send-button {
+    transition:
+      box-shadow 240ms ease,
+      scale 160ms ease,
+      background-color 200ms ease;
+  }
+  :is(.nav-link, .mobile-nav a) svg {
+    transform-origin: center;
+  }
+  :is(.nav-link.active, .mobile-nav a.active) svg {
+    animation: fx-compass 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .feed-event:focus-within,
+  .place-card:focus-within,
+  .cuisine-card:focus-within {
+    border-color: #c3a13c;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    :is(.cuisine-card, .place-card, .journey-card, .destination-choice):hover {
+      translate: 0 -4px;
+      box-shadow: 0 16px 36px -22px #075c526b;
+      border-color: #c3ab6670;
+    }
+    .feed-event:hover {
+      translate: 3px 0;
+    }
+    :is(.journey-landscape, .journey-cover):hover img {
+      scale: 1.035;
+    }
+    :is(.button-primary, .composer-send, .send-button):hover:not(:disabled) {
+      box-shadow: 0 7px 20px -8px #ae841cab;
+    }
+    :is(.capture-kinds button, .quick-actions button, .nav-link):hover > svg {
+      animation: fx-compass 420ms ease both;
+    }
+    .brand-flower:hover {
+      rotate: 45deg;
+      transition: rotate 500ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  }
+}
+@keyframes fx-unfold {
+  from {
+    opacity: 0.15;
+    translate: 0 14px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes fx-page {
+  from {
+    opacity: 0.3;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fx-caption {
+  from {
+    opacity: 0;
+    translate: 0 10px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes fx-postcard {
+  from {
+    transform: scale(1.07);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fx-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  to {
+    transform: translate3d(-24px, 24px, 0) scale(1.08);
+  }
+}
+@keyframes fx-title-light {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes fx-star {
+  0% {
+    rotate: -35deg;
+    scale: 0.7;
+  }
+  60% {
+    rotate: 12deg;
+    scale: 1.12;
+  }
+  100% {
+    rotate: 0deg;
+    scale: 1;
+  }
+}
+@keyframes fx-check {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    rotate: -15deg;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    rotate: 0deg;
+  }
+}
+@keyframes fx-compass {
+  0% {
+    rotate: -12deg;
+    scale: 0.9;
+  }
+  60% {
+    rotate: 6deg;
+    scale: 1.08;
+  }
+  100% {
+    rotate: 0deg;
+    scale: 1;
+  }
+}
+@keyframes fx-modal {
+  from {
+    opacity: 0;
+    translate: 0 18px;
+    scale: 0.975;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+/* A saved preference applies to every page, including legacy motion. */
+html[data-motion-paused="true"] {
+  scroll-behavior: auto !important;
+}
+html[data-motion-paused="true"] *,
+html[data-motion-paused="true"] *::before,
+html[data-motion-paused="true"] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+html[data-motion-paused="true"] .card-light {
+  display: none;
+}
+html[data-motion-paused="true"] .touch-wave {
+  display: none;
+}
+html[data-motion-paused="true"] .feed-intro h1 span {
+  -webkit-text-fill-color: currentColor;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-light {
+    display: none;
+  }
+  .travel-aura {
+    animation: none;
+  }
+  .feed-intro h1 span {
+    -webkit-text-fill-color: currentColor;
+  }
+}

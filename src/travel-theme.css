@@ -1,0 +1,331 @@
+/* Travel palette: ~60% sand foundations, ~30% ocean structure, ~10% marigold actions.
+   Percentages describe visual emphasis, not a per-pixel quota; photography is content. */
+:root {
+  --travel-sand: #fff5e6;
+  --travel-ocean: #006e73;
+  --travel-ocean-deep: #004d54;
+  --travel-seafoam: #d8f2ec;
+  --travel-gold: #f2c84b;
+  --travel-sunlight: #f8d66d;
+  --background: var(--travel-sand);
+  --surface: #fffdf8;
+  --surface-elevated: #fffaf1;
+  --primary: var(--travel-ocean);
+  --accent: var(--travel-gold);
+  --text: #173d43;
+  --foreground: #173d43;
+  --muted: #52686a;
+  --muted-foreground: #52686a;
+  --border: #cfdfd8;
+  --ring: var(--travel-ocean);
+  --popover: #fffdf8;
+  --popover-foreground: #173d43;
+  --color-background: var(--travel-sand);
+  --color-foreground: #173d43;
+  color: var(--text);
+  background: var(--travel-sand);
+}
+html,
+body,
+.app-shell,
+.app-main,
+.chat-page {
+  background: var(--travel-sand) !important;
+  color: var(--text);
+}
+.topbar,
+.chat-heading {
+  background: var(--travel-sand) !important;
+}
+.sidebar {
+  background: var(--travel-ocean) !important;
+}
+.sidebar .brand,
+.sidebar .nav-link {
+  color: #e5fffa !important;
+}
+.sidebar .nav-link:hover {
+  background: #00595f !important;
+}
+.sidebar .nav-link.active {
+  background: var(--travel-sunlight) !important;
+  color: #153d42 !important;
+  box-shadow: 0 4px 16px #00393b26;
+}
+.feed-wordmark,
+.feed-wordmark > span:last-child,
+.brand-flower {
+  color: var(--travel-ocean) !important;
+}
+.feed-intro h1 {
+  color: var(--travel-ocean-deep);
+}
+.feed-intro h1 span {
+  color: var(--travel-ocean) !important;
+}
+.feed-kicker,
+.eyebrow {
+  color: var(--travel-ocean) !important;
+}
+.feed-intro .feed-intro-copy > p,
+.feed-intro--returning p,
+.muted {
+  color: var(--muted) !important;
+}
+.journey-pill {
+  background: #fffdf8;
+  color: var(--travel-ocean-deep);
+  border-color: #b8d6ce;
+  box-shadow: 0 3px 15px #00505708;
+}
+.journey-dot,
+.status-dot {
+  background: var(--travel-ocean) !important;
+}
+.journey-landscape {
+  box-shadow:
+    0 16px 0 -8px var(--travel-sunlight),
+    0 30px 45px -28px #00545f6b;
+  border: 4px solid #fffdf8;
+}
+.journey-landscape:before {
+  background: linear-gradient(0deg, #003e48b3, #005c6322 65%, transparent);
+}
+.landscape-label {
+  background: var(--travel-sand);
+  color: var(--travel-ocean-deep);
+}
+.landscape-note {
+  color: #fff;
+  text-shadow: 0 1px 6px #00282d;
+}
+.button-primary,
+.companion-cta,
+.send-button,
+.feed-composer .composer-send {
+  background: var(--travel-gold) !important;
+  color: #173d43 !important;
+  border-color: var(--travel-gold) !important;
+  box-shadow: 0 5px 15px #f2c84b22;
+}
+.button-primary:hover:not(:disabled),
+.companion-cta:hover,
+.send-button:hover:not(:disabled),
+.feed-composer .composer-send:hover:not(:disabled) {
+  background: #e5b62c !important;
+}
+.button-secondary {
+  background: var(--travel-seafoam) !important;
+  color: var(--travel-ocean-deep) !important;
+  border-color: #9dcfc2 !important;
+}
+.button-ghost,
+.subtle-link {
+  color: var(--travel-ocean) !important;
+}
+.feed-capture {
+  background: var(--travel-ocean) !important;
+  border: 1px solid #005e64;
+  box-shadow: 0 12px 30px -16px #005c6355;
+}
+.capture-heading h2,
+.capture-heading span {
+  color: #fff !important;
+}
+.feed-capture .capture-kinds button {
+  color: #fff !important;
+}
+.feed-capture .capture-kinds button:hover {
+  background: #00585f !important;
+  border-color: #92d6cb !important;
+}
+.feed-capture .feed-composer,
+.chat-composer {
+  background: #fffdf8 !important;
+  border-color: #a4d2c7 !important;
+}
+.feed-composer input,
+.chat-composer textarea {
+  color: var(--text) !important;
+}
+.feed-composer input::placeholder,
+.chat-composer textarea::placeholder {
+  color: #617576 !important;
+}
+.feed-composer button,
+.composer-star,
+.chat-composer .icon-button {
+  color: var(--travel-ocean) !important;
+}
+.feed-companion {
+  margin-top: 12px;
+  padding: 24px;
+  border-radius: 28px;
+  background: var(--travel-seafoam);
+  border: 1px solid #bddfd3;
+  align-self: start;
+}
+.feed-companion h2,
+.feed-companion .feed-kicker,
+.companion-facts,
+.food-whisper,
+.food-whisper .feed-kicker {
+  color: var(--travel-ocean-deep) !important;
+}
+.feed-companion > p,
+.companion-facts span,
+.food-whisper p {
+  color: #355f60 !important;
+}
+.companion-spark,
+.chat-avatar,
+.message-avatar,
+.welcome-bot {
+  background: var(--travel-ocean) !important;
+  color: #fff !important;
+}
+.feed-event-symbol,
+.empty-orbit {
+  background: var(--travel-seafoam) !important;
+  color: var(--travel-ocean) !important;
+}
+.feed-event-meta,
+.feed-saved {
+  color: #526d6b !important;
+}
+.feed-saved:before {
+  background: var(--travel-ocean);
+}
+.feed-event h3,
+.stream-heading h2,
+.feed-empty h3,
+.chat-heading h1,
+.chat-welcome h2 {
+  color: var(--travel-ocean-deep) !important;
+}
+.feed-empty p,
+.chat-welcome p,
+.chat-heading span,
+.answer-context,
+.structured-answer,
+.chat-bottom > p {
+  color: var(--muted) !important;
+}
+.feed-filters button {
+  color: #496463;
+}
+.feed-filters .selected,
+.chip.selected,
+.chip-active,
+.chip[aria-pressed="true"],
+.chip[aria-selected="true"],
+.chat-prompts button {
+  background: var(--travel-seafoam) !important;
+  color: var(--travel-ocean-deep) !important;
+  border-color: #85c6b8 !important;
+}
+.message-row.user .message-bubble {
+  background: var(--travel-ocean) !important;
+  color: #fff !important;
+}
+.chat-bottom {
+  background: linear-gradient(transparent, var(--travel-sand) 25%) !important;
+}
+.answer-next {
+  background: var(--travel-seafoam);
+  border-color: var(--travel-ocean);
+  color: var(--travel-ocean-deep);
+}
+.modal-card {
+  background: #fffdf8 !important;
+  color: var(--text);
+  border: 1px solid #a4d2c7;
+}
+input,
+textarea,
+select {
+  background: #fffdf8;
+  color: var(--text);
+  border-color: #a4c6bd;
+  accent-color: var(--travel-ocean);
+}
+.destination-choice.is-selected {
+  border-color: var(--travel-ocean) !important;
+  background: var(--travel-seafoam);
+}
+.destination-choice-check {
+  background: var(--travel-ocean) !important;
+  color: white;
+}
+.journey-setup-marker {
+  background: var(--travel-seafoam);
+  color: var(--travel-ocean-deep);
+}
+.journey-range-trigger {
+  background: #f0f8ef;
+  color: var(--travel-ocean-deep);
+  border-color: #b7d9cc;
+}
+.profile-button > span {
+  background: var(--travel-seafoam) !important;
+  color: var(--travel-ocean-deep) !important;
+}
+.sos-button {
+  color: #a93425 !important;
+  border-color: #e7b3a2 !important;
+  background: #fff3e9 !important;
+}
+.bottom-nav {
+  background: var(--travel-ocean) !important;
+  border-color: #005b62 !important;
+  box-shadow: 0 8px 28px #00535a28 !important;
+}
+.bottom-nav .nav-link {
+  color: #e5fffa !important;
+}
+.bottom-nav .nav-link.active {
+  background: var(--travel-sunlight) !important;
+  color: #153d42 !important;
+}
+.travel-scenery {
+  opacity: 0.65;
+}
+.travel-route {
+  stroke: #00868a !important;
+}
+.travel-hills {
+  fill: #b5e4d9 !important;
+}
+.travel-plane {
+  color: var(--travel-gold) !important;
+}
+.scenery-toggle,
+.feed-footnote {
+  color: #52686a !important;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline-color: var(--travel-ocean) !important;
+}
+.sidebar a:focus-visible,
+.bottom-nav a:focus-visible,
+.feed-capture button:focus-visible {
+  outline-color: #ffe7a0 !important;
+}
+@media (max-width: 767px) {
+  .feed-companion {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .journey-landscape {
+    border-width: 3px;
+  }
+}
+
+.sidebar .brand svg {
+  color: var(--travel-sand) !important;
+  stroke: currentColor !important;
+}

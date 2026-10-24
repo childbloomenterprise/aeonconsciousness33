@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><title>LINC33 offline browser checks</title></head><body><h1>LINC33 offline browser checks</h1><p>Uses fictional local data only.</p><button id="seed">Prepare fictional journey</button><button id="queue">Test interrupted save and retry</button><p id="result" role="status">Ready</p><a href="/journey">Open saved journey</a><script type="module">
+import { offlineJourneys, OfflineJourneys, IndexedOfflineStorage } from '/src/lib/offline.ts';
+import { eventDraft } from '/shared/contracts.ts';
+const user='11111111-1111-4111-8111-111111111111', trip='33333333-3333-4333-8333-333333333333', date='2026-10-23T08:00:00Z';
+document.querySelector('#seed').onclick=async()=>{try {
+  const journey={id:trip,user_id:user,title:'Offline verification journey',destination_name:'Dubai',started_at:date,ended_at:null,created_at:date,status:'active'};
+  const entry={...eventDraft.parse({event_type:'note',title:'Original saved moment',occurred_at:date}),id:'44444444-4444-4444-8444-444444444444',user_id:user,journey_id:trip,created_at:date,updated_at:date,source_message_id:null};
+  await offlineJourneys.prepare(user,journey,[entry],{display_name:'Test traveller',profile:null,consents:{sensitive_storage:true,external_ai:false}});
+  const restarted=new OfflineJourneys(new IndexedOfflineStorage());
+  if((await restarted.events(user,trip)).length!==1)throw new Error('IndexedDB restoration failed');
+  document.querySelector('#result').textContent='PASS: native IndexedDB saved the journey and a fresh store restored it.';
+}catch(e){document.querySelector('#result').textContent='FAIL: '+e.message;}};
+document.querySelector('#queue').onclick=async()=>{try {
+  const requestId=crypto.randomUUID(), draft=eventDraft.parse({event_type:'note',title:'Interrupted save test',occurred_at:date});
+  await offlineJourneys.enqueue(user,'POST',{request_id:requestId,journey_id:trip,event:draft});
+  const committed=new Map();let calls=0;
+  const send=async(route,method,body)=>{calls++; if(!committed.has(body.request_id))committed.set(body.request_id,{...body.event,id:body.request_id,user_id:user,journey_id:trip,created_at:date,source_message_id:null}); if(calls===1)throw new TypeError('Simulated response lost after server commit'); return committed.get(body.request_id);};
+  await offlineJourneys.flush(user,send);const afterLost=await offlineJourneys.read(user);
+  if(!afterLost.queue.some(item=>item.id===requestId))throw new Error('Lost-response queue was removed');
+  await new OfflineJourneys(new IndexedOfflineStorage()).flush(user,send);
+  const restored=await offlineJourneys.read(user);
+  if(restored.queue.length||committed.size!==1)throw new Error('Retry did not reconcile exactly once');
+  document.querySelector('#result').textContent='PASS: native IndexedDB retained an interrupted save; retry reconciled one committed entry with the same request ID.';
+}catch(e){document.querySelector('#result').textContent='FAIL: '+e.message;}};
+</script></body></html>

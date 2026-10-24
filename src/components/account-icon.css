@@ -1,0 +1,18 @@
+.account-icon {
+  flex-shrink: 0;
+}
+
+@keyframes account-icon-draw {
+  from { stroke-dashoffset: 28; }
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .account-icon-body {
+    animation: account-icon-draw 0.4s linear both;
+  }
+
+  .account-icon-head {
+    animation: account-icon-draw 0.4s linear 0.4s both;
+  }
+}

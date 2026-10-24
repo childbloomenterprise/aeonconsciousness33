@@ -1,0 +1,148 @@
+.cuisine-explorer {
+  margin-top: 24px;
+  min-width: 0;
+}
+.cuisine-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cuisine-heading h2 {
+  margin: 10px 0;
+}
+.cuisine-heading p {
+  color: #596579;
+}
+.cuisine-controls {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+.cuisine-explorer label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.cuisine-explorer input,
+.cuisine-explorer select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid #d6dce4;
+  background: white;
+  color: #273445;
+  border-radius: 10px;
+  padding: 10px;
+  font: inherit;
+}
+.cuisine-search {
+  position: relative;
+}
+.cuisine-search svg {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}
+.cuisine-search input {
+  padding-left: 34px;
+}
+.cuisine-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: 24px;
+  align-items: start;
+}
+.cuisine-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-height: 740px;
+  overflow-y: auto;
+  padding: 3px;
+}
+.cuisine-card {
+  overflow: hidden;
+  border: 1px solid #d6dce4;
+  border-radius: 16px;
+  background: white;
+}
+.cuisine-selected {
+  outline: 2px solid #0284c7;
+  outline-offset: -2px;
+}
+.cuisine-card img,
+.cuisine-art {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.cuisine-art {
+  display: grid;
+  place-items: center;
+  background: #eff6f2;
+  color: #35634a;
+}
+.cuisine-card-body {
+  padding: 16px;
+}
+.cuisine-card h3 {
+  font-size: 17px;
+  margin: 12px 0 8px;
+}
+.cuisine-card p {
+  line-height: 1.5;
+}
+.cuisine-card button {
+  min-height: 44px;
+  cursor: pointer;
+}
+.cuisine-map {
+  position: sticky;
+  top: 90px;
+  border: 1px solid #d6dce4;
+  border-radius: 16px;
+  padding: 20px;
+  background: #f8fafc;
+}
+.cuisine-map iframe {
+  width: 100%;
+  height: 340px;
+  border: 0;
+  border-radius: 12px;
+  margin: 16px 0;
+  background: #e8eef3;
+}
+.cuisine-explorer a {
+  color: #0369a1;
+}
+.cuisine-explorer :is(button, input, select, a):focus-visible {
+  outline: 2px solid #0284c7;
+  outline-offset: 3px;
+}
+@media (max-width: 1100px) {
+  .cuisine-layout {
+    grid-template-columns: 1fr;
+  }
+  .cuisine-map {
+    position: static;
+  }
+  .cuisine-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 540px) {
+  .cuisine-controls,
+  .cuisine-grid {
+    grid-template-columns: 1fr;
+  }
+  .cuisine-map {
+    padding: 14px;
+  }
+  .cuisine-map iframe {
+    height: 280px;
+  }
+}
