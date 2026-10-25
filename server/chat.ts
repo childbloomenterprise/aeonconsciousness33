@@ -144,66 +144,64 @@ async function processWithStorage(
       );
     if (sensitive) allowSensitiveAI();
     await quota(ctx, "ai");
-    let destination: string | null = null;
-    let journey: {
-      title: string;
-      started_at: string;
-      ended_at: string | null;
-    } | null = null;
-    let recent: unknown[] = [];
-    if (input.journey_id) {
-      const { data, error } = await ctx.db
-        .from("journeys")
-        .select("title,destination_name,started_at,ended_at")
-        .eq("id", input.journey_id)
-        .eq("user_id", ctx.user.id)
-        .single();
-      dbCheck(error);
-      destination = data?.destination_name || null;
-      journey = data
-        ? {
-            title: data.title,
-            started_at: data.started_at,
-            ended_at: data.ended_at,
-          }
-        : null;
-      // Only non-sensitive event types travel to the external AI as journey context.
-      const { data: events, error: eventsError } = await ctx.db
-        .from("journey_events")
-        .select("event_type,title,description,time_text,occurred_at")
-        .eq("user_id", ctx.user.id)
-        .eq("journey_id", input.journey_id)
-        .in("event_type", ["meal", "activity", "hydration", "note"])
-        .order("occurred_at", { ascending: false, nullsFirst: false })
-        .order("created_at", { ascending: false })
-        .limit(12);
-      dbCheck(eventsError);
-      recent = (events || []).filter(
-        (e) =>
-          !isSensitiveText([e.title, e.description].filter(Boolean).join(" ")),
-      );
-    }
-    let messages: unknown[] = [];
-    if (input.conversation_id) {
-      const { data, error } = await ctx.db
-        .from("messages")
-        .select("role,content")
-        .eq("conversation_id", input.conversation_id)
-        .eq("user_id", ctx.user.id)
-        .order("created_at", { ascending: false })
-        .limit(8);
-      dbCheck(error);
-      // Never transmit stored health conversations as travel context.
-      messages = (data || [])
-        .filter((x) => !isSensitiveText(x.content))
-        .reverse();
-    }
-    const preferencesQuery = await ctx.db
-      .from("profiles")
-      .select("dietary_preference,interests")
-      .eq("id", ctx.user.id)
-      .maybeSingle();
-    dbCheck(preferencesQuery.error);
+    // Ownership and consent have already been checked. Context reads are independent.
+    const [journeyQuery, eventsQuery, messagesQuery, preferencesQuery] =
+      await Promise.all([
+        input.journey_id
+          ? ctx.db
+              .from("journeys")
+              .select("title,destination_name,started_at,ended_at")
+              .eq("id", input.journey_id)
+              .eq("user_id", ctx.user.id)
+              .single()
+          : Promise.resolve({ data: null, error: null }),
+        input.journey_id
+          ? ctx.db
+              .from("journey_events")
+              .select("event_type,title,description,time_text,occurred_at")
+              .eq("user_id", ctx.user.id)
+              .eq("journey_id", input.journey_id)
+              .in("event_type", ["meal", "activity", "hydration", "note"])
+              .order("occurred_at", { ascending: false, nullsFirst: false })
+              .order("created_at", { ascending: false })
+              .limit(12)
+          : Promise.resolve({ data: [], error: null }),
+        input.conversation_id
+          ? ctx.db
+              .from("messages")
+              .select("role,content")
+              .eq("conversation_id", input.conversation_id)
+              .eq("user_id", ctx.user.id)
+              .order("created_at", { ascending: false })
+              .limit(8)
+          : Promise.resolve({ data: [], error: null }),
+        ctx.db
+          .from("profiles")
+          .select("dietary_preference,interests")
+          .eq("id", ctx.user.id)
+          .maybeSingle(),
+      ]);
+    [journeyQuery, eventsQuery, messagesQuery, preferencesQuery].forEach(
+      (result) => dbCheck(result.error),
+    );
+    const destination = journeyQuery.data?.destination_name || null;
+    const journey = journeyQuery.data
+      ? {
+          title: journeyQuery.data.title,
+          started_at: journeyQuery.data.started_at,
+          ended_at: journeyQuery.data.ended_at,
+        }
+      : null;
+    // Preserve the existing filters: health records never become travel-model context.
+    const recent = (eventsQuery.data || []).filter(
+      (event) =>
+        !isSensitiveText(
+          [event.title, event.description].filter(Boolean).join(" "),
+        ),
+    );
+    const messages = (messagesQuery.data || [])
+      .filter((message) => !isSensitiveText(message.content))
+      .reverse();
     const ai = await extractAndReply(input.text, {
       destination,
       journey,

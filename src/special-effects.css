@@ -326,3 +326,23 @@ html[data-motion-paused="true"] .feed-intro h1 span {
     -webkit-text-fill-color: currentColor;
   }
 }
+
+/* Stop decorative painting while the app is in the background. */
+html[data-page-hidden="true"] *,
+html[data-page-hidden="true"] *::before,
+html[data-page-hidden="true"] *::after {
+  animation-play-state: paused !important;
+}
+/* Long histories need layout and paint work only near the viewport. */
+.feed-event {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 180px;
+}
+@media (hover: none) and (pointer: coarse) {
+  .travel-aura,
+  .travel-cloud,
+  .travel-route,
+  .travel-plane {
+    animation: none !important;
+  }
+}

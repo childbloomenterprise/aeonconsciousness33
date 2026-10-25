@@ -1,3 +1,4 @@
+import { preparePhoto } from "../lib/photo";
 import { useEffect, useRef, useState } from "react";
 import { Camera, ImagePlus, ScanLine } from "lucide-react";
 import { photoResult } from "../../shared/contracts";
@@ -107,18 +108,25 @@ export function PhotoCapture({
             aria-label="Choose a meal or travel photo"
             type="file"
             accept="image/jpeg,image/png,image/webp"
-            onChange={(e) => {
+            onChange={async (e) => {
               const chosen = e.target.files?.[0];
-              generation.current++;
+              const current = ++generation.current;
+              setFile(null);
               setText("");
               setError("");
-              setBusy(false);
-              if (chosen && chosen.size > 3 * 1024 * 1024) {
-                setError("Choose a photo smaller than 3 MB.");
-                setFile(null);
-                return;
+              setUncertainty("");
+              setEaten(false);
+              if (!chosen) return;
+              setBusy(true);
+              try {
+                const prepared = await preparePhoto(chosen);
+                if (current === generation.current) setFile(prepared);
+              } catch (error) {
+                if (current === generation.current)
+                  setError((error as Error).message);
+              } finally {
+                if (current === generation.current) setBusy(false);
               }
-              setFile(chosen || null);
             }}
           />
         </label>
@@ -128,6 +136,9 @@ export function PhotoCapture({
             src={preview}
             alt="Photo selected for review"
           />
+        )}
+        {busy && !file && (
+          <p role="status">Preparing a smaller photo on this device.</p>
         )}
         {error && <ErrorBox message={error} />}
         <Button onClick={analyze} disabled={!file || busy} loading={busy}>

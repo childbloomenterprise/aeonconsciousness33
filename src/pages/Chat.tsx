@@ -252,7 +252,7 @@ export function Chat({
         setConversation(result.conversation_id);
         setConversationJourney(journeyId);
       }
-      if (signedIn) await refresh();
+      if (signedIn) void Promise.resolve(refresh(["events"])).catch(() => {});
     } catch (err) {
       setError((err as Error).message);
       setRetry({ text: value, request_id: requestId });

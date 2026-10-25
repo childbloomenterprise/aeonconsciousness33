@@ -207,11 +207,18 @@ export function MotionPolish() {
         });
       };
     }
-    configure();
+    const visibility = () => {
+      document.documentElement.dataset.pageHidden = String(document.hidden);
+      if (document.hidden) dispose();
+      else configure();
+    };
+    visibility();
+    document.addEventListener("visibilitychange", visibility);
     preference?.addEventListener?.("change", configure);
     window.addEventListener("linc-motion-change", configure);
     return () => {
       dispose();
+      document.removeEventListener("visibilitychange", visibility);
       window.removeEventListener("linc-motion-change", configure);
       preference?.removeEventListener?.("change", configure);
     };

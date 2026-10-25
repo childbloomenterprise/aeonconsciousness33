@@ -17,10 +17,8 @@ async function collect(directory) {
     )
   ).flat();
 }
-const assets = [
-  ...(await collect("dist/assets")),
-  ...(await collect("dist/images")),
-];
+const assets = await collect("dist/assets");
+const optionalAssets = await collect("dist/images");
 await writeFile(
   "dist/sw.js",
   worker
@@ -28,6 +26,10 @@ await writeFile(
     .replace(
       "/*__BUILD_ASSETS__*/",
       assets.map((asset) => JSON.stringify(asset) + ",").join("\n"),
+    )
+    .replace(
+      "/*__OPTIONAL_ASSETS__*/",
+      optionalAssets.map((asset) => JSON.stringify(asset) + ",").join("\n"),
     ),
 );
 console.log(

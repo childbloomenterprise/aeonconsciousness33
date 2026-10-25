@@ -1,3 +1,4 @@
+import { JourneyToday } from "../components/JourneyToday";
 import { lazy, Suspense, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { format, subDays } from "date-fns";
@@ -69,6 +70,7 @@ export function Home({
     dataError,
     refresh,
     busy,
+    session,
   } = useLinc();
   const journey = selectedJourney || activeJourney;
   const navigate = useNavigate();
@@ -80,36 +82,43 @@ export function Home({
     [rhythm, setRhythm] = useState(false);
   const name = profile.display_name?.split(" ")[0] || "traveller";
   const visual = destinationVisual(journey?.destination_name || "Alleppey");
-  const records = events
-    .filter((e) => e.journey_id === journey?.id)
-    .slice()
-    .sort(
-      (a, b) =>
-        Date.parse(b.occurred_at || b.created_at) -
-        Date.parse(a.occurred_at || a.created_at),
-    );
-  const visible = records.filter(
-    (e) =>
-      (kind === "all" || e.event_type === kind) &&
-      (!day ||
-        format(new Date(e.occurred_at || e.created_at), "yyyy-MM-dd") === day),
-  );
-  const days = useMemo(
+  const records = useMemo(
     () =>
-      Array.from({ length: 84 }, (_, index) => {
-        const date = format(subDays(new Date(), 83 - index), "yyyy-MM-dd");
-        return {
-          date,
-          count: events.filter(
-            (e) =>
-              e.journey_id === journey?.id &&
-              format(new Date(e.occurred_at || e.created_at), "yyyy-MM-dd") ===
-                date,
-          ).length,
-        };
-      }),
+      events
+        .filter((e) => e.journey_id === journey?.id)
+        .slice()
+        .sort(
+          (a, b) =>
+            Date.parse(b.occurred_at || b.created_at) -
+            Date.parse(a.occurred_at || a.created_at),
+        ),
     [events, journey?.id],
   );
+  const visible = useMemo(
+    () =>
+      records.filter(
+        (e) =>
+          (kind === "all" || e.event_type === kind) &&
+          (!day ||
+            format(new Date(e.occurred_at || e.created_at), "yyyy-MM-dd") ===
+              day),
+      ),
+    [records, kind, day],
+  );
+  const days = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const event of records) {
+      const date = format(
+        new Date(event.occurred_at || event.created_at),
+        "yyyy-MM-dd",
+      );
+      counts.set(date, (counts.get(date) || 0) + 1);
+    }
+    return Array.from({ length: 84 }, (_, index) => {
+      const date = format(subDays(new Date(), 83 - index), "yyyy-MM-dd");
+      return { date, count: counts.get(date) || 0 };
+    });
+  }, [records]);
   function ask(value: string) {
     if (!value.trim()) return;
     navigate("/chat" + (journey ? "?journey=" + journey.id : ""), {
@@ -144,7 +153,14 @@ export function Home({
           onClick={() => (journeys.length ? setChooser(true) : onNew())}
         >
           {visual.photo ? (
-            <img className="trip-avatar" src={visual.photo} alt="" />
+            <img
+              className="trip-avatar"
+              src={visual.photo}
+              alt=""
+              decoding="async"
+              width={48}
+              height={48}
+            />
           ) : (
             <span className="journey-dot" />
           )}
@@ -205,6 +221,28 @@ export function Home({
           </span>
         </div>
       </section>
+      {journey ? (
+        <JourneyToday
+          key={(session?.user.id || "guest") + ":" + journey.id}
+          journey={journey}
+          events={records}
+          scope={session?.user.id || "guest"}
+          onFood={onFood}
+          onMeal={onMeal}
+          onCapture={() => onCapture?.("", "note")}
+          onJourney={() => navigate("/journey")}
+        />
+      ) : (
+        <div className="destination-preview-value">
+          <p>
+            Discover local food ideas before you set off. Choose a destination
+            inside the explorer.
+          </p>
+          <button className="subtle-link" onClick={onFood}>
+            Explore local flavours <ArrowUpRight size={15} />
+          </button>
+        </div>
+      )}
       <OfflineJourneyPanel journey={journey} />
       {journey && (
         <section className="feed-capture" aria-label="Capture a journey entry">
@@ -564,7 +602,7 @@ export function Home({
               height={340}
               cardWidth={230}
               autoplay={0}
-              swing={0.3}
+              swing={0}
               background="transparent"
               ink="#29332b"
               ariaLabel="Your journeys. Drag, tap, or use arrow keys to browse."

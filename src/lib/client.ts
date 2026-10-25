@@ -20,6 +20,8 @@ export class ClientError extends Error {
     super(message);
   }
 }
+const inflight = new Map<string, Promise<unknown>>();
+
 export async function request<T>(
   route: string,
   method = "GET",
@@ -35,45 +37,61 @@ export async function request<T>(
       "Sign in to sync this account's entries.",
       401,
     );
-  const res = await fetch(`/api/${route}`, {
-    method,
-    signal: AbortSignal.timeout(
-      route.split("?")[0] === "events" || method === "GET" ? 10000 : 45000,
-    ),
-    headers: {
-      "Content-Type": "application/json",
-      ...(data.session
-        ? { Authorization: `Bearer ${data.session.access_token}` }
-        : {}),
-    },
-    body: body === undefined ? undefined : JSON.stringify(body),
-  });
-  let value;
-  try {
-    value = await res.json();
-  } catch {
-    throw new ClientError(
-      "SERVICE_UNAVAILABLE",
-      "Could not reach the service. Please retry.",
-      res.status,
-    );
-  }
-  if (!res.ok)
-    throw new ClientError(
-      value.error?.code || "REQUEST_FAILED",
-      value.error?.message || "This action could not be completed.",
-      res.status,
-    );
-  const schema = responseSchema(route, method);
-  if (schema) {
-    const checked = schema.safeParse(value);
-    if (!checked.success)
+  // Share concurrent reads only; never retain private responses after completion.
+  const key =
+    method === "GET"
+      ? JSON.stringify([route, data.session?.access_token || "guest"])
+      : null;
+  if (key && inflight.has(key)) return inflight.get(key) as Promise<T>;
+  const execute = async (): Promise<T> => {
+    const res = await fetch(`/api/${route}`, {
+      method,
+      signal: AbortSignal.timeout(
+        route.split("?")[0] === "events" || method === "GET" ? 10000 : 45000,
+      ),
+      headers: {
+        "Content-Type": "application/json",
+        ...(data.session
+          ? { Authorization: `Bearer ${data.session.access_token}` }
+          : {}),
+      },
+      body: body === undefined ? undefined : JSON.stringify(body),
+    });
+    let value;
+    try {
+      value = await res.json();
+    } catch {
       throw new ClientError(
-        "INVALID_RESPONSE",
-        "The service returned incomplete information. Please retry.",
-        502,
+        "SERVICE_UNAVAILABLE",
+        "Could not reach the service. Please retry.",
+        res.status,
       );
-    return checked.data as T;
+    }
+    if (!res.ok)
+      throw new ClientError(
+        value.error?.code || "REQUEST_FAILED",
+        value.error?.message || "This action could not be completed.",
+        res.status,
+      );
+    const schema = responseSchema(route, method);
+    if (schema) {
+      const checked = schema.safeParse(value);
+      if (!checked.success)
+        throw new ClientError(
+          "INVALID_RESPONSE",
+          "The service returned incomplete information. Please retry.",
+          502,
+        );
+      return checked.data as T;
+    }
+    return value as T;
+  };
+  const pending = execute();
+  if (!key) return pending;
+  inflight.set(key, pending);
+  try {
+    return await pending;
+  } finally {
+    if (inflight.get(key) === pending) inflight.delete(key);
   }
-  return value as T;
 }

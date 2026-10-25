@@ -1,5 +1,5 @@
-import { mealSuggestions } from "./cuisine";
-import type { MealPeriod } from "./cuisine";
+import { mealSuggestions } from "./cuisine.js";
+import type { MealPeriod } from "./cuisine.js";
 export type DestinationMeal = {
   id: string;
   label: string;

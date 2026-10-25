@@ -1,5 +1,5 @@
+import { lazyRetry as lazy } from "./lib/lazyRetry";
 import {
-  lazy,
   Suspense,
   Component,
   useEffect,
@@ -39,11 +39,31 @@ import { InstallApp } from "./components/InstallApp";
 import { AccountIcon } from "./components/AccountIcon";
 import { useMobileViewport } from "./lib/useMobileViewport";
 import { Auth } from "./components/Auth";
-import { Onboarding } from "./components/Onboarding";
-import { Voice } from "./components/Voice";
-import { PhotoCapture } from "./components/PhotoCapture";
-import { EntryCapture } from "./components/EntryCapture";
-import { JourneyForm, EventForm } from "./components/JourneyForms";
+import { Achievements } from "./components/Achievements";
+const Onboarding = lazy(() =>
+  import("./components/Onboarding").then((m) => ({ default: m.Onboarding })),
+);
+const Voice = lazy(() =>
+  import("./components/Voice").then((m) => ({ default: m.Voice })),
+);
+const PhotoCapture = lazy(() =>
+  import("./components/PhotoCapture").then((m) => ({
+    default: m.PhotoCapture,
+  })),
+);
+const EntryCapture = lazy(() =>
+  import("./components/EntryCapture").then((m) => ({
+    default: m.EntryCapture,
+  })),
+);
+const JourneyForm = lazy(() =>
+  import("./components/QuickJourneyForm").then((m) => ({
+    default: m.JourneyForm,
+  })),
+);
+const EventForm = lazy(() =>
+  import("./components/JourneyForms").then((m) => ({ default: m.EventForm })),
+);
 import { Home } from "./pages/Home";
 import { Policies } from "./pages/Policies";
 const Chat = lazy(() =>
@@ -58,7 +78,9 @@ const Nearby = lazy(() =>
 const Profile = lazy(() =>
   import("./pages/Profile").then((m) => ({ default: m.Profile })),
 );
-import { Food } from "./pages/Food";
+const Food = lazy(() =>
+  import("./pages/Food").then((m) => ({ default: m.Food })),
+);
 const nav = [
   { to: "/", name: "Feed", icon: House },
   { to: "/chat", name: "Companion", icon: Bot },
@@ -77,7 +99,7 @@ class PageBoundary extends Component<
   render() {
     return this.state.failed ? (
       <div className="page" role="alert">
-        <h1>This page needs a fresh start.</h1>
+        <h1>This page could not finish loading.</h1>
         <p>
           Reconnect if you’re offline, then retry. Emergency access remains
           available above.
@@ -302,6 +324,7 @@ export function App() {
               <span className="search-hint">A LITTLE HELP</span>
             </form>
             <div className="topbar-right">
+              <Achievements />
               <InstallApp />
               <span className="topbar-journey">
                 <span className="status-dot" />
@@ -493,61 +516,81 @@ export function App() {
         </div>
       )}
       <Auth />
-      <Onboarding
-        open={onboardingOpen}
-        onClose={() => setOnboardingOpen(false)}
-      />
-      <EntryCapture
-        key={selectedJourney?.id || "none"}
-        open={capture}
-        onClose={() => setCapture(false)}
-        initialText={captureText}
-        initialType={captureType}
-        entry={captureEntry}
-        onPhoto={() => {
-          setCapture(false);
-          setPhoto(true);
-        }}
-        onVoice={() => {
-          setCapture(false);
-          openVoice("meal");
-        }}
-      />
-      <JourneyForm
-        onCreated={() => navigate("/")}
-        open={newJourney}
-        onClose={() => {
-          setNewJourney(false);
-          if (signedIn) {
-            try {
-              localStorage.removeItem("linc-pending-journey");
-            } catch {}
-          }
-        }}
-      />
-      <EventForm
-        open={eventOpen}
-        onClose={() => setEventOpen(false)}
-        event={event}
-        initialType={type}
-        journeyId={eventJourney}
-      />
-      <Voice
-        open={voice}
-        mode={voiceMode}
-        onClose={() => setVoice(false)}
-        onTranscript={(text) =>
-          voiceMode === "meal"
-            ? reviewEntry(text, "meal")
-            : navigate("/chat", { state: { draft: text } })
+      <Suspense
+        fallback={
+          <div className="toast" role="status">
+            Opening…
+          </div>
         }
-      />
-      <Food open={food} onClose={() => setFood(false)} />
-      <PhotoCapture
-        open={photo}
-        onClose={() => setPhoto(false)}
-        onTranscript={(text) => reviewEntry(text, "note")}
-      />
+      >
+        {onboardingOpen && (
+          <Onboarding
+            open={onboardingOpen}
+            onClose={() => setOnboardingOpen(false)}
+          />
+        )}
+        {capture && (
+          <EntryCapture
+            key={selectedJourney?.id || "none"}
+            open={capture}
+            onClose={() => setCapture(false)}
+            initialText={captureText}
+            initialType={captureType}
+            entry={captureEntry}
+            onPhoto={() => {
+              setCapture(false);
+              setPhoto(true);
+            }}
+            onVoice={() => {
+              setCapture(false);
+              openVoice("meal");
+            }}
+          />
+        )}
+        {newJourney && (
+          <JourneyForm
+            onCreated={() => navigate("/")}
+            open={newJourney}
+            onClose={() => {
+              setNewJourney(false);
+              if (signedIn) {
+                try {
+                  localStorage.removeItem("linc-pending-journey");
+                } catch {}
+              }
+            }}
+          />
+        )}
+        {eventOpen && (
+          <EventForm
+            open={eventOpen}
+            onClose={() => setEventOpen(false)}
+            event={event}
+            initialType={type}
+            journeyId={eventJourney}
+          />
+        )}
+        {voice && (
+          <Voice
+            open={voice}
+            mode={voiceMode}
+            onClose={() => setVoice(false)}
+            onTranscript={(text) =>
+              voiceMode === "meal"
+                ? reviewEntry(text, "meal")
+                : navigate("/chat", { state: { draft: text } })
+            }
+          />
+        )}
+        {food && <Food open={food} onClose={() => setFood(false)} />}
+        {photo && (
+          <PhotoCapture
+            open={photo}
+            onClose={() => setPhoto(false)}
+            onTranscript={(text) => reviewEntry(text, "note")}
+          />
+        )}
+      </Suspense>
       <Modal
         open={sos}
         onOpenChange={setSOS}

@@ -1,6 +1,7 @@
 // @vitest-environment jsdom
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import {
+  act,
   cleanup,
   fireEvent,
   render,
@@ -28,9 +29,11 @@ const fixtures = vi.hoisted(() => {
     })),
     startAutoRefresh: vi.fn(),
     stopAutoRefresh: vi.fn(),
-    onAuthStateChange: vi.fn(() => ({
-      data: { subscription: { unsubscribe: vi.fn() } },
-    })),
+    onAuthStateChange: vi.fn(
+      (_callback: (event: string, session: any) => void) => ({
+        data: { subscription: { unsubscribe: vi.fn() } },
+      }),
+    ),
     signOut: vi.fn(async () => {}),
   };
   return { owner, second, state, clear, request, auth, profile };
@@ -64,6 +67,7 @@ function Account() {
   return (
     <>
       <p>{state.session?.user.id || "No live session"}</p>
+      <output aria-label="Login celebrations">{state.loginCelebration}</output>
       <button onClick={() => void state.signOut()}>Sign out</button>
     </>
   );
@@ -110,4 +114,46 @@ it("signout clears both the active account and a stale remembered account marker
   );
   expect(fixtures.clear).toHaveBeenCalledWith(fixtures.owner);
   expect(fixtures.state.marker).toBeNull();
+});
+
+it("emits one celebration for a real email sign-in, not token refresh or repeated focus events", async () => {
+  mount();
+  await screen.findByText(fixtures.second);
+  const callback = fixtures.auth.onAuthStateChange.mock.calls[0][0];
+  const session = {
+    user: {
+      id: fixtures.second,
+      email: "traveller@example.test",
+      last_sign_in_at: "2026-10-25T10:00:00Z",
+    },
+  };
+  act(() => callback("INITIAL_SESSION", session));
+  expect(screen.getByLabelText("Login celebrations").textContent).toBe("0");
+  const fresh = {
+    user: { ...session.user, last_sign_in_at: "2026-10-25T11:00:00Z" },
+  };
+  act(() => callback("SIGNED_IN", fresh));
+  expect(screen.getByLabelText("Login celebrations").textContent).toBe("1");
+  act(() => {
+    callback("SIGNED_IN", fresh);
+    callback("TOKEN_REFRESHED", fresh);
+  });
+  expect(screen.getByLabelText("Login celebrations").textContent).toBe("1");
+});
+it("does not celebrate password recovery", async () => {
+  mount();
+  await screen.findByText(fixtures.second);
+  const callback = fixtures.auth.onAuthStateChange.mock.calls[0][0];
+  const session = {
+    user: {
+      id: fixtures.second,
+      email: "traveller@example.test",
+      last_sign_in_at: "recovery",
+    },
+  };
+  act(() => {
+    callback("PASSWORD_RECOVERY", session);
+    callback("SIGNED_IN", session);
+  });
+  expect(screen.getByLabelText("Login celebrations").textContent).toBe("0");
 });

@@ -15,7 +15,7 @@ it("matches public precached scripts across browser Origin/Vary differences", as
           listeners.set(name, fn),
       },
       URL,
-      caches: { match },
+      caches: { match, open: async () => ({ match }) },
       fetch,
     },
   );
@@ -72,7 +72,7 @@ it("serves the saved app shell when a navigation fetch loses its connection", as
         clients: { claim() {} },
       },
       URL,
-      caches: { match },
+      caches: { match, open: async () => ({ match }) },
       fetch: vi.fn().mockRejectedValue(new TypeError("Network disconnected")),
     },
   );
@@ -164,7 +164,7 @@ it("opens the saved website locally even when the network is available", async (
           listeners.set(name, fn),
       },
       URL,
-      caches: { match: async () => shell },
+      caches: { open: async () => ({ match: async () => shell }) },
       fetch,
     },
   );

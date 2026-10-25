@@ -249,6 +249,27 @@ export function Nearby() {
           </p>
         )}
       </div>
+      {!signedIn && (
+        <p className="small muted">
+          Sign in for in-app place results, or{" "}
+          <a
+            href={
+              "https://www.google.com/maps/search/?api=1&query=" +
+              encodeURIComponent(
+                (categories.find((item) => item.id === category)?.label ||
+                  "services") +
+                  " in " +
+                  (manual.trim() || "my area"),
+              )
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            search Google Maps directly
+          </a>
+          . Your search stays here if you sign in.
+        </p>
+      )}
       {error && <ErrorBox message={error} retry={() => void search()} />}
       {places.length > 0 ? (
         <>

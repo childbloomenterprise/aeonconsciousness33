@@ -10,6 +10,7 @@ const SHELL = [
   "/icons/apple-touch-icon.png",
   "/icons/maskable-512.png",
 ];
+const OPTIONAL = [/*__OPTIONAL_ASSETS__*/];
 self.addEventListener("message", (event) => {
   if (event.data?.type !== "PREPARE_JOURNEY_SHELL") return;
   event.waitUntil(
@@ -17,9 +18,12 @@ self.addEventListener("message", (event) => {
       .open(VERSION)
       .then(async (cache) => {
         const saved = await Promise.all(
-          SHELL.map((url) => cache.match(url, { ignoreVary: true })),
+          [...SHELL, ...OPTIONAL].map((url) =>
+            cache.match(url, { ignoreVary: true }),
+          ),
         );
-        if (saved.some((response) => !response)) await cache.addAll(SHELL);
+        if (saved.some((response) => !response))
+          await cache.addAll([...SHELL, ...OPTIONAL]);
       })
       .then(() => event.ports[0]?.postMessage({ ready: true }))
       .catch(() => event.ports[0]?.postMessage({ ready: false })),
@@ -36,7 +40,9 @@ self.addEventListener("activate", (event) => {
       .then((keys) =>
         Promise.all(
           keys
+            // Keep the previous shell for tabs opened before this deployment.
             .filter((key) => key.startsWith("linc33-shell-") && key !== VERSION)
+            .slice(0, -1)
             .map((key) => caches.delete(key)),
         ),
       )
@@ -55,9 +61,10 @@ self.addEventListener("fetch", (event) => {
   if (event.request.mode === "navigate") {
     // Never cache token-bearing auth callback URLs or authenticated responses.
     event.respondWith(
-      caches
-        .match("/index.html")
-        .then((cached) => cached || fetch(event.request)),
+      caches.open(VERSION).then(async (cache) => {
+        const shell = await cache.match("/index.html");
+        return shell || fetch(event.request);
+      }),
     );
     return;
   }

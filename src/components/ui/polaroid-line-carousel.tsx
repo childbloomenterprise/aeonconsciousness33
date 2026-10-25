@@ -402,6 +402,7 @@ export default function PolaroidLineCarousel({
   );
   const lastTouch = React.useRef(0);
   const activeRef = React.useRef(0);
+  const wake = React.useRef(() => {});
   const opts = React.useRef({ sag, swing });
   opts.current = { sag, swing };
 
@@ -409,6 +410,7 @@ export default function PolaroidLineCarousel({
   const goTo = React.useCallback(
     (i: number) => {
       sim.current.target = clamp(i, 0, n - 1) * spacing;
+      wake.current();
     },
     [n, spacing],
   );
@@ -450,7 +452,7 @@ export default function PolaroidLineCarousel({
     const S = sim.current;
     const frame = (now: number) => {
       raf = 0;
-      if (!visible) return;
+      if (!visible || document.hidden) return;
       const dt = Math.min(0.033, (now - prev) / 1000);
       prev = now;
       const { w, h, cw } = size;
@@ -501,8 +503,22 @@ export default function PolaroidLineCarousel({
         activeRef.current = near;
         setActive(near);
       }
-      raf = requestAnimationFrame(frame);
+      const settled =
+        !drag.current &&
+        Math.abs(S.target - S.off) < 0.05 &&
+        Math.abs(S.vel) < 0.05 &&
+        S.w.every((v) => Math.abs(v) < 0.001) &&
+        S.a.every((v) => Math.abs(v) < 0.001);
+      if (g || !settled) raf = requestAnimationFrame(frame);
     };
+    const resume = () => {
+      if (visible && !document.hidden && !raf) {
+        prev = performance.now();
+        raf = requestAnimationFrame(frame);
+      }
+    };
+    wake.current = resume;
+    document.addEventListener("visibilitychange", resume);
     const io = new IntersectionObserver(([e]) => {
       visible = e.isIntersecting;
       if (visible && !raf) {
@@ -514,13 +530,20 @@ export default function PolaroidLineCarousel({
     raf = requestAnimationFrame(frame);
     return () => {
       cancelAnimationFrame(raf);
+      wake.current = () => {};
+      document.removeEventListener("visibilitychange", resume);
       io.disconnect();
     };
   }, [size, spacing, n]);
 
   // autoplay, back to the first print after the last
   React.useEffect(() => {
-    if (!autoplay || n < 2) return;
+    if (
+      !autoplay ||
+      n < 2 ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
     const t = window.setInterval(() => {
       if (
         document.hidden ||
@@ -564,6 +587,7 @@ export default function PolaroidLineCarousel({
     if (off < 0) off *= 0.35;
     if (off > max) off = max + (off - max) * 0.35;
     sim.current.off = off;
+    wake.current();
   };
   const onUp = (e: React.PointerEvent) => {
     const d = drag.current;

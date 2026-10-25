@@ -35,6 +35,7 @@ type LincState = {
   signedIn: boolean;
   preview: boolean;
   authReady: boolean;
+  loginCelebration: number;
   authConfigured: boolean;
   journeys: Journey[];
   activeJourney: Journey | null;
@@ -47,7 +48,10 @@ type LincState = {
   notice: string | null;
   recovery: boolean;
   call: <T>(route: string, method?: string, body?: unknown) => Promise<T>;
-  refresh: () => Promise<void>;
+  refresh: (
+    resources?: Array<"journeys" | "events" | "profile">,
+  ) => Promise<void>;
+  rememberJourney: (journey: Journey) => void;
   notify: (message: string) => void;
   signOut: () => Promise<void>;
   authOpen: boolean;
@@ -153,6 +157,8 @@ export function LincProvider({ children }: { children: ReactNode }) {
   }, [selectedJourneyId]);
   const [authReady, setReady] = useState(!supabase);
   const [authOpen, setAuthOpen] = useState(false);
+  const [loginCelebration, setLoginCelebration] = useState(0);
+  const celebratedSignIn = useRef<string | null>(null);
   const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [recovery, setRecovery] = useState(
     new URLSearchParams(window.location.hash.slice(1)).get("type") ===
@@ -202,6 +208,24 @@ export function LincProvider({ children }: { children: ReactNode }) {
         rememberOfflineOwner(null);
         void offlineJourneys.clear(remembered).catch(() => {});
       }
+      const signInId = newSession
+        ? `${newSession.user.id}:${newSession.user.last_sign_in_at || "session"}`
+        : null;
+      const callback =
+        window.location.pathname === "/auth" &&
+        (new URLSearchParams(window.location.search).has("code") ||
+          /access_token=/.test(window.location.hash));
+      if (
+        newSession?.user.email &&
+        (event === "SIGNED_IN" || (event === "INITIAL_SESSION" && callback)) &&
+        !recovery &&
+        celebratedSignIn.current !== signInId
+      ) {
+        celebratedSignIn.current = signInId;
+        setLoginCelebration((value) => value + 1);
+      } else if (event === "INITIAL_SESSION" && !callback) {
+        celebratedSignIn.current = signInId;
+      }
       const previous = userRef.current;
       if (previous && newSession && previous !== newSession.user.id)
         void offlineJourneys.clear(previous).catch(() => {});
@@ -210,10 +234,13 @@ export function LincProvider({ children }: { children: ReactNode }) {
       if (newSession) setOfflineOwner(null);
       setReady(true);
       if (event === "PASSWORD_RECOVERY") {
+        celebratedSignIn.current = signInId;
         setRecovery(true);
         setAuthOpen(true);
       }
       if (event === "SIGNED_OUT") {
+        celebratedSignIn.current = null;
+        setLoginCelebration(0);
         const owner = previous || readOfflineOwner();
         if (owner) void offlineJourneys.clear(owner).catch(() => {});
         setOfflineOwner(null);
@@ -253,7 +280,12 @@ export function LincProvider({ children }: { children: ReactNode }) {
       const [path, search = ""] = route.split("?");
       const journeyId = new URLSearchParams(search).get("journey_id");
       const saved =
-        owner !== "guest"
+        owner !== "guest" &&
+        ((verb === "GET" &&
+          ["journeys", "events", "health-context", "conversations"].includes(
+            path,
+          )) ||
+          (path === "events" && (verb === "POST" || verb === "PATCH")))
           ? await offlineJourneys.read(owner).catch(() => undefined)
           : undefined;
       const cached = async (): Promise<T> => {
@@ -501,14 +533,17 @@ export function LincProvider({ children }: { children: ReactNode }) {
   );
   useEffect(() => {
     if (!session || !browserOnline || isPreview) return;
-    void syncDevice();
+    const startup = window.setTimeout(() => void syncDevice(), 1500);
     const resume = () => {
       if (document.visibilityState === "visible") void syncDevice();
     };
     document.addEventListener("visibilitychange", resume);
-    const interval = window.setInterval(() => void syncDevice(), 60000);
+    const interval = window.setInterval(() => {
+      if (document.visibilityState === "visible") void syncDevice();
+    }, 60000);
     return () => {
       document.removeEventListener("visibilitychange", resume);
+      window.clearTimeout(startup);
       window.clearInterval(interval);
     };
   }, [session?.user.id, browserOnline, syncDevice]);
@@ -543,10 +578,47 @@ export function LincProvider({ children }: { children: ReactNode }) {
     await navigator.storage?.persist?.().catch(() => false);
     setNotice("Journey ready offline on this device.");
   };
-  const refresh = async () => {
-    await syncDevice(true);
-    await queryClient.invalidateQueries();
-  };
+  const refresh = useCallback(
+    async (
+      resources: Array<"journeys" | "events" | "profile"> = [
+        "journeys",
+        "events",
+        "profile",
+      ],
+    ) => {
+      // A visible write never waits for the offline account mirror or other accounts.
+      await Promise.all(
+        resources.map((resource) =>
+          queryClient.invalidateQueries({ queryKey: [scope, resource] }),
+        ),
+      );
+    },
+    [scope, queryClient],
+  );
+  const rememberJourney = useCallback(
+    (journey: Journey) => {
+      if (journey.user_id !== scope && !isPreview) return;
+      queryClient.setQueryData<Journey[]>([scope, "journeys"], (previous) => [
+        journey,
+        ...(previous || [])
+          .filter((item) => item.id !== journey.id)
+          .map((item) =>
+            item.status === "active"
+              ? { ...item, status: "completed" as const }
+              : item,
+          ),
+      ]);
+      queryClient.setQueryData([scope, "events", journey.id], []);
+      selectJourney(journey.id);
+      if (!isPreview && profile.data?.consents.sensitive_storage) {
+        // Local setup runs separately from opening the newly committed trip.
+        void offlineJourneys
+          .prepare(scope, journey, [], profile.data)
+          .catch(() => {});
+      }
+    },
+    [scope, queryClient, profile.data],
+  );
   return (
     <Context.Provider
       value={{
@@ -601,12 +673,17 @@ export function LincProvider({ children }: { children: ReactNode }) {
         selectJourney,
         events: events.data || [],
         profile: profile.data || emptyProfile,
-        busy: journeys.isFetching || profile.isFetching || events.isFetching,
+        busy:
+          enabled &&
+          (journeys.isPending ||
+            profile.isPending ||
+            (!!selectedJourney && events.isPending)),
         dataError: journeys.error || profile.error || events.error,
         notice,
         recovery,
         call,
         refresh,
+        rememberJourney,
         notify: setNotice,
         signOut: async () => {
           const owners = new Set(
@@ -627,6 +704,7 @@ export function LincProvider({ children }: { children: ReactNode }) {
           setRecovery(false);
         },
         authOpen,
+        loginCelebration,
         setAuthOpen,
         onboardingOpen,
         setOnboardingOpen: (open) => {

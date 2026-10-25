@@ -175,9 +175,71 @@ it("starts a fresh update after an in-flight download when a mutation needs new 
     }
     return [] as T;
   };
-  const first = mirror.sync(owner, send, () => true);
-  const fresh = mirror.sync(owner, send, () => true, true);
+  const first = mirror.sync(owner, send as OfflineSend, () => true);
+  const fresh = mirror.sync(owner, send as OfflineSend, () => true, true);
   resolve();
   await Promise.all([first, fresh]);
   expect(profiles).toBe(2);
+});
+
+it("skips duplicate account downloads while rechecking consent and supports forced refresh", async () => {
+  const store = new OfflineJourneys(new Memory()),
+    mirror = new LocalAppMirror(store);
+  let revoked = false;
+  const send = vi.fn(
+    async <T>(route: string): Promise<T> =>
+      (route === "health-context"
+        ? {
+            ...profile,
+            consents: { ...profile.consents, sensitive_storage: !revoked },
+          }
+        : []) as T,
+  );
+  await mirror.sync(owner, send as OfflineSend, () => true);
+  send.mockClear();
+  await mirror.sync(owner, send as OfflineSend, () => true);
+  expect(send.mock.calls.map((c) => c[0])).toEqual(["health-context"]);
+  send.mockClear();
+  await mirror.sync(owner, send as OfflineSend, () => true, true);
+  expect(send.mock.calls.map((c) => c[0])).toContain("journeys?offset=0");
+  revoked = true;
+  await mirror.sync(owner, send as OfflineSend, () => true);
+  expect(await store.read(owner)).toBeUndefined();
+});
+
+it("downloads changed conversation histories but reuses unchanged saved conversations", async () => {
+  const store = new OfflineJourneys(new Memory()),
+    mirror = new LocalAppMirror(store);
+  let revision = "2026-10-25T08:00:00Z";
+  const send = vi.fn(
+    async <T>(route: string): Promise<T> =>
+      (route === "health-context"
+        ? profile
+        : route.startsWith("journeys?")
+          ? []
+          : route.startsWith("conversations?id=")
+            ? [{ content: revision }]
+            : [{ id: "conversation", updated_at: revision }]) as T,
+  );
+  const clock = vi.spyOn(Date, "now").mockReturnValue(2000000000000);
+  await mirror.sync(owner, send as OfflineSend, () => true);
+  send.mockClear();
+  clock.mockReturnValue(2000000061000);
+  await mirror.sync(owner, send as OfflineSend, () => true);
+  expect(
+    send.mock.calls
+      .map((call) => call[0])
+      .some((route) => route.startsWith("conversations?id=")),
+  ).toBe(false);
+  send.mockClear();
+  revision = "2026-10-25T09:00:00Z";
+  clock.mockReturnValue(2000000122000);
+  await mirror.sync(owner, send as OfflineSend, () => true);
+  expect(send.mock.calls.map((call) => call[0])).toContain(
+    "conversations?id=conversation&offset=0",
+  );
+  expect(
+    (await store.read(owner))!.snapshots?.["conversations?id=conversation"],
+  ).toEqual([{ content: revision }]);
+  clock.mockRestore();
 });
