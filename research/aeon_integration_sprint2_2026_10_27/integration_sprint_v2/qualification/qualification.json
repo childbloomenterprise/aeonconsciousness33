@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": {
+    "identical_replay_inputs": true,
+    "repaired_membership": true,
+    "restart_integrated": true,
+    "restart_no_retrieval": true,
+    "restart_adaptive_baseline": true,
+    "restart_shuffled": true,
+    "retrieval_ablation_poison_test": true,
+    "retrieval_changes_planning_and_prediction": true,
+    "shuffled_retrieves_wrong_context": true,
+    "metric_exactly_20_return_actions": true,
+    "elapsed_seconds": 6.20375349699998,
+    "landing_weights_synthetic": true,
+    "lead_bias_removed_qualification_seed": {
+      "variable_delay/integrated": 0.43534734974117345,
+      "variable_delay/no_retrieval": 0.43534734974117345,
+      "variable_delay/adaptive_baseline": 0.43534734974117345,
+      "variable_delay/shuffled": 0.43534734974117345,
+      "sensor_dropout/integrated": 0.43534734974117345,
+      "sensor_dropout/no_retrieval": 0.43534734974117345,
+      "sensor_dropout/adaptive_baseline": 0.43534734974117345,
+      "sensor_dropout/shuffled": 0.43534734974117345,
+      "delay_dropout/integrated": 0.43534734974117345,
+      "delay_dropout/no_retrieval": 0.43534734974117345,
+      "delay_dropout/adaptive_baseline": 0.43534734974117345,
+      "delay_dropout/shuffled": 0.43534734974117345
+    }
+  }
+}
