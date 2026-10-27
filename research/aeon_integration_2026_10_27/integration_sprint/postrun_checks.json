@@ -1,0 +1,7 @@
+{
+  "source_unchanged_after_measurement": true,
+  "unique_run_keys": true,
+  "all_metric_windows_recomputed": true,
+  "all_trace_chains_verified": true,
+  "recall_only_at_return_and_ablations_disconnected": true
+}

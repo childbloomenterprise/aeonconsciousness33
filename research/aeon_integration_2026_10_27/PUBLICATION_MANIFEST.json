@@ -1,0 +1,236 @@
+[
+  {
+    "local": "integration_sprint/sprint.py",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/sprint.py",
+    "bytes": 15069,
+    "sha256": "baad74fdeda1ef00484a810ed1bedc86d85e2bed42cf389bb1300bd04de16727"
+  },
+  {
+    "local": "integration_sprint/PROTOCOL.md",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/PROTOCOL.md",
+    "bytes": 3395,
+    "sha256": "e81636b741732431c1cfe651d8f71c0c8e0b1657b5e72f09ec716688f1cacb1b"
+  },
+  {
+    "local": "integration_sprint/AEON_Integration_Sprint_Report.md",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/AEON_Integration_Sprint_Report.md",
+    "bytes": 6377,
+    "sha256": "e2ac6dbf040ef0b238bb394f326a209f1b68c4f6481c0e2b3740c5e98882d2f5"
+  },
+  {
+    "local": "integration_sprint/protocol_freeze.json",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/protocol_freeze.json",
+    "bytes": 5897,
+    "sha256": "30d666ef21f58fa931be4b3b36ff7add5265e63d24ab43a703ad92384b8cb7ac"
+  },
+  {
+    "local": "integration_sprint/regression_checks.json",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/regression_checks.json",
+    "bytes": 203,
+    "sha256": "2b14f3f44c030ab9c1a60b8875fcc20535c5bc4645285ee360597161a51cd87b"
+  },
+  {
+    "local": "integration_sprint/independent_observation_audit.json",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/independent_observation_audit.json",
+    "bytes": 732,
+    "sha256": "a5551469624fff654425a8c68db3ad63d9fdbd77fd2a8a3263bd5213ee85c067"
+  },
+  {
+    "local": "integration_sprint/postrun_checks.json",
+    "path": "research/aeon_integration_2026_10_27/integration_sprint/postrun_checks.json",
+    "bytes": 219,
+    "sha256": "6db8362436103b87feacdecb7a1f498823ced47627f13fe59022cd6540ad8548"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17001.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17001.zip",
+    "bytes": 1444487,
+    "sha256": "a458c7973065f27dc125683aedcb4f7f308b30fa9803886f0d1d0935446c1498"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17003.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17003.zip",
+    "bytes": 1443638,
+    "sha256": "b4879c5ffa707839863eac0f844fb8c41c5a438b7425f637c35283022e74f8fb"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17009.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17009.zip",
+    "bytes": 1443835,
+    "sha256": "4798b82f671bf09a6db0d700051e43e6eae2a1939a1c4c5be676747fbb9a8767"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17011.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17011.zip",
+    "bytes": 1443535,
+    "sha256": "9a8cff2127fe2d1cdddbf2c66e4d0704fbacb577182090623fd4145691663299"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17021.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17021.zip",
+    "bytes": 1442945,
+    "sha256": "c16c95a6ccd8ce348d92217788b34bda40f64d7920e66d7cdac513c9c9c64218"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17027.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17027.zip",
+    "bytes": 1442939,
+    "sha256": "dfc4ad21ebe75cfa6d86e37789cc03002e40c773e5a95231556b58975174a17b"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17033.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17033.zip",
+    "bytes": 1443693,
+    "sha256": "68df8ed21efcbff5ff2c2ac34a77986846e2e617b7edd08af612bcbefdca5893"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17041.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17041.zip",
+    "bytes": 1443381,
+    "sha256": "08d256165ed84d841f44edf063402e2756a640df6924ccfd8fb17bade1f0ddab"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17047.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17047.zip",
+    "bytes": 1442684,
+    "sha256": "16deda0cf45f2c7916243050ef2c232a16814de47d46fa1829c2fd7d642f4586"
+  },
+  {
+    "local": "aeon_github_publish/variable_delay_17053.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/variable_delay_17053.zip",
+    "bytes": 1443924,
+    "sha256": "d2921bb768b40162b9b7666a4a756940d856ad046dcfd9b347fe10f457c304b5"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17001.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17001.zip",
+    "bytes": 1470043,
+    "sha256": "eee3a600c1c74fc99ca2d051e8d4d9ac6517a8454f318b201a82fdad431e2c0b"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17003.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17003.zip",
+    "bytes": 1469728,
+    "sha256": "5f6fbe4c16661fc7403122338637aea0eeb62c252066211d73f0acf16d04e620"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17009.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17009.zip",
+    "bytes": 1471132,
+    "sha256": "44e60e6ce70c642749ce75e1900430ebebcf27936b34adb8a1b6535e745ca9b1"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17011.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17011.zip",
+    "bytes": 1469993,
+    "sha256": "333eca165ba4357a4a6274be68d8cd36e1b19c38fc9099b65e50268c42a7f545"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17021.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17021.zip",
+    "bytes": 1470087,
+    "sha256": "dec4f3f756d09ba01b1e0c53520f3d331c6d3d55b3d4dc3fb14d352a0ad6787f"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17027.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17027.zip",
+    "bytes": 1469737,
+    "sha256": "c0435c3c4553033e1403dca6ab1f524a697d56a73ab63405ea68214227df11fe"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17033.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17033.zip",
+    "bytes": 1470270,
+    "sha256": "546e65427f118c71ef350bbba1515f094a353ba2e9caf20bae35076b0693e224"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17041.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17041.zip",
+    "bytes": 1470780,
+    "sha256": "f108d41704a536403a2e49610ee39d8d87c31234bf127b9a0bf8f4360a9cc5cd"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17047.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17047.zip",
+    "bytes": 1469913,
+    "sha256": "26c6bfb6cbc804804f567536652c1bac14f46c3c363967eddde834e397b7dcd0"
+  },
+  {
+    "local": "aeon_github_publish/sensor_dropout_17053.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/sensor_dropout_17053.zip",
+    "bytes": 1469482,
+    "sha256": "73dc02934840e94692e46da177351fc3873b09e829714e8a6fd3bbfd56e23a1d"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17001.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17001.zip",
+    "bytes": 1469476,
+    "sha256": "000d0e198bdb1acdcb4479f0112b846e9188e539374a61ab0c982a94344d6fd5"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17003.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17003.zip",
+    "bytes": 1469318,
+    "sha256": "347661132ff136b4c7ad41bdcf338b22e668d209aef062149f6a0b2702fcfe66"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17009.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17009.zip",
+    "bytes": 1471539,
+    "sha256": "967189dd50dc001c0c6ddb58a0462d495d74b32a16ed5d6232c79898ded7c58f"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17011.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17011.zip",
+    "bytes": 1470057,
+    "sha256": "1ef1f8d3917b94f7d672ca9430f97e6a82a99aa1fedca22d6244dfbcb80721cb"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17021.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17021.zip",
+    "bytes": 1469970,
+    "sha256": "8155b37a7be91fad28ea61213ce6282e12a8ce9e0a2ad102ff037266259bf40d"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17027.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17027.zip",
+    "bytes": 1469372,
+    "sha256": "4994e4f39cbfb8a32d6d16002911a69c3f2508460172179f50b21b0897c915f4"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17033.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17033.zip",
+    "bytes": 1471187,
+    "sha256": "b3ade4c11f299799c6286b4321bad23cbb24e9b05f44f032ad912ccad27ca4d4"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17041.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17041.zip",
+    "bytes": 1470471,
+    "sha256": "8fbd2ee8a8d09a5ca5a4fa751b9ade6f2087faf3ff4919d8e72b467c50df8bc6"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17047.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17047.zip",
+    "bytes": 1470538,
+    "sha256": "01dff68507804e80ebf522cd2346e696aa24010a73ac1f46b0f353732614d438"
+  },
+  {
+    "local": "aeon_github_publish/delay_dropout_17053.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/delay_dropout_17053.zip",
+    "bytes": 1470091,
+    "sha256": "af25987f3618b4d2b0f557338f71da9b67effd76d17e49641d464eda54841b63"
+  },
+  {
+    "local": "aeon_github_publish/qualification_and_raw_outcomes.zip",
+    "path": "research/aeon_integration_2026_10_27/evidence/qualification_and_raw_outcomes.zip",
+    "bytes": 2811565,
+    "sha256": "ea103be08ee9c7ac08704951d8de26c32526336812c0d3176a00224552c102e4"
+  },
+  {
+    "local": "aeon_github_publish/README.md",
+    "path": "research/aeon_integration_2026_10_27/README.md",
+    "bytes": 1495,
+    "sha256": "a3b9621be9413ed60dfc05734a858421b28079b8ca84b7f18a6ba70b395ccf71"
+  }
+]

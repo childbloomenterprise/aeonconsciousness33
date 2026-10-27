@@ -1,0 +1,7 @@
+{
+  "command": "python -m unittest test_developmental_cases test_developmental_v02 -q",
+  "tests_run": 13,
+  "elapsed_seconds": 20.789,
+  "passed": true,
+  "recorded_from": "completed command output"
+}

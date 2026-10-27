@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "families": {
+    "variable_delay": {
+      "equal_inputs": true,
+      "observations_per_configuration": 769,
+      "combined_sha256": "633b7dfe7a94829ffe1b1f1476836b2e99d96da294f5e5a86c325b1db037f493"
+    },
+    "sensor_dropout": {
+      "equal_inputs": true,
+      "observations_per_configuration": 769,
+      "combined_sha256": "e8e2f4f921eb532360d4a26048cb6ad91e8672e13d8be75cf0dac33830ff86f0"
+    },
+    "delay_dropout": {
+      "equal_inputs": true,
+      "observations_per_configuration": 769,
+      "combined_sha256": "1f714a087cbb918dda35433adab32b6cd9d73f56a149810d0caa5e3d598571dc"
+    }
+  },
+  "elapsed_seconds": 1.198711000000003,
+  "python": "3.11.15",
+  "numpy": "2.4.6"
+}
