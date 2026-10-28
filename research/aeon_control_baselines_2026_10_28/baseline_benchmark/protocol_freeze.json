@@ -1,0 +1,19 @@
+{
+ "frozen_at": "2026-10-28T12:08:21.964879+00:00",
+ "pid": {
+  "kp": 0.3,
+  "ki": 0.01,
+  "kd": 0.1
+ },
+ "files": {
+  "baseline_benchmark/benchmark.py": "f4289fbab5c318fb02609316ddc405a28550d1939211f153a83d5039d4f35a82",
+  "baseline_benchmark/PROTOCOL.md": "a84c2536bb077968895571182f0e6d70641b306285a2682d4e58e03e71713499",
+  "integration_sprint_v2/evaluation/results.json": "5cd97e0bfe35d77f3b9072e73ffeeaac9ef47e5a323e4e53a260595fd0afa5b4",
+  "integration_sprint/sprint.py": "a1fc603f92d468ed27d546eabb17c29baf679676a8967c991e52822398b490f8",
+  "developmental_v0_2/actors.py": "1009852d1aee7897357dd6a6d4d92096311ca03ef740b45e16ab712623073c70",
+  "developmental_v0_2/worlds.py": "95e1371cf87f7e4242f7a39b123cebc17b6d797c7c14f1b71280abab641e43ed",
+  "developmental_cases/common.py": "0e1f88b6bc1cae99460f01fd3e21ec1c10de94c69d3e5027c4c513989de2be83",
+  "aeon_developmental/world.py": "0f11f68592f7d7965e19c1505b8b8ba6464db1736bc022cd2b170984a4170be0"
+ },
+ "qualification_sha256": "35e34f68fb5c7d987d721ed88124959d6e401b0307d5cb76ccc7eafb7620a44e"
+}
