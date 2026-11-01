@@ -1,0 +1,1795 @@
+{
+  "seed": 19001,
+  "detector": {
+    "signal": "locked_sensor_signed_residual",
+    "hazard_lambda": 250,
+    "lag": 8,
+    "threshold": 0.5,
+    "retrieval_margin": 0.5
+  },
+  "fallback": {
+    "absolute_floor": 0.1,
+    "median_multiplier": 3.0
+  },
+  "t1_timing": {
+    "V3Actor_mean_us_per_decision": 1478.2824505598708,
+    "V3Hybrid_mean_us_per_decision": 1538.975672727045
+  },
+  "mean_v3_hybrid_return_window_loss": 0.4314462139361904,
+  "rows": [
+    {
+      "test": "T1_replication",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1555.9697031524895
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1760.066000012254
+      },
+      "aeon_integrated": {
+        "loss": 0.23639186565474907
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5677044001214355
+      },
+      "mmac": {
+        "loss": 0.27244235170607695
+      }
+    },
+    {
+      "test": "T1_replication",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1343.2099049926667
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1431.2976809378597
+      },
+      "aeon_integrated": {
+        "loss": 0.18761031591911032
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2916416044691136
+      },
+      "mmac": {
+        "loss": 0.13817992098515763
+      }
+    },
+    {
+      "test": "T1_replication",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.45780924590587035,
+        "us_per_decision": 1535.6677435344561
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.31045497309225534,
+        "us_per_decision": 1425.563337231021
+      },
+      "aeon_integrated": {
+        "loss": 0.13817992098515963
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.45780924590587035
+      },
+      "mmac": {
+        "loss": 0.30981175935898436
+      }
+    },
+    {
+      "test": "T2_cue_noise_x4",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1331.0268359418842
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1451.228341162884
+      },
+      "aeon_integrated": {
+        "loss": 0.23639186565474907
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5677044001214355
+      },
+      "mmac": {
+        "loss": 0.27244235170607695
+      }
+    },
+    {
+      "test": "T2_cue_noise_x4",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1361.7647643210755
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1430.7260651094111
+      },
+      "aeon_integrated": {
+        "loss": 0.18761031591911032
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2916416044691136
+      },
+      "mmac": {
+        "loss": 0.13817992098515763
+      }
+    },
+    {
+      "test": "T2_cue_noise_x4",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.45780924590587035,
+        "us_per_decision": 1449.7704453333426
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.31045497309225534,
+        "us_per_decision": 1414.7482304451842
+      },
+      "aeon_integrated": {
+        "loss": 0.13817992098515963
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.45780924590587035
+      },
+      "mmac": {
+        "loss": 0.30981175935898436
+      }
+    },
+    {
+      "test": "T2_cue_noise_x10",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1355.5149479695199
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1523.8451914380373
+      },
+      "aeon_integrated": {
+        "loss": 0.5966886380465273
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5677044001214355
+      },
+      "mmac": {
+        "loss": 0.27244235170607695
+      }
+    },
+    {
+      "test": "T2_cue_noise_x10",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1471.6929440510285
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1495.6663190635784
+      },
+      "aeon_integrated": {
+        "loss": 0.18974174092736107
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2916416044691136
+      },
+      "mmac": {
+        "loss": 0.13817992098515763
+      }
+    },
+    {
+      "test": "T2_cue_noise_x10",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.45780924590587035,
+        "us_per_decision": 1404.6437135372496
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.31045497309225534,
+        "us_per_decision": 1511.1971679289127
+      },
+      "aeon_integrated": {
+        "loss": 0.31093047315762656
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.45780924590587035
+      },
+      "mmac": {
+        "loss": 0.30981175935898436
+      }
+    },
+    {
+      "test": "T3_no_cue",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1518.252589827777
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          589
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5677044001214355,
+        "us_per_decision": 1555.0659843484027
+      },
+      "aeon_integrated": {
+        "loss": 0.5677044001214355
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5677044001214355
+      },
+      "mmac": {
+        "loss": 0.27244235170607695
+      }
+    },
+    {
+      "test": "T3_no_cue",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1422.1413867592976
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2916416044691136,
+        "us_per_decision": 1476.5956354191683
+      },
+      "aeon_integrated": {
+        "loss": 0.2916416044691136
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2916416044691136
+      },
+      "mmac": {
+        "loss": 0.13817992098515763
+      }
+    },
+    {
+      "test": "T3_no_cue",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.45780924590587035,
+        "us_per_decision": 1430.0864518190792
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.31045497309225534,
+        "us_per_decision": 1502.3480377749365
+      },
+      "aeon_integrated": {
+        "loss": 0.45780924590587035
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.45780924590587035
+      },
+      "mmac": {
+        "loss": 0.30981175935898436
+      }
+    },
+    {
+      "test": "T4_capacity_ABCDA",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 3,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          774
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.4572769435032475,
+        "us_per_decision": 1481.4140083520517
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          774
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.4572769435032475,
+        "us_per_decision": 1501.4739291776398
+      },
+      "aeon_integrated": {
+        "loss": 0.4572769435032475
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.4572769435032475
+      },
+      "mmac": {
+        "loss": 0.24829124457744384
+      }
+    },
+    {
+      "test": "T4_capacity_ABCDA",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5477816990292057,
+        "us_per_decision": 1784.1497478608896
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5477816990292057,
+        "us_per_decision": 1451.9847291618742
+      },
+      "aeon_integrated": {
+        "loss": 0.5477816990292057
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5477816990292057
+      },
+      "mmac": {
+        "loss": 0.21644314149840554
+      }
+    },
+    {
+      "test": "T4_capacity_ABCDA",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 2,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          390,
+          599
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.7928888833507327,
+        "us_per_decision": 2314.8811864302843
+      },
+      "v3_hybrid": {
+        "hits": 2,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          390,
+          772
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.6241212287904713,
+        "us_per_decision": 1429.3165604613023
+      },
+      "aeon_integrated": {
+        "loss": 0.7928888833507327
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.7928888833507327
+      },
+      "mmac": {
+        "loss": 0.2705535527950304
+      }
+    },
+    {
+      "test": "T4_revisits_ABCBA",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 4,
+        "switches": 4,
+        "false_alarms": 1,
+        "declarations": [
+          219,
+          392,
+          578,
+          714,
+          770
+        ],
+        "recalls": [],
+        "retrieval_attempted": 5,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5362566833173779,
+        "us_per_decision": 1380.3092687642977
+      },
+      "v3_hybrid": {
+        "hits": 4,
+        "switches": 4,
+        "false_alarms": 1,
+        "declarations": [
+          219,
+          392,
+          578,
+          714,
+          770
+        ],
+        "recalls": [],
+        "retrieval_attempted": 5,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5362566833173779,
+        "us_per_decision": 1665.365296867094
+      },
+      "aeon_integrated": {
+        "loss": 0.5562219531587907
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5362566833173779
+      },
+      "mmac": {
+        "loss": 0.2227250712837427
+      }
+    },
+    {
+      "test": "T4_revisits_ABCBA",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5477816990292057,
+        "us_per_decision": 1348.6195510874193
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5477816990292057,
+        "us_per_decision": 1651.2899104175933
+      },
+      "aeon_integrated": {
+        "loss": 0.23686457429532587
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5477816990292057
+      },
+      "mmac": {
+        "loss": 0.21644314149840554
+      }
+    },
+    {
+      "test": "T4_revisits_ABCBA",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 2,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          390,
+          602
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.7644860355164007,
+        "us_per_decision": 1381.1509760368306
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          390,
+          600,
+          770
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.8109929768644948,
+        "us_per_decision": 1462.1693906519795
+      },
+      "aeon_integrated": {
+        "loss": 0.6374842574545392
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.7644860355164007
+      },
+      "mmac": {
+        "loss": 0.2515913824847277
+      }
+    },
+    {
+      "test": "T5_changed_physics_on_return",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          609
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.24219186343842447,
+        "us_per_decision": 1307.2437174438771
+      },
+      "v3_hybrid": {
+        "hits": 3,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          219,
+          392,
+          609
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.24219186343842447,
+        "us_per_decision": 1371.0674206019273
+      },
+      "aeon_integrated": {
+        "loss": 0.15790833443710228
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.24219186343842447
+      },
+      "mmac": {
+        "loss": 0.31277873093907493
+      }
+    },
+    {
+      "test": "T5_changed_physics_on_return",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2519212812348023,
+        "us_per_decision": 1384.4457044645726
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          388
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2519212812348023,
+        "us_per_decision": 1424.3468736670668
+      },
+      "aeon_integrated": {
+        "loss": 0.17022762308340378
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2519212812348023
+      },
+      "mmac": {
+        "loss": 0.18577166373532378
+      }
+    },
+    {
+      "test": "T5_changed_physics_on_return",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.6474297370396723,
+        "us_per_decision": 1802.9310520735937
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          390
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432
+        ],
+        "loss": 0.3804270926430243,
+        "us_per_decision": 2256.7666783288587
+      },
+      "aeon_integrated": {
+        "loss": 0.1310425822867763
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.6474297370396723
+      },
+      "mmac": {
+        "loss": 0.234711407164713
+      }
+    },
+    {
+      "test": "T6_sensor_noise_x2",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          389
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.3723891163154569,
+        "us_per_decision": 1581.5377656357061
+      },
+      "v3_hybrid": {
+        "hits": 2,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          389,
+          583,
+          753
+        ],
+        "recalls": [],
+        "retrieval_attempted": 3,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432,
+          433,
+          434,
+          435,
+          436,
+          437
+        ],
+        "loss": 0.5777752522339851,
+        "us_per_decision": 1678.261682248679
+      },
+      "aeon_integrated": {
+        "loss": 0.26392944080490827
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.3723891163154569
+      },
+      "mmac": {
+        "loss": 0.252091483049881
+      }
+    },
+    {
+      "test": "T6_sensor_noise_x2",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          450
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2822312930741144,
+        "us_per_decision": 1830.5525923854777
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          450
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2822312930741144,
+        "us_per_decision": 1859.262925790972
+      },
+      "aeon_integrated": {
+        "loss": 0.2399109415427768
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2822312930741144
+      },
+      "mmac": {
+        "loss": 0.2706510031294863
+      }
+    },
+    {
+      "test": "T6_sensor_noise_x2",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          251,
+          415
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.6519235166705659,
+        "us_per_decision": 1612.5524010324928
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          251,
+          415
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432,
+          433,
+          434,
+          435,
+          436,
+          437,
+          438,
+          439,
+          440,
+          441,
+          442,
+          443,
+          444,
+          445,
+          446,
+          447,
+          448,
+          449,
+          450,
+          451,
+          452,
+          453,
+          454,
+          455
+        ],
+        "loss": 0.37155761354586103,
+        "us_per_decision": 2836.019509156055
+      },
+      "aeon_integrated": {
+        "loss": 0.24855655267447507
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.6519235166705659
+      },
+      "mmac": {
+        "loss": 0.28009193653952963
+      }
+    },
+    {
+      "test": "T6_sensor_noise_x4",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 2,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          417,
+          603
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.4535154699972439,
+        "us_per_decision": 2498.724796851093
+      },
+      "v3_hybrid": {
+        "hits": 2,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          417,
+          603
+        ],
+        "recalls": [],
+        "retrieval_attempted": 2,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.4535154699972439,
+        "us_per_decision": 1668.8234336470487
+      },
+      "aeon_integrated": {
+        "loss": 0.2815339572321133
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.4535154699972439
+      },
+      "mmac": {
+        "loss": 0.3192397063232674
+      }
+    },
+    {
+      "test": "T6_sensor_noise_x4",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          526
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2885764861185492,
+        "us_per_decision": 1405.9920911222434
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          526
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.2885764861185492,
+        "us_per_decision": 1455.3681080542447
+      },
+      "aeon_integrated": {
+        "loss": 0.3265218049215793
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.2885764861185492
+      },
+      "mmac": {
+        "loss": 0.31777360284439077
+      }
+    },
+    {
+      "test": "T6_sensor_noise_x4",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          394
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.3996207906256375,
+        "us_per_decision": 2094.0844765391375
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276
+        ],
+        "loss": 0.44602921545821655,
+        "us_per_decision": 2025.2214947807563
+      },
+      "aeon_integrated": {
+        "loss": 0.27275753905035355
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.3996207906256375
+      },
+      "mmac": {
+        "loss": 0.3142397063232651
+      }
+    },
+    {
+      "test": "T7_phase_96",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          301
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5104435331078272,
+        "us_per_decision": 1675.1575079373044
+      },
+      "v3_hybrid": {
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          301
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5104435331078272,
+        "us_per_decision": 1757.331796852668
+      },
+      "aeon_integrated": {
+        "loss": 0.2107180472633789
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5104435331078272
+      },
+      "mmac": {
+        "loss": 0.31700956893141
+      }
+    },
+    {
+      "test": "T7_phase_96",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.33083332410406885,
+        "us_per_decision": 1520.7950780980657
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.33083332410406885,
+        "us_per_decision": 1617.1747135255525
+      },
+      "aeon_integrated": {
+        "loss": 0.2369789007819202
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.33083332410406885
+      },
+      "mmac": {
+        "loss": 0.20865503241509065
+      }
+    },
+    {
+      "test": "T7_phase_96",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.8685349349631445,
+        "us_per_decision": 1540.449554643904
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          288,
+          289,
+          290
+        ],
+        "loss": 0.5445440248638955,
+        "us_per_decision": 1620.5889636088007
+      },
+      "aeon_integrated": {
+        "loss": 0.22968898839841995
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.8685349349631445
+      },
+      "mmac": {
+        "loss": 0.32669668165203813
+      }
+    },
+    {
+      "test": "T7_phase_64",
+      "family": "variable_delay",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          241
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.4604463650245133,
+        "us_per_decision": 1003.0518710664182
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          241
+        ],
+        "recalls": [],
+        "retrieval_attempted": 1,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.4604463650245133,
+        "us_per_decision": 1261.5319844826445
+      },
+      "aeon_integrated": {
+        "loss": 0.2378385099884328
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.4604463650245133
+      },
+      "mmac": {
+        "loss": 1.0043515429391672
+      }
+    },
+    {
+      "test": "T7_phase_64",
+      "family": "sensor_dropout",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.191912884127042,
+        "us_per_decision": 1325.7220234663691
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174
+        ],
+        "loss": 0.37624657616092183,
+        "us_per_decision": 1128.0541443738912
+      },
+      "aeon_integrated": {
+        "loss": 0.14285416988114752
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.191912884127042
+      },
+      "mmac": {
+        "loss": 0.2114867055630158
+      }
+    },
+    {
+      "test": "T7_phase_64",
+      "family": "delay_dropout",
+      "v3_actor": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5175705276236165,
+        "us_per_decision": 1018.9933477704471
+      },
+      "v3_hybrid": {
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [],
+        "recalls": [],
+        "retrieval_attempted": 0,
+        "retrieval_restored": 0,
+        "fallback_ticks": [],
+        "loss": 0.5175705276236165,
+        "us_per_decision": 1012.5373671598936
+      },
+      "aeon_integrated": {
+        "loss": 0.3777624043251443
+      },
+      "aeon_no_retrieval": {
+        "loss": 0.5175705276236165
+      },
+      "mmac": {
+        "loss": 0.4136976084190431
+      }
+    }
+  ]
+}

@@ -1,0 +1,3001 @@
+{
+  "runs": 1980,
+  "analysis": {
+    "T1_replication": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6130121741642192,
+          "control_minus_full": -0.0857695796367638,
+          "ci95": [
+            -0.15919120513754323,
+            -0.018304780338125517
+          ],
+          "improvement_percent": -13.991496947626214
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.23570360189417078,
+          "control_minus_full": -0.4630781519068122,
+          "ci95": [
+            -0.7417502944459992,
+            -0.27031692014456654
+          ],
+          "improvement_percent": -196.46630267225655
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": -0.06639188549690449,
+          "ci95": [
+            -0.13274405091124053,
+            -0.0002344265551326087
+          ],
+          "improvement_percent": -10.498568814037453
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.2414906836367227,
+          "control_minus_full": -0.4572910701642602,
+          "ci95": [
+            -0.754590414033551,
+            -0.25027159938700283
+          ],
+          "improvement_percent": -189.36178542281513
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.3264979011357195,
+          "control_minus_full": -0.37228385266526337,
+          "ci95": [
+            -0.639991922676652,
+            -0.18459217968785457
+          ],
+          "improvement_percent": -114.02335248412867
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": 0.019377694139859326,
+          "ci95": [
+            -0.03144474362660742,
+            0.06694720182795097
+          ],
+          "improvement_percent": 3.0642006001496784
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.23570360189417078,
+          "control_minus_full": -0.3773085722700483,
+          "ci95": [
+            -0.607526571975859,
+            -0.2100128931396599
+          ],
+          "improvement_percent": -160.0775589502689
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.027563918708415475,
+          "control_minus_full": -0.0018997424942297843,
+          "ci95": [
+            -0.0025951851508399784,
+            -0.0012221546505228028
+          ],
+          "improvement_percent": -6.892135020155093
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02445880019026407,
+          "control_minus_full": -0.005004861012381191,
+          "ci95": [
+            -0.006027455694039042,
+            -0.00396054367487147
+          ],
+          "improvement_percent": -20.462414237201205
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": -0.0018859072767115717,
+          "ci95": [
+            -0.0029387477901700178,
+            -0.0007647690378226474
+          ],
+          "improvement_percent": -6.838509335374459
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.016166095951582922,
+          "control_minus_full": -0.013297565251062335,
+          "ci95": [
+            -0.01461124695125466,
+            -0.012000611636748735
+          ],
+          "improvement_percent": -82.25588472868299
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.019774708386187057,
+          "control_minus_full": -0.009688952816458204,
+          "ci95": [
+            -0.01110668238036842,
+            -0.008199523763551476
+          ],
+          "improvement_percent": -48.99669126461601
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": 1.3835217518212706e-05,
+          "ci95": [
+            -0.0007101640004967835,
+            0.0007900064440533567
+          ],
+          "improvement_percent": 0.050168036002389164
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02445880019026407,
+          "control_minus_full": -0.0031051185181514064,
+          "ci95": [
+            -0.0038170050748612657,
+            -0.0023438892416350553
+          ],
+          "improvement_percent": -12.69530187088822
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.019318438090466093,
+          "control_minus_full": -0.0010018875710479929,
+          "ci95": [
+            -0.001595229078722255,
+            -0.0003456266245524508
+          ],
+          "improvement_percent": -5.186172745209861
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.011659099148979018,
+          "control_minus_full": -0.00866122651253507,
+          "ci95": [
+            -0.01014250078154362,
+            -0.007355077917960297
+          ],
+          "improvement_percent": -74.2872704131136
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.0017352859396969993,
+          "ci95": [
+            0.000336387222399943,
+            0.003156351763827992
+          ],
+          "improvement_percent": 7.867775199676229
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.010234484669654343,
+          "control_minus_full": -0.010085840991859744,
+          "ci95": [
+            -0.011773261007453994,
+            -0.008716579240874468
+          ],
+          "improvement_percent": -98.5476193223941
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.013615754457483937,
+          "control_minus_full": -0.006704571204030152,
+          "ci95": [
+            -0.008581112483467539,
+            -0.004938995977136651
+          ],
+          "improvement_percent": -49.241275795370754
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.002737173510744992,
+          "ci95": [
+            0.0009755158436916787,
+            0.004393362660364673
+          ],
+          "improvement_percent": 12.410326950963773
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.011659099148979018,
+          "control_minus_full": -0.007659338941487076,
+          "ci95": [
+            -0.009196365307043132,
+            -0.006294585826122961
+          ],
+          "improvement_percent": -65.69408874233478
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1678.0796919748454,
+        "aeon_v3": 1656.1152397192322,
+        "aeon_v2": 1310.6305497027888,
+        "aeon_v2_no_retrieval": 1289.7021607664608,
+        "mmac": 139.23597686647958,
+        "pid": 131.92407196432518
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.9,
+        "declarations_per_run": 2.1,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.1333333333333333,
+        "declarations_per_run": 2.6666666666666665,
+        "fallback_ticks_per_run": 57.6
+      }
+    },
+    "T2_cue_noise_x4": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6130121741642192,
+          "control_minus_full": -0.0857695796367638,
+          "ci95": [
+            -0.15919120513754323,
+            -0.018304780338125517
+          ],
+          "improvement_percent": -13.991496947626214
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.23570360189417078,
+          "control_minus_full": -0.4630781519068122,
+          "ci95": [
+            -0.7417502944459992,
+            -0.27031692014456654
+          ],
+          "improvement_percent": -196.46630267225655
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": -0.06639188549690449,
+          "ci95": [
+            -0.13274405091124053,
+            -0.0002344265551326087
+          ],
+          "improvement_percent": -10.498568814037453
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.2414906836367227,
+          "control_minus_full": -0.4572910701642602,
+          "ci95": [
+            -0.754590414033551,
+            -0.25027159938700283
+          ],
+          "improvement_percent": -189.36178542281513
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.3264979011357195,
+          "control_minus_full": -0.37228385266526337,
+          "ci95": [
+            -0.639991922676652,
+            -0.18459217968785457
+          ],
+          "improvement_percent": -114.02335248412867
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": 0.019377694139859326,
+          "ci95": [
+            -0.03144474362660742,
+            0.06694720182795097
+          ],
+          "improvement_percent": 3.0642006001496784
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.23570360189417078,
+          "control_minus_full": -0.3773085722700483,
+          "ci95": [
+            -0.607526571975859,
+            -0.2100128931396599
+          ],
+          "improvement_percent": -160.0775589502689
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.027563918708415475,
+          "control_minus_full": -0.0018997424942297843,
+          "ci95": [
+            -0.0025951851508399784,
+            -0.0012221546505228028
+          ],
+          "improvement_percent": -6.892135020155093
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02445880019026407,
+          "control_minus_full": -0.005004861012381191,
+          "ci95": [
+            -0.006027455694039042,
+            -0.00396054367487147
+          ],
+          "improvement_percent": -20.462414237201205
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": -0.0018859072767115717,
+          "ci95": [
+            -0.0029387477901700178,
+            -0.0007647690378226474
+          ],
+          "improvement_percent": -6.838509335374459
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.016166095951582922,
+          "control_minus_full": -0.013297565251062335,
+          "ci95": [
+            -0.01461124695125466,
+            -0.012000611636748735
+          ],
+          "improvement_percent": -82.25588472868299
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.019774708386187057,
+          "control_minus_full": -0.009688952816458204,
+          "ci95": [
+            -0.01110668238036842,
+            -0.008199523763551476
+          ],
+          "improvement_percent": -48.99669126461601
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": 1.3835217518212706e-05,
+          "ci95": [
+            -0.0007101640004967835,
+            0.0007900064440533567
+          ],
+          "improvement_percent": 0.050168036002389164
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02445880019026407,
+          "control_minus_full": -0.0031051185181514064,
+          "ci95": [
+            -0.0038170050748612657,
+            -0.0023438892416350553
+          ],
+          "improvement_percent": -12.69530187088822
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.019318438090466093,
+          "control_minus_full": -0.0010018875710479929,
+          "ci95": [
+            -0.001595229078722255,
+            -0.0003456266245524508
+          ],
+          "improvement_percent": -5.186172745209861
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.011659099148979018,
+          "control_minus_full": -0.00866122651253507,
+          "ci95": [
+            -0.01014250078154362,
+            -0.007355077917960297
+          ],
+          "improvement_percent": -74.2872704131136
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.0017352859396969993,
+          "ci95": [
+            0.000336387222399943,
+            0.003156351763827992
+          ],
+          "improvement_percent": 7.867775199676229
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.010234484669654343,
+          "control_minus_full": -0.010085840991859744,
+          "ci95": [
+            -0.011773261007453994,
+            -0.008716579240874468
+          ],
+          "improvement_percent": -98.5476193223941
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.013615754457483937,
+          "control_minus_full": -0.006704571204030152,
+          "ci95": [
+            -0.008581112483467539,
+            -0.004938995977136651
+          ],
+          "improvement_percent": -49.241275795370754
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.002737173510744992,
+          "ci95": [
+            0.0009755158436916787,
+            0.004393362660364673
+          ],
+          "improvement_percent": 12.410326950963773
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.011659099148979018,
+          "control_minus_full": -0.007659338941487076,
+          "ci95": [
+            -0.009196365307043132,
+            -0.006294585826122961
+          ],
+          "improvement_percent": -65.69408874233478
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1745.2765779555398,
+        "aeon_v3": 1751.150315188473,
+        "aeon_v2": 1384.8788696729268,
+        "aeon_v2_no_retrieval": 1383.8322226117982,
+        "mmac": 152.39648850335166,
+        "pid": 132.27915008731844
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.9,
+        "declarations_per_run": 2.1,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.1333333333333333,
+        "declarations_per_run": 2.6666666666666665,
+        "fallback_ticks_per_run": 57.6
+      }
+    },
+    "T2_cue_noise_x10": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6130121741642192,
+          "control_minus_full": -0.0857695796367638,
+          "ci95": [
+            -0.15919120513754323,
+            -0.018304780338125517
+          ],
+          "improvement_percent": -13.991496947626214
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.5588993746086804,
+          "control_minus_full": -0.13988237919230237,
+          "ci95": [
+            -0.418946409070987,
+            0.028720507297572567
+          ],
+          "improvement_percent": -25.02818674475035
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": -0.06639188549690449,
+          "ci95": [
+            -0.13274405091124053,
+            -0.0002344265551326087
+          ],
+          "improvement_percent": -10.498568814037453
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.2414906836367227,
+          "control_minus_full": -0.4572910701642602,
+          "ci95": [
+            -0.754590414033551,
+            -0.25027159938700283
+          ],
+          "improvement_percent": -189.36178542281513
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.3264979011357195,
+          "control_minus_full": -0.37228385266526337,
+          "ci95": [
+            -0.639991922676652,
+            -0.18459217968785457
+          ],
+          "improvement_percent": -114.02335248412867
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": 0.019377694139859326,
+          "ci95": [
+            -0.03144474362660742,
+            0.06694720182795097
+          ],
+          "improvement_percent": 3.0642006001496784
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.5588993746086804,
+          "control_minus_full": -0.054112799555538584,
+          "ci95": [
+            -0.29722356566143393,
+            0.12497845540005315
+          ],
+          "improvement_percent": -9.682029004492312
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.027563918708415475,
+          "control_minus_full": -0.0018997424942297843,
+          "ci95": [
+            -0.0025951851508399784,
+            -0.0012221546505228028
+          ],
+          "improvement_percent": -6.892135020155093
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02958030528201692,
+          "control_minus_full": 0.00011664407937165972,
+          "ci95": [
+            -0.0017972952716289513,
+            0.002035772283209354
+          ],
+          "improvement_percent": 0.3943302080880566
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": -0.0018859072767115717,
+          "ci95": [
+            -0.0029387477901700178,
+            -0.0007647690378226474
+          ],
+          "improvement_percent": -6.838509335374459
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.016166095951582922,
+          "control_minus_full": -0.013297565251062335,
+          "ci95": [
+            -0.01461124695125466,
+            -0.012000611636748735
+          ],
+          "improvement_percent": -82.25588472868299
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.019774708386187057,
+          "control_minus_full": -0.009688952816458204,
+          "ci95": [
+            -0.01110668238036842,
+            -0.008199523763551476
+          ],
+          "improvement_percent": -48.99669126461601
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": 1.3835217518212706e-05,
+          "ci95": [
+            -0.0007101640004967835,
+            0.0007900064440533567
+          ],
+          "improvement_percent": 0.050168036002389164
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02958030528201692,
+          "control_minus_full": 0.002016386573601444,
+          "ci95": [
+            0.0005526965342556461,
+            0.003465713671068795
+          ],
+          "improvement_percent": 6.8166523447859335
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.019318438090466093,
+          "control_minus_full": -0.0010018875710479929,
+          "ci95": [
+            -0.001595229078722255,
+            -0.0003456266245524508
+          ],
+          "improvement_percent": -5.186172745209861
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.022347399777179353,
+          "control_minus_full": 0.002027074115665267,
+          "ci95": [
+            0.0002369011414798146,
+            0.0033782083188442537
+          ],
+          "improvement_percent": 9.07073814348311
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.0017352859396969993,
+          "ci95": [
+            0.000336387222399943,
+            0.003156351763827992
+          ],
+          "improvement_percent": 7.867775199676229
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.010234484669654343,
+          "control_minus_full": -0.010085840991859744,
+          "ci95": [
+            -0.011773261007453994,
+            -0.008716579240874468
+          ],
+          "improvement_percent": -98.5476193223941
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.013615754457483937,
+          "control_minus_full": -0.006704571204030152,
+          "ci95": [
+            -0.008581112483467539,
+            -0.004938995977136651
+          ],
+          "improvement_percent": -49.241275795370754
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.002737173510744992,
+          "ci95": [
+            0.0009755158436916787,
+            0.004393362660364673
+          ],
+          "improvement_percent": 12.410326950963773
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.022347399777179353,
+          "control_minus_full": 0.00302896168671326,
+          "ci95": [
+            0.0011961810653556906,
+            0.004497663849708445
+          ],
+          "improvement_percent": 13.55397816709918
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1928.225593314892,
+        "aeon_v3": 1744.5203514423863,
+        "aeon_v2": 1570.5750831557452,
+        "aeon_v2_no_retrieval": 1606.7496582485946,
+        "mmac": 168.0529653615142,
+        "pid": 141.98349343688378
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.9,
+        "declarations_per_run": 2.1,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.1333333333333333,
+        "declarations_per_run": 2.6666666666666665,
+        "fallback_ticks_per_run": 57.6
+      }
+    },
+    "T3_no_cue": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6130121741642192,
+          "control_minus_full": -0.0857695796367638,
+          "ci95": [
+            -0.15919120513754323,
+            -0.018304780338125517
+          ],
+          "improvement_percent": -13.991496947626214
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": -0.06639188549690449,
+          "ci95": [
+            -0.13274405091124053,
+            -0.0002344265551326087
+          ],
+          "improvement_percent": -10.498568814037453
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": -0.06639188549690449,
+          "ci95": [
+            -0.13274405091124053,
+            -0.0002344265551326087
+          ],
+          "improvement_percent": -10.498568814037453
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.2414906836367227,
+          "control_minus_full": -0.4572910701642602,
+          "ci95": [
+            -0.754590414033551,
+            -0.25027159938700283
+          ],
+          "improvement_percent": -189.36178542281513
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6987817538009828,
+          "mean_control": 0.3264979011357195,
+          "control_minus_full": -0.37228385266526337,
+          "ci95": [
+            -0.639991922676652,
+            -0.18459217968785457
+          ],
+          "improvement_percent": -114.02335248412867
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": 0.019377694139859326,
+          "ci95": [
+            -0.03144474362660742,
+            0.06694720182795097
+          ],
+          "improvement_percent": 3.0642006001496784
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6130121741642192,
+          "mean_control": 0.6323898683040783,
+          "control_minus_full": 0.019377694139859326,
+          "ci95": [
+            -0.03144474362660742,
+            0.06694720182795097
+          ],
+          "improvement_percent": 3.0642006001496784
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.027563918708415475,
+          "control_minus_full": -0.0018997424942297843,
+          "ci95": [
+            -0.0025951851508399784,
+            -0.0012221546505228028
+          ],
+          "improvement_percent": -6.892135020155093
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": -0.0018859072767115717,
+          "ci95": [
+            -0.0029387477901700178,
+            -0.0007647690378226474
+          ],
+          "improvement_percent": -6.838509335374459
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": -0.0018859072767115717,
+          "ci95": [
+            -0.0029387477901700178,
+            -0.0007647690378226474
+          ],
+          "improvement_percent": -6.838509335374459
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.016166095951582922,
+          "control_minus_full": -0.013297565251062335,
+          "ci95": [
+            -0.01461124695125466,
+            -0.012000611636748735
+          ],
+          "improvement_percent": -82.25588472868299
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.029463661202645257,
+          "mean_control": 0.019774708386187057,
+          "control_minus_full": -0.009688952816458204,
+          "ci95": [
+            -0.01110668238036842,
+            -0.008199523763551476
+          ],
+          "improvement_percent": -48.99669126461601
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": 1.3835217518212706e-05,
+          "ci95": [
+            -0.0007101640004967835,
+            0.0007900064440533567
+          ],
+          "improvement_percent": 0.050168036002389164
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.027563918708415475,
+          "mean_control": 0.02757775392593369,
+          "control_minus_full": 1.3835217518212706e-05,
+          "ci95": [
+            -0.0007101640004967835,
+            0.0007900064440533567
+          ],
+          "improvement_percent": 0.050168036002389164
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.019318438090466093,
+          "control_minus_full": -0.0010018875710479929,
+          "ci95": [
+            -0.001595229078722255,
+            -0.0003456266245524508
+          ],
+          "improvement_percent": -5.186172745209861
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.0017352859396969993,
+          "ci95": [
+            0.000336387222399943,
+            0.003156351763827992
+          ],
+          "improvement_percent": 7.867775199676229
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.0017352859396969993,
+          "ci95": [
+            0.000336387222399943,
+            0.003156351763827992
+          ],
+          "improvement_percent": 7.867775199676229
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.010234484669654343,
+          "control_minus_full": -0.010085840991859744,
+          "ci95": [
+            -0.011773261007453994,
+            -0.008716579240874468
+          ],
+          "improvement_percent": -98.5476193223941
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.020320325661514087,
+          "mean_control": 0.013615754457483937,
+          "control_minus_full": -0.006704571204030152,
+          "ci95": [
+            -0.008581112483467539,
+            -0.004938995977136651
+          ],
+          "improvement_percent": -49.241275795370754
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.002737173510744992,
+          "ci95": [
+            0.0009755158436916787,
+            0.004393362660364673
+          ],
+          "improvement_percent": 12.410326950963773
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.019318438090466093,
+          "mean_control": 0.02205561160121109,
+          "control_minus_full": 0.002737173510744992,
+          "ci95": [
+            0.0009755158436916787,
+            0.004393362660364673
+          ],
+          "improvement_percent": 12.410326950963773
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1536.4062689210793,
+        "aeon_v3": 1481.9437408833542,
+        "aeon_v2": 1196.524353938205,
+        "aeon_v2_no_retrieval": 1214.4064047283289,
+        "mmac": 136.93330134224703,
+        "pid": 119.1521325558319
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.9,
+        "declarations_per_run": 2.1,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.1333333333333333,
+        "declarations_per_run": 2.6666666666666665,
+        "fallback_ticks_per_run": 57.6
+      }
+    },
+    "T4_capacity_ABCDA": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.49635194019086476,
+          "mean_control": 0.4740745225443349,
+          "control_minus_full": -0.02227741764652997,
+          "ci95": [
+            -0.06399668245272035,
+            0.021720683665480855
+          ],
+          "improvement_percent": -4.699138339467844
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.49635194019086476,
+          "mean_control": 0.48894470464619105,
+          "control_minus_full": -0.007407235544673757,
+          "ci95": [
+            -0.05465096174959713,
+            0.049943253894615944
+          ],
+          "improvement_percent": -1.514943402451564
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.49635194019086476,
+          "mean_control": 0.48894470464619105,
+          "control_minus_full": -0.007407235544673757,
+          "ci95": [
+            -0.05465096174959713,
+            0.049943253894615944
+          ],
+          "improvement_percent": -1.514943402451564
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.49635194019086476,
+          "mean_control": 0.2613012806604628,
+          "control_minus_full": -0.235050659530402,
+          "ci95": [
+            -0.26196742986639343,
+            -0.20772978540667159
+          ],
+          "improvement_percent": -89.95388730445178
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.49635194019086476,
+          "mean_control": 0.2794275524632315,
+          "control_minus_full": -0.21692438772763337,
+          "ci95": [
+            -0.2529250415286753,
+            -0.17979658777449864
+          ],
+          "improvement_percent": -77.63171019299443
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.4740745225443349,
+          "mean_control": 0.48894470464619105,
+          "control_minus_full": 0.01487018210185621,
+          "ci95": [
+            -0.02837294444895662,
+            0.06281284295216923
+          ],
+          "improvement_percent": 3.041280938427697
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.4740745225443349,
+          "mean_control": 0.48894470464619105,
+          "control_minus_full": 0.01487018210185621,
+          "ci95": [
+            -0.02837294444895662,
+            0.06281284295216923
+          ],
+          "improvement_percent": 3.041280938427697
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.0303603053066696,
+          "mean_control": 0.028196004023337457,
+          "control_minus_full": -0.0021643012833321346,
+          "ci95": [
+            -0.003338867992683697,
+            -0.0012195856378649735
+          ],
+          "improvement_percent": -7.675914932984019
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.0303603053066696,
+          "mean_control": 0.027994676508545147,
+          "control_minus_full": -0.002365628798124449,
+          "ci95": [
+            -0.003833675556340422,
+            -0.0009771991349595915
+          ],
+          "improvement_percent": -8.45028088609047
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.0303603053066696,
+          "mean_control": 0.027994676508545147,
+          "control_minus_full": -0.002365628798124449,
+          "ci95": [
+            -0.003833675556340422,
+            -0.0009771991349595915
+          ],
+          "improvement_percent": -8.45028088609047
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.0303603053066696,
+          "mean_control": 0.016636686043529463,
+          "control_minus_full": -0.01372361926314013,
+          "ci95": [
+            -0.015307462519467395,
+            -0.012274457962878137
+          ],
+          "improvement_percent": -82.49010185822243
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.0303603053066696,
+          "mean_control": 0.019852331695026017,
+          "control_minus_full": -0.010507973611643576,
+          "ci95": [
+            -0.012259856143924424,
+            -0.008917916916715814
+          ],
+          "improvement_percent": -52.930677227584006
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.028196004023337457,
+          "mean_control": 0.027994676508545147,
+          "control_minus_full": -0.0002013275147923148,
+          "ci95": [
+            -0.0008058454933871764,
+            0.0004434472872716715
+          ],
+          "improvement_percent": -0.7191635692981171
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.028196004023337457,
+          "mean_control": 0.027994676508545147,
+          "control_minus_full": -0.0002013275147923148,
+          "ci95": [
+            -0.0008058454933871764,
+            0.0004434472872716715
+          ],
+          "improvement_percent": -0.7191635692981171
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.019860130965025126,
+          "mean_control": 0.018316870790339484,
+          "control_minus_full": -0.0015432601746856358,
+          "ci95": [
+            -0.0025029673891265383,
+            -0.00046855846235152436
+          ],
+          "improvement_percent": -8.425348370637456
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.019860130965025126,
+          "mean_control": 0.022373049865068058,
+          "control_minus_full": 0.0025129189000429337,
+          "ci95": [
+            0.0013850742309778413,
+            0.003682814453688601
+          ],
+          "improvement_percent": 11.231901395645012
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.019860130965025126,
+          "mean_control": 0.022373049865068058,
+          "control_minus_full": 0.0025129189000429337,
+          "ci95": [
+            0.0013850742309778413,
+            0.003682814453688601
+          ],
+          "improvement_percent": 11.231901395645012
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.019860130965025126,
+          "mean_control": 0.0099919841465609,
+          "control_minus_full": -0.009868146818464225,
+          "ci95": [
+            -0.01210358058019958,
+            -0.008034192000965678
+          ],
+          "improvement_percent": -98.7606332608194
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.019860130965025126,
+          "mean_control": 0.013583234857649793,
+          "control_minus_full": -0.006276896107375333,
+          "ci95": [
+            -0.008105215455610952,
+            -0.004777244667941781
+          ],
+          "improvement_percent": -46.21061310620214
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.018316870790339484,
+          "mean_control": 0.022373049865068058,
+          "control_minus_full": 0.004056179074728569,
+          "ci95": [
+            0.0024199667187731664,
+            0.0056679167696065255
+          ],
+          "improvement_percent": 18.129754768310082
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.018316870790339484,
+          "mean_control": 0.022373049865068058,
+          "control_minus_full": 0.004056179074728569,
+          "ci95": [
+            0.0024199667187731664,
+            0.0056679167696065255
+          ],
+          "improvement_percent": 18.129754768310082
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 2033.7513656583421,
+        "aeon_v3": 1835.1833311155335,
+        "aeon_v2": 1521.160529589704,
+        "aeon_v2_no_retrieval": 1467.8066334353289,
+        "mmac": 168.37369646155918,
+        "pid": 149.48998294938872
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 1.4666666666666666,
+        "declarations_per_run": 2.9,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.4,
+        "declarations_per_run": 3.1666666666666665,
+        "fallback_ticks_per_run": 64.0
+      }
+    },
+    "T4_revisits_ABCBA": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.467159159920295,
+          "mean_control": 0.5028746152326355,
+          "control_minus_full": 0.03571545531234056,
+          "ci95": [
+            -0.025440676767459147,
+            0.09710917979005622
+          ],
+          "improvement_percent": 7.102258541290294
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.467159159920295,
+          "mean_control": 0.4679981722570027,
+          "control_minus_full": 0.0008390123367076785,
+          "ci95": [
+            -0.04189777897076507,
+            0.04931186321739921
+          ],
+          "improvement_percent": 0.1792768404759778
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.467159159920295,
+          "mean_control": 0.4945534818399799,
+          "control_minus_full": 0.027394321919684956,
+          "ci95": [
+            -0.03509205007799956,
+            0.08844662474998202
+          ],
+          "improvement_percent": 5.539203124759072
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.467159159920295,
+          "mean_control": 0.25285659259438364,
+          "control_minus_full": -0.2143025673259114,
+          "ci95": [
+            -0.25671203344372057,
+            -0.16985701381818205
+          ],
+          "improvement_percent": -84.75261219298397
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.467159159920295,
+          "mean_control": 0.26218833953675696,
+          "control_minus_full": -0.20497082038353795,
+          "ci95": [
+            -0.25900769270950913,
+            -0.15177067568570168
+          ],
+          "improvement_percent": -78.17693980811167
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.5028746152326355,
+          "mean_control": 0.4945534818399799,
+          "control_minus_full": -0.00832113339265561,
+          "ci95": [
+            -0.05659904669726314,
+            0.04357132292117811
+          ],
+          "improvement_percent": -1.682554809177956
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.5028746152326355,
+          "mean_control": 0.4679981722570027,
+          "control_minus_full": -0.03487644297563289,
+          "ci95": [
+            -0.07917264138638845,
+            0.013267728076617509
+          ],
+          "improvement_percent": -7.452260509359506
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.02934505421572839,
+          "mean_control": 0.02737164467327307,
+          "control_minus_full": -0.00197340954245532,
+          "ci95": [
+            -0.002785824900061219,
+            -0.0010389966278418785
+          ],
+          "improvement_percent": -7.209685665626982
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02934505421572839,
+          "mean_control": 0.02591463800365464,
+          "control_minus_full": -0.0034304162120737496,
+          "ci95": [
+            -0.004442149443191282,
+            -0.0023068774054260752
+          ],
+          "improvement_percent": -13.237368824484339
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.02934505421572839,
+          "mean_control": 0.028289730451099372,
+          "control_minus_full": -0.001055323764629014,
+          "ci95": [
+            -0.002171827375777621,
+            0.0001744369999953566
+          ],
+          "improvement_percent": -3.730412937137062
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02934505421572839,
+          "mean_control": 0.016294298851365362,
+          "control_minus_full": -0.013050755364363027,
+          "ci95": [
+            -0.014225780356144573,
+            -0.011841807547340863
+          ],
+          "improvement_percent": -80.0939978050633
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02934505421572839,
+          "mean_control": 0.01892473710137643,
+          "control_minus_full": -0.01042031711435196,
+          "ci95": [
+            -0.011735142153632794,
+            -0.009101501275509193
+          ],
+          "improvement_percent": -55.06188571356203
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.02737164467327307,
+          "mean_control": 0.028289730451099372,
+          "control_minus_full": 0.0009180857778263059,
+          "ci95": [
+            0.00029490676450433977,
+            0.001679682233570585
+          ],
+          "improvement_percent": 3.245297014806403
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02737164467327307,
+          "mean_control": 0.02591463800365464,
+          "control_minus_full": -0.0014570066696184298,
+          "ci95": [
+            -0.002062253483255394,
+            -0.0007125741683454068
+          ],
+          "improvement_percent": -5.622330782366915
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.01843010734161319,
+          "mean_control": 0.017667669491417397,
+          "control_minus_full": -0.0007624378501957897,
+          "ci95": [
+            -0.0020269554329590722,
+            0.0006265686313528366
+          ],
+          "improvement_percent": -4.315440984257527
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01843010734161319,
+          "mean_control": 0.019109074279555282,
+          "control_minus_full": 0.0006789669379420965,
+          "ci95": [
+            -0.0009641997578340888,
+            0.002274999198267625
+          ],
+          "improvement_percent": 3.5531126626501233
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.01843010734161319,
+          "mean_control": 0.022970574866359176,
+          "control_minus_full": 0.004540467524745984,
+          "ci95": [
+            0.0023053923325730215,
+            0.006798765014225166
+          ],
+          "improvement_percent": 19.76645143259162
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01843010734161319,
+          "mean_control": 0.009960458066537791,
+          "control_minus_full": -0.0084696492750754,
+          "ci95": [
+            -0.010258198934749035,
+            -0.006762091570435076
+          ],
+          "improvement_percent": -85.0327286003967
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01843010734161319,
+          "mean_control": 0.012975806950272745,
+          "control_minus_full": -0.005454300391340445,
+          "ci95": [
+            -0.007158521936717979,
+            -0.0038986573152658857
+          ],
+          "improvement_percent": -42.03438300402426
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.017667669491417397,
+          "mean_control": 0.022970574866359176,
+          "control_minus_full": 0.005302905374941774,
+          "ci95": [
+            0.0033654844261402496,
+            0.007180884272732488
+          ],
+          "improvement_percent": 23.085645029754897
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.017667669491417397,
+          "mean_control": 0.019109074279555282,
+          "control_minus_full": 0.0014414047881378862,
+          "ci95": [
+            -0.000315538155240329,
+            0.0033349010788895706
+          ],
+          "improvement_percent": 7.543038281451651
+        }
+      },
+      "loss_B_return": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.8986590220252803,
+          "mean_control": 0.7851559080002586,
+          "control_minus_full": -0.11350311402502138,
+          "ci95": [
+            -0.24458984138560488,
+            0.06930433468708984
+          ],
+          "improvement_percent": -14.456124302000921
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.8986590220252803,
+          "mean_control": 0.5446694711251999,
+          "control_minus_full": -0.35398955090008005,
+          "ci95": [
+            -0.44480570014921866,
+            -0.25771334877335195
+          ],
+          "improvement_percent": -64.99162697127016
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.8986590220252803,
+          "mean_control": 0.8464000714755414,
+          "control_minus_full": -0.052258950549738545,
+          "ci95": [
+            -0.20494679782201514,
+            0.1271171599060788
+          ],
+          "improvement_percent": -6.174261122005196
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.8986590220252803,
+          "mean_control": 0.437544725150699,
+          "control_minus_full": -0.46111429687458105,
+          "ci95": [
+            -0.5707162755345574,
+            -0.34822331591493
+          ],
+          "improvement_percent": -105.38677999506548
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.8986590220252803,
+          "mean_control": 0.37949091272011126,
+          "control_minus_full": -0.5191681093051688,
+          "ci95": [
+            -0.6156363485951906,
+            -0.4071883007721351
+          ],
+          "improvement_percent": -136.80646674353298
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.7851559080002586,
+          "mean_control": 0.8464000714755414,
+          "control_minus_full": 0.061244163475282866,
+          "ci95": [
+            -0.04909719563651108,
+            0.22062037089578532
+          ],
+          "improvement_percent": 7.235841009384018
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.7851559080002586,
+          "mean_control": 0.5446694711251999,
+          "control_minus_full": -0.24048643687505863,
+          "ci95": [
+            -0.37111914913159083,
+            -0.14060463314048
+          ],
+          "improvement_percent": -44.15272924664791
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1718.361770104416,
+        "aeon_v3": 1651.6189438172862,
+        "aeon_v2": 1330.592410346678,
+        "aeon_v2_no_retrieval": 1321.500296976915,
+        "mmac": 142.40071364636404,
+        "pid": 132.22896569358355
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 1.6666666666666667,
+        "declarations_per_run": 3.1,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.8,
+        "declarations_per_run": 3.466666666666667,
+        "fallback_ticks_per_run": 57.6
+      }
+    },
+    "T5_changed_physics_on_return": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.690127364233536,
+          "mean_control": 0.6353364909187318,
+          "control_minus_full": -0.05479087331480435,
+          "ci95": [
+            -0.17100219022355262,
+            0.034956770694442356
+          ],
+          "improvement_percent": -8.623914114483446
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.690127364233536,
+          "mean_control": 0.21214980706493947,
+          "control_minus_full": -0.4779775571685965,
+          "ci95": [
+            -0.6903027381066543,
+            -0.2881909637647345
+          ],
+          "improvement_percent": -225.30190518735031
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.690127364233536,
+          "mean_control": 0.671249572037621,
+          "control_minus_full": -0.018877792195915132,
+          "ci95": [
+            -0.18673541201953575,
+            0.1591624139733285
+          ],
+          "improvement_percent": -2.8123358259447953
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.690127364233536,
+          "mean_control": 0.5481521314890855,
+          "control_minus_full": -0.14197523274445062,
+          "ci95": [
+            -0.23591598373628447,
+            -0.04832860700770494
+          ],
+          "improvement_percent": -25.900698836793186
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.690127364233536,
+          "mean_control": 0.5874871676229819,
+          "control_minus_full": -0.10264019661055426,
+          "ci95": [
+            -0.21771081131660738,
+            0.004599791051357833
+          ],
+          "improvement_percent": -17.471053372253962
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6353364909187318,
+          "mean_control": 0.671249572037621,
+          "control_minus_full": 0.03591308111888923,
+          "ci95": [
+            -0.09193846592305314,
+            0.1834387502723418
+          ],
+          "improvement_percent": 5.350183093580645
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6353364909187318,
+          "mean_control": 0.21214980706493947,
+          "control_minus_full": -0.42318668385379227,
+          "ci95": [
+            -0.5925010315762309,
+            -0.2706244436398391
+          ],
+          "improvement_percent": -199.47540358792503
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.029479183037936018,
+          "mean_control": 0.027040900191921513,
+          "control_minus_full": -0.002438282846014506,
+          "ci95": [
+            -0.0036856099658296947,
+            -0.001278444844990473
+          ],
+          "improvement_percent": -9.017018030867717
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.029479183037936018,
+          "mean_control": 0.024142678774228606,
+          "control_minus_full": -0.005336504263707418,
+          "ci95": [
+            -0.006718518037996435,
+            -0.004130686472391646
+          ],
+          "improvement_percent": -22.10402711982373
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.029479183037936018,
+          "mean_control": 0.02652513404770592,
+          "control_minus_full": -0.0029540489902300945,
+          "ci95": [
+            -0.004284364631727005,
+            -0.0016688141267566495
+          ],
+          "improvement_percent": -11.136791938231811
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.029479183037936018,
+          "mean_control": 0.01958699990062213,
+          "control_minus_full": -0.00989218313731389,
+          "ci95": [
+            -0.011455582773698878,
+            -0.008541055386923948
+          ],
+          "improvement_percent": -50.50381981673309
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.029479183037936018,
+          "mean_control": 0.028112412605530622,
+          "control_minus_full": -0.0013667704324053973,
+          "ci95": [
+            -0.003110614694101484,
+            0.00023279470430705404
+          ],
+          "improvement_percent": -4.861804113306551
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.027040900191921513,
+          "mean_control": 0.02652513404770592,
+          "control_minus_full": -0.0005157661442155889,
+          "ci95": [
+            -0.0010326529184978594,
+            4.683707027878604e-06
+          ],
+          "improvement_percent": -1.944443120581311
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.027040900191921513,
+          "mean_control": 0.024142678774228606,
+          "control_minus_full": -0.002898221417692911,
+          "ci95": [
+            -0.0034420712460159863,
+            -0.0024370735812333077
+          ],
+          "improvement_percent": -12.004556100819485
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.02037206511248329,
+          "mean_control": 0.01757504303548622,
+          "control_minus_full": -0.002797022076997066,
+          "ci95": [
+            -0.005550807203660182,
+            -0.0007908280860322674
+          ],
+          "improvement_percent": -15.914738139471563
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02037206511248329,
+          "mean_control": 0.010605361095527467,
+          "control_minus_full": -0.00976670401695582,
+          "ci95": [
+            -0.013253642747583828,
+            -0.00739211070595027
+          ],
+          "improvement_percent": -92.09214027681406
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.02037206511248329,
+          "mean_control": 0.018546878673785197,
+          "control_minus_full": -0.0018251864386980884,
+          "ci95": [
+            -0.004636629897581169,
+            0.0003287558975905083
+          ],
+          "improvement_percent": -9.840935883609733
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02037206511248329,
+          "mean_control": 0.02163749783311835,
+          "control_minus_full": 0.0012654327206350648,
+          "ci95": [
+            -0.0026392619179141062,
+            0.003880892164651957
+          ],
+          "improvement_percent": 5.848332050197569
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02037206511248329,
+          "mean_control": 0.04140810185529581,
+          "control_minus_full": 0.021036036742812524,
+          "ci95": [
+            0.017048795520578506,
+            0.02452449835355152
+          ],
+          "improvement_percent": 50.80174120592335
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.01757504303548622,
+          "mean_control": 0.018546878673785197,
+          "control_minus_full": 0.0009718356382989778,
+          "ci95": [
+            0.0005125231971005736,
+            0.0014667052585518483
+          ],
+          "improvement_percent": 5.239887829064219
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01757504303548622,
+          "mean_control": 0.010605361095527467,
+          "control_minus_full": -0.006969681939958755,
+          "ci95": [
+            -0.008067207101417307,
+            -0.0058722131527168455
+          ],
+          "improvement_percent": -65.71847839200908
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1548.9378943635127,
+        "aeon_v3": 1515.8611927113775,
+        "aeon_v2": 1150.1372181378936,
+        "aeon_v2_no_retrieval": 1202.197401489179,
+        "mmac": 140.3724862737161,
+        "pid": 128.21191437524251
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.9666666666666667,
+        "declarations_per_run": 2.3,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 1.1,
+        "declarations_per_run": 2.533333333333333,
+        "fallback_ticks_per_run": 59.733333333333334
+      }
+    },
+    "T6_sensor_noise_x2": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.6034485670731093,
+          "mean_control": 0.5943068164537902,
+          "control_minus_full": -0.009141750619319178,
+          "ci95": [
+            -0.05693886620900655,
+            0.04357059054407845
+          ],
+          "improvement_percent": -1.5382207247542121
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6034485670731093,
+          "mean_control": 0.273612983114875,
+          "control_minus_full": -0.3298355839582344,
+          "ci95": [
+            -0.4015070992276836,
+            -0.2577176617476376
+          ],
+          "improvement_percent": -120.54822114188737
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6034485670731093,
+          "mean_control": 0.6321445083069125,
+          "control_minus_full": 0.028695941233803073,
+          "ci95": [
+            -0.03703212910320279,
+            0.10022247644643631
+          ],
+          "improvement_percent": 4.539459072524428
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6034485670731093,
+          "mean_control": 0.2695485061582522,
+          "control_minus_full": -0.33390006091485713,
+          "ci95": [
+            -0.43450040714392035,
+            -0.2342147971643972
+          ],
+          "improvement_percent": -123.87383097527689
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6034485670731093,
+          "mean_control": 0.3008659937308606,
+          "control_minus_full": -0.3025825733422488,
+          "ci95": [
+            -0.3698107435931948,
+            -0.2391915714888745
+          ],
+          "improvement_percent": -100.5705462389092
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.5943068164537902,
+          "mean_control": 0.6321445083069125,
+          "control_minus_full": 0.03783769185312225,
+          "ci95": [
+            0.0029777925976084614,
+            0.0736718493075029
+          ],
+          "improvement_percent": 5.9856079355120615
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.5943068164537902,
+          "mean_control": 0.273612983114875,
+          "control_minus_full": -0.3206938333389152,
+          "ci95": [
+            -0.4272521639542398,
+            -0.22408479569519177
+          ],
+          "improvement_percent": -117.20709656685904
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.03194807848806825,
+          "mean_control": 0.028955091780164217,
+          "control_minus_full": -0.002992986707904035,
+          "ci95": [
+            -0.005310280523401334,
+            -0.0006993551832124255
+          ],
+          "improvement_percent": -10.33665073703683
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.03194807848806825,
+          "mean_control": 0.026880323204651762,
+          "control_minus_full": -0.0050677552834164875,
+          "ci95": [
+            -0.00760757175131111,
+            -0.002640215146703432
+          ],
+          "improvement_percent": -18.853029574210957
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.03194807848806825,
+          "mean_control": 0.029216090122726662,
+          "control_minus_full": -0.002731988365341589,
+          "ci95": [
+            -0.005288028782373316,
+            -0.000269873110706141
+          ],
+          "improvement_percent": -9.350971857854535
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.03194807848806825,
+          "mean_control": 0.018011341500053415,
+          "control_minus_full": -0.013936736988014837,
+          "ci95": [
+            -0.016582044027093262,
+            -0.011468250428383203
+          ],
+          "improvement_percent": -77.37756228748151
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.03194807848806825,
+          "mean_control": 0.020235085961375705,
+          "control_minus_full": -0.011712992526692547,
+          "ci95": [
+            -0.01377464621382412,
+            -0.009673288072278935
+          ],
+          "improvement_percent": -57.88457014242516
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.028955091780164217,
+          "mean_control": 0.029216090122726662,
+          "control_minus_full": 0.00026099834256244626,
+          "ci95": [
+            -0.00036054300528485416,
+            0.0008895930850973952
+          ],
+          "improvement_percent": 0.8933376829893485
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.028955091780164217,
+          "mean_control": 0.026880323204651762,
+          "control_minus_full": -0.0020747685755124535,
+          "ci95": [
+            -0.002819201992637931,
+            -0.00133773257321677
+          ],
+          "improvement_percent": -7.718540285830363
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.021804488279668195,
+          "mean_control": 0.02115037744258242,
+          "control_minus_full": -0.0006541108370857789,
+          "ci95": [
+            -0.0013151842997946445,
+            0.00011259528364657316
+          ],
+          "improvement_percent": -3.092667442278577
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.021804488279668195,
+          "mean_control": 0.014493594706746793,
+          "control_minus_full": -0.007310893572921401,
+          "ci95": [
+            -0.008423649253209575,
+            -0.006178568459341109
+          ],
+          "improvement_percent": -50.4422382496881
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.021804488279668195,
+          "mean_control": 0.022279484433663125,
+          "control_minus_full": 0.0004749961539949325,
+          "ci95": [
+            -0.0006327474234893249,
+            0.001609066219324279
+          ],
+          "improvement_percent": 2.13198898479553
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.021804488279668195,
+          "mean_control": 0.011463694858568893,
+          "control_minus_full": -0.0103407934210993,
+          "ci95": [
+            -0.011465746672595834,
+            -0.009246624951963963
+          ],
+          "improvement_percent": -90.20471626885424
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.021804488279668195,
+          "mean_control": 0.013333903476884384,
+          "control_minus_full": -0.008470584802783811,
+          "ci95": [
+            -0.009536488162683777,
+            -0.007283079237538854
+          ],
+          "improvement_percent": -63.52666957180538
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.02115037744258242,
+          "mean_control": 0.022279484433663125,
+          "control_minus_full": 0.0011291069910807114,
+          "ci95": [
+            -0.00014737360340155264,
+            0.0024088108679792895
+          ],
+          "improvement_percent": 5.067922439779128
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02115037744258242,
+          "mean_control": 0.014493594706746793,
+          "control_minus_full": -0.006656782735835622,
+          "ci95": [
+            -0.008278500165920065,
+            -0.0051026576736770655
+          ],
+          "improvement_percent": -45.92913539066245
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1695.46427734733,
+        "aeon_v3": 1630.967154601927,
+        "aeon_v2": 1420.7643052562462,
+        "aeon_v2_no_retrieval": 1425.140163632932,
+        "mmac": 165.9951269074453,
+        "pid": 151.42174266252874
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.8333333333333334,
+        "declarations_per_run": 2.1,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 0.9333333333333333,
+        "declarations_per_run": 2.533333333333333,
+        "fallback_ticks_per_run": 51.2
+      }
+    },
+    "T6_sensor_noise_x4": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 30.79589128864601,
+          "mean_control": 30.794254603939486,
+          "control_minus_full": -0.0016366847065262314,
+          "ci95": [
+            -0.04772362279407769,
+            0.05083974227455527
+          ],
+          "improvement_percent": -0.005314902820595799
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 30.79589128864601,
+          "mean_control": 38.33253413158123,
+          "control_minus_full": 7.536642842935217,
+          "ci95": [
+            -0.3047024578423854,
+            23.148996030267867
+          ],
+          "improvement_percent": 19.66121732798762
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 30.79589128864601,
+          "mean_control": 38.676035810346164,
+          "control_minus_full": 7.8801445217001485,
+          "ci95": [
+            -0.04747451986176301,
+            23.653346564289546
+          ],
+          "improvement_percent": 20.37474719576132
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 30.79589128864601,
+          "mean_control": 0.3212996699877232,
+          "control_minus_full": -30.474591618658287,
+          "ci95": [
+            -90.81175743409152,
+            -0.248179590757569
+          ],
+          "improvement_percent": -9484.787712300706
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 30.79589128864601,
+          "mean_control": 0.3177472461992722,
+          "control_minus_full": -30.47814404244674,
+          "ci95": [
+            -90.81195029798148,
+            -0.27610642243149364
+          ],
+          "improvement_percent": -9591.945927780806
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 30.794254603939486,
+          "mean_control": 38.676035810346164,
+          "control_minus_full": 7.881781206406674,
+          "ci95": [
+            -0.04683517694809392,
+            23.65399354018984
+          ],
+          "improvement_percent": 20.378978975653528
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 30.794254603939486,
+          "mean_control": 38.33253413158123,
+          "control_minus_full": 7.538279527641743,
+          "ci95": [
+            -0.32531523529584305,
+            23.158009639102445
+          ],
+          "improvement_percent": 19.665487029283412
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 1.0130707615742953,
+          "mean_control": 1.0411519841883294,
+          "control_minus_full": 0.02808122261403393,
+          "ci95": [
+            0.001384558611893658,
+            0.06455171229778271
+          ],
+          "improvement_percent": 2.697130009882826
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 1.0130707615742953,
+          "mean_control": 1.2424790751464978,
+          "control_minus_full": 0.22940831357220226,
+          "ci95": [
+            0.005547792152998599,
+            0.6388523189675865
+          ],
+          "improvement_percent": 18.463756707142394
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 1.0130707615742953,
+          "mean_control": 1.3544217437895596,
+          "control_minus_full": 0.3413509822152643,
+          "ci95": [
+            0.007317946588453246,
+            0.9712240434443876
+          ],
+          "improvement_percent": 25.202709848720573
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 1.0130707615742953,
+          "mean_control": 0.023508913054012103,
+          "control_minus_full": -0.9895618485202832,
+          "ci95": [
+            -2.938981182759497,
+            -0.013398877895566581
+          ],
+          "improvement_percent": -4209.304982526198
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 1.0130707615742953,
+          "mean_control": 0.021675087582505158,
+          "control_minus_full": -0.9913956739917905,
+          "ci95": [
+            -2.9404305320452075,
+            -0.015571276340024323
+          ],
+          "improvement_percent": -4573.894662331082
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 1.0411519841883294,
+          "mean_control": 1.3544217437895596,
+          "control_minus_full": 0.3132697596012304,
+          "ci95": [
+            -0.0005206019524534305,
+            0.9400995148726592
+          ],
+          "improvement_percent": 23.12941009974689
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 1.0411519841883294,
+          "mean_control": 1.2424790751464978,
+          "control_minus_full": 0.2013270909581683,
+          "ci95": [
+            -0.0022139991193831274,
+            0.6077195213334499
+          ],
+          "improvement_percent": 16.203660486952693
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 1.4220257976589554,
+          "mean_control": 1.4213640619365426,
+          "control_minus_full": -0.0006617357224125497,
+          "ci95": [
+            -0.0015468846284944684,
+            0.0001547159406638011
+          ],
+          "improvement_percent": -0.04655638482310897
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 1.4220257976589554,
+          "mean_control": 1.852010574260752,
+          "control_minus_full": 0.4299847766017966,
+          "ci95": [
+            -0.006178481132455709,
+            1.300832136958857
+          ],
+          "improvement_percent": 23.217187988974047
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 1.4220257976589554,
+          "mean_control": 2.2251528030709586,
+          "control_minus_full": 0.8031270054120029,
+          "ci95": [
+            -2.6083745085705296e-05,
+            2.408563514364376
+          ],
+          "improvement_percent": 36.09311703464132
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 1.4220257976589554,
+          "mean_control": 0.015085110926103573,
+          "control_minus_full": -1.4069406867328518,
+          "ci95": [
+            -4.20018586137215,
+            -0.009573266127461368
+          ],
+          "improvement_percent": -9326.684395129332
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 1.4220257976589554,
+          "mean_control": 0.014396347553831818,
+          "control_minus_full": -1.4076294501051234,
+          "ci95": [
+            -4.200936990752431,
+            -0.010336665504086656
+          ],
+          "improvement_percent": -9777.68454701179
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 1.4213640619365426,
+          "mean_control": 2.2251528030709586,
+          "control_minus_full": 0.8037887411344155,
+          "ci95": [
+            0.0006547897144651451,
+            2.4091304284952533
+          ],
+          "improvement_percent": 36.12285592365151
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 1.4213640619365426,
+          "mean_control": 1.852010574260752,
+          "control_minus_full": 0.43064651232420925,
+          "ci95": [
+            -0.00533969461011929,
+            1.3013499842832483
+          ],
+          "improvement_percent": 23.2529186555053
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 3,
+        "aeon_v3": 9,
+        "aeon_v2": 9,
+        "aeon_v2_no_retrieval": 9,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1693.0726026506213,
+        "aeon_v3": 1503.004963279232,
+        "aeon_v2": 1203.6521078976468,
+        "aeon_v2_no_retrieval": 1199.3136325069524,
+        "mmac": 163.09307617474488,
+        "pid": 150.85885676550484
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 1.1,
+        "declarations_per_run": 2.7,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 0.9333333333333333,
+        "declarations_per_run": 2.933333333333333,
+        "fallback_ticks_per_run": 81.06666666666666
+      }
+    },
+    "T7_phase_96": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.550495493236642,
+          "mean_control": 0.4853350591714974,
+          "control_minus_full": -0.06516043406514464,
+          "ci95": [
+            -0.12331649951361906,
+            -0.01432558758104123
+          ],
+          "improvement_percent": -13.42586587014305
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.550495493236642,
+          "mean_control": 0.23563582685661708,
+          "control_minus_full": -0.3148596663800249,
+          "ci95": [
+            -0.4042505706855847,
+            -0.24253284857299584
+          ],
+          "improvement_percent": -133.62130478215227
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.550495493236642,
+          "mean_control": 0.4968742939131732,
+          "control_minus_full": -0.05362119932346876,
+          "ci95": [
+            -0.11040895156892193,
+            -0.005482122300146037
+          ],
+          "improvement_percent": -10.791703249763781
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.550495493236642,
+          "mean_control": 0.3072812345843248,
+          "control_minus_full": -0.24321425865231716,
+          "ci95": [
+            -0.33241542240684135,
+            -0.16394451091365145
+          ],
+          "improvement_percent": -79.1503779856019
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.550495493236642,
+          "mean_control": 0.4468395472872406,
+          "control_minus_full": -0.10365594594940138,
+          "ci95": [
+            -0.21326078581621877,
+            0.014228643966316524
+          ],
+          "improvement_percent": -23.19757653025472
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.4853350591714974,
+          "mean_control": 0.4968742939131732,
+          "control_minus_full": 0.011539234741675874,
+          "ci95": [
+            -0.0012380735992154278,
+            0.02658966082938786
+          ],
+          "improvement_percent": 2.322365009225514
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.4853350591714974,
+          "mean_control": 0.23563582685661708,
+          "control_minus_full": -0.24969923231488034,
+          "ci95": [
+            -0.31549119155013716,
+            -0.19500047184475644
+          ],
+          "improvement_percent": -105.96827980102564
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.03701646815135997,
+          "mean_control": 0.03733192500159329,
+          "control_minus_full": 0.00031545685023331505,
+          "ci95": [
+            -0.00013556816357879656,
+            0.0007785001325284267
+          ],
+          "improvement_percent": 0.845005582272684
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.03701646815135997,
+          "mean_control": 0.03331788707027245,
+          "control_minus_full": -0.0036985810810875193,
+          "ci95": [
+            -0.004922328379432436,
+            -0.0027658859590636705
+          ],
+          "improvement_percent": -11.100887260007376
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.03701646815135997,
+          "mean_control": 0.037119892004175106,
+          "control_minus_full": 0.0001034238528151328,
+          "ci95": [
+            -0.0012970058431939103,
+            0.0011092549626965013
+          ],
+          "improvement_percent": 0.27862110375617494
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.03701646815135997,
+          "mean_control": 0.023448520775614854,
+          "control_minus_full": -0.013567947375745116,
+          "ci95": [
+            -0.015067788239999259,
+            -0.012210856764621851
+          ],
+          "improvement_percent": -57.862700618006656
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.03701646815135997,
+          "mean_control": 0.04659365785656645,
+          "control_minus_full": 0.009577189705206476,
+          "ci95": [
+            0.007291386589963512,
+            0.011673845807589308
+          ],
+          "improvement_percent": 20.55470668280396
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.03733192500159329,
+          "mean_control": 0.037119892004175106,
+          "control_minus_full": -0.00021203299741818227,
+          "ci95": [
+            -0.0012619985747925459,
+            0.0004956842565674212
+          ],
+          "improvement_percent": -0.571211245426936
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.03733192500159329,
+          "mean_control": 0.03331788707027245,
+          "control_minus_full": -0.0040140379313208345,
+          "ci95": [
+            -0.004913201881423773,
+            -0.003338268525844801
+          ],
+          "improvement_percent": -12.047696550668483
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.02194804331861854,
+          "mean_control": 0.021055664748038116,
+          "control_minus_full": -0.0008923785705804273,
+          "ci95": [
+            -0.0016145111402412673,
+            -0.0002182843344866903
+          ],
+          "improvement_percent": -4.238187591125925
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02194804331861854,
+          "mean_control": 0.011373272296492053,
+          "control_minus_full": -0.010574771022126487,
+          "ci95": [
+            -0.011699737740225655,
+            -0.009575535232814666
+          ],
+          "improvement_percent": -92.97914220684002
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.02194804331861854,
+          "mean_control": 0.021511952120232457,
+          "control_minus_full": -0.00043609119838608734,
+          "ci95": [
+            -0.0013917696429238263,
+            0.0005600822424252208
+          ],
+          "improvement_percent": -2.0272042069856324
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02194804331861854,
+          "mean_control": 0.01262621039741528,
+          "control_minus_full": -0.00932183292120326,
+          "ci95": [
+            -0.010375147936483876,
+            -0.008465995451712099
+          ],
+          "improvement_percent": -73.82922213233148
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02194804331861854,
+          "mean_control": 0.019234608422081165,
+          "control_minus_full": -0.002713434896537379,
+          "ci95": [
+            -0.00434809543842144,
+            -0.0010554129904671375
+          ],
+          "improvement_percent": -14.107045160443084
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.021055664748038116,
+          "mean_control": 0.021511952120232457,
+          "control_minus_full": 0.00045628737219433995,
+          "ci95": [
+            0.0,
+            0.0010940143727670797
+          ],
+          "improvement_percent": 2.121087708098754
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.021055664748038116,
+          "mean_control": 0.011373272296492053,
+          "control_minus_full": -0.009682392451546059,
+          "ci95": [
+            -0.01047499160071456,
+            -0.00889558880273765
+          ],
+          "improvement_percent": -85.13286413209745
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1218.652174914799,
+        "aeon_v3": 1141.9561512108583,
+        "aeon_v2": 916.8515042700972,
+        "aeon_v2_no_retrieval": 903.6286789119509,
+        "mmac": 119.33574279383821,
+        "pid": 107.752866435678
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.13333333333333333,
+        "declarations_per_run": 0.8333333333333334,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 0.13333333333333333,
+        "declarations_per_run": 0.7666666666666667,
+        "fallback_ticks_per_run": 14.933333333333334
+      }
+    },
+    "T7_phase_64": {
+      "loss": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.65646410478425,
+          "mean_control": 0.6292625800005562,
+          "control_minus_full": -0.02720152478369369,
+          "ci95": [
+            -0.06354717531957792,
+            0.0
+          ],
+          "improvement_percent": -4.322762174046588
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.65646410478425,
+          "mean_control": 0.3038303968108171,
+          "control_minus_full": -0.35263370797343285,
+          "ci95": [
+            -0.4450802079238582,
+            -0.2609106092960598
+          ],
+          "improvement_percent": -116.0626822315621
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.65646410478425,
+          "mean_control": 0.6233903174494957,
+          "control_minus_full": -0.03307378733475429,
+          "ci95": [
+            -0.07222959612601261,
+            0.0
+          ],
+          "improvement_percent": -5.305470169968397
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.65646410478425,
+          "mean_control": 0.5708115690353812,
+          "control_minus_full": -0.08565253574886873,
+          "ci95": [
+            -0.1999196438963295,
+            0.019135640131167822
+          ],
+          "improvement_percent": -15.005395895113617
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.65646410478425,
+          "mean_control": 0.8537926778306562,
+          "control_minus_full": 0.19732857304640625,
+          "ci95": [
+            0.1445550681260045,
+            0.25811816541211363
+          ],
+          "improvement_percent": 23.1120010946668
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.6292625800005562,
+          "mean_control": 0.6233903174494957,
+          "control_minus_full": -0.005872262551060592,
+          "ci95": [
+            -0.017616787653181774,
+            0.0
+          ],
+          "improvement_percent": -0.9419880910383784
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6292625800005562,
+          "mean_control": 0.3038303968108171,
+          "control_minus_full": -0.32543218318973915,
+          "ci95": [
+            -0.4238020752575543,
+            -0.2305712497725845
+          ],
+          "improvement_percent": -107.10981738682736
+        }
+      },
+      "overall": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.05197850740313707,
+          "mean_control": 0.051550845791047184,
+          "control_minus_full": -0.0004276616120898892,
+          "ci95": [
+            -0.0010054119910041528,
+            0.0
+          ],
+          "improvement_percent": -0.829591843795046
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.05197850740313707,
+          "mean_control": 0.044847386741498525,
+          "control_minus_full": -0.0071311206616385455,
+          "ci95": [
+            -0.008446682655852258,
+            -0.005851945884765361
+          ],
+          "improvement_percent": -15.900861075233895
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.05197850740313707,
+          "mean_control": 0.051481567918513604,
+          "control_minus_full": -0.0004969394846234667,
+          "ci95": [
+            -0.001110291381062059,
+            0.0
+          ],
+          "improvement_percent": -0.9652765149073078
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.05197850740313707,
+          "mean_control": 0.047409753590486506,
+          "control_minus_full": -0.0045687538126505675,
+          "ci95": [
+            -0.009621962917538824,
+            0.00037669561378075726
+          ],
+          "improvement_percent": -9.636738153322439
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.05197850740313707,
+          "mean_control": 0.10810506617046331,
+          "control_minus_full": 0.05612655876732624,
+          "ci95": [
+            0.05150599546957444,
+            0.0604377583678785
+          ],
+          "improvement_percent": 51.9185277393237
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.051550845791047184,
+          "mean_control": 0.051481567918513604,
+          "control_minus_full": -6.927787253357756e-05,
+          "ci95": [
+            -0.0002078336176007327,
+            0.0
+          ],
+          "improvement_percent": -0.13456830344256884
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.051550845791047184,
+          "mean_control": 0.044847386741498525,
+          "control_minus_full": -0.006703459049548656,
+          "ci95": [
+            -0.007734321880854281,
+            -0.005546118986696635
+          ],
+          "improvement_percent": -14.947267915938031
+        }
+      },
+      "final_phase": {
+        "aeon_v3_hybrid__vs__aeon_v3": {
+          "control": "aeon_v3",
+          "mean_full": 0.02839247550108589,
+          "mean_control": 0.0277360768293823,
+          "control_minus_full": -0.0006563986717035959,
+          "ci95": [
+            -0.0016449342608531154,
+            0.0
+          ],
+          "improvement_percent": -2.3665880208704855
+        },
+        "aeon_v3_hybrid__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02839247550108589,
+          "mean_control": 0.014307315982590833,
+          "control_minus_full": -0.014085159518495061,
+          "ci95": [
+            -0.01664368302029865,
+            -0.011542414683565868
+          ],
+          "improvement_percent": -98.4472526897002
+        },
+        "aeon_v3_hybrid__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.02839247550108589,
+          "mean_control": 0.027575678336620984,
+          "control_minus_full": -0.000816797164464906,
+          "ci95": [
+            -0.0018053327536144254,
+            0.0
+          ],
+          "improvement_percent": -2.962020206698542
+        },
+        "aeon_v3_hybrid__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02839247550108589,
+          "mean_control": 0.01964587937741483,
+          "control_minus_full": -0.008746596123671065,
+          "ci95": [
+            -0.011638347425402977,
+            -0.005850922850906069
+          ],
+          "improvement_percent": -44.52127571202677
+        },
+        "aeon_v3_hybrid__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02839247550108589,
+          "mean_control": 0.03783197168941714,
+          "control_minus_full": 0.009439496188331247,
+          "ci95": [
+            0.007605043130117219,
+            0.011312990111187641
+          ],
+          "improvement_percent": 24.951108194479293
+        },
+        "aeon_v3__vs__aeon_v2_no_retrieval": {
+          "control": "aeon_v2_no_retrieval",
+          "mean_full": 0.0277360768293823,
+          "mean_control": 0.027575678336620984,
+          "control_minus_full": -0.00016039849276131002,
+          "ci95": [
+            -0.00048119547828393006,
+            0.0
+          ],
+          "improvement_percent": -0.5816665352826443
+        },
+        "aeon_v3__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.0277360768293823,
+          "mean_control": 0.014307315982590833,
+          "control_minus_full": -0.013428760846791465,
+          "ci95": [
+            -0.015484309373893966,
+            -0.011120175289421901
+          ],
+          "improvement_percent": -93.85939936695048
+        }
+      },
+      "loss_of_control_runs": {
+        "aeon_v3_hybrid": 0,
+        "aeon_v3": 0,
+        "aeon_v2": 0,
+        "aeon_v2_no_retrieval": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "aeon_v3_hybrid": 1223.8439457102384,
+        "aeon_v3": 1172.8417161521065,
+        "aeon_v2": 933.5167499936384,
+        "aeon_v2_no_retrieval": 930.1683033906253,
+        "mmac": 141.85657109919703,
+        "pid": 127.94028151953778
+      },
+      "aeon_v3_diag": {
+        "restores_per_run": 0.03333333333333333,
+        "declarations_per_run": 0.36666666666666664,
+        "fallback_ticks_per_run": 0.0
+      },
+      "aeon_v3_hybrid_diag": {
+        "restores_per_run": 0.03333333333333333,
+        "declarations_per_run": 0.4,
+        "fallback_ticks_per_run": 2.1333333333333333
+      }
+    }
+  },
+  "wall_seconds": 191.97461827396182,
+  "ended_at": "2026-10-31T14:11:36.571411+00:00"
+}

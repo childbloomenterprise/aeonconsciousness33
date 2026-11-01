@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Devin artifact kit" />
+    <title>Artifact</title>
+    <script>
+      // A network that blocks the kit's host (or hands back a block page for it) leaves the page blank; say so instead. Styled like the
+      // ds error alert card (ChatAlertCard variant="error", no bar), values hardcoded: the kit CSS is what failed.
+      function artifactKitFailed() {
+        function show() {
+          if (document.getElementById("artifact-kit-notice")) return;
+          document.documentElement.style.colorScheme = "light";
+          var notice = document.createElement("div");
+          notice.id = "artifact-kit-notice";
+          notice.setAttribute("role", "alert");
+          notice.style.cssText =
+            "box-sizing:border-box;display:flex;align-items:flex-start;gap:6px;max-width:960px;margin:0 auto;padding:32px 24px 0;" +
+            "font:13px/18px Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-0.005em;color:rgb(25 25 25)";
+          var ns = "http://www.w3.org/2000/svg";
+          var icon = document.createElementNS(ns, "svg");
+          icon.setAttribute("viewBox", "0 0 24 24");
+          icon.setAttribute("fill", "rgb(245 59 58)");
+          icon.setAttribute("aria-hidden", "true");
+          icon.style.cssText = "width:14px;height:14px;flex-shrink:0;margin-top:2px";
+          var path = document.createElementNS(ns, "path");
+          path.setAttribute("fill-rule", "evenodd");
+          path.setAttribute("clip-rule", "evenodd");
+          path.setAttribute(
+            "d",
+            "M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15ZM12 7C11.5858 7 11.25 7.33579 11.25 7.75V12.25C11.25 12.6642 11.5858 13 12 13C12.4142 13 12.75 12.6642 12.75 12.25V7.75C12.75 7.33579 12.4142 7 12 7Z"
+          );
+          icon.appendChild(path);
+          var text = document.createElement("span");
+          text.textContent = "This page could not load Devin's artifact kit.";
+          notice.appendChild(icon);
+          notice.appendChild(text);
+          document.body.prepend(notice);
+        }
+        if (document.body) show();
+        else document.addEventListener("DOMContentLoaded", show);
+      }
+    </script>
+    <link rel="stylesheet" href="https://static.devin.ai/artifact-kit/b0ca2d9c3a0700c2/ds-kit.css" onerror="artifactKitFailed()" />
+    <style>
+.fixed {
+    position: fixed
+}
+.flex {
+    display: flex
+}
+.min-w-\[260px\] {
+    min-width: 260px
+}
+.flex-col {
+    flex-direction: column
+}
+.gap-6 {
+    gap: 1.5rem
+}
+.whitespace-normal {
+    white-space: normal
+}
+.text-xs {
+    font-size: calc(0.75rem * var(--text-scale, 1));
+    line-height: calc(1rem * var(--text-scale, 1))
+}
+.font-medium {
+    font-weight: 500
+}
+.text-green {
+    color: rgb(var(--text-green))
+}
+.text-red {
+    color: rgb(var(--text-red))
+}
+.text-secondary {
+    color: rgb(var(--text-secondary))
+}
+@keyframes enter {
+    from {
+        opacity: var(--tw-enter-opacity, 1);
+        transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1)) rotate(var(--tw-enter-rotate, 0))
+    }
+}
+@keyframes exit {
+    to {
+        opacity: var(--tw-exit-opacity, 1);
+        transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate(var(--tw-exit-rotate, 0))
+    }
+}
+    </style>
+  </head>
+  <body>
+    <script src="https://static.devin.ai/artifact-kit/b0ca2d9c3a0700c2/ds-kit.js" onerror="artifactKitFailed()"></script>
+    <script>
+      if (!window.DS) artifactKitFailed();
+    </script>
+    <main data-artifact-shell class="mx-auto flex max-w-[960px] flex-col gap-6 px-6 py-8">
+<div id="root"></div>
+<script>DSRun("\n// Return-window error (sum of |error| over first 20 actions after the final return; lower is better).\n// vsNR / vsMMAC / vsPID = % less error for AEON (negative = AEON worse). ciZero = 95% CI includes zero.\nconst tests = [\n  {id:\"T1\", name:\"Replication on 10 new seeds\", aeon:0.213, nr:0.565, mmac:0.249, pid:0.287, vsNR:62, vsMMAC:14, vsPID:26, overallMMAC:-52, verdict:\"met\", note:\"Sprint-2 RETAIN replicates on fresh seeds.\"},\n  {id:\"T2a\", name:\"Cue noise x4\", aeon:0.213, nr:0.565, mmac:0.249, pid:0.287, vsNR:62, vsMMAC:14, vsPID:26, overallMMAC:-52, verdict:\"met\", note:\"Bit-identical to T1: the cue is only used to detect a switch.\"},\n  {id:\"T2b\", name:\"Cue noise x10\", aeon:0.535, nr:0.565, mmac:0.249, pid:0.287, vsNR:5, ciZeroNR:true, vsMMAC:-115, vsPID:-87, overallMMAC:-80, verdict:\"met\", note:\"102 false recalls per run, starting at tick 4. Memory advantage gone.\"},\n  {id:\"T3\", name:\"No context cue\", aeon:0.565, nr:0.565, mmac:0.249, pid:0.287, vsNR:0, vsMMAC:-127, vsPID:-97, overallMMAC:-69, verdict:\"met\", note:\"Zero recalls. Identical to no retrieval: memory depends 100% on the cue.\"},\n  {id:\"T4a\", name:\"4 contexts before return (A B C D A)\", aeon:0.459, nr:0.459, mmac:0.234, pid:0.287, vsNR:0, vsMMAC:-96, vsPID:-60, overallMMAC:-66, verdict:\"met\", note:\"3-slot bank evicted A. Zero recalls.\"},\n  {id:\"T4b\", name:\"Two returns (A B C B A)\", aeon:0.454, nr:0.515, mmac:0.230, pid:0.272, vsNR:12, vsMMAC:-97, vsPID:-67, overallMMAC:-58, verdict:\"failed\", note:\"B return recalled (32% less error than no retrieval). A was not recalled: the bank stores a duplicate B entry and evicts A.\"},\n  {id:\"T5\", name:\"A returns with gains halved\", aeon:0.214, nr:0.520, mmac:0.453, pid:0.549, vsNR:59, vsMMAC:53, vsPID:61, overallMMAC:-22, verdict:\"surprise\", note:\"Expected harm; AEON did best. The recalled model's structure is right and online learning fixes the gain; MMAC keeps its warmup gains.\"},\n  {id:\"T6a\", name:\"Sensor noise x2\", aeon:0.262, nr:0.555, mmac:0.270, pid:0.293, vsNR:53, vsMMAC:3, ciZeroMMAC:true, vsPID:11, ciZeroPID:true, overallMMAC:-51, verdict:\"met\", note:\"Memory still helps; edge over MMAC and PID no longer reliable.\"},\n  {id:\"T6b\", name:\"Sensor noise x4\", aeon:0.422, nr:0.557, mmac:0.343, pid:0.300, vsNR:24, vsMMAC:-23, vsPID:-41, overallMMAC:-260, verdict:\"safety\", note:\"13 of 20 dropout-family runs lost control in phase B (error up to 3.3). MMAC and PID never did.\"},\n  {id:\"T7a\", name:\"Phases 96 actions long\", aeon:0.246, nr:0.505, mmac:0.311, pid:0.495, vsNR:51, vsMMAC:21, vsPID:50, overallMMAC:-43, verdict:\"met\", note:\"Return edge grows as switches get more frequent.\"},\n  {id:\"T7b\", name:\"Phases 64 actions long\", aeon:0.306, nr:0.647, mmac:0.553, pid:0.837, vsNR:53, vsMMAC:45, vsPID:63, overallMMAC:8, ciZeroOverall:true, verdict:\"met\", note:\"Only test where AEON ties MMAC over the whole run, and it beats PID by 58%.\"},\n];\nconst verdictBadge = {met:[\"success\",\"As predicted\"], failed:[\"destructive\",\"Prediction failed\"], surprise:[\"blue\",\"Better than predicted\"], safety:[\"warning\",\"Safety failure\"]};\nconst pct = (v, ci) => (v>0?\"+\":\"\")+v+\"%\"+(ci?\" (n.s.)\":\"\");\nconst tone = (v, ci) => ci ? \"text-secondary\" : v>0 ? \"text-green\" : v<0 ? \"text-red\" : \"text-secondary\";\nconst series = { vsNR:{label:\"vs AEON without memory\", color:chartColors[0]}, vsMMAC:{label:\"vs MMAC\", color:chartColors[1]} };\n\nconst nextSteps = [\n  [\"1\",\"Detect context switches without a cue\",\"T3, T2b\",\"Memory is useless without a clean cue (0 recalls without one, 102 false recalls with a noisy one). Use AEON's own prediction errors plus a debounce.\"],\n  [\"2\",\"Fix the memory bank: one entry per context, larger capacity\",\"T4a, T4b\",\"Cheap fix. Today a revisit stores a duplicate and evicts older contexts.\"],\n  [\"3\",\"Add a safety fallback to a classical controller\",\"T6b\",\"When model uncertainty spikes, hand control to PID/MMAC. Needed before any physical system.\"],\n  [\"4\",\"Adapt faster in new contexts (hybrid model bank)\",\"T1–T6 overall\",\"AEON loses to MMAC over the whole run in 10 of 11 tests (ties in T7b).\"],\n  [\"5\",\"Speed up the planner\",\"Compute\",\"1.7 ms per decision vs 0.2 ms for MMAC (8x slower, Python, 1 core).\"],\n  [\"6\",\"Test on a real or public benchmark plant\",\"All\",\"Every result here is one simulated 1-D world.\"],\n];\nconst industries = [\n  [\"Manufacturing changeovers (multi-product lines, recipe IDs)\",\"Strong fit\",\"Recurring modes with an explicit signal, frequent switches (T7), drift between runs (T5).\"],\n  [\"Robot tool changers, pick-and-place with known payload classes\",\"Strong fit\",\"Tool or payload ID is a clean cue. Few contexts per cell, within bank capacity once step 2 is fixed.\"],\n  [\"Building HVAC with occupancy or schedule modes\",\"Possible\",\"Clear mode signals, but slow dynamics give less return-window benefit.\"],\n  [\"Process industry grade changes (polymers, paper)\",\"Later\",\"Good concept fit, but safety-critical: needs steps 3 and 6 first.\"],\n  [\"Drones, prosthetics, medical devices, autonomous vehicles\",\"Avoid for now\",\"High sensor noise caused loss of control (T6b). No cue-free detection. Heavy certification.\"],\n  [\"LLM agent platforms (Hermes-type), Google/Nvidia AI stacks\",\"Not comparable\",\"Different problem class; no shared benchmark exists.\"],\n];\n\nfunction Report() {\n  return (\n    React.createElement(PageLayout, { title: \"AEON capability battery: congruency report\"    , subtitle: \"Sprint-2 AEON controller vs its no-memory version, MMAC and PID across 11 frozen stress tests (1,320 runs).\"                ,}\n      , React.createElement('div', { className: \"flex flex-col gap-6\"  ,}\n        , React.createElement(BannerCard, { variant: \"info\", title: \"Verdict\",}, \"AEON's memory works when a familiar situation returns with a clear signal. It is brittle without that signal, too small to hold more than 3 contexts, and unsafe under heavy sensor noise. Over a whole run it still loses to multiple-model adaptive control (MMAC) in 10 of 11 tests and ties in 1. None of this is evidence of consciousness.\"\n\n        )\n        , React.createElement(StatsRow, null\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Runs completed\" ), React.createElement(StatCardValue, null, \"1,320 / 1,320\"  ))\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Predictions met\" ), React.createElement(StatCardValue, null, \"8 of 11\"  ))\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Return wins vs MMAC\"   ), React.createElement(StatCardValue, null, \"5 of 11\"  ))\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Whole-run wins vs MMAC\"   ), React.createElement(StatCardValue, null, \"0 of 11\"  ))\n        )\n\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"How much less error AEON makes on return\"       )\n        , React.createElement(Text, { className: \"text-secondary\",}, \"First 20 actions after the final return. Positive means AEON beats that controller.\"            )\n        , React.createElement(ChartContainer, { config: series, style: {height:280, width:\"100%\"},}\n          , React.createElement(BarChart, { data: tests,}\n            , React.createElement(ChartGrid, null )\n            , React.createElement(ChartXAxis, { dataKey: \"id\",} )\n            , React.createElement(ChartYAxis, { title: \"% less error\"  ,} )\n            , React.createElement(ChartTooltip, { content: React.createElement(ChartTooltipContent, null ),} )\n            , React.createElement(ChartLegend, { content: React.createElement(ChartLegendContent, null ),} )\n            , React.createElement(ChartBar, { dataKey: \"vsNR\",} )\n            , React.createElement(ChartBar, { dataKey: \"vsMMAC\",} )\n          )\n        )\n\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"Scorecard\")\n        , React.createElement(Table, null\n          , React.createElement(TableHeader, null, React.createElement(TableRow, null\n            , React.createElement(TableHead, null, \"Test\"), React.createElement(TableHead, null, \"vs no memory\"  ), React.createElement(TableHead, null, \"vs MMAC\" ), React.createElement(TableHead, null, \"vs PID\" ), React.createElement(TableHead, null, \"Whole run vs MMAC\"   ), React.createElement(TableHead, null, \"Result\")\n          ))\n          , React.createElement(TableBody, null\n            , tests.map(t => (\n              React.createElement(TableRow, { key: t.id,}\n                , React.createElement(TableCell, { className: \"whitespace-normal min-w-[260px]\" ,}, React.createElement('div', { className: \"font-medium\",}, t.id, \" \" , t.name), React.createElement('div', { className: \"text-xs text-secondary\" ,}, t.note))\n                , React.createElement(TableCell, { className: tone(t.vsNR,t.ciZeroNR),}, pct(t.vsNR,t.ciZeroNR))\n                , React.createElement(TableCell, { className: tone(t.vsMMAC,t.ciZeroMMAC),}, pct(t.vsMMAC,t.ciZeroMMAC))\n                , React.createElement(TableCell, { className: tone(t.vsPID,t.ciZeroPID),}, pct(t.vsPID,t.ciZeroPID))\n                , React.createElement(TableCell, { className: tone(t.overallMMAC,t.ciZeroOverall),}, pct(t.overallMMAC,t.ciZeroOverall))\n                , React.createElement(TableCell, null, React.createElement(Badge, { variant: verdictBadge[t.verdict][0],}, verdictBadge[t.verdict][1]))\n              )))\n          )\n        )\n        , React.createElement(Text, { size: 12, className: \"text-secondary\",}, \"n.s. = 95% interval includes zero. T3 and T4a are identical to no memory by construction (no recall happened).\"                  )\n\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"Framework health\" )\n        , React.createElement(Table, null\n          , React.createElement(TableHeader, null, React.createElement(TableRow, null, React.createElement(TableHead, null, \"Check\"), React.createElement(TableHead, null, \"Result\")))\n          , React.createElement(TableBody, null\n            , React.createElement(TableRow, null, React.createElement(TableCell, null, \"Sprint-2 evaluation re-run\"  ), React.createElement(TableCell, null, \"120 of 120 runs bit-exact\"    ))\n            , React.createElement(TableRow, null, React.createElement(TableCell, null, \"Battery world matches sprint world and baseline benchmark\"       ), React.createElement(TableCell, null, \"Bit-exact on seed 19001 (AEON, MMAC, PID)\"      ))\n            , React.createElement(TableRow, null, React.createElement(TableCell, null, \"aeonconsciousness repo test suite (commit 6e27911)\"     ), React.createElement(TableCell, null, \"210 passed, 0 failed, 11 skipped (Windows-only or NVIDIA-only)\"        ))\n            , React.createElement(TableRow, null, React.createElement(TableCell, null, \"Compute per decision\"  ), React.createElement(TableCell, null, \"AEON 0.9–2.1 ms; MMAC and PID 0.13–0.29 ms\"       ))\n          )\n        )\n\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"What to do next, ranked by evidence\"      )\n        , React.createElement(Table, null\n          , React.createElement(TableHeader, null, React.createElement(TableRow, null, React.createElement(TableHead, null, \"#\"), React.createElement(TableHead, null, \"Step\"), React.createElement(TableHead, null, \"Evidence\"), React.createElement(TableHead, null, \"Why\")))\n          , React.createElement(TableBody, null, nextSteps.map(r => React.createElement(TableRow, { key: r[0],}, r.map((c,i)=>React.createElement(TableCell, { key: i, className: \"whitespace-normal\",}, c)))))\n        )\n\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"Industries that match the evidence\"    )\n        , React.createElement(Table, null\n          , React.createElement(TableHeader, null, React.createElement(TableRow, null, React.createElement(TableHead, null, \"Industry\"), React.createElement(TableHead, null, \"Fit\"), React.createElement(TableHead, null, \"Reason\")))\n          , React.createElement(TableBody, null, industries.map(r => React.createElement(TableRow, { key: r[0],}, React.createElement(TableCell, { className: \"whitespace-normal\",}, r[0]), React.createElement(TableCell, null, React.createElement(Badge, { variant: r[1]===\"Strong fit\"?\"success\":r[1]===\"Possible\"?\"blue\":r[1]===\"Later\"?\"warning\":\"destructive\",}, r[1])), React.createElement(TableCell, { className: \"whitespace-normal\",}, r[2]))))\n        )\n        , React.createElement(Text, { size: 12, className: \"text-secondary\",}, \"Industry fit is an inference from the test conditions, not market research or customer validation.\"              )\n      )\n      , React.createElement(Footnote, null, \"Simulated 1-D tracking world, 3 families x 10 fresh seeds (29001–29053) per test. Protocol and expectations were frozen before evaluation; nothing was tuned afterwards. Statistics: paired seed clusters, 10,000 bootstrap resamples. Linux, NumPy 2.2.6; not re-run on the original Windows setup. MMAC and PID were given the right model form (gains plus delay); AEON learns from scratch.\"                                                        )\n    )\n  );\n}\nrender(React.createElement(Report, null ));\n")</script>
+    </main>
+  </body>
+</html>
