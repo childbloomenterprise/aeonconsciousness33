@@ -1,5 +1,7 @@
 # AEON capability battery and sprints 3–4 (C → D attempts)
 
+> **Correction:** the hybrid results here (`V3Hybrid`, `V4Hybrid`) are affected by two bugs fixed in `../aeon_sprint5_hybrid_fixes_2026_10_27/` (fallback ticks trained on unexecuted actions; v4 sensor dropout ended an active fallback). The non-hybrid results are unaffected.
+
 Simulated 1-D tracking world; every protocol was frozen (file hashes in `protocol_freeze.json`) before evaluation seeds were run, and nothing was tuned afterwards. Not evidence of consciousness.
 
 | Folder | What it is | Evaluation seeds | Result |
