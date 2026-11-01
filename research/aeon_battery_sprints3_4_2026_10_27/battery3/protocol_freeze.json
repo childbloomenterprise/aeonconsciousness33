@@ -1,0 +1,24 @@
+{
+ "files": {
+  "battery3/battery3.py": "b541c92ba82b42a9ccf46aa9756dbbaa7fb9eee3dd145812bf9dbb4ec70ecaf8",
+  "battery3/PROTOCOL.md": "c2e0f2912bf4933d56d59ca252115eacc752dbd9e9cb236c75e1b7009637c3f8",
+  "battery/battery.py": "9b400a9693a99018c8f322b2ff47f1608009ed0e16a041f90febbbe7ae1db29e",
+  "integration_sprint_v3/sprint3.py": "875fcd886a7462ed453ab093347d937547868db7745b59ba8d329fd0a70bfdf8",
+  "integration_sprint_v3/bocpd.py": "b8868c991d8d7d04ce4a84ef64568f1045acc3afe7a8ff0975bb126c0b29e96f",
+  "integration_sprint_v2/sprint2.py": "f23f0a4948ec74d7a602487163b3b899105e7f79d30d395d66cc3c2a3f0fbf45",
+  "integration_sprint/sprint.py": "a1fc603f92d468ed27d546eabb17c29baf679676a8967c991e52822398b490f8",
+  "baseline_benchmark/benchmark.py": "f4289fbab5c318fb02609316ddc405a28550d1939211f153a83d5039d4f35a82",
+  "developmental_v0_2/worlds.py": "95e1371cf87f7e4242f7a39b123cebc17b6d797c7c14f1b71280abab641e43ed",
+  "developmental_v0_2/actors.py": "1009852d1aee7897357dd6a6d4d92096311ca03ef740b45e16ab712623073c70",
+  "developmental_cases/common.py": "0e1f88b6bc1cae99460f01fd3e21ec1c10de94c69d3e5027c4c513989de2be83",
+  "integration_sprint_v3/qualification/detector_grid.json": "e1554f22b6e422bed98b8ae62ed92990df3f71d0d018977a776c8f8d7076bc96",
+  "integration_sprint_v3/qualification/per_test_seed_19001.json": "d2d6df34dbcd8cf0d5d7ff6250986b3851dc838358ec3c2d5c00f268ac5df871",
+  "integration_sprint_v3/qualification/per_test_seed_19001_requalified.json": "410c15f97a532785a07741c31a346fbb8e87c578f24306edb6db873a72cc1923",
+  "integration_sprint_v3/qualification/per_test_seed_19001_retrieval_fix.json": "6142f4e671251db095ab584cf89e756a06dac97c783be7c793feb039529d306a",
+  "integration_sprint_v3/qualification/stage_a_detector_retrieval_grid.json": "e9eef17a92db8f4fa07275faf2b812e8d9f0a5f0c6287d886938b64d75f6d437",
+  "integration_sprint_v3/qualification/stage_a_detector_retrieval_grid_retrieval_fix.json": "6d1cb0626ab9d68911d4fc7bd1304edbfd30057b46e9a4c5c198aa50452132fd",
+  "integration_sprint_v3/qualification/stage_b_fallback_grid.json": "d250fe6cbdc1b3b95ccc95b060530c1bbef99007780feb113d914c3ef7957f7b",
+  "integration_sprint_v3/qualification/stage_b_fallback_grid_retrieval_fix.json": "69bbe0129cd6fe02ab6ffbd2a148c0fcdaa56b99a97cf8a4e67afcce8c71a8cc"
+ },
+ "frozen_at": "2026-10-31T14:08:24.504954+00:00"
+}

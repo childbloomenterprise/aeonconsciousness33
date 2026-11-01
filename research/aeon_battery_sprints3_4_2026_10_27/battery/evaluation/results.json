@@ -1,0 +1,5002 @@
+{
+  "runs": 1320,
+  "analysis": {
+    "T1_replication": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.21291286932907508,
+            "mean_control": 0.5651174129581754,
+            "control_minus_full": 0.35220454362910036,
+            "ci95": [
+              0.24705924349167535,
+              0.48049102478075456
+            ],
+            "improvement_percent": 62.32413575533677
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.21291286932907508,
+            "mean_control": 0.24887007913314968,
+            "control_minus_full": 0.035957209804074616,
+            "ci95": [
+              0.01979953471609341,
+              0.052620150245525285
+            ],
+            "improvement_percent": 14.448185145164398
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.21291286932907508,
+            "mean_control": 0.286834392626307,
+            "control_minus_full": 0.07392152329723188,
+            "ci95": [
+              0.048298742811415295,
+              0.10113141801837189
+            ],
+            "improvement_percent": 25.7714992335449
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.19996893313635852,
+              "mean_control": 0.5908987385928639,
+              "control_minus_full": 0.3909298054565054,
+              "ci95": [
+                0.2635392205494863,
+                0.5283782455985672
+              ],
+              "improvement_percent": 66.1585107437267
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.19996893313635852,
+              "mean_control": 0.25929222908291677,
+              "control_minus_full": 0.059323295946558253,
+              "ci95": [
+                0.03726254563927477,
+                0.08344603101330465
+              ],
+              "improvement_percent": 22.87893322386757
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.19996893313635852,
+              "mean_control": 0.2772955336254187,
+              "control_minus_full": 0.07732660048906022,
+              "ci95": [
+                0.032026357190022454,
+                0.1276778599454757
+              ],
+              "improvement_percent": 27.885988453573837
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.21755309899733044,
+              "mean_control": 0.5266389588151211,
+              "control_minus_full": 0.30908585981779063,
+              "ci95": [
+                0.14517757460360003,
+                0.5389641680652059
+              ],
+              "improvement_percent": 58.69027625931802
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.21755309899733044,
+              "mean_control": 0.19896076681245514,
+              "control_minus_full": -0.018592332184875344,
+              "ci95": [
+                -0.041299350466782715,
+                0.005651457979261705
+              ],
+              "improvement_percent": -9.34472282286733
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.21755309899733044,
+              "mean_control": 0.2532997030030656,
+              "control_minus_full": 0.03574660400573511,
+              "ci95": [
+                -0.006617421819355518,
+                0.07872094828917425
+              ],
+              "improvement_percent": 14.112375017392926
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.22121657585353632,
+              "mean_control": 0.5778145414665413,
+              "control_minus_full": 0.35659796561300505,
+              "ci95": [
+                0.2654117983191971,
+                0.46602636723360313
+              ],
+              "improvement_percent": 61.71495177465243
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.22121657585353632,
+              "mean_control": 0.2883572415040772,
+              "control_minus_full": 0.06714066565054091,
+              "ci95": [
+                0.045409102343759146,
+                0.08757790731819579
+              ],
+              "improvement_percent": 23.28384933228444
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.22121657585353632,
+              "mean_control": 0.3299079412504366,
+              "control_minus_full": 0.10869136539690027,
+              "ci95": [
+                0.06717282572465218,
+                0.15481615220062492
+              ],
+              "improvement_percent": 32.94596819492487
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.024979834253075074,
+            "mean_control": 0.027912758635835255,
+            "control_minus_full": 0.0029329243827601777,
+            "ci95": [
+              0.002620976248110647,
+              0.003253543364615079
+            ],
+            "improvement_percent": 10.507468720754813
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.024979834253075074,
+            "mean_control": 0.01647148821376229,
+            "control_minus_full": -0.00850834603931278,
+            "ci95": [
+              -0.009128538048534912,
+              -0.007806120742509387
+            ],
+            "improvement_percent": -51.65499272982432
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.024979834253075074,
+            "mean_control": 0.02003449580738931,
+            "control_minus_full": -0.004945338445685761,
+            "ci95": [
+              -0.0055213717712665235,
+              -0.004258657174617151
+            ],
+            "improvement_percent": -24.68411730062992
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021197210844602597,
+              "mean_control": 0.023873003170907937,
+              "control_minus_full": 0.0026757923263053397,
+              "ci95": [
+                0.00224689764836509,
+                0.003199393335273263
+              ],
+              "improvement_percent": 11.2084445645536
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021197210844602597,
+              "mean_control": 0.013569615179614834,
+              "control_minus_full": -0.007627595664987765,
+              "ci95": [
+                -0.008997286707138261,
+                -0.006240454588353765
+              ],
+              "improvement_percent": -56.210847279195065
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021197210844602597,
+              "mean_control": 0.020720224378779264,
+              "control_minus_full": -0.00047698646582333205,
+              "ci95": [
+                -0.0019090607964762417,
+                0.0009580979712843458
+              ],
+              "improvement_percent": -2.30203330380843
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02044293673188045,
+              "mean_control": 0.02368944523332572,
+              "control_minus_full": 0.0032465085014452668,
+              "ci95": [
+                0.002506258264230118,
+                0.004110477498859716
+              ],
+              "improvement_percent": 13.704451368401653
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02044293673188045,
+              "mean_control": 0.016697933217376493,
+              "control_minus_full": -0.003745003514503957,
+              "ci95": [
+                -0.004056519528030285,
+                -0.0033870146011184005
+              ],
+              "improvement_percent": -22.427946415588526
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02044293673188045,
+              "mean_control": 0.016909231672773743,
+              "control_minus_full": -0.0035337050591067063,
+              "ci95": [
+                -0.0040230208435327736,
+                -0.0030561229078674744
+              ],
+              "improvement_percent": -20.8980817549296
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.033299355182742164,
+              "mean_control": 0.0361758275032721,
+              "control_minus_full": 0.002876472320529929,
+              "ci95": [
+                0.002493900535460135,
+                0.0032605091617709096
+              ],
+              "improvement_percent": 7.95136564676994
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.033299355182742164,
+              "mean_control": 0.019146916244295542,
+              "control_minus_full": -0.01415243893844662,
+              "ci95": [
+                -0.014959131987802432,
+                -0.01336404307690963
+              ],
+              "improvement_percent": -73.91497804594549
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.033299355182742164,
+              "mean_control": 0.02247403137061492,
+              "control_minus_full": -0.010825323812127243,
+              "ci95": [
+                -0.011682943005694174,
+                -0.009897336715057112
+              ],
+              "improvement_percent": -48.168144084205075
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.011504755983900218,
+            "mean_control": 0.021281170593100807,
+            "control_minus_full": 0.009776414609200593,
+            "ci95": [
+              0.008736587493702154,
+              0.010845144548716924
+            ],
+            "improvement_percent": 45.939270898801176
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.011504755983900218,
+            "mean_control": 0.010100446807939477,
+            "control_minus_full": -0.0014043091759607417,
+            "ci95": [
+              -0.0015600205127369777,
+              -0.0012259189253935332
+            ],
+            "improvement_percent": -13.90343618122796
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.011504755983900218,
+            "mean_control": 0.013553980119334338,
+            "control_minus_full": 0.0020492241354341193,
+            "ci95": [
+              0.0012219583060989723,
+              0.002810786946015011
+            ],
+            "improvement_percent": 15.118984367632086
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01152236432233339,
+              "mean_control": 0.020441672076684524,
+              "control_minus_full": 0.008919307754351137,
+              "ci95": [
+                0.007489658827883642,
+                0.01066464445091088
+              ],
+              "improvement_percent": 43.63296564435338
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01152236432233339,
+              "mean_control": 0.01016505628573892,
+              "control_minus_full": -0.0013573080365944655,
+              "ci95": [
+                -0.0016843439312897164,
+                -0.0010263551095821995
+              ],
+              "improvement_percent": -13.352685892145061
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01152236432233339,
+              "mean_control": 0.013294228599718608,
+              "control_minus_full": 0.0017718642773852198,
+              "ci95": [
+                0.0006904312741854004,
+                0.0028879583279101057
+              ],
+              "improvement_percent": 13.328071381461907
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.011598099435690127,
+              "mean_control": 0.022419794440507675,
+              "control_minus_full": 0.01082169500481755,
+              "ci95": [
+                0.008354194214100389,
+                0.013701591662865715
+              ],
+              "improvement_percent": 48.268484501646945
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.011598099435690127,
+              "mean_control": 0.00977444704079279,
+              "control_minus_full": -0.0018236523948973362,
+              "ci95": [
+                -0.002015893697143028,
+                -0.0016384604202839524
+              ],
+              "improvement_percent": -18.657345907001023
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.011598099435690127,
+              "mean_control": 0.013099859017530436,
+              "control_minus_full": 0.0015017595818403115,
+              "ci95": [
+                0.0006937471271478184,
+                0.002377023755843076
+              ],
+              "improvement_percent": 11.463936976960083
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01139380419367714,
+              "mean_control": 0.020982045262110234,
+              "control_minus_full": 0.009588241068433095,
+              "ci95": [
+                0.008313001784867118,
+                0.010868363872569698
+              ],
+              "improvement_percent": 45.697361475755265
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01139380419367714,
+              "mean_control": 0.010361837097286716,
+              "control_minus_full": -0.0010319670963904223,
+              "ci95": [
+                -0.001296190938397167,
+                -0.0007866265840584367
+              ],
+              "improvement_percent": -9.95930631509973
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01139380419367714,
+              "mean_control": 0.014267852740753966,
+              "control_minus_full": 0.0028740485470768267,
+              "ci95": [
+                0.0018999568134175115,
+                0.0037790890169127605
+              ],
+              "improvement_percent": 20.143525443513592
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 1762.6183907522216,
+        "aeon_no_retrieval": 1783.4802133721596,
+        "mmac": 220.3110243827824,
+        "pid": 201.59808684386215
+      }
+    },
+    "T2_cue_noise_x4": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.21291286932907508,
+            "mean_control": 0.5651174129581754,
+            "control_minus_full": 0.35220454362910036,
+            "ci95": [
+              0.24705924349167535,
+              0.48049102478075456
+            ],
+            "improvement_percent": 62.32413575533677
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.21291286932907508,
+            "mean_control": 0.24887007913314968,
+            "control_minus_full": 0.035957209804074616,
+            "ci95": [
+              0.01979953471609341,
+              0.052620150245525285
+            ],
+            "improvement_percent": 14.448185145164398
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.21291286932907508,
+            "mean_control": 0.286834392626307,
+            "control_minus_full": 0.07392152329723188,
+            "ci95": [
+              0.048298742811415295,
+              0.10113141801837189
+            ],
+            "improvement_percent": 25.7714992335449
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.19996893313635852,
+              "mean_control": 0.5908987385928639,
+              "control_minus_full": 0.3909298054565054,
+              "ci95": [
+                0.2635392205494863,
+                0.5283782455985672
+              ],
+              "improvement_percent": 66.1585107437267
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.19996893313635852,
+              "mean_control": 0.25929222908291677,
+              "control_minus_full": 0.059323295946558253,
+              "ci95": [
+                0.03726254563927477,
+                0.08344603101330465
+              ],
+              "improvement_percent": 22.87893322386757
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.19996893313635852,
+              "mean_control": 0.2772955336254187,
+              "control_minus_full": 0.07732660048906022,
+              "ci95": [
+                0.032026357190022454,
+                0.1276778599454757
+              ],
+              "improvement_percent": 27.885988453573837
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.21755309899733044,
+              "mean_control": 0.5266389588151211,
+              "control_minus_full": 0.30908585981779063,
+              "ci95": [
+                0.14517757460360003,
+                0.5389641680652059
+              ],
+              "improvement_percent": 58.69027625931802
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.21755309899733044,
+              "mean_control": 0.19896076681245514,
+              "control_minus_full": -0.018592332184875344,
+              "ci95": [
+                -0.041299350466782715,
+                0.005651457979261705
+              ],
+              "improvement_percent": -9.34472282286733
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.21755309899733044,
+              "mean_control": 0.2532997030030656,
+              "control_minus_full": 0.03574660400573511,
+              "ci95": [
+                -0.006617421819355518,
+                0.07872094828917425
+              ],
+              "improvement_percent": 14.112375017392926
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.22121657585353632,
+              "mean_control": 0.5778145414665413,
+              "control_minus_full": 0.35659796561300505,
+              "ci95": [
+                0.2654117983191971,
+                0.46602636723360313
+              ],
+              "improvement_percent": 61.71495177465243
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.22121657585353632,
+              "mean_control": 0.2883572415040772,
+              "control_minus_full": 0.06714066565054091,
+              "ci95": [
+                0.045409102343759146,
+                0.08757790731819579
+              ],
+              "improvement_percent": 23.28384933228444
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.22121657585353632,
+              "mean_control": 0.3299079412504366,
+              "control_minus_full": 0.10869136539690027,
+              "ci95": [
+                0.06717282572465218,
+                0.15481615220062492
+              ],
+              "improvement_percent": 32.94596819492487
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.024979834253075074,
+            "mean_control": 0.027912758635835255,
+            "control_minus_full": 0.0029329243827601777,
+            "ci95": [
+              0.002620976248110647,
+              0.003253543364615079
+            ],
+            "improvement_percent": 10.507468720754813
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.024979834253075074,
+            "mean_control": 0.01647148821376229,
+            "control_minus_full": -0.00850834603931278,
+            "ci95": [
+              -0.009128538048534912,
+              -0.007806120742509387
+            ],
+            "improvement_percent": -51.65499272982432
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.024979834253075074,
+            "mean_control": 0.02003449580738931,
+            "control_minus_full": -0.004945338445685761,
+            "ci95": [
+              -0.0055213717712665235,
+              -0.004258657174617151
+            ],
+            "improvement_percent": -24.68411730062992
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021197210844602597,
+              "mean_control": 0.023873003170907937,
+              "control_minus_full": 0.0026757923263053397,
+              "ci95": [
+                0.00224689764836509,
+                0.003199393335273263
+              ],
+              "improvement_percent": 11.2084445645536
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021197210844602597,
+              "mean_control": 0.013569615179614834,
+              "control_minus_full": -0.007627595664987765,
+              "ci95": [
+                -0.008997286707138261,
+                -0.006240454588353765
+              ],
+              "improvement_percent": -56.210847279195065
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021197210844602597,
+              "mean_control": 0.020720224378779264,
+              "control_minus_full": -0.00047698646582333205,
+              "ci95": [
+                -0.0019090607964762417,
+                0.0009580979712843458
+              ],
+              "improvement_percent": -2.30203330380843
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02044293673188045,
+              "mean_control": 0.02368944523332572,
+              "control_minus_full": 0.0032465085014452668,
+              "ci95": [
+                0.002506258264230118,
+                0.004110477498859716
+              ],
+              "improvement_percent": 13.704451368401653
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02044293673188045,
+              "mean_control": 0.016697933217376493,
+              "control_minus_full": -0.003745003514503957,
+              "ci95": [
+                -0.004056519528030285,
+                -0.0033870146011184005
+              ],
+              "improvement_percent": -22.427946415588526
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02044293673188045,
+              "mean_control": 0.016909231672773743,
+              "control_minus_full": -0.0035337050591067063,
+              "ci95": [
+                -0.0040230208435327736,
+                -0.0030561229078674744
+              ],
+              "improvement_percent": -20.8980817549296
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.033299355182742164,
+              "mean_control": 0.0361758275032721,
+              "control_minus_full": 0.002876472320529929,
+              "ci95": [
+                0.002493900535460135,
+                0.0032605091617709096
+              ],
+              "improvement_percent": 7.95136564676994
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.033299355182742164,
+              "mean_control": 0.019146916244295542,
+              "control_minus_full": -0.01415243893844662,
+              "ci95": [
+                -0.014959131987802432,
+                -0.01336404307690963
+              ],
+              "improvement_percent": -73.91497804594549
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.033299355182742164,
+              "mean_control": 0.02247403137061492,
+              "control_minus_full": -0.010825323812127243,
+              "ci95": [
+                -0.011682943005694174,
+                -0.009897336715057112
+              ],
+              "improvement_percent": -48.168144084205075
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.011504755983900218,
+            "mean_control": 0.021281170593100807,
+            "control_minus_full": 0.009776414609200593,
+            "ci95": [
+              0.008736587493702154,
+              0.010845144548716924
+            ],
+            "improvement_percent": 45.939270898801176
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.011504755983900218,
+            "mean_control": 0.010100446807939477,
+            "control_minus_full": -0.0014043091759607417,
+            "ci95": [
+              -0.0015600205127369777,
+              -0.0012259189253935332
+            ],
+            "improvement_percent": -13.90343618122796
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.011504755983900218,
+            "mean_control": 0.013553980119334338,
+            "control_minus_full": 0.0020492241354341193,
+            "ci95": [
+              0.0012219583060989723,
+              0.002810786946015011
+            ],
+            "improvement_percent": 15.118984367632086
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01152236432233339,
+              "mean_control": 0.020441672076684524,
+              "control_minus_full": 0.008919307754351137,
+              "ci95": [
+                0.007489658827883642,
+                0.01066464445091088
+              ],
+              "improvement_percent": 43.63296564435338
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01152236432233339,
+              "mean_control": 0.01016505628573892,
+              "control_minus_full": -0.0013573080365944655,
+              "ci95": [
+                -0.0016843439312897164,
+                -0.0010263551095821995
+              ],
+              "improvement_percent": -13.352685892145061
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01152236432233339,
+              "mean_control": 0.013294228599718608,
+              "control_minus_full": 0.0017718642773852198,
+              "ci95": [
+                0.0006904312741854004,
+                0.0028879583279101057
+              ],
+              "improvement_percent": 13.328071381461907
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.011598099435690127,
+              "mean_control": 0.022419794440507675,
+              "control_minus_full": 0.01082169500481755,
+              "ci95": [
+                0.008354194214100389,
+                0.013701591662865715
+              ],
+              "improvement_percent": 48.268484501646945
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.011598099435690127,
+              "mean_control": 0.00977444704079279,
+              "control_minus_full": -0.0018236523948973362,
+              "ci95": [
+                -0.002015893697143028,
+                -0.0016384604202839524
+              ],
+              "improvement_percent": -18.657345907001023
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.011598099435690127,
+              "mean_control": 0.013099859017530436,
+              "control_minus_full": 0.0015017595818403115,
+              "ci95": [
+                0.0006937471271478184,
+                0.002377023755843076
+              ],
+              "improvement_percent": 11.463936976960083
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01139380419367714,
+              "mean_control": 0.020982045262110234,
+              "control_minus_full": 0.009588241068433095,
+              "ci95": [
+                0.008313001784867118,
+                0.010868363872569698
+              ],
+              "improvement_percent": 45.697361475755265
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01139380419367714,
+              "mean_control": 0.010361837097286716,
+              "control_minus_full": -0.0010319670963904223,
+              "ci95": [
+                -0.001296190938397167,
+                -0.0007866265840584367
+              ],
+              "improvement_percent": -9.95930631509973
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01139380419367714,
+              "mean_control": 0.014267852740753966,
+              "control_minus_full": 0.0028740485470768267,
+              "ci95": [
+                0.0018999568134175115,
+                0.0037790890169127605
+              ],
+              "improvement_percent": 20.143525443513592
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 1801.6555868067976,
+        "aeon_no_retrieval": 1826.4070640599232,
+        "mmac": 215.17927930037538,
+        "pid": 182.66330851020024
+      }
+    },
+    "T2_cue_noise_x10": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.5351709327986809,
+            "mean_control": 0.5651174129581754,
+            "control_minus_full": 0.029946480159494582,
+            "ci95": [
+              -0.08087711719457806,
+              0.14398193133319218
+            ],
+            "improvement_percent": 5.299160753645179
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.5351709327986809,
+            "mean_control": 0.24887007913314968,
+            "control_minus_full": -0.28630085366553115,
+            "ci95": [
+              -0.385070757232721,
+              -0.1942256425789577
+            ],
+            "improvement_percent": -115.04028715013
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.5351709327986809,
+            "mean_control": 0.286834392626307,
+            "control_minus_full": -0.24833654017237392,
+            "ci95": [
+              -0.35244069970656955,
+              -0.14498482749373437
+            ],
+            "improvement_percent": -86.5783694551271
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.604100909255024,
+              "mean_control": 0.5908987385928639,
+              "control_minus_full": -0.013202170662160184,
+              "ci95": [
+                -0.2138854241894061,
+                0.17130135206781888
+              ],
+              "improvement_percent": -2.2342526392253195
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.604100909255024,
+              "mean_control": 0.25929222908291677,
+              "control_minus_full": -0.3448086801721073,
+              "ci95": [
+                -0.4734010786136991,
+                -0.2373885233213153
+              ],
+              "improvement_percent": -132.9807227126132
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.604100909255024,
+              "mean_control": 0.2772955336254187,
+              "control_minus_full": -0.3268053756296053,
+              "ci95": [
+                -0.4723241828010768,
+                -0.20128050031332095
+              ],
+              "improvement_percent": -117.854540012558
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.45289330981805664,
+              "mean_control": 0.5266389588151211,
+              "control_minus_full": 0.07374564899706443,
+              "ci95": [
+                -0.01250412554798584,
+                0.18548254845763426
+              ],
+              "improvement_percent": 14.003075116771441
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.45289330981805664,
+              "mean_control": 0.19896076681245514,
+              "control_minus_full": -0.25393254300560153,
+              "ci95": [
+                -0.3892228485897447,
+                -0.1416951243562143
+              ],
+              "improvement_percent": -127.62945533124326
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.45289330981805664,
+              "mean_control": 0.2532997030030656,
+              "control_minus_full": -0.19959360681499108,
+              "ci95": [
+                -0.3244724540888096,
+                -0.09069654346064329
+              ],
+              "improvement_percent": -78.7974105175226
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.548518579322962,
+              "mean_control": 0.5778145414665413,
+              "control_minus_full": 0.02929596214357933,
+              "ci95": [
+                -0.11798255655341175,
+                0.18353064834388538
+              ],
+              "improvement_percent": 5.070132376596779
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.548518579322962,
+              "mean_control": 0.2883572415040772,
+              "control_minus_full": -0.26016133781888484,
+              "ci95": [
+                -0.41028789037627267,
+                -0.1301284796826802
+              ],
+              "improvement_percent": -90.22188465317467
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.548518579322962,
+              "mean_control": 0.3299079412504366,
+              "control_minus_full": -0.2186106380725254,
+              "ci95": [
+                -0.37873453256197465,
+                -0.07534354262172764
+              ],
+              "improvement_percent": -66.26413333487348
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.029668532878805037,
+            "mean_control": 0.027912758635835255,
+            "control_minus_full": -0.0017557742429697854,
+            "ci95": [
+              -0.0027795103781665972,
+              -0.0006135594539022136
+            ],
+            "improvement_percent": -6.290221134630772
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.029668532878805037,
+            "mean_control": 0.01647148821376229,
+            "control_minus_full": -0.013197044665042743,
+            "ci95": [
+              -0.014015821606775811,
+              -0.01224630170439509
+            ],
+            "improvement_percent": -80.12053612749044
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.029668532878805037,
+            "mean_control": 0.02003449580738931,
+            "control_minus_full": -0.009634037071415722,
+            "ci95": [
+              -0.010401767334132948,
+              -0.008788381333845107
+            ],
+            "improvement_percent": -48.08724494011177
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.027242050084196334,
+              "mean_control": 0.023873003170907937,
+              "control_minus_full": -0.003369046913288401,
+              "ci95": [
+                -0.005945244329690889,
+                -0.0006245546426349205
+              ],
+              "improvement_percent": -14.1123715737364
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.027242050084196334,
+              "mean_control": 0.013569615179614834,
+              "control_minus_full": -0.013672434904581504,
+              "ci95": [
+                -0.015493497972122733,
+                -0.011667277347630785
+              ],
+              "improvement_percent": -100.7577202713982
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.027242050084196334,
+              "mean_control": 0.020720224378779264,
+              "control_minus_full": -0.006521825705417072,
+              "ci95": [
+                -0.008375388887678786,
+                -0.004617550548382756
+              ],
+              "improvement_percent": -31.475651934041977
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021961486580002958,
+              "mean_control": 0.02368944523332572,
+              "control_minus_full": 0.001727958653322759,
+              "ci95": [
+                0.0007610348532363952,
+                0.0027876231334685734
+              ],
+              "improvement_percent": 7.294213251106067
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021961486580002958,
+              "mean_control": 0.016697933217376493,
+              "control_minus_full": -0.005263553362626465,
+              "ci95": [
+                -0.006227462152162565,
+                -0.0043335437866104855
+              ],
+              "improvement_percent": -31.522184776430983
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021961486580002958,
+              "mean_control": 0.016909231672773743,
+              "control_minus_full": -0.0050522549072292144,
+              "ci95": [
+                -0.006021550063088709,
+                -0.004117703457813963
+              ],
+              "improvement_percent": -29.878678138664693
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.03980206197221581,
+              "mean_control": 0.0361758275032721,
+              "control_minus_full": -0.003626234468943715,
+              "ci95": [
+                -0.004817637097188972,
+                -0.0025149139376012476
+              ],
+              "improvement_percent": -10.02391574488717
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.03980206197221581,
+              "mean_control": 0.019146916244295542,
+              "control_minus_full": -0.020655145727920262,
+              "ci95": [
+                -0.02165440833966214,
+                -0.019637753754269436
+              ],
+              "improvement_percent": -107.8771404459142
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.03980206197221581,
+              "mean_control": 0.02247403137061492,
+              "control_minus_full": -0.01732803060160089,
+              "ci95": [
+                -0.018489182002641047,
+                -0.016275337440747432
+              ],
+              "improvement_percent": -77.10245801408601
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.022143397719721562,
+            "mean_control": 0.021281170593100807,
+            "control_minus_full": -0.0008622271266207519,
+            "ci95": [
+              -0.0024447664937835524,
+              0.0006818419339966194
+            ],
+            "improvement_percent": -4.051596329481422
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.022143397719721562,
+            "mean_control": 0.010100446807939477,
+            "control_minus_full": -0.012042950911782088,
+            "ci95": [
+              -0.012963319722553428,
+              -0.011141999457282344
+            ],
+            "improvement_percent": -119.23186311238925
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.022143397719721562,
+            "mean_control": 0.013553980119334338,
+            "control_minus_full": -0.008589417600387225,
+            "ci95": [
+              -0.00941059435965622,
+              -0.007842504793422255
+            ],
+            "improvement_percent": -63.371921197779265
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.023943584722341347,
+              "mean_control": 0.020441672076684524,
+              "control_minus_full": -0.003501912645656818,
+              "ci95": [
+                -0.00591806377325593,
+                -0.0009957344000673296
+              ],
+              "improvement_percent": -17.13124363075489
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.023943584722341347,
+              "mean_control": 0.01016505628573892,
+              "control_minus_full": -0.013778528436602423,
+              "ci95": [
+                -0.015213559175513506,
+                -0.012446066347898667
+              ],
+              "improvement_percent": -135.54797975819403
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.023943584722341347,
+              "mean_control": 0.013294228599718608,
+              "control_minus_full": -0.010649356122622735,
+              "ci95": [
+                -0.01219086361269263,
+                -0.009161729106796636
+              ],
+              "improvement_percent": -80.10510758667219
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.019696019134738806,
+              "mean_control": 0.022419794440507675,
+              "control_minus_full": 0.0027237753057688693,
+              "ci95": [
+                3.0360977064057717e-05,
+                0.005697612176215817
+              ],
+              "improvement_percent": 12.14897537529426
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.019696019134738806,
+              "mean_control": 0.00977444704079279,
+              "control_minus_full": -0.009921572093946018,
+              "ci95": [
+                -0.011724546661937058,
+                -0.00808836634193308
+              ],
+              "improvement_percent": -101.50520078055786
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.019696019134738806,
+              "mean_control": 0.013099859017530436,
+              "control_minus_full": -0.006596160117208369,
+              "ci95": [
+                -0.008420784073999106,
+                -0.004865805664089211
+              ],
+              "improvement_percent": -50.352909205979124
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02279058930208454,
+              "mean_control": 0.020982045262110234,
+              "control_minus_full": -0.0018085440399743043,
+              "ci95": [
+                -0.0034657905339377875,
+                -0.00027442998273304633
+              ],
+              "improvement_percent": -8.61948402732791
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02279058930208454,
+              "mean_control": 0.010361837097286716,
+              "control_minus_full": -0.012428752204797822,
+              "ci95": [
+                -0.013236435672882383,
+                -0.01157177097849445
+              ],
+              "improvement_percent": -119.94738083705577
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02279058930208454,
+              "mean_control": 0.014267852740753966,
+              "control_minus_full": -0.008522736561330574,
+              "ci95": [
+                -0.009253112129520779,
+                -0.007696203809762165
+              ],
+              "improvement_percent": -59.73384163817912
+            }
+          }
+        }
+      },
+      "recalls_per_run": 101.8,
+      "us_per_decision": {
+        "aeon_integrated": 1681.8765928418438,
+        "aeon_no_retrieval": 1508.699136118392,
+        "mmac": 156.28269297344053,
+        "pid": 142.20182300606314
+      }
+    },
+    "T3_no_cue": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.5651174129581754,
+            "mean_control": 0.5651174129581754,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.5651174129581754,
+            "mean_control": 0.24887007913314968,
+            "control_minus_full": -0.31624733382502573,
+            "ci95": [
+              -0.4473446432066526,
+              -0.20729618720181053
+            ],
+            "improvement_percent": -127.07326446255038
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.5651174129581754,
+            "mean_control": 0.286834392626307,
+            "control_minus_full": -0.2782830203318685,
+            "ci95": [
+              -0.4050850959733339,
+              -0.1760570645270484
+            ],
+            "improvement_percent": -97.01870747920408
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.5908987385928639,
+              "mean_control": 0.5908987385928639,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.5908987385928639,
+              "mean_control": 0.25929222908291677,
+              "control_minus_full": -0.33160650950994713,
+              "ci95": [
+                -0.4652649579356361,
+                -0.20334928723869675
+              ],
+              "improvement_percent": -127.88910438341969
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.5908987385928639,
+              "mean_control": 0.2772955336254187,
+              "control_minus_full": -0.31360320496744515,
+              "ci95": [
+                -0.44418278911209047,
+                -0.18218189498935508
+              ],
+              "improvement_percent": -113.09349302072503
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.5266389588151211,
+              "mean_control": 0.5266389588151211,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.5266389588151211,
+              "mean_control": 0.19896076681245514,
+              "control_minus_full": -0.32767819200266596,
+              "ci95": [
+                -0.5577923924194153,
+                -0.16212775614743116
+              ],
+              "improvement_percent": -164.69487791607816
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.5266389588151211,
+              "mean_control": 0.2532997030030656,
+              "control_minus_full": -0.2733392558120555,
+              "ci95": [
+                -0.48092167553492693,
+                -0.11368383746251874
+              ],
+              "improvement_percent": -107.91140004169186
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.5778145414665413,
+              "mean_control": 0.5778145414665413,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.5778145414665413,
+              "mean_control": 0.2883572415040772,
+              "control_minus_full": -0.28945729996246417,
+              "ci95": [
+                -0.40411681767899493,
+                -0.19108481386397322
+              ],
+              "improvement_percent": -100.38149153204859
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.5778145414665413,
+              "mean_control": 0.3299079412504366,
+              "control_minus_full": -0.24790660021610478,
+              "ci95": [
+                -0.3636208429647041,
+                -0.14869815732578434
+              ],
+              "improvement_percent": -75.14417484964882
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.027912758635835255,
+            "mean_control": 0.027912758635835255,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.027912758635835255,
+            "mean_control": 0.01647148821376229,
+            "control_minus_full": -0.01144127042207296,
+            "ci95": [
+              -0.012047496647562904,
+              -0.010682049169531247
+            ],
+            "improvement_percent": -69.46106067400473
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.027912758635835255,
+            "mean_control": 0.02003449580738931,
+            "control_minus_full": -0.007878262828445937,
+            "ci95": [
+              -0.00844260238237766,
+              -0.0071110616128817325
+            ],
+            "improvement_percent": -39.32348936647661
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.023873003170907937,
+              "mean_control": 0.023873003170907937,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.023873003170907937,
+              "mean_control": 0.013569615179614834,
+              "control_minus_full": -0.010303387991293104,
+              "ci95": [
+                -0.011805339404870793,
+                -0.008774876108700489
+              ],
+              "improvement_percent": -75.92984660885247
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.023873003170907937,
+              "mean_control": 0.020720224378779264,
+              "control_minus_full": -0.0031527787921286714,
+              "ci95": [
+                -0.004746666213271808,
+                -0.0015422400118853118
+              ],
+              "improvement_percent": -15.215949086717458
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02368944523332572,
+              "mean_control": 0.02368944523332572,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02368944523332572,
+              "mean_control": 0.016697933217376493,
+              "control_minus_full": -0.006991512015949224,
+              "ci95": [
+                -0.007932325208770057,
+                -0.006131774125425567
+              ],
+              "improvement_percent": -41.87052328532249
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02368944523332572,
+              "mean_control": 0.016909231672773743,
+              "control_minus_full": -0.006780213560551973,
+              "ci95": [
+                -0.007901217518276125,
+                -0.005814087134394154
+              ],
+              "improvement_percent": -40.09770338334814
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.0361758275032721,
+              "mean_control": 0.0361758275032721,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.0361758275032721,
+              "mean_control": 0.019146916244295542,
+              "control_minus_full": -0.01702891125897655,
+              "ci95": [
+                -0.01768606499371808,
+                -0.01630391272625686
+              ],
+              "improvement_percent": -88.93814043841127
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.0361758275032721,
+              "mean_control": 0.02247403137061492,
+              "control_minus_full": -0.01370179613265717,
+              "ci95": [
+                -0.014633105716402165,
+                -0.012708632477335757
+              ],
+              "improvement_percent": -60.96723772741745
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.021281170593100807,
+            "mean_control": 0.021281170593100807,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.021281170593100807,
+            "mean_control": 0.010100446807939477,
+            "control_minus_full": -0.011180723785161334,
+            "ci95": [
+              -0.012288656238781271,
+              -0.010027419465799272
+            ],
+            "improvement_percent": -110.69533851089342
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.021281170593100807,
+            "mean_control": 0.013553980119334338,
+            "control_minus_full": -0.007727190473766474,
+            "ci95": [
+              -0.009260425566754297,
+              -0.006231436947869254
+            ],
+            "improvement_percent": -57.01048995006178
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.020441672076684524,
+              "mean_control": 0.020441672076684524,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.020441672076684524,
+              "mean_control": 0.01016505628573892,
+              "control_minus_full": -0.010276615790945604,
+              "ci95": [
+                -0.011987302021417378,
+                -0.008817533831567127
+              ],
+              "improvement_percent": -101.09748044743438
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.020441672076684524,
+              "mean_control": 0.013294228599718608,
+              "control_minus_full": -0.007147443476965919,
+              "ci95": [
+                -0.008890047215823546,
+                -0.0056234170570296825
+              ],
+              "improvement_percent": -53.76350664766819
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.022419794440507675,
+              "mean_control": 0.022419794440507675,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.022419794440507675,
+              "mean_control": 0.00977444704079279,
+              "control_minus_full": -0.012645347399714884,
+              "ci95": [
+                -0.015450797240056683,
+                -0.010215662613521526
+              ],
+              "improvement_percent": -129.37148615098783
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.022419794440507675,
+              "mean_control": 0.013099859017530436,
+              "control_minus_full": -0.00931993542297724,
+              "ci95": [
+                -0.012628872264573302,
+                -0.006297258245999139
+              ],
+              "improvement_percent": -71.1453108808664
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.020982045262110234,
+              "mean_control": 0.020982045262110234,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.020982045262110234,
+              "mean_control": 0.010361837097286716,
+              "control_minus_full": -0.010620208164823518,
+              "ci95": [
+                -0.011928705608127784,
+                -0.00931593946337897
+              ],
+              "improvement_percent": -102.49348706325888
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.020982045262110234,
+              "mean_control": 0.014267852740753966,
+              "control_minus_full": -0.006714192521356269,
+              "ci95": [
+                -0.00816149751704256,
+                -0.005245158678813978
+              ],
+              "improvement_percent": -47.05818488144465
+            }
+          }
+        }
+      },
+      "recalls_per_run": 0.0,
+      "us_per_decision": {
+        "aeon_integrated": 1540.7693486597261,
+        "aeon_no_retrieval": 1512.5580096865733,
+        "mmac": 176.6307536879847,
+        "pid": 170.3770030846701
+      }
+    },
+    "T4_capacity_ABCDA": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.45906057213557777,
+            "mean_control": 0.45906057213557777,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.45906057213557777,
+            "mean_control": 0.23440901950316353,
+            "control_minus_full": -0.2246515526324142,
+            "ci95": [
+              -0.304484350033007,
+              -0.15478882144873257
+            ],
+            "improvement_percent": -95.83741833337704
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.45906057213557777,
+            "mean_control": 0.2871262607310495,
+            "control_minus_full": -0.17193431140452825,
+            "ci95": [
+              -0.25786265217571597,
+              -0.08892092142714998
+            ],
+            "improvement_percent": -59.88108192081348
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.4681301717787119,
+              "mean_control": 0.4681301717787119,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.4681301717787119,
+              "mean_control": 0.2503593462530971,
+              "control_minus_full": -0.21777082552561483,
+              "ci95": [
+                -0.2954647932479351,
+                -0.1464573075812922
+              ],
+              "improvement_percent": -86.98330171603126
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.4681301717787119,
+              "mean_control": 0.2843679127246614,
+              "control_minus_full": -0.18376225905405053,
+              "ci95": [
+                -0.2805222181062229,
+                -0.1044947852386226
+              ],
+              "improvement_percent": -64.62130600226261
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.37426147994334324,
+              "mean_control": 0.37426147994334324,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.37426147994334324,
+              "mean_control": 0.1929586498527469,
+              "control_minus_full": -0.1813028300905964,
+              "ci95": [
+                -0.25394542156162764,
+                -0.113751450243324
+              ],
+              "improvement_percent": -93.95942095830092
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.37426147994334324,
+              "mean_control": 0.2341284676585685,
+              "control_minus_full": -0.14013301228477473,
+              "ci95": [
+                -0.22198743734577137,
+                -0.06086626260091011
+              ],
+              "improvement_percent": -59.8530429409942
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.5347900646846782,
+              "mean_control": 0.5347900646846782,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.5347900646846782,
+              "mean_control": 0.25990906240364664,
+              "control_minus_full": -0.2748810022810316,
+              "ci95": [
+                -0.4007509517180761,
+                -0.16513773956588274
+              ],
+              "improvement_percent": -105.7604531904059
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.5347900646846782,
+              "mean_control": 0.34288240180991875,
+              "control_minus_full": -0.19190766287475947,
+              "ci95": [
+                -0.3398706285959282,
+                -0.047101305987500106
+              ],
+              "improvement_percent": -55.96894499740058
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.028035608646115418,
+            "mean_control": 0.028035608646115418,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.028035608646115418,
+            "mean_control": 0.016906311225014996,
+            "control_minus_full": -0.011129297421100425,
+            "ci95": [
+              -0.011641589198782595,
+              -0.010539677333333409
+            ],
+            "improvement_percent": -65.82924727325049
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.028035608646115418,
+            "mean_control": 0.019918909303676333,
+            "control_minus_full": -0.008116699342439087,
+            "ci95": [
+              -0.00857437898298134,
+              -0.007495636487434356
+            ],
+            "improvement_percent": -40.74871379097564
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.024104347175626175,
+              "mean_control": 0.024104347175626175,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.024104347175626175,
+              "mean_control": 0.013696254906468058,
+              "control_minus_full": -0.010408092269158117,
+              "ci95": [
+                -0.011808842579690868,
+                -0.009084352271963997
+              ],
+              "improvement_percent": -75.99224999998279
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.024104347175626175,
+              "mean_control": 0.020766848270817848,
+              "control_minus_full": -0.003337498904808328,
+              "ci95": [
+                -0.0047450235238564184,
+                -0.0019138343696511937
+              ],
+              "improvement_percent": -16.07128275453466
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02355135055954549,
+              "mean_control": 0.02355135055954549,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02355135055954549,
+              "mean_control": 0.017160731465507943,
+              "control_minus_full": -0.006390619094037547,
+              "ci95": [
+                -0.007606937629621127,
+                -0.005445676484312611
+              ],
+              "improvement_percent": -37.23978262163425
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02355135055954549,
+              "mean_control": 0.016390761924948694,
+              "control_minus_full": -0.007160588634596796,
+              "ci95": [
+                -0.008472614006157857,
+                -0.006140352282663534
+              ],
+              "improvement_percent": -43.68673443848591
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.036451128203174595,
+              "mean_control": 0.036451128203174595,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.036451128203174595,
+              "mean_control": 0.019861947303068984,
+              "control_minus_full": -0.01658918090010561,
+              "ci95": [
+                -0.01746503739183111,
+                -0.015737818987940612
+              ],
+              "improvement_percent": -83.52242933170163
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.036451128203174595,
+              "mean_control": 0.022599117715262455,
+              "control_minus_full": -0.013852010487912143,
+              "ci95": [
+                -0.014846160038877917,
+                -0.012888618604875694
+              ],
+              "improvement_percent": -61.294474688970276
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.02019030245408345,
+            "mean_control": 0.02019030245408345,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.02019030245408345,
+            "mean_control": 0.01004056978354682,
+            "control_minus_full": -0.01014973267053663,
+            "ci95": [
+              -0.01163703774946444,
+              -0.008874942590898804
+            ],
+            "improvement_percent": -101.08721804980321
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.02019030245408345,
+            "mean_control": 0.013268860684793129,
+            "control_minus_full": -0.006921441769290322,
+            "ci95": [
+              -0.008385619581870354,
+              -0.0056497792307441
+            ],
+            "improvement_percent": -52.16304499468209
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021652872373387495,
+              "mean_control": 0.021652872373387495,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021652872373387495,
+              "mean_control": 0.01005401962235227,
+              "control_minus_full": -0.011598852751035222,
+              "ci95": [
+                -0.01343376879891717,
+                -0.009963804405443087
+              ],
+              "improvement_percent": -115.36532836327923
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021652872373387495,
+              "mean_control": 0.013284085193506632,
+              "control_minus_full": -0.008368787179880863,
+              "ci95": [
+                -0.009889667087682541,
+                -0.007140977301373411
+              ],
+              "improvement_percent": -62.998596124418064
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01731888720320983,
+              "mean_control": 0.01731888720320983,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01731888720320983,
+              "mean_control": 0.00996925927436389,
+              "control_minus_full": -0.00734962792884594,
+              "ci95": [
+                -0.011138437384650137,
+                -0.004643666949683739
+              ],
+              "improvement_percent": -73.7229088598952
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01731888720320983,
+              "mean_control": 0.012986625483506525,
+              "control_minus_full": -0.004332261719703303,
+              "ci95": [
+                -0.007993719261393358,
+                -0.0017914237495470192
+              ],
+              "improvement_percent": -33.35941061213653
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02159914778565303,
+              "mean_control": 0.02159914778565303,
+              "control_minus_full": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "improvement_percent": 0.0
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02159914778565303,
+              "mean_control": 0.010098430453924303,
+              "control_minus_full": -0.011500717331728728,
+              "ci95": [
+                -0.012711115287695082,
+                -0.010362261479765678
+              ],
+              "improvement_percent": -113.8861864148353
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02159914778565303,
+              "mean_control": 0.013535871377366221,
+              "control_minus_full": -0.008063276408286805,
+              "ci95": [
+                -0.0096751918339467,
+                -0.006381280846759707
+              ],
+              "improvement_percent": -59.56968844850045
+            }
+          }
+        }
+      },
+      "recalls_per_run": 0.0,
+      "us_per_decision": {
+        "aeon_integrated": 1809.5748494771317,
+        "aeon_no_retrieval": 1899.4799002131103,
+        "mmac": 205.24231757008238,
+        "pid": 180.0775437873704
+      }
+    },
+    "T4_revisits_ABCBA": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.4538211107965444,
+            "mean_control": 0.5145472769016359,
+            "control_minus_full": 0.06072616610509167,
+            "ci95": [
+              0.009807893335861767,
+              0.11232820558806438
+            ],
+            "improvement_percent": 11.801863274985413
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.4538211107965444,
+            "mean_control": 0.23015252796255034,
+            "control_minus_full": -0.22366858283399402,
+            "ci95": [
+              -0.2671935637330039,
+              -0.17958860990799994
+            ],
+            "improvement_percent": -97.18276171634693
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.4538211107965444,
+            "mean_control": 0.2719491178397864,
+            "control_minus_full": -0.181871992956758,
+            "ci95": [
+              -0.22663861568716198,
+              -0.1303285977522619
+            ],
+            "improvement_percent": -66.87721379699579
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.6159707580281749,
+              "mean_control": 0.5529478344319184,
+              "control_minus_full": -0.06302292359625641,
+              "ci95": [
+                -0.14884564101299835,
+                0.02333546574030703
+              ],
+              "improvement_percent": -11.397625539306837
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.6159707580281749,
+              "mean_control": 0.23404446661510966,
+              "control_minus_full": -0.38192629141306517,
+              "ci95": [
+                -0.4576862201408871,
+                -0.3046368770780033
+              ],
+              "improvement_percent": -163.1853540212723
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.6159707580281749,
+              "mean_control": 0.2976234150027602,
+              "control_minus_full": -0.31834734302541473,
+              "ci95": [
+                -0.38301115046536055,
+                -0.24466400270657157
+              ],
+              "improvement_percent": -106.96313763568043
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.22083870044523507,
+              "mean_control": 0.37426147994334324,
+              "control_minus_full": 0.15342277949810817,
+              "ci95": [
+                0.0931152126497643,
+                0.22324058688017268
+              ],
+              "improvement_percent": 40.99347320523976
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.22083870044523507,
+              "mean_control": 0.1929586498527469,
+              "control_minus_full": -0.027880050592488194,
+              "ci95": [
+                -0.05487376271806449,
+                -0.004571525954360078
+              ],
+              "improvement_percent": -14.448717698721657
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.22083870044523507,
+              "mean_control": 0.2341284676585685,
+              "control_minus_full": 0.013289767213333433,
+              "ci95": [
+                -0.015445657863370037,
+                0.04548737520538935
+              ],
+              "improvement_percent": 5.676271384782654
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.5246538739162231,
+              "mean_control": 0.6164325163296465,
+              "control_minus_full": 0.09177864241342325,
+              "ci95": [
+                -0.0013256445583660242,
+                0.1901459152767984
+              ],
+              "improvement_percent": 14.888676372864026
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.5246538739162231,
+              "mean_control": 0.26345446741979445,
+              "control_minus_full": -0.26119940649642864,
+              "ci95": [
+                -0.32716105435030973,
+                -0.19570210770198612
+              ],
+              "improvement_percent": -99.14404149398138
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.5246538739162231,
+              "mean_control": 0.2840954708580305,
+              "control_minus_full": -0.24055840305819265,
+              "ci95": [
+                -0.30056148829307494,
+                -0.1767130377261726
+              ],
+              "improvement_percent": -84.67519821123992
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.026161826150464702,
+            "mean_control": 0.02812695047863979,
+            "control_minus_full": 0.001965124328175089,
+            "ci95": [
+              0.001719765227899833,
+              0.002218620618714212
+            ],
+            "improvement_percent": 6.986624197555461
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.026161826150464702,
+            "mean_control": 0.016518360954415286,
+            "control_minus_full": -0.009643465196049415,
+            "ci95": [
+              -0.010212103860770807,
+              -0.008960146071536975
+            ],
+            "improvement_percent": -58.38027890698053
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.026161826150464702,
+            "mean_control": 0.019129718278127785,
+            "control_minus_full": -0.007032107872336914,
+            "ci95": [
+              -0.007565245541947694,
+              -0.006344914441817856
+            ],
+            "improvement_percent": -36.760122496823
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.022623574637972172,
+              "mean_control": 0.024673800829889972,
+              "control_minus_full": 0.0020502261919177985,
+              "ci95": [
+                0.001551065692105533,
+                0.0026003285159110342
+              ],
+              "improvement_percent": 8.309324558679844
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.022623574637972172,
+              "mean_control": 0.013117533774767676,
+              "control_minus_full": -0.009506040863204496,
+              "ci95": [
+                -0.010671801432626641,
+                -0.008378605227889744
+              ],
+              "improvement_percent": -72.46820192290953
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.022623574637972172,
+              "mean_control": 0.019700639598572538,
+              "control_minus_full": -0.0029229350393996374,
+              "ci95": [
+                -0.004184138345220755,
+                -0.0016731970544429492
+              ],
+              "improvement_percent": -14.836751998708845
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021487641609035997,
+              "mean_control": 0.02355135055954549,
+              "control_minus_full": 0.002063708950509489,
+              "ci95": [
+                0.001429572744515844,
+                0.002907469306872393
+              ],
+              "improvement_percent": 8.762592808814764
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021487641609035997,
+              "mean_control": 0.017160731465507943,
+              "control_minus_full": -0.004326910143528059,
+              "ci95": [
+                -0.004775484041234504,
+                -0.0038700897230201934
+              ],
+              "improvement_percent": -25.214019298797915
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021487641609035997,
+              "mean_control": 0.016390761924948694,
+              "control_minus_full": -0.005096879684087306,
+              "ci95": [
+                -0.005685175471755478,
+                -0.004498104239344637
+              ],
+              "improvement_percent": -31.096050979358367
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.034374262204385934,
+              "mean_control": 0.036155700046483906,
+              "control_minus_full": 0.0017814378420979763,
+              "ci95": [
+                0.0011184596157915864,
+                0.0024031092499266246
+              ],
+              "improvement_percent": 4.927128612660395
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.034374262204385934,
+              "mean_control": 0.01927681762297024,
+              "control_minus_full": -0.015097444581415698,
+              "ci95": [
+                -0.01596729420511868,
+                -0.014184240021658598
+              ],
+              "improvement_percent": -78.31917527416763
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.034374262204385934,
+              "mean_control": 0.021297753310862134,
+              "control_minus_full": -0.013076508893523802,
+              "ci95": [
+                -0.013915001978827871,
+                -0.012208374113815444
+              ],
+              "improvement_percent": -61.39853675013979
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.018208748169840777,
+            "mean_control": 0.021488547679529034,
+            "control_minus_full": 0.003279799509688257,
+            "ci95": [
+              0.0026058859001857255,
+              0.004083174622281646
+            ],
+            "improvement_percent": 15.263011528753722
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.018208748169840777,
+            "mean_control": 0.010051906515398232,
+            "control_minus_full": -0.008156841654442545,
+            "ci95": [
+              -0.00892948538774952,
+              -0.007364052302372523
+            ],
+            "improvement_percent": -81.14720965567386
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.018208748169840777,
+            "mean_control": 0.013268630171452777,
+            "control_minus_full": -0.004940117998388001,
+            "ci95": [
+              -0.005642154041596899,
+              -0.004195151216910812
+            ],
+            "improvement_percent": -37.23155996175534
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.020871700635948294,
+              "mean_control": 0.024100336696248024,
+              "control_minus_full": 0.003228636060299729,
+              "ci95": [
+                0.0013639274179203164,
+                0.00548316635459753
+              ],
+              "improvement_percent": 13.396642963923272
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.020871700635948294,
+              "mean_control": 0.00994935477246047,
+              "control_minus_full": -0.010922345863487825,
+              "ci95": [
+                -0.012322357471534836,
+                -0.00948341616472688
+              ],
+              "improvement_percent": -109.77943910212718
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.020871700635948294,
+              "mean_control": 0.013431743696688658,
+              "control_minus_full": -0.007439956939259635,
+              "ci95": [
+                -0.008903586077655068,
+                -0.0058513351831154595
+              ],
+              "improvement_percent": -55.39084952234322
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.012736454057832141,
+              "mean_control": 0.01731888720320983,
+              "control_minus_full": 0.0045824331453776885,
+              "ci95": [
+                0.002234771235733698,
+                0.0078059807561087335
+              ],
+              "improvement_percent": 26.45916617857754
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.012736454057832141,
+              "mean_control": 0.00996925927436389,
+              "control_minus_full": -0.0027671947834682527,
+              "ci95": [
+                -0.0034997909604183725,
+                -0.0020764672816188773
+              ],
+              "improvement_percent": -27.757275714396737
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.012736454057832141,
+              "mean_control": 0.012986625483506525,
+              "control_minus_full": 0.0002501714256743859,
+              "ci95": [
+                -0.0006136061591490117,
+                0.0010946843677011834
+              ],
+              "improvement_percent": 1.9263774565002472
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.0210180898157419,
+              "mean_control": 0.023046419139129255,
+              "control_minus_full": 0.0020283293233873513,
+              "ci95": [
+                0.0009325127130380582,
+                0.0030763341582389597
+              ],
+              "improvement_percent": 8.801060638281815
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.0210180898157419,
+              "mean_control": 0.01023710549937034,
+              "control_minus_full": -0.010780984316371561,
+              "ci95": [
+                -0.011898486097422483,
+                -0.009464175930093173
+              ],
+              "improvement_percent": -105.31281832579212
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.0210180898157419,
+              "mean_control": 0.013387521334163146,
+              "control_minus_full": -0.007630568481578753,
+              "ci95": [
+                -0.008855172858135831,
+                -0.006284685681144336
+              ],
+              "improvement_percent": -56.99761958254791
+            }
+          }
+        }
+      },
+      "loss_B_return": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.49362689963297646,
+            "mean_control": 0.7274122283654466,
+            "control_minus_full": 0.23378532873247013,
+            "ci95": [
+              0.16686886530772463,
+              0.3104537902104599
+            ],
+            "improvement_percent": 32.13931792950532
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.49362689963297646,
+            "mean_control": 0.4122820279366798,
+            "control_minus_full": -0.08134487169629664,
+            "ci95": [
+              -0.13860398170547558,
+              -0.02328766940047202
+            ],
+            "improvement_percent": -19.730394774518278
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.49362689963297646,
+            "mean_control": 0.36107228121610907,
+            "control_minus_full": -0.13255461841686744,
+            "ci95": [
+              -0.19735487613096103,
+              -0.0687002389220253
+            ],
+            "improvement_percent": -36.711380328176126
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.369650557234964,
+              "mean_control": 0.8078346110485212,
+              "control_minus_full": 0.4381840538135573,
+              "ci95": [
+                0.2911881415442946,
+                0.6046196844049375
+              ],
+              "improvement_percent": 54.24180244577792
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.369650557234964,
+              "mean_control": 0.30360900555917464,
+              "control_minus_full": -0.06604155167578933,
+              "ci95": [
+                -0.14922073888152304,
+                0.012549280745332408
+              ],
+              "improvement_percent": -21.75217153198625
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.369650557234964,
+              "mean_control": 0.3588325678379712,
+              "control_minus_full": -0.0108179893969928,
+              "ci95": [
+                -0.11548800833220538,
+                0.10158805830244454
+              ],
+              "improvement_percent": -3.0147735647778777
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.47382222947235064,
+              "mean_control": 0.5775042011874837,
+              "control_minus_full": 0.10368197171513298,
+              "ci95": [
+                0.04982593696376049,
+                0.17885880468253676
+              ],
+              "improvement_percent": 17.95345756826333
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.47382222947235064,
+              "mean_control": 0.3978901259021482,
+              "control_minus_full": -0.0759321035702026,
+              "ci95": [
+                -0.1329382055864568,
+                -0.02004440371361157
+              ],
+              "improvement_percent": -19.08368633125526
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.47382222947235064,
+              "mean_control": 0.30654730494792376,
+              "control_minus_full": -0.16727492452442694,
+              "ci95": [
+                -0.2068276388178681,
+                -0.1314623580083217
+              ],
+              "improvement_percent": -54.56740993134602
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.637407912191615,
+              "mean_control": 0.7968978728603349,
+              "control_minus_full": 0.15948996066872007,
+              "ci95": [
+                0.04139765982149847,
+                0.28117057445165144
+              ],
+              "improvement_percent": 20.013851975317348
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.637407912191615,
+              "mean_control": 0.5353469523487167,
+              "control_minus_full": -0.10206095984289805,
+              "ci95": [
+                -0.23620873797273326,
+                0.017836566043410784
+              ],
+              "improvement_percent": -19.064451454356487
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.637407912191615,
+              "mean_control": 0.41783697086243227,
+              "control_minus_full": -0.2195709413291825,
+              "ci95": [
+                -0.33553039947436364,
+                -0.11449146692815142
+              ],
+              "improvement_percent": -52.54942875829759
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 1663.689300518551,
+        "aeon_no_retrieval": 1704.5783230221589,
+        "mmac": 177.5719224032299,
+        "pid": 160.59003584006052
+      }
+    },
+    "T5_changed_physics_on_return": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.21385231434054056,
+            "mean_control": 0.5201990862104198,
+            "control_minus_full": 0.30634677186987913,
+            "ci95": [
+              0.19241196610256955,
+              0.44321057067026637
+            ],
+            "improvement_percent": 58.890294118271925
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.21385231434054056,
+            "mean_control": 0.4533117804678236,
+            "control_minus_full": 0.239459466127283,
+            "ci95": [
+              0.09724893641141988,
+              0.392879338821786
+            ],
+            "improvement_percent": 52.824452494960035
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.21385231434054056,
+            "mean_control": 0.5493194702151656,
+            "control_minus_full": 0.33546715587462506,
+            "ci95": [
+              0.22669898453410914,
+              0.46124291121401606
+            ],
+            "improvement_percent": 61.069591387908446
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.2180683428997073,
+              "mean_control": 0.6218485181340689,
+              "control_minus_full": 0.40378017523436166,
+              "ci95": [
+                0.2267966279475649,
+                0.6005844170680218
+              ],
+              "improvement_percent": 64.93224048293183
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.2180683428997073,
+              "mean_control": 0.4897660334862951,
+              "control_minus_full": 0.2716976905865877,
+              "ci95": [
+                0.08707852249735563,
+                0.4762464557388356
+              ],
+              "improvement_percent": 55.474996633099614
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.2180683428997073,
+              "mean_control": 0.5083173139636271,
+              "control_minus_full": 0.2902489710639199,
+              "ci95": [
+                0.1585733275407997,
+                0.4341288762014057
+              ],
+              "improvement_percent": 57.09995766240785
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.2047408623365811,
+              "mean_control": 0.40852003032659645,
+              "control_minus_full": 0.20377916799001533,
+              "ci95": [
+                0.07279732185296456,
+                0.3585669246544846
+              ],
+              "improvement_percent": 49.88229532517696
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.2047408623365811,
+              "mean_control": 0.2912038716460952,
+              "control_minus_full": 0.08646300930951407,
+              "ci95": [
+                0.0430439366175322,
+                0.1365218738009646
+              ],
+              "improvement_percent": 29.691572718715076
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.2047408623365811,
+              "mean_control": 0.5562764331018181,
+              "control_minus_full": 0.35153557076523695,
+              "ci95": [
+                0.2250875434655881,
+                0.49440718679961476
+              ],
+              "improvement_percent": 63.194402970670815
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.2187477377853333,
+              "mean_control": 0.5302287101705938,
+              "control_minus_full": 0.31148097238526046,
+              "ci95": [
+                0.19099923558787923,
+                0.4758857944162661
+              ],
+              "improvement_percent": 58.74464479395047
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.2187477377853333,
+              "mean_control": 0.5789654362710804,
+              "control_minus_full": 0.3602176984857472,
+              "ci95": [
+                0.16094971965701296,
+                0.5785068562118711
+              ],
+              "improvement_percent": 62.21747895794729
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.2187477377853333,
+              "mean_control": 0.5833646635800516,
+              "control_minus_full": 0.3646169257947183,
+              "ci95": [
+                0.2551311600483871,
+                0.48694727614392813
+              ],
+              "improvement_percent": 62.502401766521146
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.02472063710853176,
+            "mean_control": 0.02696736241927955,
+            "control_minus_full": 0.002246725310747793,
+            "ci95": [
+              0.002010068734130367,
+              0.0024924269846549104
+            ],
+            "improvement_percent": 8.33127569473224
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.02472063710853176,
+            "mean_control": 0.020234423786330568,
+            "control_minus_full": -0.004486213322201188,
+            "ci95": [
+              -0.0053322959507830685,
+              -0.003564727488086967
+            ],
+            "improvement_percent": -22.171193850510654
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.02472063710853176,
+            "mean_control": 0.028359873875020713,
+            "control_minus_full": 0.0036392367664889553,
+            "ci95": [
+              0.0021406001878947257,
+              0.005244876548938852
+            ],
+            "improvement_percent": 12.83234468011645
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.020966856212589688,
+              "mean_control": 0.022906308648171562,
+              "control_minus_full": 0.0019394524355818693,
+              "ci95": [
+                0.0014983660425675826,
+                0.002350792526514256
+              ],
+              "improvement_percent": 8.466892092352388
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.020966856212589688,
+              "mean_control": 0.01750870105537029,
+              "control_minus_full": -0.0034581551572193995,
+              "ci95": [
+                -0.00512050428264274,
+                -0.0018295192805067742
+              ],
+              "improvement_percent": -19.751066320015273
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.020966856212589688,
+              "mean_control": 0.029053428481021465,
+              "control_minus_full": 0.008086572268431774,
+              "ci95": [
+                0.0055430062444324114,
+                0.010552075594867818
+              ],
+              "improvement_percent": 27.833452680857114
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02008942060149598,
+              "mean_control": 0.02303088712107475,
+              "control_minus_full": 0.0029414665195787717,
+              "ci95": [
+                0.0023445719959340355,
+                0.0034673839385632502
+              ],
+              "improvement_percent": 12.771833338921363
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02008942060149598,
+              "mean_control": 0.02026257232042297,
+              "control_minus_full": 0.00017315171892699316,
+              "ci95": [
+                -0.00046289313527808564,
+                0.0009503235781036537
+              ],
+              "improvement_percent": 0.8545396714141312
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02008942060149598,
+              "mean_control": 0.025383353245642153,
+              "control_minus_full": 0.005293932644146171,
+              "ci95": [
+                0.004238108567878575,
+                0.006480407446790549
+              ],
+              "improvement_percent": 20.85592314346821
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.03310563451150961,
+              "mean_control": 0.034964891488592345,
+              "control_minus_full": 0.0018592569770827425,
+              "ci95": [
+                0.0015636057015123589,
+                0.002162038638853231
+              ],
+              "improvement_percent": 5.31749677441254
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.03310563451150961,
+              "mean_control": 0.022931997983198452,
+              "control_minus_full": -0.010173636528311157,
+              "ci95": [
+                -0.011144367088104866,
+                -0.009265104888610166
+              ],
+              "improvement_percent": -44.36437041275277
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.03310563451150961,
+              "mean_control": 0.030642839898398534,
+              "control_minus_full": -0.0024627946131110744,
+              "ci95": [
+                -0.0038184082842534902,
+                -0.0009095534908276924
+              ],
+              "improvement_percent": -8.037096500444745
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.010640765502089176,
+            "mean_control": 0.01812984987124849,
+            "control_minus_full": 0.007489084369159314,
+            "ci95": [
+              0.0067002291137678955,
+              0.008308089948849705
+            ],
+            "improvement_percent": 41.30803300823796
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.010640765502089176,
+            "mean_control": 0.02264356538316708,
+            "control_minus_full": 0.012002799881077903,
+            "ci95": [
+              0.010698049441239857,
+              0.013340358720229055
+            ],
+            "improvement_percent": 53.007552821167565
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.010640765502089176,
+            "mean_control": 0.041305240344772357,
+            "control_minus_full": 0.030664474842683177,
+            "ci95": [
+              0.02775438045565045,
+              0.033509704091664975
+            ],
+            "improvement_percent": 74.23870333819305
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.010754515548957037,
+              "mean_control": 0.0172193570008966,
+              "control_minus_full": 0.006464841451939563,
+              "ci95": [
+                0.004994553475225276,
+                0.00783597508838085
+              ],
+              "improvement_percent": 37.544035190181276
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.010754515548957037,
+              "mean_control": 0.023295342538257116,
+              "control_minus_full": 0.01254082698930008,
+              "ci95": [
+                0.011131967812663937,
+                0.014016386460804267
+              ],
+              "improvement_percent": 53.834052745542266
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.010754515548957037,
+              "mean_control": 0.041071575607192594,
+              "control_minus_full": 0.03031706005823557,
+              "ci95": [
+                0.026973421636330996,
+                0.03358459950233527
+              ],
+              "improvement_percent": 73.81518631811716
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.010419712334408544,
+              "mean_control": 0.02022460073300445,
+              "control_minus_full": 0.009804888398595907,
+              "ci95": [
+                0.007815239986446785,
+                0.011557946461877503
+              ],
+              "improvement_percent": 48.48000970716493
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.010419712334408544,
+              "mean_control": 0.02165657738428104,
+              "control_minus_full": 0.011236865049872499,
+              "ci95": [
+                0.009304002090585442,
+                0.013226294279649227
+              ],
+              "improvement_percent": 51.88661555555189
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.010419712334408544,
+              "mean_control": 0.04134693092709178,
+              "control_minus_full": 0.030927218592683242,
+              "ci95": [
+                0.02820690372387491,
+                0.03365579290800603
+              ],
+              "improvement_percent": 74.79930891900558
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.010748068622901947,
+              "mean_control": 0.016945591879844422,
+              "control_minus_full": 0.006197523256942475,
+              "ci95": [
+                0.0052120190050411914,
+                0.0072067954628441
+              ],
+              "improvement_percent": 36.573070453289915
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.010748068622901947,
+              "mean_control": 0.022978776226963073,
+              "control_minus_full": 0.012230707604061124,
+              "ci95": [
+                0.01100139750720481,
+                0.013477295160975778
+              ],
+              "improvement_percent": 53.22610518183179
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.010748068622901947,
+              "mean_control": 0.04149721450003267,
+              "control_minus_full": 0.030749145877130724,
+              "ci95": [
+                0.027846456090000072,
+                0.03348739478886021
+              ],
+              "improvement_percent": 74.09930099550782
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 1612.0880372859067,
+        "aeon_no_retrieval": 1602.0274287863383,
+        "mmac": 171.80312925878144,
+        "pid": 160.49016394137854
+      }
+    },
+    "T6_sensor_noise_x2": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.26187288326896463,
+            "mean_control": 0.5553177663665768,
+            "control_minus_full": 0.29344488309761213,
+            "ci95": [
+              0.21984879691278633,
+              0.370579206842228
+            ],
+            "improvement_percent": 52.84269671716267
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.26187288326896463,
+            "mean_control": 0.27011342620314926,
+            "control_minus_full": 0.00824054293418455,
+            "ci95": [
+              -0.017747920070224025,
+              0.031073850699295545
+            ],
+            "improvement_percent": 3.0507713185596814
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.26187288326896463,
+            "mean_control": 0.2928515895227094,
+            "control_minus_full": 0.030978706253744763,
+            "ci95": [
+              -4.8815253161798754e-05,
+              0.06090784531792489
+            ],
+            "improvement_percent": 10.578295410393357
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.25997039897639657,
+              "mean_control": 0.5527633747757401,
+              "control_minus_full": 0.2927929757993435,
+              "ci95": [
+                0.2228675529209813,
+                0.3620421326424775
+              ],
+              "improvement_percent": 52.96895365365544
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.25997039897639657,
+              "mean_control": 0.2806766238858735,
+              "control_minus_full": 0.020706224909476968,
+              "ci95": [
+                -0.007650298650548931,
+                0.05151910262155464
+              ],
+              "improvement_percent": 7.377253090338001
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.25997039897639657,
+              "mean_control": 0.30369328647348337,
+              "control_minus_full": 0.043722887497086846,
+              "ci95": [
+                -0.01136728960691798,
+                0.10518899087461417
+              ],
+              "improvement_percent": 14.397054345455365
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.2584219529853971,
+              "mean_control": 0.44793084428790764,
+              "control_minus_full": 0.18950889130251053,
+              "ci95": [
+                0.09378431223857395,
+                0.2843373660117344
+              ],
+              "improvement_percent": 42.30762264290593
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.2584219529853971,
+              "mean_control": 0.2061126210441094,
+              "control_minus_full": -0.05230933194128769,
+              "ci95": [
+                -0.08571656595885535,
+                -0.022802634094117574
+              ],
+              "improvement_percent": -25.379004777244162
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.2584219529853971,
+              "mean_control": 0.24858152395968364,
+              "control_minus_full": -0.009840429025713512,
+              "ci95": [
+                -0.05373178653133872,
+                0.04709313867486837
+              ],
+              "improvement_percent": -3.9586325117668397
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.2672262978451003,
+              "mean_control": 0.6652590800360828,
+              "control_minus_full": 0.3980327821909825,
+              "ci95": [
+                0.2747669568481606,
+                0.5249526058587982
+              ],
+              "improvement_percent": 59.831243816979345
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.2672262978451003,
+              "mean_control": 0.32355103367946464,
+              "control_minus_full": 0.056324735834364384,
+              "ci95": [
+                0.022181869311214245,
+                0.08606932220888344
+              ],
+              "improvement_percent": 17.40830038273472
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.2672262978451003,
+              "mean_control": 0.3262799581349613,
+              "control_minus_full": 0.059053660289860976,
+              "ci95": [
+                0.013228103701757584,
+                0.10180443519590701
+              ],
+              "improvement_percent": 18.09907682574675
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.027488999265401704,
+            "mean_control": 0.03005189979242301,
+            "control_minus_full": 0.0025629005270213024,
+            "ci95": [
+              0.0022330180529863183,
+              0.0028555456041650306
+            ],
+            "improvement_percent": 8.528247946798647
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.027488999265401704,
+            "mean_control": 0.018185259610351303,
+            "control_minus_full": -0.009303739655050405,
+            "ci95": [
+              -0.009962897885903703,
+              -0.008674117601553928
+            ],
+            "improvement_percent": -51.16088444376448
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.027488999265401704,
+            "mean_control": 0.0205957147809409,
+            "control_minus_full": -0.006893284484460803,
+            "ci95": [
+              -0.007823898749745116,
+              -0.006002203849633614
+            ],
+            "improvement_percent": -33.46950837967415
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.024144199559288454,
+              "mean_control": 0.026996487905354007,
+              "control_minus_full": 0.002852288346065545,
+              "ci95": [
+                0.002439043854009573,
+                0.0032416860786021267
+              ],
+              "improvement_percent": 10.565405233692905
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.024144199559288454,
+              "mean_control": 0.01457336127309711,
+              "control_minus_full": -0.009570838286191345,
+              "ci95": [
+                -0.010921650628125954,
+                -0.008158201424421693
+              ],
+              "improvement_percent": -65.67351283508916
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.024144199559288454,
+              "mean_control": 0.02123044648934057,
+              "control_minus_full": -0.0029137530699478807,
+              "ci95": [
+                -0.00438465872916936,
+                -0.001369150621677343
+              ],
+              "improvement_percent": -13.72440787531635
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.0231420339672433,
+              "mean_control": 0.025254671558106095,
+              "control_minus_full": 0.0021126375908627924,
+              "ci95": [
+                0.00154421138160923,
+                0.00268917696114452
+              ],
+              "improvement_percent": 8.365333859131857
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.0231420339672433,
+              "mean_control": 0.01854470537637387,
+              "control_minus_full": -0.004597328590869432,
+              "ci95": [
+                -0.00512869325933608,
+                -0.00406423898124051
+              ],
+              "improvement_percent": -24.79051835855247
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.0231420339672433,
+              "mean_control": 0.017541426329903256,
+              "control_minus_full": -0.005600607637340047,
+              "ci95": [
+                -0.00607437570948673,
+                -0.0051114094997969425
+              ],
+              "improvement_percent": -31.927891905760067
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.03518076426967336,
+              "mean_control": 0.03790453991380892,
+              "control_minus_full": 0.00272377564413557,
+              "ci95": [
+                0.0023771532270163466,
+                0.003035110990149806
+              ],
+              "improvement_percent": 7.185882351636927
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.03518076426967336,
+              "mean_control": 0.02143771218158292,
+              "control_minus_full": -0.013743052088090435,
+              "ci95": [
+                -0.014690561090246457,
+                -0.01273364295195805
+              ],
+              "improvement_percent": -64.1068970964964
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.03518076426967336,
+              "mean_control": 0.02301527152357887,
+              "control_minus_full": -0.012165492746094488,
+              "ci95": [
+                -0.013641957244355013,
+                -0.010670651447887874
+              ],
+              "improvement_percent": -52.858349872740305
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.014609202567790561,
+            "mean_control": 0.023152204324528233,
+            "control_minus_full": 0.008543001756737672,
+            "ci95": [
+              0.007443393509954394,
+              0.009518485347216766
+            ],
+            "improvement_percent": 36.899301841798824
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.014609202567790561,
+            "mean_control": 0.011205458483462948,
+            "control_minus_full": -0.003403744084327609,
+            "ci95": [
+              -0.0039432253966693006,
+              -0.0029521503877286627
+            ],
+            "improvement_percent": -30.375768107577798
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.014609202567790561,
+            "mean_control": 0.013578450729003358,
+            "control_minus_full": -0.0010307518387872023,
+            "ci95": [
+              -0.0015839544804410856,
+              -0.0005923059811380107
+            ],
+            "improvement_percent": -7.59108575314511
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.014900909005349525,
+              "mean_control": 0.024408536825568004,
+              "control_minus_full": 0.00950762782021848,
+              "ci95": [
+                0.008130146180031909,
+                0.010805620262007092
+              ],
+              "improvement_percent": 38.952059634558736
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.014900909005349525,
+              "mean_control": 0.011318018756477448,
+              "control_minus_full": -0.0035828902488720775,
+              "ci95": [
+                -0.004144042115039465,
+                -0.0030142075392721366
+              ],
+              "improvement_percent": -31.65651450101674
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.014900909005349525,
+              "mean_control": 0.013683367609650138,
+              "control_minus_full": -0.0012175413956993873,
+              "ci95": [
+                -0.0016308651364212378,
+                -0.000827734355671004
+              ],
+              "improvement_percent": -8.897965986390084
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.014569155650142673,
+              "mean_control": 0.02161128095301865,
+              "control_minus_full": 0.007042125302875976,
+              "ci95": [
+                0.005147371272030768,
+                0.00896392320381507
+              ],
+              "improvement_percent": 32.585413692899756
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.014569155650142673,
+              "mean_control": 0.01074737467689096,
+              "control_minus_full": -0.0038217809732517143,
+              "ci95": [
+                -0.004425801134365877,
+                -0.0032414383027416305
+              ],
+              "improvement_percent": -35.56013527163355
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.014569155650142673,
+              "mean_control": 0.013483628202248304,
+              "control_minus_full": -0.0010855274478943707,
+              "ci95": [
+                -0.0019271048668960471,
+                -0.00027540045992063215
+              ],
+              "improvement_percent": -8.05070735867195
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.014357543047879482,
+              "mean_control": 0.023436795194998052,
+              "control_minus_full": 0.009079252147118567,
+              "ci95": [
+                0.007923844090054484,
+                0.010117036633832692
+              ],
+              "improvement_percent": 38.73930745043285
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.014357543047879482,
+              "mean_control": 0.011550982017020445,
+              "control_minus_full": -0.0028065610308590345,
+              "ci95": [
+                -0.0035799991987546785,
+                -0.002121150550975461
+              ],
+              "improvement_percent": -24.297163883759396
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.014357543047879482,
+              "mean_control": 0.013568356375111631,
+              "control_minus_full": -0.0007891866727678498,
+              "ci95": [
+                -0.0016633084331827302,
+                -5.045185997898938e-05
+              ],
+              "improvement_percent": -5.816376360923502
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 1820.9884586339185,
+        "aeon_no_retrieval": 1644.5641025661141,
+        "mmac": 226.2902412263025,
+        "pid": 210.71062455525362
+      }
+    },
+    "T6_sensor_noise_x4": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.421871386320052,
+            "mean_control": 0.5572374107731193,
+            "control_minus_full": 0.13536602445306728,
+            "ci95": [
+              0.07311596065460049,
+              0.19373889715657977
+            ],
+            "improvement_percent": 24.292343233965305
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.421871386320052,
+            "mean_control": 0.3425320600872436,
+            "control_minus_full": -0.07933932623280841,
+            "ci95": [
+              -0.13251254948385857,
+              -0.030872652290557658
+            ],
+            "improvement_percent": -23.162598622914462
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.421871386320052,
+            "mean_control": 0.29970077428304664,
+            "control_minus_full": -0.12217061203700537,
+            "ci95": [
+              -0.17915140784632083,
+              -0.07398827254266437
+            ],
+            "improvement_percent": -40.76419633191327
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.4088069890843907,
+              "mean_control": 0.5212884974736592,
+              "control_minus_full": 0.11248150838926856,
+              "ci95": [
+                0.006098487797010437,
+                0.2108303060959127
+              ],
+              "improvement_percent": 21.577592625655864
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.4088069890843907,
+              "mean_control": 0.36380740977336984,
+              "control_minus_full": -0.04499957931102079,
+              "ci95": [
+                -0.1133797370185711,
+                0.020643084224610295
+              ],
+              "improvement_percent": -12.369066187808771
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.4088069890843907,
+              "mean_control": 0.3172973234256503,
+              "control_minus_full": -0.0915096656587404,
+              "ci95": [
+                -0.1681979406369054,
+                -0.025497043348284638
+              ],
+              "improvement_percent": -28.84035221941704
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.41559508239469733,
+              "mean_control": 0.49631199101741325,
+              "control_minus_full": 0.08071690862271588,
+              "ci95": [
+                0.02960219587816972,
+                0.13166766205352656
+              ],
+              "improvement_percent": 16.26334041562254
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.41559508239469733,
+              "mean_control": 0.2970135189370823,
+              "control_minus_full": -0.1185815634576151,
+              "ci95": [
+                -0.16351761338395499,
+                -0.07031001399152167
+              ],
+              "improvement_percent": -39.924635040849694
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.41559508239469733,
+              "mean_control": 0.26613189783587565,
+              "control_minus_full": -0.14946318455882174,
+              "ci95": [
+                -0.19940390313588582,
+                -0.09487744457559838
+              ],
+              "improvement_percent": -56.16131917076552
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.4412120874810679,
+              "mean_control": 0.6541117438282853,
+              "control_minus_full": 0.21289965634721747,
+              "ci95": [
+                0.13105939702438182,
+                0.2949376454368745
+              ],
+              "improvement_percent": 32.547903069464994
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.4412120874810679,
+              "mean_control": 0.36677525155127855,
+              "control_minus_full": -0.0744368359297894,
+              "ci95": [
+                -0.14445939690647266,
+                -0.010677035976102655
+              ],
+              "improvement_percent": -20.294945096474823
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.4412120874810679,
+              "mean_control": 0.315673101587614,
+              "control_minus_full": -0.1255389858934539,
+              "ci95": [
+                -0.20414366034810708,
+                -0.05857517955165315
+              ],
+              "improvement_percent": -39.768667416413045
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.08534461470624691,
+            "mean_control": 0.08686790382321077,
+            "control_minus_full": 0.0015232891169638697,
+            "ci95": [
+              0.0012502555613314625,
+              0.0017872332870368618
+            ],
+            "improvement_percent": 1.7535695578242474
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.08534461470624691,
+            "mean_control": 0.02372411685032632,
+            "control_minus_full": -0.06162049785592059,
+            "ci95": [
+              -0.09815001789031441,
+              -0.030507412212694037
+            ],
+            "improvement_percent": -259.7377944337389
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.08534461470624691,
+            "mean_control": 0.022258389525522546,
+            "control_minus_full": -0.06308622518072435,
+            "ci95": [
+              -0.09977351048368276,
+              -0.032051653019283206
+            ],
+            "improvement_percent": -283.4267281933701
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02907891139144538,
+              "mean_control": 0.03132624853162671,
+              "control_minus_full": 0.002247337140181326,
+              "ci95": [
+                0.0017660319170593284,
+                0.0026868026866367248
+              ],
+              "improvement_percent": 7.173974687433237
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02907891139144538,
+              "mean_control": 0.018374459248225845,
+              "control_minus_full": -0.010704452143219535,
+              "ci95": [
+                -0.011567447042183654,
+                -0.009812849471547232
+              ],
+              "improvement_percent": -58.25723630072601
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02907891139144538,
+              "mean_control": 0.021139322862210458,
+              "control_minus_full": -0.00793958852923492,
+              "ci95": [
+                -0.008750915453718653,
+                -0.007113184651978012
+              ],
+              "improvement_percent": -37.55838624059271
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.09875729186252566,
+              "mean_control": 0.09975181683715144,
+              "control_minus_full": 0.00099452497462576,
+              "ci95": [
+                0.0004115636098670344,
+                0.001576867126209618
+              ],
+              "improvement_percent": 0.9969993591689252
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.09875729186252566,
+              "mean_control": 0.02448993375824394,
+              "control_minus_full": -0.07426735810428173,
+              "ci95": [
+                -0.12489668013473647,
+                -0.03147247923395505
+              ],
+              "improvement_percent": -303.25667205727507
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.09875729186252566,
+              "mean_control": 0.019675788852086235,
+              "control_minus_full": -0.07908150301043944,
+              "ci95": [
+                -0.13030888123333778,
+                -0.03589822292682808
+              ],
+              "improvement_percent": -401.9229094443874
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.12819764086476965,
+              "mean_control": 0.12952564610085418,
+              "control_minus_full": 0.0013280052360845167,
+              "ci95": [
+                0.000903664908794832,
+                0.0017717243313315608
+              ],
+              "improvement_percent": 1.0252836222491994
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.12819764086476965,
+              "mean_control": 0.028307957544509172,
+              "control_minus_full": -0.0998896833202605,
+              "ci95": [
+                -0.1640944516410509,
+                -0.04802727048169292
+              ],
+              "improvement_percent": -352.8678576093028
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.12819764086476965,
+              "mean_control": 0.02596005686227094,
+              "control_minus_full": -0.10223758400249874,
+              "ci95": [
+                -0.16650782348604648,
+                -0.05034469115371341
+              ],
+              "improvement_percent": -393.8265025570332
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.02105017911773071,
+            "mean_control": 0.02612780950761026,
+            "control_minus_full": 0.00507763038987955,
+            "ci95": [
+              0.004167518537771493,
+              0.005957444290122858
+            ],
+            "improvement_percent": 19.433815867344663
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.02105017911773071,
+            "mean_control": 0.014839981970420168,
+            "control_minus_full": -0.006210197147310547,
+            "ci95": [
+              -0.007231997208993352,
+              -0.005312433531922097
+            ],
+            "improvement_percent": -41.847740514031884
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.02105017911773071,
+            "mean_control": 0.013823809506639492,
+            "control_minus_full": -0.007226369611091224,
+            "ci95": [
+              -0.008390222379234858,
+              -0.006218251141894415
+            ],
+            "improvement_percent": -52.274806070066596
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.020982156441074064,
+              "mean_control": 0.02847328024167848,
+              "control_minus_full": 0.007491123800604418,
+              "ci95": [
+                0.0058867730568644226,
+                0.00895600895545575
+              ],
+              "improvement_percent": 26.309310824114664
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.020982156441074064,
+              "mean_control": 0.014829715384163245,
+              "control_minus_full": -0.006152441056910819,
+              "ci95": [
+                -0.007462937427495364,
+                -0.005026970806996255
+              ],
+              "improvement_percent": -41.48724973832642
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.020982156441074064,
+              "mean_control": 0.014249654012502565,
+              "control_minus_full": -0.006732502428571499,
+              "ci95": [
+                -0.008283233245170012,
+                -0.005450585786752374
+              ],
+              "improvement_percent": -47.24677822117252
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.020793500449843117,
+              "mean_control": 0.024108583698595646,
+              "control_minus_full": 0.0033150832487525315,
+              "ci95": [
+                0.0013718786995567745,
+                0.005256223754032066
+              ],
+              "improvement_percent": 13.750634588068479
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.020793500449843117,
+              "mean_control": 0.01466879285689306,
+              "control_minus_full": -0.006124707592950053,
+              "ci95": [
+                -0.0071161430610607946,
+                -0.0052231832385554455
+              ],
+              "improvement_percent": -41.75331707729428
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.020793500449843117,
+              "mean_control": 0.013284622904401336,
+              "control_minus_full": -0.007508877545441777,
+              "ci95": [
+                -0.008513179412788915,
+                -0.006532812308632205
+              ],
+              "improvement_percent": -56.52307633778605
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.02137488046227497,
+              "mean_control": 0.02580156458255667,
+              "control_minus_full": 0.0044266841202817,
+              "ci95": [
+                0.0030122163626494277,
+                0.005905747771105165
+              ],
+              "improvement_percent": 17.156649962515804
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.02137488046227497,
+              "mean_control": 0.015021437670204196,
+              "control_minus_full": -0.006353442792070771,
+              "ci95": [
+                -0.007467709441277584,
+                -0.005311990748978323
+              ],
+              "improvement_percent": -42.295837000163814
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.02137488046227497,
+              "mean_control": 0.013937151603014572,
+              "control_minus_full": -0.007437728859260395,
+              "ci95": [
+                -0.008744471744638847,
+                -0.0062196178943881835
+              ],
+              "improvement_percent": -53.36620473907762
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 2101.090444964231,
+        "aeon_no_retrieval": 1961.1633531212647,
+        "mmac": 286.2406353288962,
+        "pid": 267.52524674722935
+      }
+    },
+    "T7_phase_96": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.2459304592391745,
+            "mean_control": 0.5050115075731001,
+            "control_minus_full": 0.25908104833392553,
+            "ci95": [
+              0.19541953952960955,
+              0.32959673758642827
+            ],
+            "improvement_percent": 51.302008855000935
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.2459304592391745,
+            "mean_control": 0.3107227459645985,
+            "control_minus_full": 0.06479228672542396,
+            "ci95": [
+              0.03030777951233411,
+              0.10138990955276095
+            ],
+            "improvement_percent": 20.852122210842566
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.2459304592391745,
+            "mean_control": 0.49482778437965597,
+            "control_minus_full": 0.2488973251404815,
+            "ci95": [
+              0.17286883091548697,
+              0.33820005530980846
+            ],
+            "improvement_percent": 50.29978772362454
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.3155455319589484,
+              "mean_control": 0.5883687687511681,
+              "control_minus_full": 0.2728232367922197,
+              "ci95": [
+                0.19819672775064318,
+                0.3456583085593403
+              ],
+              "improvement_percent": 46.36942871242061
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.3155455319589484,
+              "mean_control": 0.3871146083776241,
+              "control_minus_full": 0.07156907641867567,
+              "ci95": [
+                -0.036864912854738176,
+                0.17654609902762958
+              ],
+              "improvement_percent": 18.487826310305806
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.3155455319589484,
+              "mean_control": 0.7893227121297268,
+              "control_minus_full": 0.4737771801707784,
+              "ci95": [
+                0.29227617896854924,
+                0.6913795671885516
+              ],
+              "improvement_percent": 60.023254480090536
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.21448343291037056,
+              "mean_control": 0.3642043832998133,
+              "control_minus_full": 0.14972095038944278,
+              "ci95": [
+                0.06835573672339314,
+                0.24378417521627577
+              ],
+              "improvement_percent": 41.10904680303982
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.21448343291037056,
+              "mean_control": 0.18409141659265016,
+              "control_minus_full": -0.03039201631772039,
+              "ci95": [
+                -0.05435875399885775,
+                -0.010277429050677937
+              ],
+              "improvement_percent": -16.509197919298206
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.21448343291037056,
+              "mean_control": 0.24690930349687662,
+              "control_minus_full": 0.03242587058650605,
+              "ci95": [
+                -0.009209188532187168,
+                0.08269541931894642
+              ],
+              "improvement_percent": 13.132705056987142
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.20776241284820451,
+              "mean_control": 0.5624613706683188,
+              "control_minus_full": 0.3546989578201143,
+              "ci95": [
+                0.2701634882323378,
+                0.4474141944169332
+              ],
+              "improvement_percent": 63.061923239041214
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.20776241284820451,
+              "mean_control": 0.36096221292352115,
+              "control_minus_full": 0.1531998000753166,
+              "ci95": [
+                0.12220978407864105,
+                0.18224968929668509
+              ],
+              "improvement_percent": 42.44206030169031
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.20776241284820451,
+              "mean_control": 0.4482513375123645,
+              "control_minus_full": 0.24048892466416,
+              "ci95": [
+                0.1714027349432543,
+                0.3096128029885892
+              ],
+              "improvement_percent": 53.650464491369505
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.03458261780623069,
+            "mean_control": 0.038187537767293486,
+            "control_minus_full": 0.003604919961062792,
+            "ci95": [
+              0.0031842465494380107,
+              0.003989488939332212
+            ],
+            "improvement_percent": 9.440042935028664
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.03458261780623069,
+            "mean_control": 0.024112263668229966,
+            "control_minus_full": -0.010470354138000727,
+            "ci95": [
+              -0.011904318045483305,
+              -0.008871020495461058
+            ],
+            "improvement_percent": -43.423356189474404
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.03458261780623069,
+            "mean_control": 0.04877945813361602,
+            "control_minus_full": 0.014196840327385324,
+            "ci95": [
+              0.011756936152052571,
+              0.01657237315606552
+            ],
+            "improvement_percent": 29.10413700885634
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.03678573425458249,
+              "mean_control": 0.04059380535439764,
+              "control_minus_full": 0.003808071099815153,
+              "ci95": [
+                0.0029605925434708588,
+                0.004586508630751028
+              ],
+              "improvement_percent": 9.380916784148235
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.03678573425458249,
+              "mean_control": 0.02687070324085087,
+              "control_minus_full": -0.009915031013731621,
+              "ci95": [
+                -0.012657156514570238,
+                -0.007085704246879131
+              ],
+              "improvement_percent": -36.899038052186306
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.03678573425458249,
+              "mean_control": 0.08869920781894658,
+              "control_minus_full": 0.051913473564364085,
+              "ci95": [
+                0.046176664699073576,
+                0.057654298667209065
+              ],
+              "improvement_percent": 58.52755040420453
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021596606572538847,
+              "mean_control": 0.02385702490015989,
+              "control_minus_full": 0.0022604183276210407,
+              "ci95": [
+                0.0018399758830955734,
+                0.002710650513409401
+              ],
+              "improvement_percent": 9.474854207851758
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021596606572538847,
+              "mean_control": 0.017749692940265092,
+              "control_minus_full": -0.0038469136322737546,
+              "ci95": [
+                -0.004697369466702214,
+                -0.003075077428034166
+              ],
+              "improvement_percent": -21.673127784351973
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021596606572538847,
+              "mean_control": 0.01996840077197088,
+              "control_minus_full": -0.001628205800567965,
+              "ci95": [
+                -0.0028757697769328473,
+                -0.0003791503791605781
+              ],
+              "improvement_percent": -8.153911868863503
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.04536551259157075,
+              "mean_control": 0.05011178304732293,
+              "control_minus_full": 0.004746270455752185,
+              "ci95": [
+                0.004170788780288077,
+                0.005258908187813303
+              ],
+              "improvement_percent": 9.471366148097458
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.04536551259157075,
+              "mean_control": 0.027716394823573944,
+              "control_minus_full": -0.017649117767996807,
+              "ci95": [
+                -0.020780749335523846,
+                -0.014429366941731414
+              ],
+              "improvement_percent": -63.67753771852571
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.04536551259157075,
+              "mean_control": 0.037670765809930604,
+              "control_minus_full": -0.0076947467816401525,
+              "ci95": [
+                -0.011058956504391159,
+                -0.004629925406467716
+              ],
+              "improvement_percent": -20.426308348665682
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.01212937246994622,
+            "mean_control": 0.021742492366113662,
+            "control_minus_full": 0.009613119896167446,
+            "ci95": [
+              0.008491324131834701,
+              0.010638637171552558
+            ],
+            "improvement_percent": 44.21351395367068
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.01212937246994622,
+            "mean_control": 0.01284645842757336,
+            "control_minus_full": 0.0007170859576271411,
+            "ci95": [
+              -0.0005290678563825551,
+              0.0019076019021245858
+            ],
+            "improvement_percent": 5.581973908762304
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.01212937246994622,
+            "mean_control": 0.01869971649721914,
+            "control_minus_full": 0.006570344027272919,
+            "ci95": [
+              0.005151859523040411,
+              0.008087186169976229
+            ],
+            "improvement_percent": 35.13606224056928
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01466716275586849,
+              "mean_control": 0.024822019022042237,
+              "control_minus_full": 0.01015485626617374,
+              "ci95": [
+                0.007894913449255624,
+                0.01223068968200274
+              ],
+              "improvement_percent": 40.9106779636101
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01466716275586849,
+              "mean_control": 0.016065840910004008,
+              "control_minus_full": 0.0013986781541355184,
+              "ci95": [
+                -0.002024490772684771,
+                0.004579783473610454
+              ],
+              "improvement_percent": 8.70591313564283
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01466716275586849,
+              "mean_control": 0.02496317446121511,
+              "control_minus_full": 0.010296011705346619,
+              "ci95": [
+                0.00660654775398406,
+                0.014242743111828762
+              ],
+              "improvement_percent": 41.24480130258822
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.010769624584005547,
+              "mean_control": 0.01679740679099499,
+              "control_minus_full": 0.006027782206989444,
+              "ci95": [
+                0.004906602354921532,
+                0.007228401369091735
+              ],
+              "improvement_percent": 35.88519514941383
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.010769624584005547,
+              "mean_control": 0.009353000079143378,
+              "control_minus_full": -0.0014166245048621677,
+              "ci95": [
+                -0.0017321895294950893,
+                -0.0011230473077850653
+              ],
+              "improvement_percent": -15.146204350207956
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.010769624584005547,
+              "mean_control": 0.013835733434644254,
+              "control_minus_full": 0.003066108850638706,
+              "ci95": [
+                0.002266138393783972,
+                0.00392908961075976
+              ],
+              "improvement_percent": 22.160797366630835
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01095133006996462,
+              "mean_control": 0.023608051285303775,
+              "control_minus_full": 0.012656721215339155,
+              "ci95": [
+                0.011122103414101534,
+                0.014023755167502138
+              ],
+              "improvement_percent": 53.61188461674546
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01095133006996462,
+              "mean_control": 0.013120534293572694,
+              "control_minus_full": 0.002169204223608073,
+              "ci95": [
+                0.0015776287020423346,
+                0.002805498297745415
+              ],
+              "improvement_percent": 16.532895498552165
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01095133006996462,
+              "mean_control": 0.017300241595798054,
+              "control_minus_full": 0.006348911525833434,
+              "ci95": [
+                0.005467703074311562,
+                0.007222384989451031
+              ],
+              "improvement_percent": 36.69839805806805
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 1166.5440757850672,
+        "aeon_no_retrieval": 1196.0297403018355,
+        "mmac": 156.70775303280814,
+        "pid": 142.7833328913645
+      }
+    },
+    "T7_phase_64": {
+      "loss": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.3061480388228462,
+            "mean_control": 0.6468757648883593,
+            "control_minus_full": 0.34072772606551305,
+            "ci95": [
+              0.26828366716004615,
+              0.41551948225551
+            ],
+            "improvement_percent": 52.67282290662371
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.3061480388228462,
+            "mean_control": 0.552733992682606,
+            "control_minus_full": 0.24658595385975984,
+            "ci95": [
+              0.1616601409147357,
+              0.3294990921299627
+            ],
+            "improvement_percent": 44.61204795149189
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.3061480388228462,
+            "mean_control": 0.8368389454862658,
+            "control_minus_full": 0.5306909066634197,
+            "ci95": [
+              0.4359062382090123,
+              0.6192546396340733
+            ],
+            "improvement_percent": 63.41613395574565
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.2978712141988996,
+              "mean_control": 0.6072944082711288,
+              "control_minus_full": 0.30942319407222924,
+              "ci95": [
+                0.16947737884181016,
+                0.4393524537656848
+              ],
+              "improvement_percent": 50.951102110936304
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.2978712141988996,
+              "mean_control": 1.0003274708362069,
+              "control_minus_full": 0.7024562566373073,
+              "ci95": [
+                0.47954956842538016,
+                0.9064592681294702
+              ],
+              "improvement_percent": 70.22262980042933
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.2978712141988996,
+              "mean_control": 1.3958872078346927,
+              "control_minus_full": 1.098015993635793,
+              "ci95": [
+                0.8683244482500461,
+                1.3028501252723068
+              ],
+              "improvement_percent": 78.66079633604788
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.20661606470813432,
+              "mean_control": 0.3051123532507539,
+              "control_minus_full": 0.09849628854261956,
+              "ci95": [
+                0.05172972407742929,
+                0.1412301996738578
+              ],
+              "improvement_percent": 32.28197334300367
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.20661606470813432,
+              "mean_control": 0.2046439297112225,
+              "control_minus_full": -0.0019721349969117953,
+              "ci95": [
+                -0.024979905378985513,
+                0.019646420785582635
+              ],
+              "improvement_percent": -0.9636909336596096
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.20661606470813432,
+              "mean_control": 0.27865361811510636,
+              "control_minus_full": 0.07203755340697207,
+              "ci95": [
+                0.03291348043067854,
+                0.11117816074388046
+              ],
+              "improvement_percent": 25.85200719597862
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.41395683756150453,
+              "mean_control": 1.0282205331431948,
+              "control_minus_full": 0.6142636955816904,
+              "ci95": [
+                0.4594433004204792,
+                0.7997927688497046
+              ],
+              "improvement_percent": 59.74046187386778
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.41395683756150453,
+              "mean_control": 0.4532305775003886,
+              "control_minus_full": 0.0392737399388841,
+              "ci95": [
+                -0.028528522867652246,
+                0.10809058891546675
+              ],
+              "improvement_percent": 8.66528912402218
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.41395683756150453,
+              "mean_control": 0.8359760105089984,
+              "control_minus_full": 0.42201917294749397,
+              "ci95": [
+                0.28080738718658826,
+                0.5676884889928336
+              ],
+              "improvement_percent": 50.4822109297778
+            }
+          }
+        }
+      },
+      "overall": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.046319593246921545,
+            "mean_control": 0.052756026072960226,
+            "control_minus_full": 0.006436432826038681,
+            "ci95": [
+              0.0053961414575172655,
+              0.007524697913908534
+            ],
+            "improvement_percent": 12.200374639926935
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.046319593246921545,
+            "mean_control": 0.050210587063070036,
+            "control_minus_full": 0.003890993816148494,
+            "ci95": [
+              -0.0003877299292042633,
+              0.008470216445982151
+            ],
+            "improvement_percent": 7.749349377773609
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.046319593246921545,
+            "mean_control": 0.11084543117564619,
+            "control_minus_full": 0.06452583792872464,
+            "ci95": [
+              0.05991667498741144,
+              0.06958424815324728
+            ],
+            "improvement_percent": 58.21244704842791
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.05297419573966833,
+              "mean_control": 0.058801762234946674,
+              "control_minus_full": 0.005827566495278345,
+              "ci95": [
+                0.003994736266530535,
+                0.007374617572367216
+              ],
+              "improvement_percent": 9.910530354505166
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.05297419573966833,
+              "mean_control": 0.08892058942443928,
+              "control_minus_full": 0.03594639368477096,
+              "ci95": [
+                0.022168931330233007,
+                0.04850683216302964
+              ],
+              "improvement_percent": 40.42527598775826
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.05297419573966833,
+              "mean_control": 0.16545368048831297,
+              "control_minus_full": 0.11247948474864464,
+              "ci95": [
+                0.10411755711656519,
+                0.12113059391705037
+              ],
+              "improvement_percent": 67.98246156669194
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.021748616232419665,
+              "mean_control": 0.0241701715735658,
+              "control_minus_full": 0.00242155534114613,
+              "ci95": [
+                0.001516777957669676,
+                0.0033226828141784655
+              ],
+              "improvement_percent": 10.018775968452427
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.021748616232419665,
+              "mean_control": 0.018673716038659707,
+              "control_minus_full": -0.0030749001937599636,
+              "ci95": [
+                -0.0044023646616928565,
+                -0.001726242323522058
+              ],
+              "improvement_percent": -16.46646113389578
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.021748616232419665,
+              "mean_control": 0.025533907746747263,
+              "control_minus_full": 0.0037852915143275915,
+              "ci95": [
+                0.0013734098718102081,
+                0.00626510936832646
+              ],
+              "improvement_percent": 14.824567989636432
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.06423596776867664,
+              "mean_control": 0.07529614441036821,
+              "control_minus_full": 0.01106017664169157,
+              "ci95": [
+                0.00867260933990148,
+                0.013810497981734058
+              ],
+              "improvement_percent": 14.688901707121932
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.06423596776867664,
+              "mean_control": 0.04303745572611113,
+              "control_minus_full": -0.021198512042565513,
+              "ci95": [
+                -0.02904334427002748,
+                -0.012910153516212986
+              ],
+              "improvement_percent": -49.25596015125082
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.06423596776867664,
+              "mean_control": 0.14154870529187832,
+              "control_minus_full": 0.0773127375232017,
+              "ci95": [
+                0.06971345550243858,
+                0.08658148540680338
+              ],
+              "improvement_percent": 54.619176744697285
+            }
+          }
+        }
+      },
+      "final_phase": {
+        "pooled": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.014865640227594876,
+            "mean_control": 0.027738505879672238,
+            "control_minus_full": 0.012872865652077358,
+            "ci95": [
+              0.010792282915034533,
+              0.015049395827817072
+            ],
+            "improvement_percent": 46.407927333645794
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.014865640227594876,
+            "mean_control": 0.01871579779069284,
+            "control_minus_full": 0.003850157563097964,
+            "ci95": [
+              0.0016764193917272992,
+              0.00597229236180284
+            ],
+            "improvement_percent": 20.57169887255677
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.014865640227594876,
+            "mean_control": 0.03787845947316408,
+            "control_minus_full": 0.02301281924556921,
+            "ci95": [
+              0.020590382693209022,
+              0.02513389814932484
+            ],
+            "improvement_percent": 60.754369543125705
+          }
+        },
+        "by_family": {
+          "variable_delay": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01421636966960986,
+              "mean_control": 0.02587150266016655,
+              "control_minus_full": 0.01165513299055669,
+              "ci95": [
+                0.007989472533061072,
+                0.014749235144734432
+              ],
+              "improvement_percent": 45.0500813333185
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01421636966960986,
+              "mean_control": 0.028819484286192094,
+              "control_minus_full": 0.014603114616582234,
+              "ci95": [
+                0.009514413740592918,
+                0.01938054131148075
+              ],
+              "improvement_percent": 50.67097825750766
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01421636966960986,
+              "mean_control": 0.06346395089065127,
+              "control_minus_full": 0.049247581221041406,
+              "ci95": [
+                0.04196788803234025,
+                0.05574633891533184
+              ],
+              "improvement_percent": 77.59929933435008
+            }
+          },
+          "sensor_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.010834805744006538,
+              "mean_control": 0.0156779164262988,
+              "control_minus_full": 0.0048431106822922594,
+              "ci95": [
+                0.003033555915339353,
+                0.0066453656283569276
+              ],
+              "improvement_percent": 30.891290338607885
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.010834805744006538,
+              "mean_control": 0.010014720950495272,
+              "control_minus_full": -0.0008200847935112665,
+              "ci95": [
+                -0.00166441834640012,
+                -3.785461152171488e-05
+              ],
+              "improvement_percent": -8.188793253103169
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.010834805744006538,
+              "mean_control": 0.014075967747951956,
+              "control_minus_full": 0.0032411620039454183,
+              "ci95": [
+                0.0016239718431537299,
+                0.00490497356092248
+              ],
+              "improvement_percent": 23.026210786942197
+            }
+          },
+          "delay_dropout": {
+            "aeon_no_retrieval": {
+              "control": "aeon_no_retrieval",
+              "mean_full": 0.01954574526916823,
+              "mean_control": 0.041666098552551364,
+              "control_minus_full": 0.022120353283383132,
+              "ci95": [
+                0.017345218679802946,
+                0.027620995963468117
+              ],
+              "improvement_percent": 53.08957174256149
+            },
+            "mmac": {
+              "control": "mmac",
+              "mean_full": 0.01954574526916823,
+              "mean_control": 0.017313188135391153,
+              "control_minus_full": -0.002232557133777078,
+              "ci95": [
+                -0.004125357290709229,
+                -0.0005303040011621113
+              ],
+              "improvement_percent": -12.895124319785706
+            },
+            "pid": {
+              "control": "pid",
+              "mean_full": 0.01954574526916823,
+              "mean_control": 0.03609545978088903,
+              "control_minus_full": 0.016549714511720798,
+              "ci95": [
+                0.011646480583413398,
+                0.021478269212976013
+              ],
+              "improvement_percent": 45.84985095683184
+            }
+          }
+        }
+      },
+      "recalls_per_run": 1.0,
+      "us_per_decision": {
+        "aeon_integrated": 922.475071744581,
+        "aeon_no_retrieval": 937.277036193033,
+        "mmac": 138.1908615788537,
+        "pid": 132.04286889655728
+      }
+    }
+  },
+  "wall_seconds": 126.59745536703849,
+  "ended_at": "2026-10-31T12:06:50.319689+00:00"
+}

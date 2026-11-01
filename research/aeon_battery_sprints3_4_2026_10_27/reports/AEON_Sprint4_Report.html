@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Devin artifact kit" />
+    <title>Artifact</title>
+    <script>
+      // A network that blocks the kit's host (or hands back a block page for it) leaves the page blank; say so instead. Styled like the
+      // ds error alert card (ChatAlertCard variant="error", no bar), values hardcoded: the kit CSS is what failed.
+      function artifactKitFailed() {
+        function show() {
+          if (document.getElementById("artifact-kit-notice")) return;
+          document.documentElement.style.colorScheme = "light";
+          var notice = document.createElement("div");
+          notice.id = "artifact-kit-notice";
+          notice.setAttribute("role", "alert");
+          notice.style.cssText =
+            "box-sizing:border-box;display:flex;align-items:flex-start;gap:6px;max-width:960px;margin:0 auto;padding:32px 24px 0;" +
+            "font:13px/18px Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-0.005em;color:rgb(25 25 25)";
+          var ns = "http://www.w3.org/2000/svg";
+          var icon = document.createElementNS(ns, "svg");
+          icon.setAttribute("viewBox", "0 0 24 24");
+          icon.setAttribute("fill", "rgb(245 59 58)");
+          icon.setAttribute("aria-hidden", "true");
+          icon.style.cssText = "width:14px;height:14px;flex-shrink:0;margin-top:2px";
+          var path = document.createElementNS(ns, "path");
+          path.setAttribute("fill-rule", "evenodd");
+          path.setAttribute("clip-rule", "evenodd");
+          path.setAttribute(
+            "d",
+            "M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15ZM12 7C11.5858 7 11.25 7.33579 11.25 7.75V12.25C11.25 12.6642 11.5858 13 12 13C12.4142 13 12.75 12.6642 12.75 12.25V7.75C12.75 7.33579 12.4142 7 12 7Z"
+          );
+          icon.appendChild(path);
+          var text = document.createElement("span");
+          text.textContent = "This page could not load Devin's artifact kit.";
+          notice.appendChild(icon);
+          notice.appendChild(text);
+          document.body.prepend(notice);
+        }
+        if (document.body) show();
+        else document.addEventListener("DOMContentLoaded", show);
+      }
+    </script>
+    <link rel="stylesheet" href="https://static.devin.ai/artifact-kit/b0ca2d9c3a0700c2/ds-kit.css" onerror="artifactKitFailed()" />
+    <style>
+.flex {
+    display: flex
+}
+.flex-col {
+    flex-direction: column
+}
+.gap-6 {
+    gap: 1.5rem
+}
+.whitespace-normal {
+    white-space: normal
+}
+.text-green {
+    color: rgb(var(--text-green))
+}
+.text-red {
+    color: rgb(var(--text-red))
+}
+.text-secondary {
+    color: rgb(var(--text-secondary))
+}
+@keyframes enter {
+    from {
+        opacity: var(--tw-enter-opacity, 1);
+        transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1)) rotate(var(--tw-enter-rotate, 0))
+    }
+}
+@keyframes exit {
+    to {
+        opacity: var(--tw-exit-opacity, 1);
+        transform: translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate(var(--tw-exit-rotate, 0))
+    }
+}
+    </style>
+  </head>
+  <body>
+    <script src="https://static.devin.ai/artifact-kit/b0ca2d9c3a0700c2/ds-kit.js" onerror="artifactKitFailed()"></script>
+    <script>
+      if (!window.DS) artifactKitFailed();
+    </script>
+    <main data-artifact-shell class="mx-auto flex max-w-[960px] flex-col gap-6 px-6 py-8">
+<script type="application/json" id="artifact-data">{"rows": [{"test": "T1_replication", "v4_vs_noret": {"pct": -3, "sig": false}, "h_vs_v3h": {"pct": 61, "sig": true}, "h_vs_v2": {"pct": -21, "sig": true}, "h_vs_mmac": {"pct": -10, "sig": true}, "h_vs_mmac_overall": {"pct": -32, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 421}, {"test": "T2_cue_noise_x4", "v4_vs_noret": {"pct": -3, "sig": false}, "h_vs_v3h": {"pct": 61, "sig": true}, "h_vs_v2": {"pct": -21, "sig": true}, "h_vs_mmac": {"pct": -10, "sig": true}, "h_vs_mmac_overall": {"pct": -32, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 421}, {"test": "T2_cue_noise_x10", "v4_vs_noret": {"pct": -3, "sig": false}, "h_vs_v3h": {"pct": 61, "sig": true}, "h_vs_v2": {"pct": 60, "sig": true}, "h_vs_mmac": {"pct": -10, "sig": true}, "h_vs_mmac_overall": {"pct": -32, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 421}, {"test": "T3_no_cue", "v4_vs_noret": {"pct": -3, "sig": false}, "h_vs_v3h": {"pct": 61, "sig": true}, "h_vs_v2": {"pct": 56, "sig": true}, "h_vs_mmac": {"pct": -10, "sig": true}, "h_vs_mmac_overall": {"pct": -32, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 421}, {"test": "T4_capacity_ABCDA", "v4_vs_noret": {"pct": -9, "sig": false}, "h_vs_v3h": {"pct": 20, "sig": true}, "h_vs_v2": {"pct": 23, "sig": true}, "h_vs_mmac": {"pct": -33, "sig": true}, "h_vs_mmac_overall": {"pct": -55, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 486}, {"test": "T4_revisits_ABCBA", "v4_vs_noret": {"pct": 4, "sig": false}, "h_vs_v3h": {"pct": 22, "sig": true}, "h_vs_v2": {"pct": 31, "sig": true}, "h_vs_mmac": {"pct": -30, "sig": true}, "h_vs_mmac_overall": {"pct": -50, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 491}, {"test": "T5_changed_physics_on_return", "v4_vs_noret": {"pct": -1, "sig": false}, "h_vs_v3h": {"pct": 11, "sig": false}, "h_vs_v2": {"pct": -170, "sig": true}, "h_vs_mmac": {"pct": -6, "sig": true}, "h_vs_mmac_overall": {"pct": -19, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 363}, {"test": "T6_sensor_noise_x2", "v4_vs_noret": {"pct": 1, "sig": false}, "h_vs_v3h": {"pct": 55, "sig": true}, "h_vs_v2": {"pct": -1, "sig": false}, "h_vs_mmac": {"pct": -8, "sig": true}, "h_vs_mmac_overall": {"pct": -36, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 441}, {"test": "T6_sensor_noise_x4", "v4_vs_noret": {"pct": 2, "sig": false}, "h_vs_v3h": {"pct": 46, "sig": true}, "h_vs_v2": {"pct": -7, "sig": false}, "h_vs_mmac": {"pct": -25, "sig": true}, "h_vs_mmac_overall": {"pct": -203, "sig": true}, "loc": {"aeon_v4_hybrid": 7, "aeon_v4": 7, "aeon_v3_hybrid": 0, "aeon_v2": 6, "aeon_v2_no_retrieval": 6, "mmac": 0, "pid": 0}, "fb": 460}, {"test": "T7_phase_96", "v4_vs_noret": {"pct": -1, "sig": false}, "h_vs_v3h": {"pct": 22, "sig": true}, "h_vs_v2": {"pct": -76, "sig": true}, "h_vs_mmac": {"pct": -35, "sig": true}, "h_vs_mmac_overall": {"pct": -39, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 140}, {"test": "T7_phase_64", "v4_vs_noret": {"pct": 1, "sig": false}, "h_vs_v3h": {"pct": 26, "sig": true}, "h_vs_v2": {"pct": -75, "sig": true}, "h_vs_mmac": {"pct": -14, "sig": false}, "h_vs_mmac_overall": {"pct": -16, "sig": true}, "loc": {"aeon_v4_hybrid": 0, "aeon_v4": 0, "aeon_v3_hybrid": 0, "aeon_v2": 0, "aeon_v2_no_retrieval": 0, "mmac": 0, "pid": 0}, "fb": 38}]}</script>
+<script>var data = JSON.parse(document.getElementById("artifact-data").textContent);</script>
+<div id="root"></div>
+<script>DSRun("\nconst rows = data.rows;\nconst gates = [\n  [\"1. Memory works without a cue (T3)\",\"v4 vs no memory: -3%, interval includes zero\",\"Failed\"],\n  [\"2. Robust to a very noisy cue (T2 x10)\",\"v4 hybrid vs v2: +60%, interval above zero\",\"Met\"],\n  [\"3. No loss of control at 4x sensor noise (T6 x4)\",\"v4 hybrid 7 of 30 runs (v3 hybrid 0, v2 6, MMAC 0)\",\"Failed\"],\n  [\"4. Beats v3 hybrid in at least 8 of 11 tests\",\"Beats it in 10 of 11 (T5 within noise)\",\"Met\"],\n  [\"5. Beats MMAC over a whole run in 6 or more tests\",\"0 of 11\",\"Failed (expected)\"],\n];\nconst cell = (x) => React.createElement(TableCell, { className: x.sig ? (x.pct>0?\"text-green\":\"text-red\") : \"text-secondary\",}, (x.pct>0?\"+\":\"\")+x.pct+\"%\"+(x.sig?\"\":\" (n.s.)\"));\nconst badge = (s) => React.createElement(Badge, { variant: s.startsWith(\"Met\")?\"success\":s.includes(\"expected\")?\"default\":\"destructive\",}, s);\nfunction Report() {\n  return (\n    React.createElement(PageLayout, { title: \"AEON sprint 4: second attempt at C to D\"        , subtitle: \"Better change detector, model-error fallback with hysteresis, tuned on 5 seeds; tested on 10 fresh seeds (2,310 runs).\"                 ,}\n      , React.createElement('div', { className: \"flex flex-col gap-6\"  ,}\n        , React.createElement(BannerCard, { variant: \"warning\", title: \"Verdict: D still not reached\"    ,}, \"v4 hybrid is clearly better than v3, but mostly because it hands control to MMAC 63% of the time, and it is still worse than MMAC alone in every test. AEON's own cue-free memory still gives no measurable gain: the detector catches half of the situation changes and raises about one false alarm per change.\"\n\n        )\n        , React.createElement(StatsRow, null\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Runs\"), React.createElement(StatCardValue, null, \"2,310 / 2,310\"  ))\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Gates met\" ), React.createElement(StatCardValue, null, \"2 of 5\"  ))\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Switches detected (v4)\"  ), React.createElement(StatCardValue, null, \"523 / 1,050\"  ))\n          , React.createElement(StatCard, null, React.createElement(StatCardCaption, null, \"Time on MMAC (hybrid)\"   ), React.createElement(StatCardValue, null, \"63%\"))\n        )\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"Pre-registered gates\" )\n        , React.createElement(Table, null, React.createElement(TableHeader, null, React.createElement(TableRow, null, React.createElement(TableHead, null, \"Gate\"), React.createElement(TableHead, null, \"Result\"), React.createElement(TableHead, null, \"Outcome\")))\n          , React.createElement(TableBody, null, gates.map(g => React.createElement(TableRow, { key: g[0],}, React.createElement(TableCell, { className: \"whitespace-normal\",}, g[0]), React.createElement(TableCell, { className: \"whitespace-normal\",}, g[1]), React.createElement(TableCell, null, badge(g[2]))))))\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"Per test: return error, % less error for the first controller\"          )\n        , React.createElement(Table, null, React.createElement(TableHeader, null, React.createElement(TableRow, null, React.createElement(TableHead, null, \"Test\"), React.createElement(TableHead, null, \"v4 vs no memory\"   ), React.createElement(TableHead, null, \"Hybrid vs v3 hybrid\"   ), React.createElement(TableHead, null, \"Hybrid vs v2 (cue)\"   ), React.createElement(TableHead, null, \"Hybrid vs MMAC\"  ), React.createElement(TableHead, null, \"Hybrid vs MMAC, whole run\"    ), React.createElement(TableHead, null, \"Loss of control (hybrid / MMAC)\"     )))\n          , React.createElement(TableBody, null, rows.map(r => React.createElement(TableRow, { key: r.test,}, React.createElement(TableCell, null, r.test.replaceAll(\"_\",\" \")), cell(r.v4_vs_noret), cell(r.h_vs_v3h), cell(r.h_vs_v2), cell(r.h_vs_mmac), cell(r.h_vs_mmac_overall), React.createElement(TableCell, null, r.loc.aeon_v4_hybrid, \" / \"  , r.loc.mmac)))))\n        , React.createElement(Text, { size: 12, className: \"text-secondary\",}, \"n.s. = 95% interval includes zero. Loss of control = any error above 1.0 after warmup, out of 30 runs.\"                   )\n        , React.createElement(Text, { size: 18, weight: \"semibold\",}, \"What two sprints of outside code taught us\"       )\n        , React.createElement(Table, null, React.createElement(TableHeader, null, React.createElement(TableRow, null, React.createElement(TableHead, null, \"Finding\"), React.createElement(TableHead, null, \"Implication\")))\n          , React.createElement(TableBody, null\n            , React.createElement(TableRow, null, React.createElement(TableCell, { className: \"whitespace-normal\",}, \"AEON's residuals barely change when the situation changes, so a statistical detector cannot tell a real switch from noise.\"                  ), React.createElement(TableCell, { className: \"whitespace-normal\",}, \"Cue-free recall needs active probing (small test actions) or a richer signal, not a better off-the-shelf detector.\"                ))\n            , React.createElement(TableRow, null, React.createElement(TableCell, { className: \"whitespace-normal\",}, \"The best hybrid works by deferring to MMAC.\"       ), React.createElement(TableCell, { className: \"whitespace-normal\",}, \"For real systems, use the classical controller as primary and AEON as an add-on.\"             ))\n            , React.createElement(TableRow, null, React.createElement(TableCell, { className: \"whitespace-normal\",}, \"With a clean mode signal, sprint-2 memory beats MMAC on return (14%, earlier battery).\"             ), React.createElement(TableCell, { className: \"whitespace-normal\",}, \"AEON's real, proven value is cue-driven recall: tool IDs, recipe IDs, payload sensors.\"            ))\n            , React.createElement(TableRow, null, React.createElement(TableCell, { className: \"whitespace-normal\",}, \"v4 is 12x slower than MMAC per decision (about 3 ms vs 0.26 ms, 8 processes in parallel).\"                 ), React.createElement(TableCell, { className: \"whitespace-normal\",}, \"Speed work is needed before any embedded pilot.\"       ))\n          ))\n      )\n      , React.createElement(Footnote, null, \"Simulated 1-D tracking world; 11 tests x 3 families x 10 fresh seeds (37003–37117) x 7 controllers. v4 settings tuned on seeds 19001–19021 only, then frozen with file hashes before evaluation. Paired seed clusters, 10,000 bootstrap resamples. Linux, NumPy 2.2.6. Not evidence of consciousness.\"                                           )\n    )\n  );\n}\nrender(React.createElement(Report, null ));\n")</script>
+    </main>
+  </body>
+</html>

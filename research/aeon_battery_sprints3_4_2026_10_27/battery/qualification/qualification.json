@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_sprint_world_variable_delay_integrated": true,
+    "exact_sprint_world_variable_delay_no_retrieval": true,
+    "exact_sprint_world_sensor_dropout_integrated": true,
+    "exact_sprint_world_sensor_dropout_no_retrieval": true,
+    "exact_sprint_world_delay_dropout_integrated": true,
+    "exact_sprint_world_delay_dropout_no_retrieval": true,
+    "min_cue_distance": 0.608276253029822,
+    "all_tests_run_on_qualification_seed": true
+  }
+}

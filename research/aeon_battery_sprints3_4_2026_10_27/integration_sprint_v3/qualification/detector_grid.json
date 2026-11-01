@@ -1,0 +1,6035 @@
+{
+  "seed": 19001,
+  "grid": [
+    {
+      "hazard_lambda": 100,
+      "lag": 4,
+      "threshold": 0.3,
+      "hits": 14,
+      "switches": 105,
+      "false_alarms": 19,
+      "score": -5,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            616
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            616
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            616
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            616
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            799
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            615
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 4,
+      "threshold": 0.5,
+      "hits": 3,
+      "switches": 105,
+      "false_alarms": 7,
+      "score": -4,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 4,
+      "threshold": 0.7,
+      "hits": 0,
+      "switches": 105,
+      "false_alarms": 3,
+      "score": -3,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 8,
+      "threshold": 0.3,
+      "hits": 25,
+      "switches": 105,
+      "false_alarms": 23,
+      "score": 2,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 2,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401,
+            799
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            404,
+            648
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 3,
+          "declarations": [
+            300,
+            401,
+            765,
+            907
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            615
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            726
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            610,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            515
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 8,
+      "threshold": 0.5,
+      "hits": 20,
+      "switches": 105,
+      "false_alarms": 9,
+      "score": 11,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            401,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            401,
+            727
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            611,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 8,
+      "threshold": 0.7,
+      "hits": 9,
+      "switches": 105,
+      "false_alarms": 5,
+      "score": 4,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 16,
+      "threshold": 0.3,
+      "hits": 25,
+      "switches": 105,
+      "false_alarms": 25,
+      "score": 0,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            616
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            772
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 2,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401,
+            799
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            404,
+            648
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            772
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 3,
+          "declarations": [
+            300,
+            401,
+            765,
+            907
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            404
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            615
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 3,
+          "declarations": [
+            300,
+            401,
+            649,
+            726
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            610,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            515
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            601,
+            709
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 16,
+      "threshold": 0.5,
+      "hits": 21,
+      "switches": 105,
+      "false_alarms": 9,
+      "score": 12,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            401
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            401,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            401,
+            727
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            611,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            604
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 100,
+      "lag": 16,
+      "threshold": 0.7,
+      "hits": 17,
+      "switches": 105,
+      "false_alarms": 6,
+      "score": 11,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            408,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            408,
+            727
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            611,
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 4,
+      "threshold": 0.3,
+      "hits": 5,
+      "switches": 105,
+      "false_alarms": 15,
+      "score": -10,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 4,
+      "threshold": 0.5,
+      "hits": 3,
+      "switches": 105,
+      "false_alarms": 6,
+      "score": -3,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 4,
+      "threshold": 0.7,
+      "hits": 1,
+      "switches": 105,
+      "false_alarms": 2,
+      "score": -1,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 8,
+      "threshold": 0.3,
+      "hits": 23,
+      "switches": 105,
+      "false_alarms": 17,
+      "score": 6,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            727
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            611,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            604
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 8,
+      "threshold": 0.5,
+      "hits": 12,
+      "switches": 105,
+      "false_alarms": 7,
+      "score": 5,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 8,
+      "threshold": 0.7,
+      "hits": 10,
+      "switches": 105,
+      "false_alarms": 4,
+      "score": 6,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            618
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 16,
+      "threshold": 0.3,
+      "hits": 23,
+      "switches": 105,
+      "false_alarms": 17,
+      "score": 6,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            401
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            405
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            300,
+            401,
+            727
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 2,
+          "declarations": [
+            539,
+            611,
+            763
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            604
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            227
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 16,
+      "threshold": 0.5,
+      "hits": 20,
+      "switches": 105,
+      "false_alarms": 7,
+      "score": 13,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 1,
+          "declarations": [
+            408,
+            765
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            406
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            616
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            408
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            611,
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300,
+            601
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    },
+    {
+      "hazard_lambda": 250,
+      "lag": 16,
+      "threshold": 0.7,
+      "hits": 12,
+      "switches": 105,
+      "false_alarms": 4,
+      "score": 8,
+      "per_test_family": [
+        {
+          "test": "T1_replication",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T1_replication",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T1_replication",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T2_cue_noise_x10",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T3_no_cue",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_capacity_ABCDA",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "sensor_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            773
+          ]
+        },
+        {
+          "test": "T4_revisits_ABCBA",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 4,
+          "false_alarms": 0,
+          "declarations": [
+            769
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            407
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            618
+          ]
+        },
+        {
+          "test": "T5_changed_physics_on_return",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "variable_delay",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            612,
+            764
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x2",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T6_sensor_noise_x4",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 1,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_96",
+          "family": "delay_dropout",
+          "hits": 1,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": [
+            300
+          ]
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "variable_delay",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "sensor_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        },
+        {
+          "test": "T7_phase_64",
+          "family": "delay_dropout",
+          "hits": 0,
+          "switches": 3,
+          "false_alarms": 0,
+          "declarations": []
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "hazard_lambda": 250,
+    "lag": 16,
+    "threshold": 0.5,
+    "hits": 20,
+    "switches": 105,
+    "false_alarms": 7,
+    "score": 13,
+    "per_test_family": [
+      {
+        "test": "T1_replication",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T1_replication",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T1_replication",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          408
+        ]
+      },
+      {
+        "test": "T2_cue_noise_x4",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T2_cue_noise_x4",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T2_cue_noise_x4",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          408
+        ]
+      },
+      {
+        "test": "T2_cue_noise_x10",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T2_cue_noise_x10",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T2_cue_noise_x10",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          408
+        ]
+      },
+      {
+        "test": "T3_no_cue",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T3_no_cue",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T3_no_cue",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          408
+        ]
+      },
+      {
+        "test": "T4_capacity_ABCDA",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T4_capacity_ABCDA",
+        "family": "sensor_dropout",
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          773
+        ]
+      },
+      {
+        "test": "T4_capacity_ABCDA",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          408
+        ]
+      },
+      {
+        "test": "T4_revisits_ABCBA",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T4_revisits_ABCBA",
+        "family": "sensor_dropout",
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 0,
+        "declarations": [
+          773
+        ]
+      },
+      {
+        "test": "T4_revisits_ABCBA",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 4,
+        "false_alarms": 1,
+        "declarations": [
+          408,
+          765
+        ]
+      },
+      {
+        "test": "T5_changed_physics_on_return",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          406
+        ]
+      },
+      {
+        "test": "T5_changed_physics_on_return",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          616
+        ]
+      },
+      {
+        "test": "T5_changed_physics_on_return",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          408
+        ]
+      },
+      {
+        "test": "T6_sensor_noise_x2",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          611,
+          764
+        ]
+      },
+      {
+        "test": "T6_sensor_noise_x2",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T6_sensor_noise_x2",
+        "family": "delay_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          300
+        ]
+      },
+      {
+        "test": "T6_sensor_noise_x4",
+        "family": "variable_delay",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          300
+        ]
+      },
+      {
+        "test": "T6_sensor_noise_x4",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          300
+        ]
+      },
+      {
+        "test": "T6_sensor_noise_x4",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 1,
+        "declarations": [
+          300,
+          601
+        ]
+      },
+      {
+        "test": "T7_phase_96",
+        "family": "variable_delay",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          300
+        ]
+      },
+      {
+        "test": "T7_phase_96",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T7_phase_96",
+        "family": "delay_dropout",
+        "hits": 1,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": [
+          300
+        ]
+      },
+      {
+        "test": "T7_phase_64",
+        "family": "variable_delay",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T7_phase_64",
+        "family": "sensor_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      },
+      {
+        "test": "T7_phase_64",
+        "family": "delay_dropout",
+        "hits": 0,
+        "switches": 3,
+        "false_alarms": 0,
+        "declarations": []
+      }
+    ]
+  }
+}
