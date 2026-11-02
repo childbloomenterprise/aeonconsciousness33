@@ -1,0 +1,17 @@
+{
+ "files": {
+  "battery7/battery7.py": "ee480b2ab29956bebdf9bbc5adecee96f9c9abb0df97de998e7137b7a65e56e5",
+  "battery7/PROTOCOL.md": "49ffd45e0b2fca54c5bea3012fba67d1ff4274eeb68afc4db407ec3738a90fe0",
+  "battery6/battery6.py": "0fbde74cb37491c657374bd33ff1541ec6bd503cab00b9f2ab56667a68266501",
+  "battery3/battery3.py": "b541c92ba82b42a9ccf46aa9756dbbaa7fb9eee3dd145812bf9dbb4ec70ecaf8",
+  "battery/battery.py": "9b400a9693a99018c8f322b2ff47f1608009ed0e16a041f90febbbe7ae1db29e",
+  "integration_sprint_v7/sprint7.py": "81a03ca841ff37e13ea103b35bbf9b70b4d85f3627de83fda7bb1e2a7c6364fb",
+  "integration_sprint_v6/sprint6.py": "002a162c9c636672b654519b5ab7706ce826deec4b1b3524737fa22a9fa4c50c",
+  "baseline_benchmark/benchmark.py": "f4289fbab5c318fb02609316ddc405a28550d1939211f153a83d5039d4f35a82",
+  "developmental_v0_2/worlds.py": "95e1371cf87f7e4242f7a39b123cebc17b6d797c7c14f1b71280abab641e43ed",
+  "developmental_cases/common.py": "0e1f88b6bc1cae99460f01fd3e21ec1c10de94c69d3e5027c4c513989de2be83",
+  "integration_sprint_v7/qualification/guard_grid.json": "33b61eb1700f97e1310d7e8634c2cde360b6f1464195fa45ac0625deb1b75dfc",
+  "integration_sprint_v7/qualification/per_test_five_seeds.json": "e423e47ab014248f70ccef9bf4d8cf3d172998a0e60ae41d34c9a2b4d61259ae"
+ },
+ "frozen_at": "2026-11-02T14:43:52.944142+00:00"
+}
