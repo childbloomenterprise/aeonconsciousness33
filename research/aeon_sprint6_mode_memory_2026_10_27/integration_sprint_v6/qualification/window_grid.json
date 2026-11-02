@@ -1,0 +1,62 @@
+{
+  "qualification_seeds": [
+    19001,
+    19003,
+    19009,
+    19013,
+    19021
+  ],
+  "tests": [
+    "T1_replication",
+    "T2_cue_noise_x4",
+    "T2_cue_noise_x10",
+    "T3_no_cue",
+    "T4_capacity_ABCDA",
+    "T4_revisits_ABCBA",
+    "T5_changed_physics_on_return",
+    "T6_sensor_noise_x2",
+    "T6_sensor_noise_x4",
+    "T7_phase_96",
+    "T7_phase_64"
+  ],
+  "families": [
+    "variable_delay",
+    "sensor_dropout",
+    "delay_dropout"
+  ],
+  "objective": "mean over paired runs of cued return loss / MMAC return loss + cued whole-run mean error / MMAC whole-run mean error",
+  "grid": [
+    {
+      "window": 10,
+      "mean_objective": 2.086598907085416,
+      "mean_return_loss_ratio": 1.0282072923645054,
+      "mean_whole_run_error_ratio": 1.0583916147209111,
+      "runs": 165,
+      "loss_of_control_runs": 0
+    },
+    {
+      "window": 20,
+      "mean_objective": 2.0835422277078015,
+      "mean_return_loss_ratio": 1.0115047159039208,
+      "mean_whole_run_error_ratio": 1.0720375118038805,
+      "runs": 165,
+      "loss_of_control_runs": 0
+    },
+    {
+      "window": 40,
+      "mean_objective": 2.0764365706692036,
+      "mean_return_loss_ratio": 1.0026008059135059,
+      "mean_whole_run_error_ratio": 1.0738357647556978,
+      "runs": 165,
+      "loss_of_control_runs": 0
+    },
+    {
+      "window": 80,
+      "mean_objective": 2.0785217876899478,
+      "mean_return_loss_ratio": 1.0028203391315749,
+      "mean_whole_run_error_ratio": 1.0757014485583727,
+      "runs": 165,
+      "loss_of_control_runs": 0
+    }
+  ]
+}

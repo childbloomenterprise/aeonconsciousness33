@@ -1,0 +1,2869 @@
+{
+  "runs": 1650,
+  "analysis": {
+    "T1_replication": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.22919178373799443,
+          "control_minus_full": 0.02932039188232799,
+          "ci95": [
+            0.006690777218224153,
+            0.05156892446009571
+          ],
+          "improvement_percent": 12.792950691393996
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.049654426157116995,
+          "ci95": [
+            0.0383820176847733,
+            0.060867873936358445
+          ],
+          "improvement_percent": 19.899514428031313
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.2392926475447434,
+          "control_minus_full": 0.03942125568907694,
+          "ci95": [
+            0.014900439723488729,
+            0.06505625267365767
+          ],
+          "improvement_percent": 16.474077283007986
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.14444678483306161,
+          "ci95": [
+            0.10108332608026513,
+            0.1924642867435662
+          ],
+          "improvement_percent": 41.951542094637944
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.22919178373799443,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.020334034274788994,
+          "ci95": [
+            -0.000912942451314907,
+            0.04199524094470686
+          ],
+          "improvement_percent": 8.149070279271568
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.22919178373799443,
+          "mean_control": 0.2392926475447434,
+          "control_minus_full": 0.01010086380674895,
+          "ci95": [
+            -0.003190818239234337,
+            0.02343658649656736
+          ],
+          "improvement_percent": 4.221134209675319
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.22919178373799443,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.11512639295073361,
+          "ci95": [
+            0.08059822830867007,
+            0.1528999140493246
+          ],
+          "improvement_percent": 33.436048615815785
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.016236918221942388,
+          "control_minus_full": 0.00012730257792199288,
+          "ci95": [
+            6.850962626064763e-05,
+            0.0002071512015404692
+          ],
+          "improvement_percent": 0.7840316504763669
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": 7.396571446656348e-05,
+          "ci95": [
+            4.575188351275559e-05,
+            0.00010200902868307862
+          ],
+          "improvement_percent": 0.45704169446878673
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.024403883964054483,
+          "control_minus_full": 0.008294268320034087,
+          "ci95": [
+            0.007728330002386452,
+            0.008810588189881344
+          ],
+          "improvement_percent": 33.987492860771944
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.0039064513852511305,
+          "ci95": [
+            0.0031907393302824955,
+            0.004593628639535043
+          ],
+          "improvement_percent": 19.516578254550858
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016236918221942388,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": -5.333686345542939e-05,
+          "ci95": [
+            -0.00011467911179133821,
+            -1.8842746955397928e-06
+          ],
+          "improvement_percent": -0.3295739198509271
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016236918221942388,
+          "mean_control": 0.024403883964054483,
+          "control_minus_full": 0.008166965742112094,
+          "ci95": [
+            0.0075929961515732985,
+            0.008698160240440778
+          ],
+          "improvement_percent": 33.46584401950757
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016236918221942388,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.003779148807329138,
+          "ci95": [
+            0.0030053941438837255,
+            0.004495899197682854
+          ],
+          "improvement_percent": 18.88057629804349
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.01043759465287304,
+          "control_minus_full": 0.000424341926406642,
+          "ci95": [
+            0.00022836542086882442,
+            0.0006905040051348955
+          ],
+          "improvement_percent": 4.065514522446397
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": 0.0002465523815552123,
+          "ci95": [
+            0.000152506278375851,
+            0.0003400300956102642
+          ],
+          "improvement_percent": 2.4030903020023815
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.011741440886567997,
+          "control_minus_full": 0.0017281881601015972,
+          "ci95": [
+            0.0014815659691936294,
+            0.002013184655030449
+          ],
+          "improvement_percent": 14.718705964602814
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.0036785559263103674,
+          "ci95": [
+            0.003200634094188777,
+            0.0041417456849443925
+          ],
+          "improvement_percent": 26.866837096531714
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01043759465287304,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": -0.00017778954485142968,
+          "ci95": [
+            -0.00038226370597112453,
+            -6.28091565180031e-06
+          ],
+          "improvement_percent": -1.7328744842572616
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01043759465287304,
+          "mean_control": 0.011741440886567997,
+          "control_minus_full": 0.0013038462336949553,
+          "ci95": [
+            0.0011070391000880591,
+            0.0015119163223082793
+          ],
+          "improvement_percent": 11.104652710780433
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01043759465287304,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.0032542139999037255,
+          "ci95": [
+            0.002682454803539246,
+            0.0038025099520623967
+          ],
+          "improvement_percent": 23.767597710648367
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 122.47270615767371,
+        "cued_switch": 1079.2110361510115,
+        "mmac": 118.34974665766318,
+        "aeon_v2": 1078.5870932623866,
+        "pid": 106.95308546423298
+      }
+    },
+    "T2_cue_noise_x4": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.22919178373799443,
+          "control_minus_full": 0.02932039188232799,
+          "ci95": [
+            0.006690777218224153,
+            0.05156892446009571
+          ],
+          "improvement_percent": 12.792950691393996
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.049654426157116995,
+          "ci95": [
+            0.0383820176847733,
+            0.060867873936358445
+          ],
+          "improvement_percent": 19.899514428031313
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.2392926475447434,
+          "control_minus_full": 0.03942125568907694,
+          "ci95": [
+            0.014900439723488729,
+            0.06505625267365767
+          ],
+          "improvement_percent": 16.474077283007986
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.19987139185566646,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.14444678483306161,
+          "ci95": [
+            0.10108332608026513,
+            0.1924642867435662
+          ],
+          "improvement_percent": 41.951542094637944
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.22919178373799443,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.020334034274788994,
+          "ci95": [
+            -0.000912942451314907,
+            0.04199524094470686
+          ],
+          "improvement_percent": 8.149070279271568
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.22919178373799443,
+          "mean_control": 0.2392926475447434,
+          "control_minus_full": 0.01010086380674895,
+          "ci95": [
+            -0.003190818239234337,
+            0.02343658649656736
+          ],
+          "improvement_percent": 4.221134209675319
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.22919178373799443,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.11512639295073361,
+          "ci95": [
+            0.08059822830867007,
+            0.1528999140493246
+          ],
+          "improvement_percent": 33.436048615815785
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.016236918221942388,
+          "control_minus_full": 0.00012730257792199288,
+          "ci95": [
+            6.850962626064763e-05,
+            0.0002071512015404692
+          ],
+          "improvement_percent": 0.7840316504763669
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": 7.396571446656348e-05,
+          "ci95": [
+            4.575188351275559e-05,
+            0.00010200902868307862
+          ],
+          "improvement_percent": 0.45704169446878673
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.024403883964054483,
+          "control_minus_full": 0.008294268320034087,
+          "ci95": [
+            0.007728330002386452,
+            0.008810588189881344
+          ],
+          "improvement_percent": 33.987492860771944
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016109615644020397,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.0039064513852511305,
+          "ci95": [
+            0.0031907393302824955,
+            0.004593628639535043
+          ],
+          "improvement_percent": 19.516578254550858
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016236918221942388,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": -5.333686345542939e-05,
+          "ci95": [
+            -0.00011467911179133821,
+            -1.8842746955397928e-06
+          ],
+          "improvement_percent": -0.3295739198509271
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016236918221942388,
+          "mean_control": 0.024403883964054483,
+          "control_minus_full": 0.008166965742112094,
+          "ci95": [
+            0.0075929961515732985,
+            0.008698160240440778
+          ],
+          "improvement_percent": 33.46584401950757
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016236918221942388,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.003779148807329138,
+          "ci95": [
+            0.0030053941438837255,
+            0.004495899197682854
+          ],
+          "improvement_percent": 18.88057629804349
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.01043759465287304,
+          "control_minus_full": 0.000424341926406642,
+          "ci95": [
+            0.00022836542086882442,
+            0.0006905040051348955
+          ],
+          "improvement_percent": 4.065514522446397
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": 0.0002465523815552123,
+          "ci95": [
+            0.000152506278375851,
+            0.0003400300956102642
+          ],
+          "improvement_percent": 2.4030903020023815
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.011741440886567997,
+          "control_minus_full": 0.0017281881601015972,
+          "ci95": [
+            0.0014815659691936294,
+            0.002013184655030449
+          ],
+          "improvement_percent": 14.718705964602814
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.0100132527264664,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.0036785559263103674,
+          "ci95": [
+            0.003200634094188777,
+            0.0041417456849443925
+          ],
+          "improvement_percent": 26.866837096531714
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01043759465287304,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": -0.00017778954485142968,
+          "ci95": [
+            -0.00038226370597112453,
+            -6.28091565180031e-06
+          ],
+          "improvement_percent": -1.7328744842572616
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01043759465287304,
+          "mean_control": 0.011741440886567997,
+          "control_minus_full": 0.0013038462336949553,
+          "ci95": [
+            0.0011070391000880591,
+            0.0015119163223082793
+          ],
+          "improvement_percent": 11.104652710780433
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01043759465287304,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.0032542139999037255,
+          "ci95": [
+            0.002682454803539246,
+            0.0038025099520623967
+          ],
+          "improvement_percent": 23.767597710648367
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 127.94925139840211,
+        "cued_switch": 1100.6809310199767,
+        "mmac": 121.61618407541634,
+        "aeon_v2": 1056.7000715935944,
+        "pid": 109.37666002064361
+      }
+    },
+    "T2_cue_noise_x10": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.2583054715973424,
+          "mean_control": 0.6102044120415763,
+          "control_minus_full": 0.351898940444234,
+          "ci95": [
+            0.2683332398803417,
+            0.43499260043217863
+          ],
+          "improvement_percent": 57.66902590344714
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2583054715973424,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": -0.008779653584558933,
+          "ci95": [
+            -0.021696794475795218,
+            0.003233725270660762
+          ],
+          "improvement_percent": -3.5185351377584277
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.2583054715973424,
+          "mean_control": 0.6451097217486728,
+          "control_minus_full": 0.38680425015133035,
+          "ci95": [
+            0.2887484216196255,
+            0.5056906706463513
+          ],
+          "improvement_percent": 59.95945140972852
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2583054715973424,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.08601270509138567,
+          "ci95": [
+            0.039002768477143936,
+            0.13800356212486548
+          ],
+          "improvement_percent": 24.980587989446526
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6102044120415763,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": -0.36067859402879293,
+          "ci95": [
+            -0.4504061125832408,
+            -0.2694036571378832
+          ],
+          "improvement_percent": -144.545601293376
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6102044120415763,
+          "mean_control": 0.6451097217486728,
+          "control_minus_full": 0.03490530970709646,
+          "ci95": [
+            -0.030375943406743898,
+            0.10838919312742948
+          ],
+          "improvement_percent": 5.4107554932640065
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6102044120415763,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": -0.2658862353528483,
+          "ci95": [
+            -0.35900511664428264,
+            -0.17206501076036462
+          ],
+          "improvement_percent": -77.22108600534786
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.016361894829384965,
+          "mean_control": 0.029495943738775142,
+          "control_minus_full": 0.013134048909390178,
+          "ci95": [
+            0.0114927668806151,
+            0.014670249067469237
+          ],
+          "improvement_percent": 44.52832235411495
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016361894829384965,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": -0.00017831347089800748,
+          "ci95": [
+            -0.0002984642946013264,
+            -6.427778285995242e-05
+          ],
+          "improvement_percent": -1.1018171253206368
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016361894829384965,
+          "mean_control": 0.03016810276501234,
+          "control_minus_full": 0.013806207935627372,
+          "ci95": [
+            0.01294456318023227,
+            0.014773509704584839
+          ],
+          "improvement_percent": 45.76425651678439
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016361894829384965,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.0036541721998865602,
+          "ci95": [
+            0.002857774830375738,
+            0.004418591298720324
+          ],
+          "improvement_percent": 18.256194858573828
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.029495943738775142,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": -0.013312362380288188,
+          "ci95": [
+            -0.014806008545204221,
+            -0.011754417915840653
+          ],
+          "improvement_percent": -82.25844505862077
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.029495943738775142,
+          "mean_control": 0.03016810276501234,
+          "control_minus_full": 0.0006721590262371922,
+          "ci95": [
+            -0.0008426182765065261,
+            0.002228019768914928
+          ],
+          "improvement_percent": 2.2280454010410398
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.029495943738775142,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": -0.009479876709503617,
+          "ci95": [
+            -0.010554839673268037,
+            -0.008345677627975513
+          ],
+          "improvement_percent": -47.36133574912709
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.010370557140871772,
+          "mean_control": 0.0219796843128025,
+          "control_minus_full": 0.011609127171930727,
+          "ci95": [
+            0.010590705833343773,
+            0.01269188851028374
+          ],
+          "improvement_percent": 52.81753371302409
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010370557140871772,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": -0.0001107520328501619,
+          "ci95": [
+            -0.00022444014502175192,
+            -1.3495607458921237e-05
+          ],
+          "improvement_percent": -1.0794750161830131
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010370557140871772,
+          "mean_control": 0.022017203130666733,
+          "control_minus_full": 0.01164664598979496,
+          "ci95": [
+            0.010963969505040153,
+            0.012332881250052762
+          ],
+          "improvement_percent": 52.89793585804225
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010370557140871772,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.0033212515119049927,
+          "ci95": [
+            0.0028431006909043328,
+            0.003801908804488273
+          ],
+          "improvement_percent": 24.257215362350443
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.0219796843128025,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": -0.01171987920478089,
+          "ci95": [
+            -0.01280917495064756,
+            -0.010683441012848004
+          ],
+          "improvement_percent": -114.23101200643394
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.0219796843128025,
+          "mean_control": 0.022017203130666733,
+          "control_minus_full": 3.7518817864233554e-05,
+          "ci95": [
+            -0.0006569289132682025,
+            0.0007627261049660408
+          ],
+          "improvement_percent": 0.17040682979381402
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.0219796843128025,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": -0.008287875660025734,
+          "ci95": [
+            -0.009585011279305678,
+            -0.007115152184836544
+          ],
+          "improvement_percent": -60.53163515650587
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 130.55717225446037,
+        "cued_switch": 1118.0516957867644,
+        "mmac": 121.80496157472791,
+        "aeon_v2": 1078.712608513241,
+        "pid": 104.40111185643117
+      }
+    },
+    "T3_no_cue": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.6263430546417477,
+          "control_minus_full": 0.3768172366289642,
+          "ci95": [
+            0.27999425151420015,
+            0.48026396577868824
+          ],
+          "improvement_percent": 60.1614776178039
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.09479235867594463,
+          "ci95": [
+            0.04872222145076879,
+            0.14549337289806877
+          ],
+          "improvement_percent": 27.53045441502765
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.24952581801278342,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.6263430546417477,
+          "control_minus_full": 0.3768172366289642,
+          "ci95": [
+            0.27999425151420015,
+            0.48026396577868824
+          ],
+          "improvement_percent": 60.1614776178039
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.24952581801278342,
+          "mean_control": 0.34431817668872805,
+          "control_minus_full": 0.09479235867594463,
+          "ci95": [
+            0.04872222145076879,
+            0.14549337289806877
+          ],
+          "improvement_percent": 27.53045441502765
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.027197823964021473,
+          "control_minus_full": 0.011014242605534515,
+          "ci95": [
+            0.01034572610218568,
+            0.011622016509214876
+          ],
+          "improvement_percent": 40.496778786805365
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.0038324856707845677,
+          "ci95": [
+            0.0030913021593109054,
+            0.004541367108310221
+          ],
+          "improvement_percent": 19.1470465460569
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.016183581358486958,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.027197823964021473,
+          "control_minus_full": 0.011014242605534515,
+          "ci95": [
+            0.01034572610218568,
+            0.011622016509214876
+          ],
+          "improvement_percent": 40.496778786805365
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016183581358486958,
+          "mean_control": 0.020016067029271528,
+          "control_minus_full": 0.0038324856707845677,
+          "ci95": [
+            0.0030913021593109054,
+            0.004541367108310221
+          ],
+          "improvement_percent": 19.1470465460569
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.02105457421979131,
+          "control_minus_full": 0.010794769111769697,
+          "ci95": [
+            0.009809025460578968,
+            0.011760006900832568
+          ],
+          "improvement_percent": 51.27042228012671
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.003432003544755155,
+          "ci95": [
+            0.002957594030076593,
+            0.0038951467382999645
+          ],
+          "improvement_percent": 25.06610800508907
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.010259805108021611,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.02105457421979131,
+          "control_minus_full": 0.010794769111769697,
+          "ci95": [
+            0.009809025460578968,
+            0.011760006900832568
+          ],
+          "improvement_percent": 51.27042228012671
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010259805108021611,
+          "mean_control": 0.013691808652776766,
+          "control_minus_full": 0.003432003544755155,
+          "ci95": [
+            0.002957594030076593,
+            0.0038951467382999645
+          ],
+          "improvement_percent": 25.06610800508907
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 123.08626453179588,
+        "cued_switch": 1068.3454310765228,
+        "mmac": 115.3968579425661,
+        "aeon_v2": 1017.7968628896554,
+        "pid": 104.59200158644913
+      }
+    },
+    "T4_capacity_ABCDA": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.2089545856990878,
+          "mean_control": 0.23707216571740836,
+          "control_minus_full": 0.028117580018320536,
+          "ci95": [
+            0.01707063953777671,
+            0.04016660962631606
+          ],
+          "improvement_percent": 11.860346377329206
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2089545856990878,
+          "mean_control": 0.23707216571740836,
+          "control_minus_full": 0.028117580018320536,
+          "ci95": [
+            0.01707063953777671,
+            0.04016660962631606
+          ],
+          "improvement_percent": 11.860346377329206
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.2089545856990878,
+          "mean_control": 0.4672079231139838,
+          "control_minus_full": 0.2582533374148959,
+          "ci95": [
+            0.21093947538787547,
+            0.3122276006486867
+          ],
+          "improvement_percent": 55.27588994930002
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2089545856990878,
+          "mean_control": 0.2716009527493911,
+          "control_minus_full": 0.06264636705030327,
+          "ci95": [
+            0.04148163971528743,
+            0.08343267358801074
+          ],
+          "improvement_percent": 23.065591786825465
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.23707216571740836,
+          "mean_control": 0.23707216571740836,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.23707216571740836,
+          "mean_control": 0.4672079231139838,
+          "control_minus_full": 0.23013575739657538,
+          "ci95": [
+            0.18755976775169608,
+            0.27865880248535374
+          ],
+          "improvement_percent": 49.25767436962528
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.23707216571740836,
+          "mean_control": 0.2716009527493911,
+          "control_minus_full": 0.034528787031982734,
+          "ci95": [
+            0.009669312440917222,
+            0.05828459494749065
+          ],
+          "improvement_percent": 12.713058140058436
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.01679045650519999,
+          "mean_control": 0.01681601855320321,
+          "control_minus_full": 2.5562048003217527e-05,
+          "ci95": [
+            3.720445888331882e-06,
+            4.576140753679336e-05
+          ],
+          "improvement_percent": 0.15201010823307115
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01679045650519999,
+          "mean_control": 0.01681601855320321,
+          "control_minus_full": 2.5562048003217527e-05,
+          "ci95": [
+            3.720445888331882e-06,
+            4.576140753679336e-05
+          ],
+          "improvement_percent": 0.15201010823307115
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01679045650519999,
+          "mean_control": 0.028172866110702122,
+          "control_minus_full": 0.01138240960550213,
+          "ci95": [
+            0.010776860544071246,
+            0.011933208550457207
+          ],
+          "improvement_percent": 40.40202924607041
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01679045650519999,
+          "mean_control": 0.020229267960570653,
+          "control_minus_full": 0.003438811455370659,
+          "ci95": [
+            0.0029268146616491216,
+            0.003979352972142938
+          ],
+          "improvement_percent": 16.999188809369315
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01681601855320321,
+          "mean_control": 0.01681601855320321,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01681601855320321,
+          "mean_control": 0.028172866110702122,
+          "control_minus_full": 0.011356847557498913,
+          "ci95": [
+            0.010746471526855629,
+            0.011920358186638247
+          ],
+          "improvement_percent": 40.31129638309944
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01681601855320321,
+          "mean_control": 0.020229267960570653,
+          "control_minus_full": 0.003413249407367441,
+          "ci95": [
+            0.002895540722996182,
+            0.00396315137888149
+          ],
+          "improvement_percent": 16.87282710387883
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.010051977860194902,
+          "mean_control": 0.010162746734875513,
+          "control_minus_full": 0.00011076887468060951,
+          "ci95": [
+            1.6121932182767206e-05,
+            0.00019829943265943888
+          ],
+          "improvement_percent": 1.0899501637729867
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010051977860194902,
+          "mean_control": 0.010162746734875513,
+          "control_minus_full": 0.00011076887468060951,
+          "ci95": [
+            1.6121932182767206e-05,
+            0.00019829943265943888
+          ],
+          "improvement_percent": 1.0899501637729867
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010051977860194902,
+          "mean_control": 0.022201644231131745,
+          "control_minus_full": 0.01214966637093684,
+          "ci95": [
+            0.010118948955339675,
+            0.014237507198498792
+          ],
+          "improvement_percent": 54.724173779436796
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010051977860194902,
+          "mean_control": 0.013668311813338538,
+          "control_minus_full": 0.003616333953143632,
+          "ci95": [
+            0.0032269376997613865,
+            0.003989436598046592
+          ],
+          "improvement_percent": 26.457795245895316
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010162746734875513,
+          "mean_control": 0.010162746734875513,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010162746734875513,
+          "mean_control": 0.022201644231131745,
+          "control_minus_full": 0.01203889749625623,
+          "ci95": [
+            0.009984607396937788,
+            0.014136972176274206
+          ],
+          "improvement_percent": 54.22525183686604
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010162746734875513,
+          "mean_control": 0.013668311813338538,
+          "control_minus_full": 0.003505565078463023,
+          "ci95": [
+            0.003114301242718803,
+            0.003857975497066553
+          ],
+          "improvement_percent": 25.647388838774052
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 133.0634923053569,
+        "cued_switch": 1195.571120382131,
+        "mmac": 129.56753750283193,
+        "aeon_v2": 1148.2500876809354,
+        "pid": 113.16173018308795
+      }
+    },
+    "T4_revisits_ABCBA": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.2096395208231368,
+          "mean_control": 0.24564502910526947,
+          "control_minus_full": 0.03600550828213269,
+          "ci95": [
+            0.027419086238162603,
+            0.0442340984001551
+          ],
+          "improvement_percent": 14.65753588146202
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2096395208231368,
+          "mean_control": 0.24877756156392353,
+          "control_minus_full": 0.039138040740786736,
+          "ci95": [
+            0.029946177480925543,
+            0.047058269982220846
+          ],
+          "improvement_percent": 15.732142599496537
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.2096395208231368,
+          "mean_control": 0.4869982821983202,
+          "control_minus_full": 0.27735876137518345,
+          "ci95": [
+            0.23244527043533497,
+            0.32238863571707077
+          ],
+          "improvement_percent": 56.95271862627119
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2096395208231368,
+          "mean_control": 0.2716306309996462,
+          "control_minus_full": 0.06199111017650939,
+          "ci95": [
+            0.031966444559796525,
+            0.09797451875548849
+          ],
+          "improvement_percent": 22.82184080211121
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.24564502910526947,
+          "mean_control": 0.24877756156392353,
+          "control_minus_full": 0.00313253245865405,
+          "ci95": [
+            -0.0004825663397593826,
+            0.007389359029357295
+          ],
+          "improvement_percent": 1.2591700147559908
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.24564502910526947,
+          "mean_control": 0.4869982821983202,
+          "control_minus_full": 0.24135325309305075,
+          "ci95": [
+            0.19832913062895136,
+            0.28528179737689613
+          ],
+          "improvement_percent": 49.55936435824316
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.24564502910526947,
+          "mean_control": 0.2716306309996462,
+          "control_minus_full": 0.0259856018943767,
+          "ci95": [
+            -0.001456606714818512,
+            0.05857583406461211
+          ],
+          "improvement_percent": 9.566521197828587
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.016390116214022907,
+          "mean_control": 0.01696076589041941,
+          "control_minus_full": 0.0005706496763965037,
+          "ci95": [
+            0.0004087816878789011,
+            0.0007561175943733106
+          ],
+          "improvement_percent": 3.364527758259108
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016390116214022907,
+          "mean_control": 0.016506459424106387,
+          "control_minus_full": 0.0001163432100834784,
+          "ci95": [
+            6.515467926921162e-05,
+            0.00016325423729818896
+          ],
+          "improvement_percent": 0.7048344353821164
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016390116214022907,
+          "mean_control": 0.026322672203676,
+          "control_minus_full": 0.009932555989653093,
+          "ci95": [
+            0.009435079884526628,
+            0.010385137990978953
+          ],
+          "improvement_percent": 37.73384371008501
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016390116214022907,
+          "mean_control": 0.019558121995558862,
+          "control_minus_full": 0.00316800578153595,
+          "ci95": [
+            0.002605723408810173,
+            0.003693079208416645
+          ],
+          "improvement_percent": 16.197903777547356
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01696076589041941,
+          "mean_control": 0.016506459424106387,
+          "control_minus_full": -0.0004543064663130253,
+          "ci95": [
+            -0.000627798123806391,
+            -0.00030543247264880823
+          ],
+          "improvement_percent": -2.7522950539565523
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01696076589041941,
+          "mean_control": 0.026322672203676,
+          "control_minus_full": 0.009361906313256587,
+          "ci95": [
+            0.008787146940328665,
+            0.009816930983409905
+          ],
+          "improvement_percent": 35.56594194091428
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01696076589041941,
+          "mean_control": 0.019558121995558862,
+          "control_minus_full": 0.002597356105139447,
+          "ci95": [
+            0.00206883230013644,
+            0.0030906582286717855
+          ],
+          "improvement_percent": 13.28019175731309
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.010132569581417913,
+          "mean_control": 0.010320841514622791,
+          "control_minus_full": 0.0001882719332048784,
+          "ci95": [
+            9.61203116902804e-05,
+            0.00027948988047342394
+          ],
+          "improvement_percent": 1.8241916895839418
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010132569581417913,
+          "mean_control": 0.010307177985052988,
+          "control_minus_full": 0.0001746084036350742,
+          "ci95": [
+            5.560235415006283e-05,
+            0.00030159090333550006
+          ],
+          "improvement_percent": 1.6940466526170748
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010132569581417913,
+          "mean_control": 0.01982865139065574,
+          "control_minus_full": 0.009696081809237827,
+          "ci95": [
+            0.00904083035390534,
+            0.010415821889149647
+          ],
+          "improvement_percent": 48.899350834354316
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010132569581417913,
+          "mean_control": 0.014138855998284178,
+          "control_minus_full": 0.004006286416866266,
+          "ci95": [
+            0.0035162565827486646,
+            0.004502026363895945
+          ],
+          "improvement_percent": 28.335294010720876
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010320841514622791,
+          "mean_control": 0.010307177985052988,
+          "control_minus_full": -1.3663529569804198e-05,
+          "ci95": [
+            -7.07058815463942e-05,
+            4.394333069413786e-05
+          ],
+          "improvement_percent": -0.13256324465938632
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.010320841514622791,
+          "mean_control": 0.01982865139065574,
+          "control_minus_full": 0.009507809876032948,
+          "ci95": [
+            0.00885090651167916,
+            0.010236336253560357
+          ],
+          "improvement_percent": 47.94985644113703
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010320841514622791,
+          "mean_control": 0.014138855998284178,
+          "control_minus_full": 0.0038180144836613876,
+          "ci95": [
+            0.0032803678409087317,
+            0.004360022967078121
+          ],
+          "improvement_percent": 27.00370160163399
+        }
+      },
+      "loss_B_return": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.38840950807078667,
+          "mean_control": 0.6338830594377657,
+          "control_minus_full": 0.24547355136697915,
+          "ci95": [
+            0.14586370555878844,
+            0.35810717423538796
+          ],
+          "improvement_percent": 38.72536861684022
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.38840950807078667,
+          "mean_control": 0.4537399036730497,
+          "control_minus_full": 0.06533039560226309,
+          "ci95": [
+            0.04585422343616178,
+            0.085640225211465
+          ],
+          "improvement_percent": 14.398203700712656
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.38840950807078667,
+          "mean_control": 0.6641418460464019,
+          "control_minus_full": 0.2757323379756153,
+          "ci95": [
+            0.16691802175978016,
+            0.37982026102581945
+          ],
+          "improvement_percent": 41.51708548663723
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.38840950807078667,
+          "mean_control": 0.42343457131611667,
+          "control_minus_full": 0.03502506324533006,
+          "ci95": [
+            -0.012784449984658441,
+            0.08162910990004181
+          ],
+          "improvement_percent": 8.271658862540528
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.6338830594377657,
+          "mean_control": 0.4537399036730497,
+          "control_minus_full": -0.18014315576471604,
+          "ci95": [
+            -0.29129319328637165,
+            -0.07785766538603578
+          ],
+          "improvement_percent": -39.70185436776602
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.6338830594377657,
+          "mean_control": 0.6641418460464019,
+          "control_minus_full": 0.03025878660863617,
+          "ci95": [
+            -0.07007027108333357,
+            0.11536129626278215
+          ],
+          "improvement_percent": 4.556072891471149
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.6338830594377657,
+          "mean_control": 0.42343457131611667,
+          "control_minus_full": -0.21044848812164907,
+          "ci95": [
+            -0.30698720342779345,
+            -0.13215671175283256
+          ],
+          "improvement_percent": -49.70035570490487
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 137.87258451581388,
+        "cued_switch": 1187.436633469285,
+        "mmac": 127.67401989549398,
+        "aeon_v2": 1126.7932379754104,
+        "pid": 118.48245614399075
+      }
+    },
+    "T5_changed_physics_on_return": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.5117408508250174,
+          "mean_control": 0.2528307869407428,
+          "control_minus_full": -0.2589100638842747,
+          "ci95": [
+            -0.36728071744634344,
+            -0.15422162735582295
+          ],
+          "improvement_percent": -102.40448444475106
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.5117408508250174,
+          "mean_control": 0.6226631342892694,
+          "control_minus_full": 0.11092228346425208,
+          "ci95": [
+            0.0478427098469784,
+            0.18754032542887744
+          ],
+          "improvement_percent": 17.814172279664966
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.5117408508250174,
+          "mean_control": 0.24420155425451412,
+          "control_minus_full": -0.26753929657050335,
+          "ci95": [
+            -0.37837140780712425,
+            -0.16009081128619543
+          ],
+          "improvement_percent": -109.55675420954363
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.5117408508250174,
+          "mean_control": 0.6621655061785126,
+          "control_minus_full": 0.15042465535349506,
+          "ci95": [
+            0.07832589924279287,
+            0.22106208287665838
+          ],
+          "improvement_percent": 22.71707812471618
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2528307869407428,
+          "mean_control": 0.6226631342892694,
+          "control_minus_full": 0.3698323473485268,
+          "ci95": [
+            0.23732030492260076,
+            0.5124597538742725
+          ],
+          "improvement_percent": 59.395253545991125
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.2528307869407428,
+          "mean_control": 0.24420155425451412,
+          "control_minus_full": -0.008629232686228661,
+          "ci95": [
+            -0.032402716372857195,
+            0.01355599604122404
+          ],
+          "improvement_percent": -3.5336518281267852
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2528307869407428,
+          "mean_control": 0.6621655061785126,
+          "control_minus_full": 0.40933471923776976,
+          "ci95": [
+            0.25217754170180834,
+            0.5689002497396053
+          ],
+          "improvement_percent": 61.81758418678753
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.019316390618837533,
+          "mean_control": 0.018585461202571582,
+          "control_minus_full": -0.0007309294162659505,
+          "ci95": [
+            -0.0010238770082352578,
+            -0.00045057435814894293
+          ],
+          "improvement_percent": -3.9328021419496184
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.019316390618837533,
+          "mean_control": 0.01948241691088387,
+          "control_minus_full": 0.00016602629204634408,
+          "ci95": [
+            -1.1983906127489841e-05,
+            0.0003418113125073341
+          ],
+          "improvement_percent": 0.8521852951088082
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.019316390618837533,
+          "mean_control": 0.024058601096294728,
+          "control_minus_full": 0.004742210477457202,
+          "ci95": [
+            0.0041672119639140585,
+            0.005227280173253873
+          ],
+          "improvement_percent": 19.711081531617197
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.019316390618837533,
+          "mean_control": 0.02820636335460412,
+          "control_minus_full": 0.008889972735766588,
+          "ci95": [
+            0.00807190045531178,
+            0.009704105326203766
+          ],
+          "improvement_percent": 31.517614036250723
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.018585461202571582,
+          "mean_control": 0.01948241691088387,
+          "control_minus_full": 0.0008969557083122945,
+          "ci95": [
+            0.0006264171147489677,
+            0.0011865149103031608
+          ],
+          "improvement_percent": 4.603924207223024
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.018585461202571582,
+          "mean_control": 0.024058601096294728,
+          "control_minus_full": 0.005473139893723153,
+          "ci95": [
+            0.004967760803288538,
+            0.0059236828973852134
+          ],
+          "improvement_percent": 22.749202548464353
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.018585461202571582,
+          "mean_control": 0.02820636335460412,
+          "control_minus_full": 0.009620902152032538,
+          "ci95": [
+            0.008621405772785959,
+            0.010641850780133612
+          ],
+          "improvement_percent": 34.10897757743775
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.020702502642523515,
+          "mean_control": 0.018266071254970342,
+          "control_minus_full": -0.002436431387553172,
+          "ci95": [
+            -0.003412923360784193,
+            -0.0015019145271631478
+          ],
+          "improvement_percent": -13.33856281158544
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.020702502642523515,
+          "mean_control": 0.021255923616011328,
+          "control_minus_full": 0.0005534209734878139,
+          "ci95": [
+            -3.994635375829669e-05,
+            0.0011393710416911136
+          ],
+          "improvement_percent": 2.60360821522214
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.020702502642523515,
+          "mean_control": 0.0105904979940355,
+          "control_minus_full": -0.010112004648488012,
+          "ci95": [
+            -0.011909123759966406,
+            -0.008415649322293862
+          ],
+          "improvement_percent": -95.481861704549
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.020702502642523515,
+          "mean_control": 0.04099279640388541,
+          "control_minus_full": 0.020290293761361895,
+          "ci95": [
+            0.018298628273541145,
+            0.022265765582694753
+          ],
+          "improvement_percent": 49.49721790494567
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.018266071254970342,
+          "mean_control": 0.021255923616011328,
+          "control_minus_full": 0.002989852361040986,
+          "ci95": [
+            0.0020880570491632246,
+            0.003955049701010546
+          ],
+          "improvement_percent": 14.065972455738583
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.018266071254970342,
+          "mean_control": 0.0105904979940355,
+          "control_minus_full": -0.007675573260934839,
+          "ci95": [
+            -0.009089278371707392,
+            -0.006264989949280362
+          ],
+          "improvement_percent": -72.47603715384933
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.018266071254970342,
+          "mean_control": 0.04099279640388541,
+          "control_minus_full": 0.022726725148915067,
+          "ci95": [
+            0.020441152515503738,
+            0.024862779279920175
+          ],
+          "improvement_percent": 55.44077775274918
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 124.96596971989976,
+        "cued_switch": 1156.029239801784,
+        "mmac": 126.76365519534254,
+        "aeon_v2": 1108.9881235117598,
+        "pid": 112.05972572901779
+      }
+    },
+    "T6_sensor_noise_x2": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.21625664494076563,
+          "mean_control": 0.2819569986973809,
+          "control_minus_full": 0.06570035375661525,
+          "ci95": [
+            0.04155118109939572,
+            0.08917885235480416
+          ],
+          "improvement_percent": 23.301550967043095
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.21625664494076563,
+          "mean_control": 0.27351139830648397,
+          "control_minus_full": 0.05725475336571835,
+          "ci95": [
+            0.04214623907172814,
+            0.06920610523164672
+          ],
+          "improvement_percent": 20.933223887642654
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.21625664494076563,
+          "mean_control": 0.2821830595875652,
+          "control_minus_full": 0.06592641464679952,
+          "ci95": [
+            0.03448824450931014,
+            0.09480168963960184
+          ],
+          "improvement_percent": 23.362995192963265
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.21625664494076563,
+          "mean_control": 0.34112116508131984,
+          "control_minus_full": 0.12486452014055413,
+          "ci95": [
+            0.057513026136874056,
+            0.20222055120931454
+          ],
+          "improvement_percent": 36.6041550399805
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2819569986973809,
+          "mean_control": 0.27351139830648397,
+          "control_minus_full": -0.008445600390896915,
+          "ci95": [
+            -0.025278682274540453,
+            0.007202571549957521
+          ],
+          "improvement_percent": -3.0878422044529104
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.2819569986973809,
+          "mean_control": 0.2821830595875652,
+          "control_minus_full": 0.0002260608901842459,
+          "ci95": [
+            -0.01628128193560769,
+            0.017141295498322762
+          ],
+          "improvement_percent": 0.08011143210179
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2819569986973809,
+          "mean_control": 0.34112116508131984,
+          "control_minus_full": 0.05916416638393888,
+          "ci95": [
+            0.0017488412748112925,
+            0.12382902951894167
+          ],
+          "improvement_percent": 17.344032689919647
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.018026932405577883,
+          "mean_control": 0.01818286706879028,
+          "control_minus_full": 0.00015593466321240125,
+          "ci95": [
+            9.948728587003545e-05,
+            0.00021905819050812582
+          ],
+          "improvement_percent": 0.8575911742766521
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.018026932405577883,
+          "mean_control": 0.018115846518356845,
+          "control_minus_full": 8.891411277896326e-05,
+          "ci95": [
+            5.800521018657093e-05,
+            0.00011278695114515553
+          ],
+          "improvement_percent": 0.4908084901738724
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.018026932405577883,
+          "mean_control": 0.026832528846876768,
+          "control_minus_full": 0.008805596441298889,
+          "ci95": [
+            0.008288720175137617,
+            0.009373243375644174
+          ],
+          "improvement_percent": 32.816871236956985
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.018026932405577883,
+          "mean_control": 0.020435197522995385,
+          "control_minus_full": 0.0024082651174175016,
+          "ci95": [
+            0.0015089086358081837,
+            0.0033213044074288174
+          ],
+          "improvement_percent": 11.784887886243924
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01818286706879028,
+          "mean_control": 0.018115846518356845,
+          "control_minus_full": -6.7020550433438e-05,
+          "ci95": [
+            -0.0001299539130814128,
+            -1.2882059057952596e-05
+          ],
+          "improvement_percent": -0.36995538886645934
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01818286706879028,
+          "mean_control": 0.026832528846876768,
+          "control_minus_full": 0.008649661778086489,
+          "ci95": [
+            0.008166595151463805,
+            0.009176243874871585
+          ],
+          "improvement_percent": 32.235730845373844
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01818286706879028,
+          "mean_control": 0.020435197522995385,
+          "control_minus_full": 0.0022523304542051,
+          "ci95": [
+            0.001346931022842444,
+            0.0031587304573298808
+          ],
+          "improvement_percent": 11.021818857735974
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.011259550139650897,
+          "mean_control": 0.011779332350358903,
+          "control_minus_full": 0.0005197822107080063,
+          "ci95": [
+            0.0003316242862334533,
+            0.0007301939683604209
+          ],
+          "improvement_percent": 4.412662749023879
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.011259550139650897,
+          "mean_control": 0.011555930515580775,
+          "control_minus_full": 0.0002963803759298781,
+          "ci95": [
+            0.00019335070062190274,
+            0.0003759565038171883
+          ],
+          "improvement_percent": 2.5647469542177554
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.011259550139650897,
+          "mean_control": 0.014146531807096172,
+          "control_minus_full": 0.002886981667445274,
+          "ci95": [
+            0.0024041360243623076,
+            0.0033436534898894374
+          ],
+          "improvement_percent": 20.407699263766602
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.011259550139650897,
+          "mean_control": 0.013523118529567602,
+          "control_minus_full": 0.002263568389916705,
+          "ci95": [
+            0.0019727538159559836,
+            0.00253422159508116
+          ],
+          "improvement_percent": 16.738508835573164
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.011779332350358903,
+          "mean_control": 0.011555930515580775,
+          "control_minus_full": -0.0002234018347781282,
+          "ci95": [
+            -0.0004331797102713795,
+            -4.2940196859843245e-05
+          ],
+          "improvement_percent": -1.9332223785606635
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.011779332350358903,
+          "mean_control": 0.014146531807096172,
+          "control_minus_full": 0.0023671994567372673,
+          "ci95": [
+            0.0019914869592911446,
+            0.0026911607916434337
+          ],
+          "improvement_percent": 16.733426178350193
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.011779332350358903,
+          "mean_control": 0.013523118529567602,
+          "control_minus_full": 0.0017437861792086989,
+          "ci95": [
+            0.0013910763281197226,
+            0.0020693251180625865
+          ],
+          "improvement_percent": 12.89485243655892
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 223.00363089521449,
+        "cued_switch": 1699.0374578957317,
+        "mmac": 207.657739979873,
+        "aeon_v2": 1615.1337065518119,
+        "pid": 194.84266017065644
+      }
+    },
+    "T6_sensor_noise_x4": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.30175241245244055,
+          "mean_control": 0.40735775626361664,
+          "control_minus_full": 0.1056053438111761,
+          "ci95": [
+            0.03176416002429303,
+            0.18878332364153808
+          ],
+          "improvement_percent": 25.924471103683832
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.30175241245244055,
+          "mean_control": 0.3447280020423855,
+          "control_minus_full": 0.04297558958994492,
+          "ci95": [
+            0.02199788118327119,
+            0.06177954367549473
+          ],
+          "improvement_percent": 12.466521238579546
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.30175241245244055,
+          "mean_control": 0.4261227578337309,
+          "control_minus_full": 0.12437034538129026,
+          "ci95": [
+            0.06148419899064958,
+            0.1944629022808717
+          ],
+          "improvement_percent": 29.18650625785596
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.30175241245244055,
+          "mean_control": 0.3144758802290697,
+          "control_minus_full": 0.012723467776629093,
+          "ci95": [
+            -0.05655958535209522,
+            0.08162996033767367
+          ],
+          "improvement_percent": 4.045928027091012
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.40735775626361664,
+          "mean_control": 0.3447280020423855,
+          "control_minus_full": -0.06262975422123117,
+          "ci95": [
+            -0.14452841005375985,
+            0.00420094811572776
+          ],
+          "improvement_percent": -18.167875498994313
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.40735775626361664,
+          "mean_control": 0.4261227578337309,
+          "control_minus_full": 0.01876500157011416,
+          "ci95": [
+            -0.029914704427447068,
+            0.06630547994330432
+          ],
+          "improvement_percent": 4.403660969789389
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.40735775626361664,
+          "mean_control": 0.3144758802290697,
+          "control_minus_full": -0.092881876034547,
+          "ci95": [
+            -0.12895433718194016,
+            -0.055871788268150105
+          ],
+          "improvement_percent": -29.53545307414045
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.023602022151370153,
+          "mean_control": 0.023872545293659224,
+          "control_minus_full": 0.0002705231422890659,
+          "ci95": [
+            0.00013583032421939033,
+            0.0004324051562760063
+          ],
+          "improvement_percent": 1.1331977338877202
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.023602022151370153,
+          "mean_control": 0.023670831061972365,
+          "control_minus_full": 6.880891060220864e-05,
+          "ci95": [
+            2.881995214725612e-05,
+            0.00010294800862937075
+          ],
+          "improvement_percent": 0.29069072573776866
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.023602022151370153,
+          "mean_control": 0.04928042532998516,
+          "control_minus_full": 0.025678403178615,
+          "ci95": [
+            0.009552173282486925,
+            0.042294470342847716
+          ],
+          "improvement_percent": 52.106699580351886
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.023602022151370153,
+          "mean_control": 0.022030826153757822,
+          "control_minus_full": -0.0015711959976123298,
+          "ci95": [
+            -0.0020767937554934616,
+            -0.0010983299089456777
+          ],
+          "improvement_percent": -7.131806981030211
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.023872545293659224,
+          "mean_control": 0.023670831061972365,
+          "control_minus_full": -0.00020171423168685725,
+          "ci95": [
+            -0.0003518601559475119,
+            -7.631883636137837e-05
+          ],
+          "improvement_percent": -0.8521637079777692
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.023872545293659224,
+          "mean_control": 0.04928042532998516,
+          "control_minus_full": 0.025407880036325936,
+          "ci95": [
+            0.009301777380859794,
+            0.04207550144077206
+          ],
+          "improvement_percent": 51.55775313665214
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.023872545293659224,
+          "mean_control": 0.022030826153757822,
+          "control_minus_full": -0.0018417191399013957,
+          "ci95": [
+            -0.0023289735799198767,
+            -0.0013833884492669608
+          ],
+          "improvement_percent": -8.359737065907769
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.014922849888488876,
+          "mean_control": 0.015824593696119098,
+          "control_minus_full": 0.0009017438076302216,
+          "ci95": [
+            0.00045276774739797264,
+            0.0014413505209200238
+          ],
+          "improvement_percent": 5.6983694175438435
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.014922849888488876,
+          "mean_control": 0.015152212923829567,
+          "control_minus_full": 0.00022936303534069075,
+          "ci95": [
+            9.606650715751657e-05,
+            0.0003431600287645579
+          ],
+          "improvement_percent": 1.5137263216515149
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.014922849888488876,
+          "mean_control": 0.020248128977324274,
+          "control_minus_full": 0.005325279088835397,
+          "ci95": [
+            0.004579960087816072,
+            0.00610170523982631
+          ],
+          "improvement_percent": 26.300104542000582
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.014922849888488876,
+          "mean_control": 0.014158852751966813,
+          "control_minus_full": -0.0007639971365220648,
+          "ci95": [
+            -0.0014083723404761305,
+            -0.00010655046333915228
+          ],
+          "improvement_percent": -5.3958971811182765
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.015824593696119098,
+          "mean_control": 0.015152212923829567,
+          "control_minus_full": -0.0006723807722895308,
+          "ci95": [
+            -0.0011728671864917098,
+            -0.0002543961212046009
+          ],
+          "improvement_percent": -4.437508736641971
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.015824593696119098,
+          "mean_control": 0.020248128977324274,
+          "control_minus_full": 0.004423535281205175,
+          "ci95": [
+            0.00360176031485247,
+            0.0052614058450828035
+          ],
+          "improvement_percent": 21.84663721847613
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.015824593696119098,
+          "mean_control": 0.014158852751966813,
+          "control_minus_full": -0.0016657409441522865,
+          "ci95": [
+            -0.0024015487528665867,
+            -0.0008703126010268454
+          ],
+          "improvement_percent": -11.764660409515859
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 6,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 204.2650454515953,
+        "cued_switch": 1512.5352479824671,
+        "mmac": 194.65669039770245,
+        "aeon_v2": 1449.5170449410784,
+        "pid": 180.94371292944643
+      }
+    },
+    "T7_phase_96": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.28706300736904133,
+          "mean_control": 0.2227533821267484,
+          "control_minus_full": -0.064309625242293,
+          "ci95": [
+            -0.09233337328506841,
+            -0.03709852787633143
+          ],
+          "improvement_percent": -28.87032494334938
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.28706300736904133,
+          "mean_control": 0.32576858377222623,
+          "control_minus_full": 0.038705576403184824,
+          "ci95": [
+            0.02042970752216179,
+            0.05656547814679563
+          ],
+          "improvement_percent": 11.881310332320853
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.28706300736904133,
+          "mean_control": 0.22675845201881284,
+          "control_minus_full": -0.06030455535022857,
+          "ci95": [
+            -0.08724545666172435,
+            -0.03302682153555949
+          ],
+          "improvement_percent": -26.59418196470377
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.28706300736904133,
+          "mean_control": 0.41972135743342165,
+          "control_minus_full": 0.13265835006438023,
+          "ci95": [
+            0.0658829779016476,
+            0.20882682680014522
+          ],
+          "improvement_percent": 31.606290152967297
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2227533821267484,
+          "mean_control": 0.32576858377222623,
+          "control_minus_full": 0.10301520164547781,
+          "ci95": [
+            0.0873661063396183,
+            0.11779298368122769
+          ],
+          "improvement_percent": 31.622202623904613
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.2227533821267484,
+          "mean_control": 0.22675845201881284,
+          "control_minus_full": 0.004005069892064425,
+          "ci95": [
+            -0.0045674604835498405,
+            0.012673269627311776
+          ],
+          "improvement_percent": 1.7662273914853448
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2227533821267484,
+          "mean_control": 0.41972135743342165,
+          "control_minus_full": 0.19696797530667323,
+          "ci95": [
+            0.13354561552632635,
+            0.2770454150820185
+          ],
+          "improvement_percent": 46.92827082022322
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.02430226552246551,
+          "mean_control": 0.02408942770055641,
+          "control_minus_full": -0.00021283782190909713,
+          "ci95": [
+            -0.00031909000204914596,
+            -0.00010229193982712445
+          ],
+          "improvement_percent": -0.883532081188384
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02430226552246551,
+          "mean_control": 0.02445807856278614,
+          "control_minus_full": 0.00015581304032062684,
+          "ci95": [
+            8.4269198703164e-05,
+            0.0002290291093823947
+          ],
+          "improvement_percent": 0.6370616560112865
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02430226552246551,
+          "mean_control": 0.033408294762491464,
+          "control_minus_full": 0.009106029240025954,
+          "ci95": [
+            0.008417559345147142,
+            0.009930202699422177
+          ],
+          "improvement_percent": 27.256791478772442
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02430226552246551,
+          "mean_control": 0.0482836216307478,
+          "control_minus_full": 0.02398135610828229,
+          "ci95": [
+            0.021941006896724208,
+            0.026150167100480008
+          ],
+          "improvement_percent": 49.66768294988579
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02408942770055641,
+          "mean_control": 0.02445807856278614,
+          "control_minus_full": 0.00036865086222972397,
+          "ci95": [
+            0.0002765797188754986,
+            0.00046099088017617293
+          ],
+          "improvement_percent": 1.5072764660697415
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.02408942770055641,
+          "mean_control": 0.033408294762491464,
+          "control_minus_full": 0.009318867061935047,
+          "ci95": [
+            0.008683720312204565,
+            0.01010395735295612
+          ],
+          "improvement_percent": 27.89387224994683
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02408942770055641,
+          "mean_control": 0.0482836216307478,
+          "control_minus_full": 0.02419419393019139,
+          "ci95": [
+            0.022166188401139413,
+            0.026378593302004757
+          ],
+          "improvement_percent": 50.10849044261446
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.012571096916123422,
+          "mean_control": 0.012003529391032497,
+          "control_minus_full": -0.0005675675250909267,
+          "ci95": [
+            -0.0008509066721310546,
+            -0.0002727785062056692
+          ],
+          "improvement_percent": -4.728338696075011
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.012571096916123422,
+          "mean_control": 0.012986598356978426,
+          "control_minus_full": 0.0004155014408550029,
+          "ci95": [
+            0.00022471786320843681,
+            0.0006107442916863813
+          ],
+          "improvement_percent": 3.199463242287236
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.012571096916123422,
+          "mean_control": 0.01186719796705165,
+          "control_minus_full": -0.0007038989490717759,
+          "ci95": [
+            -0.0014699446065043324,
+            8.046002818874612e-05
+          ],
+          "improvement_percent": -5.931467150258186
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.012571096916123422,
+          "mean_control": 0.01959785149512248,
+          "control_minus_full": 0.0070267545789990575,
+          "ci95": [
+            0.00589191470905694,
+            0.008300864277324816
+          ],
+          "improvement_percent": 35.85471897645453
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.012003529391032497,
+          "mean_control": 0.012986598356978426,
+          "control_minus_full": 0.0009830689659459297,
+          "ci95": [
+            0.0007375459170013318,
+            0.0012293090138031256
+          ],
+          "improvement_percent": 7.569872717420815
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.012003529391032497,
+          "mean_control": 0.01186719796705165,
+          "control_minus_full": -0.00013633142398084916,
+          "ci95": [
+            -0.000707871254159755,
+            0.00043129792236363054
+          ],
+          "improvement_percent": -1.1488088793948052
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.012003529391032497,
+          "mean_control": 0.01959785149512248,
+          "control_minus_full": 0.007594322104089985,
+          "ci95": [
+            0.00646093188857132,
+            0.008790474219803118
+          ],
+          "improvement_percent": 38.750789115735785
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 153.014492601263,
+        "cued_switch": 1153.0407998988164,
+        "mmac": 142.27535234062495,
+        "aeon_v2": 1092.0240345714979,
+        "pid": 131.51580525219387
+      }
+    },
+    "T7_phase_64": {
+      "loss": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.42877778042734976,
+          "mean_control": 0.34084976363206776,
+          "control_minus_full": -0.08792801679528206,
+          "ci95": [
+            -0.13193033422995107,
+            -0.04404898695999365
+          ],
+          "improvement_percent": -25.796707575304783
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.42877778042734976,
+          "mean_control": 0.5562033416312271,
+          "control_minus_full": 0.12742556120387732,
+          "ci95": [
+            0.09164607611008076,
+            0.17101988162877632
+          ],
+          "improvement_percent": 22.909887745399917
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.42877778042734976,
+          "mean_control": 0.3287074908290245,
+          "control_minus_full": -0.10007028959832528,
+          "ci95": [
+            -0.13023031344347558,
+            -0.0688829709688236
+          ],
+          "improvement_percent": -30.44356833668154
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.42877778042734976,
+          "mean_control": 0.8143466226804982,
+          "control_minus_full": 0.3855688422531484,
+          "ci95": [
+            0.30402026429318413,
+            0.45546821678346666
+          ],
+          "improvement_percent": 47.34701802827062
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.34084976363206776,
+          "mean_control": 0.5562033416312271,
+          "control_minus_full": 0.2153535779991594,
+          "ci95": [
+            0.16569974121112646,
+            0.2634439539969996
+          ],
+          "improvement_percent": 38.71849769323082
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.34084976363206776,
+          "mean_control": 0.3287074908290245,
+          "control_minus_full": -0.012142272803043206,
+          "ci95": [
+            -0.03397804334460006,
+            0.0081185205843956
+          ],
+          "improvement_percent": -3.6939446595571948
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.34084976363206776,
+          "mean_control": 0.8143466226804982,
+          "control_minus_full": 0.47349685904843053,
+          "ci95": [
+            0.41873888172611334,
+            0.536619240788681
+          ],
+          "improvement_percent": 58.144387888522374
+        }
+      },
+      "overall": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.049380311613212276,
+          "mean_control": 0.048499091230471206,
+          "control_minus_full": -0.0008812203827410749,
+          "ci95": [
+            -0.001395598996702643,
+            -0.0003299643395590781
+          ],
+          "improvement_percent": -1.8169832885186479
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.049380311613212276,
+          "mean_control": 0.05034679799455492,
+          "control_minus_full": 0.0009664863813426481,
+          "ci95": [
+            0.000694606876757575,
+            0.0013010039790931841
+          ],
+          "improvement_percent": 1.9196580911603853
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.049380311613212276,
+          "mean_control": 0.04710515659577475,
+          "control_minus_full": -0.0022751550174375137,
+          "ci95": [
+            -0.0046894685456030155,
+            0.00010640771042858305
+          ],
+          "improvement_percent": -4.829948952216393
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.049380311613212276,
+          "mean_control": 0.11008262186038867,
+          "control_minus_full": 0.06070231024717641,
+          "ci95": [
+            0.057003417980488524,
+            0.06488069886133561
+          ],
+          "improvement_percent": 55.14250044313224
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.048499091230471206,
+          "mean_control": 0.05034679799455492,
+          "control_minus_full": 0.0018477067640837231,
+          "ci95": [
+            0.0011944985620214576,
+            0.0024306542184294195
+          ],
+          "improvement_percent": 3.6699588408453603
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.048499091230471206,
+          "mean_control": 0.04710515659577475,
+          "control_minus_full": -0.001393934634696439,
+          "ci95": [
+            -0.0037053710811943575,
+            0.0008411103595624646
+          ],
+          "improvement_percent": -2.959197538940933
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.048499091230471206,
+          "mean_control": 0.11008262186038867,
+          "control_minus_full": 0.06158353062991747,
+          "ci95": [
+            0.05823490829879206,
+            0.065371518009765
+          ],
+          "improvement_percent": 55.943008614039236
+        }
+      },
+      "final_phase": {
+        "mmac_memory__vs__cued_switch": {
+          "control": "cued_switch",
+          "mean_full": 0.01796392674888004,
+          "mean_control": 0.016201485983397892,
+          "control_minus_full": -0.0017624407654821483,
+          "ci95": [
+            -0.002791197993405287,
+            -0.0006599286791181572
+          ],
+          "improvement_percent": -10.878266149711019
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01796392674888004,
+          "mean_control": 0.019896899511565334,
+          "control_minus_full": 0.0019329727626852971,
+          "ci95": [
+            0.0013892137535151468,
+            0.0026020079581863635
+          ],
+          "improvement_percent": 9.714944590043949
+        },
+        "mmac_memory__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.01796392674888004,
+          "mean_control": 0.015594182371545667,
+          "control_minus_full": -0.0023697443773343725,
+          "ci95": [
+            -0.003905899797654221,
+            -0.0007690889616065958
+          ],
+          "improvement_percent": -15.196336177640122
+        },
+        "mmac_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01796392674888004,
+          "mean_control": 0.03802714912335481,
+          "control_minus_full": 0.02006322237447477,
+          "ci95": [
+            0.018085320867171926,
+            0.02214295947352235
+          ],
+          "improvement_percent": 52.7602590175573
+        },
+        "cued_switch__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016201485983397892,
+          "mean_control": 0.019896899511565334,
+          "control_minus_full": 0.0036954135281674454,
+          "ci95": [
+            0.0023889971240429173,
+            0.004861308436858833
+          ],
+          "improvement_percent": 18.572810934786286
+        },
+        "cued_switch__vs__aeon_v2": {
+          "control": "aeon_v2",
+          "mean_full": 0.016201485983397892,
+          "mean_control": 0.015594182371545667,
+          "control_minus_full": -0.000607303611852224,
+          "ci95": [
+            -0.0012313163892429164,
+            -1.2413200582613168e-05
+          ],
+          "improvement_percent": -3.89442419860599
+        },
+        "cued_switch__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016201485983397892,
+          "mean_control": 0.03802714912335481,
+          "control_minus_full": 0.021825663139956916,
+          "ci95": [
+            0.020406197741780745,
+            0.023382795767510508
+          ],
+          "improvement_percent": 57.39494977432435
+        }
+      },
+      "loss_of_control_runs": {
+        "mmac_memory": 0,
+        "cued_switch": 0,
+        "mmac": 0,
+        "aeon_v2": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "mmac_memory": 151.3987850406314,
+        "cued_switch": 969.3000155645374,
+        "mmac": 145.89046716840434,
+        "aeon_v2": 913.5931226865068,
+        "pid": 136.35563453438712
+      }
+    }
+  },
+  "wall_seconds": 94.69757667498197,
+  "ended_at": "2026-11-02T14:33:16.973898+00:00"
+}
