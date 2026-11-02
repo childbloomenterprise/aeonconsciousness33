@@ -1,0 +1,1725 @@
+{
+  "runs": 1320,
+  "analysis": {
+    "T1_replication": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.22472838709471482,
+          "mean_control": 0.20029860458266557,
+          "control_minus_full": -0.024429782512049233,
+          "ci95": [
+            -0.030415318430433904,
+            -0.018508499601827006
+          ],
+          "improvement_percent": -12.196681331330382
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.22472838709471482,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.013943134816566827,
+          "ci95": [
+            0.007868190302320477,
+            0.021109538520973956
+          ],
+          "improvement_percent": 5.841976749010606
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.22472838709471482,
+          "mean_control": 0.3480658986657119,
+          "control_minus_full": 0.12333751157099708,
+          "ci95": [
+            0.06030434884720186,
+            0.18225400538397615
+          ],
+          "improvement_percent": 35.43510353752075
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.20029860458266557,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.038372917328616064,
+          "ci95": [
+            0.030478594727666942,
+            0.046986303885101624
+          ],
+          "improvement_percent": 16.077710914702237
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.016130507523016254,
+          "mean_control": 0.016104743993933152,
+          "control_minus_full": -2.576352908310077e-05,
+          "ci95": [
+            -3.4978586145023214e-05,
+            -1.411585149732473e-05
+          ],
+          "improvement_percent": -0.15997478192019815
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016130507523016254,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 2.5125601273387996e-05,
+          "ci95": [
+            1.2090786348075148e-05,
+            3.934374832051428e-05
+          ],
+          "improvement_percent": 0.1555222322770638
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016130507523016254,
+          "mean_control": 0.01947666632505303,
+          "control_minus_full": 0.003346158802036775,
+          "ci95": [
+            0.002681731244107228,
+            0.004048997174849243
+          ],
+          "improvement_percent": 17.18034670919313
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016104743993933152,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 5.088913035648877e-05,
+          "ci95": [
+            3.522075706633847e-05,
+            6.786216752599234e-05
+          ],
+          "improvement_percent": 0.3149931046650104
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.010265388769717412,
+          "mean_control": 0.010179510339440407,
+          "control_minus_full": -8.587843027700257e-05,
+          "ci95": [
+            -0.00011659528715007672,
+            -4.7052838324418886e-05
+          ],
+          "improvement_percent": -0.8436400908624011
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010265388769717412,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 8.375200424462597e-05,
+          "ci95": [
+            4.030262116025005e-05,
+            0.0001311458277350481
+          ],
+          "improvement_percent": 0.8092652914273054
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010265388769717412,
+          "mean_control": 0.013892863400210825,
+          "control_minus_full": 0.003627474630493414,
+          "ci95": [
+            0.0030971072957353095,
+            0.0041562537281545605
+          ],
+          "improvement_percent": 26.11034547736478
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010179510339440407,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 0.00016963043452162852,
+          "ci95": [
+            0.00011740252355446549,
+            0.0002262072250866376
+          ],
+          "improvement_percent": 1.6390774676522994
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 211.35478080193735,
+        "mmac_memory": 176.41264362787805,
+        "mmac": 168.96028636842354,
+        "pid": 151.70069141782332
+      }
+    },
+    "T2_cue_noise_x4": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.22472838709471482,
+          "mean_control": 0.20029860458266557,
+          "control_minus_full": -0.024429782512049233,
+          "ci95": [
+            -0.030415318430433904,
+            -0.018508499601827006
+          ],
+          "improvement_percent": -12.196681331330382
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.22472838709471482,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.013943134816566827,
+          "ci95": [
+            0.007868190302320477,
+            0.021109538520973956
+          ],
+          "improvement_percent": 5.841976749010606
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.22472838709471482,
+          "mean_control": 0.3480658986657119,
+          "control_minus_full": 0.12333751157099708,
+          "ci95": [
+            0.06030434884720186,
+            0.18225400538397615
+          ],
+          "improvement_percent": 35.43510353752075
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.20029860458266557,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.038372917328616064,
+          "ci95": [
+            0.030478594727666942,
+            0.046986303885101624
+          ],
+          "improvement_percent": 16.077710914702237
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.016130507523016254,
+          "mean_control": 0.016104743993933152,
+          "control_minus_full": -2.576352908310077e-05,
+          "ci95": [
+            -3.4978586145023214e-05,
+            -1.411585149732473e-05
+          ],
+          "improvement_percent": -0.15997478192019815
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016130507523016254,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 2.5125601273387996e-05,
+          "ci95": [
+            1.2090786348075148e-05,
+            3.934374832051428e-05
+          ],
+          "improvement_percent": 0.1555222322770638
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016130507523016254,
+          "mean_control": 0.01947666632505303,
+          "control_minus_full": 0.003346158802036775,
+          "ci95": [
+            0.002681731244107228,
+            0.004048997174849243
+          ],
+          "improvement_percent": 17.18034670919313
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016104743993933152,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 5.088913035648877e-05,
+          "ci95": [
+            3.522075706633847e-05,
+            6.786216752599234e-05
+          ],
+          "improvement_percent": 0.3149931046650104
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.010265388769717412,
+          "mean_control": 0.010179510339440407,
+          "control_minus_full": -8.587843027700257e-05,
+          "ci95": [
+            -0.00011659528715007672,
+            -4.7052838324418886e-05
+          ],
+          "improvement_percent": -0.8436400908624011
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010265388769717412,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 8.375200424462597e-05,
+          "ci95": [
+            4.030262116025005e-05,
+            0.0001311458277350481
+          ],
+          "improvement_percent": 0.8092652914273054
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010265388769717412,
+          "mean_control": 0.013892863400210825,
+          "control_minus_full": 0.003627474630493414,
+          "ci95": [
+            0.0030971072957353095,
+            0.0041562537281545605
+          ],
+          "improvement_percent": 26.11034547736478
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010179510339440407,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 0.00016963043452162852,
+          "ci95": [
+            0.00011740252355446549,
+            0.0002262072250866376
+          ],
+          "improvement_percent": 1.6390774676522994
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 209.36370347044434,
+        "mmac_memory": 170.0793576674187,
+        "mmac": 164.15070828467532,
+        "pid": 144.8571689808078
+      }
+    },
+    "T2_cue_noise_x10": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.22467557515458228,
+          "mean_control": 0.262409022830099,
+          "control_minus_full": 0.03773344767551668,
+          "ci95": [
+            0.024389756241271113,
+            0.05308050509301021
+          ],
+          "improvement_percent": 14.379630421453847
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.22467557515458228,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.013995946756699348,
+          "ci95": [
+            0.0067204295166862086,
+            0.022068173787889934
+          ],
+          "improvement_percent": 5.864104206743981
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.22467557515458228,
+          "mean_control": 0.3480658986657119,
+          "control_minus_full": 0.12339032351112962,
+          "ci95": [
+            0.06189556597579936,
+            0.18078357661857042
+          ],
+          "improvement_percent": 35.4502765091721
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.262409022830099,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": -0.02373750091881733,
+          "ci95": [
+            -0.04229962711753402,
+            -0.008229025421233228
+          ],
+          "improvement_percent": -9.94567794629515
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.01613371171781938,
+          "mean_control": 0.016300769817435078,
+          "control_minus_full": 0.0001670580996156981,
+          "ci95": [
+            6.867107389519111e-05,
+            0.0002608480606685793
+          ],
+          "improvement_percent": 1.0248479150783119
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01613371171781938,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 2.192140647026327e-05,
+          "ci95": [
+            7.479461098182268e-06,
+            3.736587183307317e-05
+          ],
+          "improvement_percent": 0.13568893463732418
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01613371171781938,
+          "mean_control": 0.01947666632505303,
+          "control_minus_full": 0.00334295460723365,
+          "ci95": [
+            0.0026821640319118806,
+            0.004040966981875465
+          ],
+          "improvement_percent": 17.163895255183245
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016300769817435078,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": -0.00014513669314543485,
+          "ci95": [
+            -0.0002366432387493983,
+            -5.118264031353966e-05
+          ],
+          "improvement_percent": -0.8983658642707415
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.010296342813430405,
+          "mean_control": 0.01061785284251809,
+          "control_minus_full": 0.00032151002908768647,
+          "ci95": [
+            0.0001468320916958584,
+            0.0005084968906108324
+          ],
+          "improvement_percent": 3.0280136093074574
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010296342813430405,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 5.279796053163123e-05,
+          "ci95": [
+            1.32975819105037e-06,
+            0.00011030967438082662
+          ],
+          "improvement_percent": 0.5101675751137571
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010296342813430405,
+          "mean_control": 0.013892863400210825,
+          "control_minus_full": 0.003596520586780419,
+          "ci95": [
+            0.0030471779539718497,
+            0.004148527824607701
+          ],
+          "improvement_percent": 25.887540121684648
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01061785284251809,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": -0.0002687120685560552,
+          "ci95": [
+            -0.00047173671058449646,
+            -8.876385606984976e-05
+          ],
+          "improvement_percent": -2.596467421064775
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 229.14978625421003,
+        "mmac_memory": 195.82785138886217,
+        "mmac": 162.24969745053383,
+        "pid": 145.86482524868592
+      }
+    },
+    "T3_no_cue": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.2386715219112816,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2386715219112816,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2386715219112816,
+          "mean_control": 0.3480658986657119,
+          "control_minus_full": 0.10939437675443027,
+          "ci95": [
+            0.04670394336284111,
+            0.16814776246519522
+          ],
+          "improvement_percent": 31.429214172886955
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2386715219112816,
+          "mean_control": 0.2386715219112816,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.016155633124289644,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016155633124289644,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.016155633124289644,
+          "mean_control": 0.01947666632505303,
+          "control_minus_full": 0.0033210332007633874,
+          "ci95": [
+            0.0026601077678827766,
+            0.004013438554061198
+          ],
+          "improvement_percent": 17.051343106348284
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016155633124289644,
+          "mean_control": 0.016155633124289644,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.010349140773962037,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010349140773962037,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010349140773962037,
+          "mean_control": 0.013892863400210825,
+          "control_minus_full": 0.003543722626248788,
+          "ci95": [
+            0.003022031934859298,
+            0.004065872735088301
+          ],
+          "improvement_percent": 25.50750355894964
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010349140773962037,
+          "mean_control": 0.010349140773962037,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 181.50159280089107,
+        "mmac_memory": 152.60986358245847,
+        "mmac": 151.17042344677935,
+        "pid": 134.2412091010677
+      }
+    },
+    "T4_capacity_ABCDA": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.2272833621336518,
+          "mean_control": 0.21967999002145588,
+          "control_minus_full": -0.007603372112195961,
+          "ci95": [
+            -0.02044957711004837,
+            0.00752833887463351
+          ],
+          "improvement_percent": -3.461112735599336
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2272833621336518,
+          "mean_control": 0.25322886502482217,
+          "control_minus_full": 0.02594550289117038,
+          "ci95": [
+            0.010546241613678288,
+            0.042581105542544295
+          ],
+          "improvement_percent": 10.245871018150767
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2272833621336518,
+          "mean_control": 0.2427693291075653,
+          "control_minus_full": 0.015485966973913464,
+          "ci95": [
+            0.002250671629358855,
+            0.02944163382088427
+          ],
+          "improvement_percent": 6.3788811506135525
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.21967999002145588,
+          "mean_control": 0.25322886502482217,
+          "control_minus_full": 0.03354887500336634,
+          "ci95": [
+            0.023552927301036912,
+            0.042517290031850216
+          ],
+          "improvement_percent": 13.248440299283335
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.01666929837714949,
+          "mean_control": 0.016662367639812003,
+          "control_minus_full": -6.930737337484949e-06,
+          "ci95": [
+            -2.445482667675446e-05,
+            1.2964743700517942e-05
+          ],
+          "improvement_percent": -0.04159515314573354
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01666929837714949,
+          "mean_control": 0.016691549151753575,
+          "control_minus_full": 2.2250774604089945e-05,
+          "ci95": [
+            -7.37920859311126e-06,
+            4.996408029514669e-05
+          ],
+          "improvement_percent": 0.13330562910484753
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01666929837714949,
+          "mean_control": 0.01953816673293527,
+          "control_minus_full": 0.0028688683557857807,
+          "ci95": [
+            0.002304003569102617,
+            0.0034296934928141056
+          ],
+          "improvement_percent": 14.683406048274536
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016662367639812003,
+          "mean_control": 0.016691549151753575,
+          "control_minus_full": 2.9181511941574894e-05,
+          "ci95": [
+            7.887722739587229e-06,
+            4.905046888297247e-05
+          ],
+          "improvement_percent": 0.17482806225034633
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.010172827355262978,
+          "mean_control": 0.010142794160133875,
+          "control_minus_full": -3.003319512910347e-05,
+          "ci95": [
+            -0.00010597091559926817,
+            5.618055603557398e-05
+          ],
+          "improvement_percent": -0.29610376248340486
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010172827355262978,
+          "mean_control": 0.01026924737854737,
+          "control_minus_full": 9.642002328439197e-05,
+          "ci95": [
+            -3.197657057014527e-05,
+            0.00021651101461230715
+          ],
+          "improvement_percent": 0.9389200564572533
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010172827355262978,
+          "mean_control": 0.013443078663307068,
+          "control_minus_full": 0.0032702513080440907,
+          "ci95": [
+            0.0027306429567557373,
+            0.003924085087090762
+          ],
+          "improvement_percent": 24.32665455547957
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010142794160133875,
+          "mean_control": 0.01026924737854737,
+          "control_minus_full": 0.00012645321841349544,
+          "ci95": [
+            3.4180131871550275e-05,
+            0.00021255203182621828
+          ],
+          "improvement_percent": 1.2313776633491014
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 203.813248715758,
+        "mmac_memory": 169.86713640815452,
+        "mmac": 165.29517215531087,
+        "pid": 148.07264968516796
+      }
+    },
+    "T4_revisits_ABCBA": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.22340285460814552,
+          "mean_control": 0.20442053912904773,
+          "control_minus_full": -0.018982315479097782,
+          "ci95": [
+            -0.03231811259551232,
+            -0.006000844904329126
+          ],
+          "improvement_percent": -9.285914008432647
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.22340285460814552,
+          "mean_control": 0.24397413102867374,
+          "control_minus_full": 0.02057127642052822,
+          "ci95": [
+            0.0037015133084222595,
+            0.037707058040561535
+          ],
+          "improvement_percent": 8.43174492877301
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.22340285460814552,
+          "mean_control": 0.2485230217735158,
+          "control_minus_full": 0.02512016716537028,
+          "ci95": [
+            0.00945098630175146,
+            0.03889395820463224
+          ],
+          "improvement_percent": 10.107782766404156
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.20442053912904773,
+          "mean_control": 0.24397413102867374,
+          "control_minus_full": 0.039553591899626005,
+          "ci95": [
+            0.02035731680140177,
+            0.06024588469866524
+          ],
+          "improvement_percent": 16.21220730774008
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.01628169162332305,
+          "mean_control": 0.016235158839456164,
+          "control_minus_full": -4.653278386688737e-05,
+          "ci95": [
+            -0.00010218113409179686,
+            -1.1238602046059936e-06
+          ],
+          "improvement_percent": -0.2866173612899872
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01628169162332305,
+          "mean_control": 0.016342357725983366,
+          "control_minus_full": 6.0666102660312216e-05,
+          "ci95": [
+            2.402325607908028e-05,
+            9.588602419648512e-05
+          ],
+          "improvement_percent": 0.37122001413453803
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01628169162332305,
+          "mean_control": 0.01875251530033329,
+          "control_minus_full": 0.0024708236770102357,
+          "ci95": [
+            0.001968372000875307,
+            0.002997135263681332
+          ],
+          "improvement_percent": 13.175958731073914
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.016235158839456164,
+          "mean_control": 0.016342357725983366,
+          "control_minus_full": 0.00010719888652719958,
+          "ci95": [
+            5.1437794019540157e-05,
+            0.00015575694253532434
+          ],
+          "improvement_percent": 0.6559572879546004
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.010140690859990684,
+          "mean_control": 0.010091780693530847,
+          "control_minus_full": -4.891016645983681e-05,
+          "ci95": [
+            -0.00016956014701139893,
+            6.899037201020313e-05
+          ],
+          "improvement_percent": -0.48465348133446645
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010140690859990684,
+          "mean_control": 0.010204901296069751,
+          "control_minus_full": 6.421043607906588e-05,
+          "ci95": [
+            -5.2856420568127975e-05,
+            0.00017010290845807455
+          ],
+          "improvement_percent": 0.629211730874805
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.010140690859990684,
+          "mean_control": 0.013494633166914637,
+          "control_minus_full": 0.0033539423069239523,
+          "ci95": [
+            0.0028434610706790085,
+            0.003918628892083411
+          ],
+          "improvement_percent": 24.853897586093368
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.010091780693530847,
+          "mean_control": 0.010204901296069751,
+          "control_minus_full": 0.00011312060253890268,
+          "ci95": [
+            -7.66362059360488e-05,
+            0.0002754247676719625
+          ],
+          "improvement_percent": 1.1084928629585984
+        }
+      },
+      "loss_B_return": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.37659927289890455,
+          "mean_control": 0.3560591144741532,
+          "control_minus_full": -0.020540158424751286,
+          "ci95": [
+            -0.03967021037483746,
+            -0.002589525606654738
+          ],
+          "improvement_percent": -5.768749510902444
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.37659927289890455,
+          "mean_control": 0.42896876482459056,
+          "control_minus_full": 0.052369491925686074,
+          "ci95": [
+            0.03199058557390317,
+            0.07219162979771271
+          ],
+          "improvement_percent": 12.208229647466398
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.37659927289890455,
+          "mean_control": 0.3828808651391625,
+          "control_minus_full": 0.0062815922402579966,
+          "ci95": [
+            -0.04650263668286774,
+            0.061901068994822284
+          ],
+          "improvement_percent": 1.6406127368038825
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.3560591144741532,
+          "mean_control": 0.42896876482459056,
+          "control_minus_full": 0.07290965035043737,
+          "ci95": [
+            0.05273941147328176,
+            0.09382418489624447
+          ],
+          "improvement_percent": 16.996493994207437
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 223.23174373013902,
+        "mmac_memory": 189.36451212034123,
+        "mmac": 192.323914913383,
+        "pid": 163.30580098130866
+      }
+    },
+    "T5_changed_physics_on_return": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.4354582158273711,
+          "mean_control": 0.4504775846284469,
+          "control_minus_full": 0.015019368801075721,
+          "ci95": [
+            -0.024763778652309942,
+            0.06396303908880963
+          ],
+          "improvement_percent": 3.3340990347974073
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.4354582158273711,
+          "mean_control": 0.5427537315882358,
+          "control_minus_full": 0.10729551576086464,
+          "ci95": [
+            0.06634117386635317,
+            0.1515966418176597
+          ],
+          "improvement_percent": 19.76872926269721
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.4354582158273711,
+          "mean_control": 0.6289076133147129,
+          "control_minus_full": 0.19344939748734175,
+          "ci95": [
+            0.12451896649490397,
+            0.26120942402659675
+          ],
+          "improvement_percent": 30.75958907028485
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.4504775846284469,
+          "mean_control": 0.5427537315882358,
+          "control_minus_full": 0.09227614695978895,
+          "ci95": [
+            0.03131866012123323,
+            0.1478954201650251
+          ],
+          "improvement_percent": 17.001476284606174
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.0194042729741914,
+          "mean_control": 0.019559124778061106,
+          "control_minus_full": 0.00015485180386970166,
+          "ci95": [
+            -1.6122596114847144e-05,
+            0.0003633590589008969
+          ],
+          "improvement_percent": 0.7917113144213609
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.0194042729741914,
+          "mean_control": 0.01966672085775268,
+          "control_minus_full": 0.0002624478835612787,
+          "ci95": [
+            3.300187207819936e-05,
+            0.000488520773777196
+          ],
+          "improvement_percent": 1.334477086747387
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.0194042729741914,
+          "mean_control": 0.027152134711187454,
+          "control_minus_full": 0.007747861736996054,
+          "ci95": [
+            0.00705639361981341,
+            0.008433056239125767
+          ],
+          "improvement_percent": 28.535000357830846
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.019559124778061106,
+          "mean_control": 0.01966672085775268,
+          "control_minus_full": 0.00010759607969157703,
+          "ci95": [
+            -7.556665420586548e-05,
+            0.0002689768143798946
+          ],
+          "improvement_percent": 0.5470972027813286
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.021177940273634555,
+          "mean_control": 0.02169411295320023,
+          "control_minus_full": 0.0005161726795656747,
+          "ci95": [
+            -5.374198704949021e-05,
+            0.0012111968630029914
+          ],
+          "improvement_percent": 2.379321434709922
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.021177940273634555,
+          "mean_control": 0.02205276655217216,
+          "control_minus_full": 0.000874826278537602,
+          "ci95": [
+            0.00011000624026066579,
+            0.0016284025792573282
+          ],
+          "improvement_percent": 3.9669683913260907
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.021177940273634555,
+          "mean_control": 0.03947775802065891,
+          "control_minus_full": 0.01829981774702436,
+          "ci95": [
+            0.01681661572850016,
+            0.01987923861061733
+          ],
+          "improvement_percent": 46.35475433394159
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02169411295320023,
+          "mean_control": 0.02205276655217216,
+          "control_minus_full": 0.00035865359897192735,
+          "ci95": [
+            -0.0002518888473528814,
+            0.0008965893812663184
+          ],
+          "improvement_percent": 1.6263428813950809
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 187.38161807050346,
+        "mmac_memory": 157.80395044910418,
+        "mmac": 152.40395504305422,
+        "pid": 132.8761492762472
+      }
+    },
+    "T6_sensor_noise_x2": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.24558943208385847,
+          "mean_control": 0.2074205609496722,
+          "control_minus_full": -0.03816887113418625,
+          "ci95": [
+            -0.053187205186498464,
+            -0.02450783131743288
+          ],
+          "improvement_percent": -18.401681568804268
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.24558943208385847,
+          "mean_control": 0.2730525342950158,
+          "control_minus_full": 0.02746310221115736,
+          "ci95": [
+            0.013404759232347905,
+            0.0429144331643917
+          ],
+          "improvement_percent": 10.057808942174194
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.24558943208385847,
+          "mean_control": 0.3470275486303108,
+          "control_minus_full": 0.10143811654645234,
+          "ci95": [
+            0.03309623572157221,
+            0.16531185549256291
+          ],
+          "improvement_percent": 29.230565972880317
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2074205609496722,
+          "mean_control": 0.2730525342950158,
+          "control_minus_full": 0.06563197334534361,
+          "ci95": [
+            0.04948828910876551,
+            0.08385744415203739
+          ],
+          "improvement_percent": 24.03639047511365
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.017923667248408347,
+          "mean_control": 0.01786473501162707,
+          "control_minus_full": -5.893223678127522e-05,
+          "ci95": [
+            -8.809548180869243e-05,
+            -3.644431438365901e-05
+          ],
+          "improvement_percent": -0.3298802738631153
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.017923667248408347,
+          "mean_control": 0.017982397393128707,
+          "control_minus_full": 5.873014472036475e-05,
+          "ci95": [
+            2.8145351372442134e-05,
+            9.132969730092545e-05
+          ],
+          "improvement_percent": 0.32659796931640633
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.017923667248408347,
+          "mean_control": 0.019805773520529184,
+          "control_minus_full": 0.0018821062721208366,
+          "ci95": [
+            0.0012773655411296725,
+            0.0025127824239613637
+          ],
+          "improvement_percent": 9.502816288240325
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01786473501162707,
+          "mean_control": 0.017982397393128707,
+          "control_minus_full": 0.00011766238150163997,
+          "ci95": [
+            8.201919023424234e-05,
+            0.00015624040181189607
+          ],
+          "improvement_percent": 0.6543197713259312
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.01128035392307534,
+          "mean_control": 0.01108391313380442,
+          "control_minus_full": -0.00019644078927091927,
+          "ci95": [
+            -0.00029365160602897605,
+            -0.00012148104794553183
+          ],
+          "improvement_percent": -1.772305384384525
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01128035392307534,
+          "mean_control": 0.011476121072143217,
+          "control_minus_full": 0.0001957671490678799,
+          "ci95": [
+            9.381783790813928e-05,
+            0.00030443232433641345
+          ],
+          "improvement_percent": 1.7058651423875184
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01128035392307534,
+          "mean_control": 0.013358581761996937,
+          "control_minus_full": 0.0020782278389216,
+          "ci95": [
+            0.0015137471095547127,
+            0.0026884400898652154
+          ],
+          "improvement_percent": 15.557249084882882
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01108391313380442,
+          "mean_control": 0.011476121072143217,
+          "control_minus_full": 0.0003922079383387992,
+          "ci95": [
+            0.0002733973007808072,
+            0.0005208013393729863
+          ],
+          "improvement_percent": 3.4176002141597537
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 231.06720808148873,
+        "mmac_memory": 195.56505135874932,
+        "mmac": 192.84781900650057,
+        "pid": 167.88773027656134
+      }
+    },
+    "T6_sensor_noise_x4": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.35225978539407954,
+          "mean_control": 0.3181141573474348,
+          "control_minus_full": -0.03414562804664471,
+          "ci95": [
+            -0.047240932998877175,
+            -0.021509035773070555
+          ],
+          "improvement_percent": -10.733765617778486
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.35225978539407954,
+          "mean_control": 0.3733006742500745,
+          "control_minus_full": 0.021040888855994998,
+          "ci95": [
+            0.003459034799506716,
+            0.04066629518201953
+          ],
+          "improvement_percent": 5.6364454466266745
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.35225978539407954,
+          "mean_control": 0.3230162146379514,
+          "control_minus_full": -0.029243570756128157,
+          "ci95": [
+            -0.09404086143033923,
+            0.037215017344746484
+          ],
+          "improvement_percent": -9.0532826003504
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.3181141573474348,
+          "mean_control": 0.3733006742500745,
+          "control_minus_full": 0.05518651690263972,
+          "ci95": [
+            0.04012057970294342,
+            0.0722803383533145
+          ],
+          "improvement_percent": 14.78339598863682
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.02333947291092508,
+          "mean_control": 0.023296855144518614,
+          "control_minus_full": -4.261776640646156e-05,
+          "ci95": [
+            -5.833461800646095e-05,
+            -2.6209195242129643e-05
+          ],
+          "improvement_percent": -0.1829335596675539
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.02333947291092508,
+          "mean_control": 0.023373480121337595,
+          "control_minus_full": 3.4007210412520525e-05,
+          "ci95": [
+            6.164859320738763e-06,
+            6.476651417261214e-05
+          ],
+          "improvement_percent": 0.14549485243951935
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.02333947291092508,
+          "mean_control": 0.021797320769248254,
+          "control_minus_full": -0.0015421521416768187,
+          "ci95": [
+            -0.002200042935577403,
+            -0.0008683424296327238
+          ],
+          "improvement_percent": -7.074961909320952
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.023296855144518614,
+          "mean_control": 0.023373480121337595,
+          "control_minus_full": 7.662497681898208e-05,
+          "ci95": [
+            5.6534485699558797e-05,
+            9.965069403433565e-05
+          ],
+          "improvement_percent": 0.3278287033903493
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.015163292580272481,
+          "mean_control": 0.01502123335891761,
+          "control_minus_full": -0.00014205922135487084,
+          "ci95": [
+            -0.00019444872668820506,
+            -8.736398414042643e-05
+          ],
+          "improvement_percent": -0.9457227509919149
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.015163292580272481,
+          "mean_control": 0.015276649948314219,
+          "control_minus_full": 0.00011335736804173636,
+          "ci95": [
+            2.0549531069133977e-05,
+            0.00021588838057537074
+          ],
+          "improvement_percent": 0.7420302777458442
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.015163292580272481,
+          "mean_control": 0.01433983689811053,
+          "control_minus_full": -0.0008234556821619495,
+          "ci95": [
+            -0.0014435459871276607,
+            -0.00017154945245664735
+          ],
+          "improvement_percent": -5.742434087729763
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01502123335891761,
+          "mean_control": 0.015276649948314219,
+          "control_minus_full": 0.0002554165893966072,
+          "ci95": [
+            0.0001884482856651947,
+            0.0003321689801144539
+          ],
+          "improvement_percent": 1.6719411013590222
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 210.74514323926348,
+        "mmac_memory": 182.9020811126409,
+        "mmac": 174.95198289402148,
+        "pid": 156.7137673949522
+      }
+    },
+    "T7_phase_96": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.2730909006260077,
+          "mean_control": 0.26323909979655763,
+          "control_minus_full": -0.009851800829450178,
+          "ci95": [
+            -0.021338479524666932,
+            0.0023207553396193212
+          ],
+          "improvement_percent": -3.742529448347175
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.2730909006260077,
+          "mean_control": 0.29414743165689017,
+          "control_minus_full": 0.02105653103088236,
+          "ci95": [
+            0.011107859800018554,
+            0.029853672303139674
+          ],
+          "improvement_percent": 7.158495626589003
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.2730909006260077,
+          "mean_control": 0.4798723865346653,
+          "control_minus_full": 0.20678148590865755,
+          "ci95": [
+            0.12113983967465311,
+            0.2949107979134077
+          ],
+          "improvement_percent": 43.090932445999364
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.26323909979655763,
+          "mean_control": 0.29414743165689017,
+          "control_minus_full": 0.03090833186033253,
+          "ci95": [
+            0.017813626124842726,
+            0.04343425699307291
+          ],
+          "improvement_percent": 10.507768735640608
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.022807772206817952,
+          "mean_control": 0.022784443484574327,
+          "control_minus_full": -2.3328722243622436e-05,
+          "ci95": [
+            -8.456702540924354e-05,
+            4.7627261170518375e-05
+          ],
+          "improvement_percent": -0.10238881743772502
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.022807772206817952,
+          "mean_control": 0.022869985225449606,
+          "control_minus_full": 6.221301863165371e-05,
+          "ci95": [
+            -7.641097448923194e-06,
+            0.00011868747385440843
+          ],
+          "improvement_percent": 0.27202911597172075
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.022807772206817952,
+          "mean_control": 0.04717635916808586,
+          "control_minus_full": 0.024368586961267907,
+          "ci95": [
+            0.02323862750881497,
+            0.025679962985483817
+          ],
+          "improvement_percent": 51.65423400827615
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.022784443484574327,
+          "mean_control": 0.022869985225449606,
+          "control_minus_full": 8.554174087527615e-05,
+          "ci95": [
+            7.394069228102267e-06,
+            0.00016123062861989924
+          ],
+          "improvement_percent": 0.3740349634335825
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.012485601002134061,
+          "mean_control": 0.01242339107615107,
+          "control_minus_full": -6.220992598299311e-05,
+          "ci95": [
+            -0.00022551206775798128,
+            0.00012700602978804983
+          ],
+          "improvement_percent": -0.5007483512486074
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.012485601002134061,
+          "mean_control": 0.012651502385151805,
+          "control_minus_full": 0.0001659013830177433,
+          "ci95": [
+            -2.0376259863793972e-05,
+            0.0003164999302784255
+          ],
+          "improvement_percent": 1.3113176440803607
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.012485601002134061,
+          "mean_control": 0.019737340333550017,
+          "control_minus_full": 0.007251739331415953,
+          "ci95": [
+            0.005552355863403829,
+            0.008866554521302996
+          ],
+          "improvement_percent": 36.741218466447926
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01242339107615107,
+          "mean_control": 0.012651502385151805,
+          "control_minus_full": 0.0002281113090007364,
+          "ci95": [
+            1.971751794160867e-05,
+            0.000429948342986396
+          ],
+          "improvement_percent": 1.8030373156982122
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 191.6897697002342,
+        "mmac_memory": 160.11146674120226,
+        "mmac": 147.00158876116296,
+        "pid": 135.546945006758
+      }
+    },
+    "T7_phase_64": {
+      "loss": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.43137363334096046,
+          "mean_control": 0.4298247144246018,
+          "control_minus_full": -0.001548918916358627,
+          "ci95": [
+            -0.043414645198388675,
+            0.04173392644410849
+          ],
+          "improvement_percent": -0.3603605991880051
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.43137363334096046,
+          "mean_control": 0.5769079480377435,
+          "control_minus_full": 0.14553431469678316,
+          "ci95": [
+            0.09899782768305458,
+            0.19354733108921052
+          ],
+          "improvement_percent": 25.226609408276303
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.43137363334096046,
+          "mean_control": 0.9490654800802248,
+          "control_minus_full": 0.5176918467392645,
+          "ci95": [
+            0.4046207109477006,
+            0.6194071668477503
+          ],
+          "improvement_percent": 54.5475372990601
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.4298247144246018,
+          "mean_control": 0.5769079480377435,
+          "control_minus_full": 0.14708323361314177,
+          "ci95": [
+            0.09476454638250574,
+            0.20774011334866033
+          ],
+          "improvement_percent": 25.495095727736278
+        }
+      },
+      "overall": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.0482211412015068,
+          "mean_control": 0.048201704978178425,
+          "control_minus_full": -1.9436223328380547e-05,
+          "ci95": [
+            -0.0003375890567565456,
+            0.00030804761755195097
+          ],
+          "improvement_percent": -0.04032268845506522
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.0482211412015068,
+          "mean_control": 0.04945555634198837,
+          "control_minus_full": 0.0012344151404815589,
+          "ci95": [
+            0.0007893491945989014,
+            0.001730276800518519
+          ],
+          "improvement_percent": 2.4960090064410525
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.0482211412015068,
+          "mean_control": 0.1073713579021242,
+          "control_minus_full": 0.05915021670061739,
+          "ci95": [
+            0.05590524551264467,
+            0.06227462866358583
+          ],
+          "improvement_percent": 55.089381243121245
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.048201704978178425,
+          "mean_control": 0.04945555634198837,
+          "control_minus_full": 0.0012538513638099395,
+          "ci95": [
+            0.0007761204653104426,
+            0.0017936701934150722
+          ],
+          "improvement_percent": 2.53530938998942
+        }
+      },
+      "final_phase": {
+        "guarded_memory__vs__mmac_memory": {
+          "control": "mmac_memory",
+          "mean_full": 0.01735535502844834,
+          "mean_control": 0.017316482581791585,
+          "control_minus_full": -3.8872446656757455e-05,
+          "ci95": [
+            -0.0006751781135130823,
+            0.0006160952351038937
+          ],
+          "improvement_percent": -0.2244823478044677
+        },
+        "guarded_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.01735535502844834,
+          "mean_control": 0.019824185309411466,
+          "control_minus_full": 0.0024688302809631204,
+          "ci95": [
+            0.0015786983891978043,
+            0.0034605536010370395
+          ],
+          "improvement_percent": 12.453627941981814
+        },
+        "guarded_memory__vs__pid": {
+          "control": "pid",
+          "mean_full": 0.01735535502844834,
+          "mean_control": 0.039837245133327,
+          "control_minus_full": 0.022481890104878666,
+          "ci95": [
+            0.02021795969118711,
+            0.02487241096421779
+          ],
+          "improvement_percent": 56.43434938745498
+        },
+        "mmac_memory__vs__mmac": {
+          "control": "mmac",
+          "mean_full": 0.017316482581791585,
+          "mean_control": 0.019824185309411466,
+          "control_minus_full": 0.002507702727619878,
+          "ci95": [
+            0.0015522409306208923,
+            0.0035873403868301383
+          ],
+          "improvement_percent": 12.649713914999346
+        }
+      },
+      "loss_of_control_runs": {
+        "guarded_memory": 0,
+        "mmac_memory": 0,
+        "mmac": 0,
+        "pid": 0
+      },
+      "us_per_decision": {
+        "guarded_memory": 180.05236576451958,
+        "mmac_memory": 142.020051058959,
+        "mmac": 138.30480705413115,
+        "pid": 128.47066332142276
+      }
+    }
+  },
+  "wall_seconds": 21.86398907098919,
+  "ended_at": "2026-11-02T14:44:14.952172+00:00"
+}
