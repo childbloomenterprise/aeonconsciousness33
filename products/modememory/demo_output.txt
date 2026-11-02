@@ -1,0 +1,22 @@
+aeon-modememory demo: synthetic 3-mode changeover plant
+modes A/B/C/A/B/C, 192 ticks per phase, 10 seeds
+return error = sum |error| over 20 ticks after each return (3 returns)
+whole-run error = mean |error| after the 128-tick warmup
+
+  seed  return MMAC  return +mem   delta %   run MMAC   run +mem   delta %
+--------------------------------------------------------------------------
+  9001     0.790615     0.691912     12.48   0.026210   0.026082      0.49
+  9002     0.728125     0.723855      0.59   0.025339   0.025338      0.00
+  9003     0.707790     0.697790      1.41   0.025777   0.025743      0.13
+  9004     0.664249     0.633739      4.59   0.025865   0.025755      0.42
+  9005     0.796807     0.775068      2.73   0.025858   0.025752      0.41
+  9006     0.676258     0.684606     -1.23   0.026074   0.026281     -0.79
+  9007     0.707962     0.678517      4.16   0.026379   0.026430     -0.19
+  9008     0.671782     0.672507     -0.11   0.025781   0.025755      0.10
+  9009     0.767421     0.727723      5.17   0.025249   0.025087      0.64
+  9010     0.686654     0.689696     -0.44   0.025923   0.025951     -0.11
+
+return error: MMAC 0.719766, +memory 0.697541, mean reduction 0.022225 (3.09%), paired bootstrap 95% CI [0.006489, 0.042061]
+whole-run error: MMAC 0.025846, +memory 0.025817, mean reduction 0.000028 (0.11%), paired bootstrap 95% CI [-0.000038, 0.000087]
+
+A reduction is a win for the memory only if the whole interval is above 0.
