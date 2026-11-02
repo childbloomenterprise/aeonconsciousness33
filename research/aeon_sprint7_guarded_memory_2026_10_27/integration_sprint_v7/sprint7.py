@@ -11,7 +11,7 @@ from integration_sprint_v6.sprint6 import (
 )
 
 FROZEN_N = 1
-FROZEN_D = 1
+FROZEN_D = 3
 FROZEN_V = 0
 DEFAULT_N = FROZEN_N
 DEFAULT_D = FROZEN_D
@@ -52,6 +52,23 @@ class GuardedMMACMemory(MMACMemory):
             return False
         self._outside_count = 0
         return True
+
+    def _store_context(self):
+        duplicate = next(
+            (
+                index
+                for index, old in enumerate(self.bank)
+                if np.linalg.norm(np.asarray(old["cue"]) - self.context)
+                < MMAC_MEMORY_MATCH_DISTANCE
+            ),
+            None,
+        )
+        skip_once = duplicate is not None and self.bank[duplicate].get(
+            "skip_once", False
+        )
+        super()._store_context()
+        if skip_once:
+            self.bank[-1]["skip_once"] = True
 
     def _restore_matching_context(self, cue):
         if not self.bank:
@@ -125,6 +142,7 @@ class GuardedMMACMemory(MMACMemory):
         effective_cue = self._effective_cue(cue)
         restored = False
         if self._context_changed(effective_cue):
+            self._restore_monitor = None
             if self.context is not None:
                 self._store_context()
             before_restore = copy.deepcopy(self.mmac.delay_error)

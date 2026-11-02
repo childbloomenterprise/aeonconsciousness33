@@ -41,6 +41,16 @@ def test_default_reduction_matches_mmac_memory_on_all_33_runs():
                 )
 
 
+def test_default_matches_explicit_evaluated_d3():
+    default = GuardedMMACMemory()
+    explicit = GuardedMMACMemory(n=1, d=3, v=0)
+
+    assert (default.n, default.d, default.v) == (explicit.n, explicit.d, explicit.v)
+    assert _run("T1_replication", "variable_delay", default) == _run(
+        "T1_replication", "variable_delay", explicit
+    )
+
+
 def test_debounce_ignores_a_two_tick_cue_spike():
     guarded = GuardedMMACMemory(n=1, d=3, v=0)
     guarded.context = [0.1, 0.2]
@@ -53,6 +63,38 @@ def test_debounce_ignores_a_two_tick_cue_spike():
     assert guarded.context == [0.1, 0.2]
     assert guarded.bank == []
     assert guarded._outside_count == 2
+
+
+def test_mode_change_clears_pending_restore_monitor():
+    guarded = GuardedMMACMemory(n=1, d=1, v=2)
+    guarded.context = [0.1, 0.2]
+    guarded._restore_monitor = {"errors": []}
+    guarded.mmac.decide = lambda obs: [0.0, 0.0]
+    obs = Observation(WARMUP + 1, {"target": 0.0}, (None, None), "target")
+
+    guarded.decide(obs, [0.9, 0.1])
+
+    assert guarded.context == [0.9, 0.1]
+    assert guarded._restore_monitor is None
+
+
+def test_store_context_preserves_skip_once_on_duplicate():
+    guarded = GuardedMMACMemory(n=1, d=1, v=0)
+    guarded.context = [0.1, 0.2]
+    guarded.mmac.delay_error = np.full(5, 0.5)
+    guarded.bank = [
+        {
+            "cue": [0.1, 0.2],
+            "delay_error": np.full(5, 0.01),
+            "skip_once": True,
+        }
+    ]
+
+    guarded._store_context()
+
+    assert len(guarded.bank) == 1
+    assert guarded.bank[0]["skip_once"]
+    np.testing.assert_array_equal(guarded.bank[0]["delay_error"], np.full(5, 0.5))
 
 
 def test_wrong_restore_reverts_and_marks_entry_suspect():
