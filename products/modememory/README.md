@@ -15,6 +15,7 @@ Structured Text function block for controllers that expose a discrete mode ID.
 ```python
 from aeon_modememory import DelayMMAC, ModeMemory
 from my_plant import plant, stream, log
+
 controller = DelayMMAC()
 memory = ModeMemory()
 for measurement, target, mode_cue in stream:
@@ -56,6 +57,38 @@ recipe number, or a numeric vector cue. The controller supplies
 * `step()` returns `True` only when a saved state was restored.
 * `save(path)` writes the bank and detector state as JSON; use
   `ModeMemory.load(path)` to create an instance from a saved file.
+
+### Works with your recipe system
+
+For PackML, key memory with the product and current unit mode exposed by
+`PackTags.Status.Product[0].ProductID` and `PackTags.Status.UnitModeCurrent`:
+
+```python
+from aeon_modememory.adapters import packml_mode
+
+mode = packml_mode(product_id=product_id, unit_mode=unit_mode)
+restored = memory.step(mode, controller)
+```
+
+For ISA-88, use the active recipe identifier and optionally its unit and
+version:
+
+```python
+from aeon_modememory.adapters import isa88_mode
+
+mode = isa88_mode(recipe_id=recipe_id, unit=unit, version=version)
+restored = memory.step(mode, controller)
+```
+
+For a raw format or tool identifier, build a key from the tags your machine
+already exposes:
+
+```python
+from aeon_modememory.adapters import ModeKey
+
+mode = ModeKey.from_fields(format_id=format_id, tool_id=tool_id)
+restored = memory.step(mode, controller)
+```
 
 ### `DelayMMAC`
 
@@ -101,4 +134,5 @@ Runtime dependency: NumPy. Python 3.9 or newer.
 ## License
 
 See [`LICENSE`](LICENSE). Source is available for evaluation only. Commercial
-or production use requires written permission from Childbloom Enterprise.
+or production use requires written permission from the ModeMemory authors.
+Contact: vaibhavvarunmr@gmail.com.

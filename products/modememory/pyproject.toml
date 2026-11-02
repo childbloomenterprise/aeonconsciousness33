@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = "LicenseRef-Proprietary"
 license-files = ["LICENSE"]
-authors = [{ name = "Childbloom Enterprise", email = "exeptionst@gmail.com" }]
+authors = [{ name = "ModeMemory authors", email = "vaibhavvarunmr@gmail.com" }]
 dependencies = ["numpy>=1.21"]
 
 [project.optional-dependencies]

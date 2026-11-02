@@ -59,6 +59,30 @@ END_IF
 Ctl();
 ```
 
+## PackML / OMAC PackTags example
+
+`FB_ModeMemory_PackML.st` wraps `FB_ModeMemory` and combines
+`PackTags.Status.Product[0].ProductID` and
+`PackTags.Status.UnitModeCurrent` into a `DINT` mode key:
+`ProductID * 100 + UnitModeCurrent`. Map the wrapper inputs to the equivalent
+fields in your PackTags UDT:
+
+```
+MemoryPackML(
+    Execute := Ctl.Ready,
+    ProductID := PackTags.Status.Product[0].ProductID,
+    UnitModeCurrent := PackTags.Status.UnitModeCurrent,
+    State := Ctl.AdaptiveState);
+IF MemoryPackML.Restored THEN
+    Ctl.AdaptiveState := MemoryPackML.RestoredState;
+END_IF
+```
+
+The example requires numeric `DINT` values; ensure `UnitModeCurrent` is between
+0 and 99, the combined key fits in a `DINT`, and distinct product/mode pairs
+cannot collide. PackML implementations and vendor UDTs differ, so map the
+fields and types to the machine's actual PackTags definition.
+
 ## Memory and timing
 
 The bank is statically sized: 6 entries x 16 `REAL` plus 6 `DINT`, about 408
@@ -72,6 +96,6 @@ cycle, and none on an unchanged cycle), so the block is safe in a fast task.
   with `aeon_modememory.ModeMemory` on random mode sequences.
 * Control results come from the simulation study in
   `../../../research/aeon_sprint7_guarded_memory_2026_10_27/`.
-* No hardware, no PLC runtime, no plant trial. Commission it as you would any
-  new function block, starting with the mode signal and `Restored` traced in
-  monitoring mode.
+* **Not yet compiled on a PLC runtime.** No hardware or plant trial has been
+  performed. Commission it as you would any new function block, starting with
+  the mode signal and `Restored` traced in monitoring mode.

@@ -60,7 +60,13 @@ class ModeMemory:
 
     @staticmethod
     def _is_vector(mode: Any) -> bool:
-        return isinstance(mode, (list, tuple, np.ndarray))
+        if isinstance(mode, (list, np.ndarray)):
+            return True
+        return isinstance(mode, tuple) and all(
+            isinstance(value, (int, float, np.integer, np.floating))
+            and not isinstance(value, (bool, np.bool_))
+            for value in mode
+        )
 
     @staticmethod
     def _as_vector(mode: Any) -> np.ndarray:
@@ -149,13 +155,16 @@ class ModeMemory:
             "debounce": self.debounce,
             "change_distance": self.change_distance,
             "match_distance": self.match_distance,
-            "mode": self.mode,
+            "mode": _mode_to_json(self.mode),
             "outside_count": self._outside_count,
-            "pending_mode": self._pending_mode,
+            "pending_mode": _mode_to_json(self._pending_mode),
             "restores": self.restores,
             "changes": self.changes,
             "bank": [
-                {"mode": entry["mode"], "state": _to_json(entry["state"])}
+                {
+                    "mode": _mode_to_json(entry["mode"]),
+                    "state": _to_json(entry["state"]),
+                }
                 for entry in self.bank
             ],
         }
@@ -175,16 +184,31 @@ class ModeMemory:
             change_distance=float(payload["change_distance"]),
             match_distance=float(payload["match_distance"]),
         )
-        memory.mode = payload["mode"]
+        memory.mode = _mode_from_json(payload["mode"])
         memory._outside_count = int(payload["outside_count"])
-        memory._pending_mode = payload["pending_mode"]
+        memory._pending_mode = _mode_from_json(payload["pending_mode"])
         memory.restores = int(payload["restores"])
         memory.changes = int(payload["changes"])
         memory.bank = [
-            {"mode": entry["mode"], "state": entry["state"]}
+            {
+                "mode": _mode_from_json(entry["mode"]),
+                "state": entry["state"],
+            }
             for entry in payload["bank"]
         ]
         return memory
+
+
+def _mode_to_json(mode: Any) -> Any:
+    if isinstance(mode, tuple) and not ModeMemory._is_vector(mode):
+        return {"__tuple_mode__": [_mode_to_json(value) for value in mode]}
+    return _to_json(mode)
+
+
+def _mode_from_json(mode: Any) -> Any:
+    if isinstance(mode, dict) and set(mode) == {"__tuple_mode__"}:
+        return tuple(_mode_from_json(value) for value in mode["__tuple_mode__"])
+    return mode
 
 
 def _to_json(state: Any) -> Any:
