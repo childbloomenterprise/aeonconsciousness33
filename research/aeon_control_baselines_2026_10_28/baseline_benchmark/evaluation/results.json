@@ -1,0 +1,1398 @@
+{
+  "analysis": {
+    "loss": {
+      "pooled": {
+        "aeon_no_retrieval": {
+          "control": "aeon_no_retrieval",
+          "mean_full": 0.21767110975068063,
+          "mean_control": 0.6105796243278295,
+          "control_minus_full": 0.3929085145771488,
+          "ci95": [
+            0.28938867224039627,
+            0.5147653200024888
+          ],
+          "improvement_percent": 64.35008620041835
+        },
+        "oracle": {
+          "control": "oracle",
+          "mean_full": 0.21767110975068063,
+          "mean_control": 0.16917953507515357,
+          "control_minus_full": -0.04849157467552702,
+          "ci95": [
+            -0.0708694985823365,
+            -0.027330681006865514
+          ],
+          "improvement_percent": -28.662789890033633
+        },
+        "mpc_known": {
+          "control": "mpc_known",
+          "mean_full": 0.21767110975068063,
+          "mean_control": 0.19221497348980632,
+          "control_minus_full": -0.025456136260874295,
+          "ci95": [
+            -0.04085944364806229,
+            -0.008867962094667073
+          ],
+          "improvement_percent": -13.24357608499439
+        },
+        "mmac": {
+          "control": "mmac",
+          "mean_full": 0.21767110975068063,
+          "mean_control": 0.23861918510154387,
+          "control_minus_full": 0.020948075350863314,
+          "ci95": [
+            0.003268306769034605,
+            0.036929368110725815
+          ],
+          "improvement_percent": 8.778873057482325
+        },
+        "pid": {
+          "control": "pid",
+          "mean_full": 0.21767110975068063,
+          "mean_control": 0.29747264841115556,
+          "control_minus_full": 0.07980153866047497,
+          "ci95": [
+            0.05309077969364409,
+            0.10400114952425062
+          ],
+          "improvement_percent": 26.826512987565927
+        }
+      },
+      "by_family": {
+        "variable_delay": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.2217948308352682,
+            "mean_control": 0.7469683523526242,
+            "control_minus_full": 0.525173521517356,
+            "ci95": [
+              0.36669625804261285,
+              0.6990771700305878
+            ],
+            "improvement_percent": 70.30733228031531
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.2217948308352682,
+            "mean_control": 0.17009519449665153,
+            "control_minus_full": -0.05169963633861664,
+            "ci95": [
+              -0.08231394976008864,
+              -0.027458968192920718
+            ],
+            "improvement_percent": -30.394530834105602
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.2217948308352682,
+            "mean_control": 0.18096100032311463,
+            "control_minus_full": -0.04083383051215354,
+            "ci95": [
+              -0.07146707759363241,
+              -0.012684628066165158
+            ],
+            "improvement_percent": -22.56498938403455
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.2217948308352682,
+            "mean_control": 0.24648183724885026,
+            "control_minus_full": 0.02468700641358203,
+            "ci95": [
+              -0.009036354648848473,
+              0.06047833016667528
+            ],
+            "improvement_percent": 10.015750730005234
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.2217948308352682,
+            "mean_control": 0.3199597975391662,
+            "control_minus_full": 0.09816496670389797,
+            "ci95": [
+              0.05189982699955797,
+              0.1450781512120019
+            ],
+            "improvement_percent": 30.680406556977406
+          }
+        },
+        "sensor_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.20993440430269147,
+            "mean_control": 0.4925425194442684,
+            "control_minus_full": 0.28260811514157697,
+            "ci95": [
+              0.14290194356243638,
+              0.4351107471679184
+            ],
+            "improvement_percent": 57.37740478942637
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.20993440430269147,
+            "mean_control": 0.16734821623215762,
+            "control_minus_full": -0.04258618807053383,
+            "ci95": [
+              -0.0634227364878058,
+              -0.02394212463671595
+            ],
+            "improvement_percent": -25.447649834196724
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.20993440430269147,
+            "mean_control": 0.1952620687441466,
+            "control_minus_full": -0.014672335558544896,
+            "ci95": [
+              -0.0348218866311476,
+              0.00508434393114414
+            ],
+            "improvement_percent": -7.514176026563649
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.20993440430269147,
+            "mean_control": 0.19526206874414667,
+            "control_minus_full": -0.014672335558544808,
+            "ci95": [
+              -0.034821886631147825,
+              0.005084343931144226
+            ],
+            "improvement_percent": -7.514176026563601
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.20993440430269147,
+            "mean_control": 0.25332012860899994,
+            "control_minus_full": 0.0433857243063084,
+            "ci95": [
+              0.01448358709298292,
+              0.06825806040743916
+            ],
+            "improvement_percent": 17.126836522838794
+          }
+        },
+        "delay_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.22128409411408212,
+            "mean_control": 0.5922280011865956,
+            "control_minus_full": 0.3709439070725135,
+            "ci95": [
+              0.2899858259853059,
+              0.4646448009237492
+            ],
+            "improvement_percent": 62.63532057405012
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.22128409411408212,
+            "mean_control": 0.17009519449665153,
+            "control_minus_full": -0.051188899617430596,
+            "ci95": [
+              -0.07902162936631262,
+              -0.02328529237103684
+            ],
+            "improvement_percent": -30.09426560750856
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.22128409411408212,
+            "mean_control": 0.2004218514021577,
+            "control_minus_full": -0.020862242711924456,
+            "ci95": [
+              -0.039395254276999955,
+              -0.0013221194485143477
+            ],
+            "improvement_percent": -10.409165750127311
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.22128409411408212,
+            "mean_control": 0.27411364931163484,
+            "control_minus_full": 0.052829555197552724,
+            "ci95": [
+              0.020404546388467785,
+              0.08538486956120371
+            ],
+            "improvement_percent": 19.272865590684894
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.22128409411408212,
+            "mean_control": 0.31913801908530065,
+            "control_minus_full": 0.09785392497121852,
+            "ci95": [
+              0.04997939634154264,
+              0.14280194410163294
+            ],
+            "improvement_percent": 30.661945340039125
+          }
+        }
+      }
+    },
+    "overall": {
+      "pooled": {
+        "aeon_no_retrieval": {
+          "control": "aeon_no_retrieval",
+          "mean_full": 0.023607144379225196,
+          "mean_control": 0.026659136826078143,
+          "control_minus_full": 0.00305199244685295,
+          "ci95": [
+            0.002650088169445474,
+            0.003445573744949177
+          ],
+          "improvement_percent": 11.448204293949496
+        },
+        "oracle": {
+          "control": "oracle",
+          "mean_full": 0.023607144379225196,
+          "mean_control": 0.009082189358359683,
+          "control_minus_full": -0.014524955020865515,
+          "ci95": [
+            -0.015019552226531173,
+            -0.014071805625242488
+          ],
+          "improvement_percent": -159.92790336942326
+        },
+        "mpc_known": {
+          "control": "mpc_known",
+          "mean_full": 0.023607144379225196,
+          "mean_control": 0.016109855524853625,
+          "control_minus_full": -0.007497288854371571,
+          "ci95": [
+            -0.007947718303596325,
+            -0.007101683483537734
+          ],
+          "improvement_percent": -46.538523221422196
+        },
+        "mmac": {
+          "control": "mmac",
+          "mean_full": 0.023607144379225196,
+          "mean_control": 0.016423101417297935,
+          "control_minus_full": -0.007184042961927262,
+          "ci95": [
+            -0.007625262681836624,
+            -0.006767507740652485
+          ],
+          "improvement_percent": -43.74352188046854
+        },
+        "pid": {
+          "control": "pid",
+          "mean_full": 0.023607144379225196,
+          "mean_control": 0.020137465149198328,
+          "control_minus_full": -0.0034696792300268676,
+          "ci95": [
+            -0.004262145399118961,
+            -0.0026419812648862924
+          ],
+          "improvement_percent": -17.229970129408247
+        }
+      },
+      "by_family": {
+        "variable_delay": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.020111836168918432,
+            "mean_control": 0.023649367442377195,
+            "control_minus_full": 0.0035375312734587635,
+            "ci95": [
+              0.002707333723333706,
+              0.00446362338433321
+            ],
+            "improvement_percent": 14.958249019040894
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.020111836168918432,
+            "mean_control": 0.009096772732162427,
+            "control_minus_full": -0.011015063436756001,
+            "ci95": [
+              -0.012369275606462922,
+              -0.00998392033692933
+            ],
+            "improvement_percent": -121.08759623961244
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.020111836168918432,
+            "mean_control": 0.013289907549252558,
+            "control_minus_full": -0.006821928619665872,
+            "ci95": [
+              -0.008124127991285143,
+              -0.005859851666113249
+            ],
+            "improvement_percent": -51.33164842858178
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.020111836168918432,
+            "mean_control": 0.01356146933254991,
+            "control_minus_full": -0.006550366836368516,
+            "ci95": [
+              -0.007743848890452137,
+              -0.005662279405888262
+            ],
+            "improvement_percent": -48.30130626514403
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.020111836168918432,
+            "mean_control": 0.021495469433408295,
+            "control_minus_full": 0.0013836332644898666,
+            "ci95": [
+              -0.00038129187679188434,
+              0.003054476402223459
+            ],
+            "improvement_percent": 6.436859956821513
+          }
+        },
+        "sensor_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.020307561737482112,
+            "mean_control": 0.022612233551534272,
+            "control_minus_full": 0.002304671814052159,
+            "ci95": [
+              0.0019489835814759686,
+              0.0026852037463276092
+            ],
+            "improvement_percent": 10.19214580815164
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.020307561737482112,
+            "mean_control": 0.00905302261075419,
+            "control_minus_full": -0.011254539126727922,
+            "ci95": [
+              -0.011833434791719348,
+              -0.010771252280026778
+            ],
+            "improvement_percent": -124.31802736644583
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.020307561737482112,
+            "mean_control": 0.016646079399777476,
+            "control_minus_full": -0.0036614823377046344,
+            "ci95": [
+              -0.004292468195422415,
+              -0.0031456559612426855
+            ],
+            "improvement_percent": -21.99606435707366
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.020307561737482112,
+            "mean_control": 0.016668555413961315,
+            "control_minus_full": -0.0036390063235207984,
+            "ci95": [
+              -0.004295867918963367,
+              -0.003108342861817891
+            ],
+            "improvement_percent": -21.83156388269151
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.020307561737482112,
+            "mean_control": 0.016837117852070597,
+            "control_minus_full": -0.003470443885411514,
+            "ci95": [
+              -0.0044910332469526686,
+              -0.0025587882474371534
+            ],
+            "improvement_percent": -20.61186431016592
+          }
+        },
+        "delay_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.03040203523127505,
+            "mean_control": 0.03371580948432298,
+            "control_minus_full": 0.0033137742530479257,
+            "ci95": [
+              0.002781235975176175,
+              0.00400799876344093
+            ],
+            "improvement_percent": 9.828547211920714
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.03040203523127505,
+            "mean_control": 0.009096772732162427,
+            "control_minus_full": -0.021305262499112618,
+            "ci95": [
+              -0.022137164924308343,
+              -0.020509910661467484
+            ],
+            "improvement_percent": -234.20682396281063
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.03040203523127505,
+            "mean_control": 0.01839357962553084,
+            "control_minus_full": -0.012008455605744208,
+            "ci95": [
+              -0.012837721754259474,
+              -0.01121071581141371
+            ],
+            "improvement_percent": -65.2861261930555
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.03040203523127505,
+            "mean_control": 0.01903927950538258,
+            "control_minus_full": -0.011362755725892468,
+            "ci95": [
+              -0.012230985649406046,
+              -0.01050257298052591
+            ],
+            "improvement_percent": -59.680597276173785
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.03040203523127505,
+            "mean_control": 0.022079808162116098,
+            "control_minus_full": -0.008322227069158954,
+            "ci95": [
+              -0.009076045789413727,
+              -0.007490150301845216
+            ],
+            "improvement_percent": -37.69157326030573
+          }
+        }
+      }
+    },
+    "mean_A1": {
+      "pooled": {
+        "aeon_no_retrieval": {
+          "control": "aeon_no_retrieval",
+          "mean_full": 0.017983008074018463,
+          "mean_control": 0.017983008074018463,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "oracle": {
+          "control": "oracle",
+          "mean_full": 0.017983008074018463,
+          "mean_control": 0.015631538379849545,
+          "control_minus_full": -0.0023514696941689174,
+          "ci95": [
+            -0.0029761441158175726,
+            -0.00175209855560104
+          ],
+          "improvement_percent": -15.043111157889442
+        },
+        "mpc_known": {
+          "control": "mpc_known",
+          "mean_full": 0.017983008074018463,
+          "mean_control": 0.017208517277051322,
+          "control_minus_full": -0.0007744907969671397,
+          "ci95": [
+            -0.0011474792316614908,
+            -0.00036073193583312176
+          ],
+          "improvement_percent": -4.500624803974097
+        },
+        "mmac": {
+          "control": "mmac",
+          "mean_full": 0.017983008074018463,
+          "mean_control": 0.017208517277051322,
+          "control_minus_full": -0.0007744907969671397,
+          "ci95": [
+            -0.0011474792316614908,
+            -0.00036073193583312176
+          ],
+          "improvement_percent": -4.500624803974097
+        },
+        "pid": {
+          "control": "pid",
+          "mean_full": 0.017983008074018463,
+          "mean_control": 0.037156656267204505,
+          "control_minus_full": 0.01917364819318605,
+          "ci95": [
+            0.013085006275085378,
+            0.024554182817647513
+          ],
+          "improvement_percent": 51.602189538538326
+        }
+      },
+      "by_family": {
+        "variable_delay": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017983008074018463,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.015631538379849545,
+            "control_minus_full": -0.002351469694168918,
+            "ci95": [
+              -0.002976144115817574,
+              -0.0017520985556010405
+            ],
+            "improvement_percent": -15.043111157889445
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017208517277051322,
+            "control_minus_full": -0.000774490796967141,
+            "ci95": [
+              -0.001147479231661492,
+              -0.0003607319358331228
+            ],
+            "improvement_percent": -4.500624803974105
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017208517277051322,
+            "control_minus_full": -0.000774490796967141,
+            "ci95": [
+              -0.001147479231661492,
+              -0.0003607319358331228
+            ],
+            "improvement_percent": -4.500624803974105
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.03715665626720451,
+            "control_minus_full": 0.01917364819318605,
+            "ci95": [
+              0.013085006275085378,
+              0.024554182817647513
+            ],
+            "improvement_percent": 51.60218953853832
+          }
+        },
+        "sensor_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017983008074018463,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.015631538379849545,
+            "control_minus_full": -0.002351469694168918,
+            "ci95": [
+              -0.002976144115817574,
+              -0.0017520985556010405
+            ],
+            "improvement_percent": -15.043111157889445
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017208517277051322,
+            "control_minus_full": -0.000774490796967141,
+            "ci95": [
+              -0.001147479231661492,
+              -0.0003607319358331228
+            ],
+            "improvement_percent": -4.500624803974105
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017208517277051322,
+            "control_minus_full": -0.000774490796967141,
+            "ci95": [
+              -0.001147479231661492,
+              -0.0003607319358331228
+            ],
+            "improvement_percent": -4.500624803974105
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.03715665626720451,
+            "control_minus_full": 0.01917364819318605,
+            "ci95": [
+              0.013085006275085378,
+              0.024554182817647513
+            ],
+            "improvement_percent": 51.60218953853832
+          }
+        },
+        "delay_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017983008074018463,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.015631538379849545,
+            "control_minus_full": -0.002351469694168918,
+            "ci95": [
+              -0.002976144115817574,
+              -0.0017520985556010405
+            ],
+            "improvement_percent": -15.043111157889445
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017208517277051322,
+            "control_minus_full": -0.000774490796967141,
+            "ci95": [
+              -0.001147479231661492,
+              -0.0003607319358331228
+            ],
+            "improvement_percent": -4.500624803974105
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.017208517277051322,
+            "control_minus_full": -0.000774490796967141,
+            "ci95": [
+              -0.001147479231661492,
+              -0.0003607319358331228
+            ],
+            "improvement_percent": -4.500624803974105
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.017983008074018463,
+            "mean_control": 0.03715665626720451,
+            "control_minus_full": 0.01917364819318605,
+            "ci95": [
+              0.013085006275085378,
+              0.024554182817647513
+            ],
+            "improvement_percent": 51.60218953853832
+          }
+        }
+      }
+    },
+    "mean_B": {
+      "pooled": {
+        "aeon_no_retrieval": {
+          "control": "aeon_no_retrieval",
+          "mean_full": 0.02662830033137533,
+          "mean_control": 0.02662830033137533,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "oracle": {
+          "control": "oracle",
+          "mean_full": 0.02662830033137533,
+          "mean_control": 0.008270590009416734,
+          "control_minus_full": -0.0183577103219586,
+          "ci95": [
+            -0.020221827282519325,
+            -0.016786714658558032
+          ],
+          "improvement_percent": -221.96373295081568
+        },
+        "mpc_known": {
+          "control": "mpc_known",
+          "mean_full": 0.02662830033137533,
+          "mean_control": 0.016797633758193844,
+          "control_minus_full": -0.009830666573181488,
+          "ci95": [
+            -0.0117197869090331,
+            -0.008139645902915134
+          ],
+          "improvement_percent": -58.524115448023224
+        },
+        "mmac": {
+          "control": "mmac",
+          "mean_full": 0.02662830033137533,
+          "mean_control": 0.017285340559753566,
+          "control_minus_full": -0.009342959771621768,
+          "ci95": [
+            -0.011279404735354227,
+            -0.007634518571688742
+          ],
+          "improvement_percent": -54.0513491147262
+        },
+        "pid": {
+          "control": "pid",
+          "mean_full": 0.02662830033137533,
+          "mean_control": 0.01684759685779688,
+          "control_minus_full": -0.00978070347357845,
+          "ci95": [
+            -0.011517000344416028,
+            -0.008277207965388647
+          ],
+          "improvement_percent": -58.05399758869496
+        }
+      },
+      "by_family": {
+        "variable_delay": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.02195129028464451,
+            "mean_control": 0.02195129028464451,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.02195129028464451,
+            "mean_control": 0.008279220781635425,
+            "control_minus_full": -0.013672069503009084,
+            "ci95": [
+              -0.016291225837486094,
+              -0.011361317231638498
+            ],
+            "improvement_percent": -165.1371531646531
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.02195129028464451,
+            "mean_control": 0.011488664587850299,
+            "control_minus_full": -0.010462625696794214,
+            "ci95": [
+              -0.013022297594696707,
+              -0.008229371317727897
+            ],
+            "improvement_percent": -91.06911962473724
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.02195129028464451,
+            "mean_control": 0.01197923181720351,
+            "control_minus_full": -0.009972058467441001,
+            "ci95": [
+              -0.012516456601362816,
+              -0.007770655693953432
+            ],
+            "improvement_percent": -83.2445570768571
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.02195129028464451,
+            "mean_control": 0.016375032052521242,
+            "control_minus_full": -0.00557625823212327,
+            "ci95": [
+              -0.008240585526142936,
+              -0.0033544390751088426
+            ],
+            "improvement_percent": -34.05341873065037
+          }
+        },
+        "sensor_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.022754535251571915,
+            "mean_control": 0.022754535251571915,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.022754535251571915,
+            "mean_control": 0.008253328464979342,
+            "control_minus_full": -0.014501206786592575,
+            "ci95": [
+              -0.015767282374111638,
+              -0.013254918977645302
+            ],
+            "improvement_percent": -175.7013167248139
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.022754535251571915,
+            "mean_control": 0.019124944380856615,
+            "control_minus_full": -0.0036295908707153005,
+            "ci95": [
+              -0.004911895036123683,
+              -0.0021952789249119233
+            ],
+            "improvement_percent": -18.978308111308237
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.022754535251571915,
+            "mean_control": 0.019237799289968428,
+            "control_minus_full": -0.0035167359616034913,
+            "ci95": [
+              -0.0048641665451414975,
+              -0.002016329191512358
+            ],
+            "improvement_percent": -18.28034438137265
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.022754535251571915,
+            "mean_control": 0.015325514688120712,
+            "control_minus_full": -0.0074290205634512056,
+            "ci95": [
+              -0.008675204807405704,
+              -0.00624982398346453
+            ],
+            "improvement_percent": -48.47485200095546
+          }
+        },
+        "delay_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.03517907545790957,
+            "mean_control": 0.03517907545790957,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.03517907545790957,
+            "mean_control": 0.008279220781635425,
+            "control_minus_full": -0.02689985467627415,
+            "ci95": [
+              -0.02953924333615579,
+              -0.024544918655918166
+            ],
+            "improvement_percent": -324.90804854415927
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.03517907545790957,
+            "mean_control": 0.019779292305874614,
+            "control_minus_full": -0.01539978315203496,
+            "ci95": [
+              -0.01804395201642629,
+              -0.012897244495960667
+            ],
+            "improvement_percent": -77.85810995604275
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.03517907545790957,
+            "mean_control": 0.020638990572088754,
+            "control_minus_full": -0.014540084885820814,
+            "ci95": [
+              -0.017294327897197186,
+              -0.011881992859467103
+            ],
+            "improvement_percent": -70.44959313797145
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.03517907545790957,
+            "mean_control": 0.01884224383274869,
+            "control_minus_full": -0.01633683162516088,
+            "ci95": [
+              -0.01909143202012318,
+              -0.013675468538676573
+            ],
+            "improvement_percent": -86.70321735655874
+          }
+        }
+      }
+    },
+    "mean_C": {
+      "pooled": {
+        "aeon_no_retrieval": {
+          "control": "aeon_no_retrieval",
+          "mean_full": 0.03462868612028116,
+          "mean_control": 0.03462868612028116,
+          "control_minus_full": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improvement_percent": 0.0
+        },
+        "oracle": {
+          "control": "oracle",
+          "mean_full": 0.03462868612028116,
+          "mean_control": 0.008458940627273074,
+          "control_minus_full": -0.026169745493008094,
+          "ci95": [
+            -0.028104214858501442,
+            -0.024028562653169626
+          ],
+          "improvement_percent": -309.37379331677005
+        },
+        "mpc_known": {
+          "control": "mpc_known",
+          "mean_full": 0.03462868612028116,
+          "mean_control": 0.021381540848456334,
+          "control_minus_full": -0.013247145271824832,
+          "ci95": [
+            -0.015186518519511354,
+            -0.011160774510614702
+          ],
+          "improvement_percent": -61.955989821852455
+        },
+        "mmac": {
+          "control": "mmac",
+          "mean_full": 0.03462868612028116,
+          "mean_control": 0.02165210123090307,
+          "control_minus_full": -0.012976584889378093,
+          "ci95": [
+            -0.014705581810811474,
+            -0.011130806311996647
+          ],
+          "improvement_percent": -59.93221974621658
+        },
+        "pid": {
+          "control": "pid",
+          "mean_full": 0.03462868612028116,
+          "mean_control": 0.02474667211291291,
+          "control_minus_full": -0.009882014007368253,
+          "ci95": [
+            -0.011577326534528535,
+            -0.008121540124680212
+          ],
+          "improvement_percent": -39.93269867673149
+        }
+      },
+      "by_family": {
+        "variable_delay": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.027820854769858842,
+            "mean_control": 0.027820854769858842,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.027820854769858842,
+            "mean_control": 0.008494888940744969,
+            "control_minus_full": -0.019325965829113872,
+            "ci95": [
+              -0.02226055652472617,
+              -0.01642375906606959
+            ],
+            "improvement_percent": -227.5011005313868
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.027820854769858842,
+            "mean_control": 0.017279292161334225,
+            "control_minus_full": -0.010541562608524619,
+            "ci95": [
+              -0.013443338283156213,
+              -0.007614396963301963
+            ],
+            "improvement_percent": -61.00691226295377
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.027820854769858842,
+            "mean_control": 0.01740364502775054,
+            "control_minus_full": -0.010417209742108302,
+            "ci95": [
+              -0.012905016571626158,
+              -0.00793596819945811
+            ],
+            "improvement_percent": -59.85648250982943
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.027820854769858842,
+            "mean_control": 0.02950372345603707,
+            "control_minus_full": 0.0016828686861782214,
+            "ci95": [
+              -0.001877229144133198,
+              0.005319946970051267
+            ],
+            "improvement_percent": 5.703919671989305
+          }
+        },
+        "sensor_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.02724339545177361,
+            "mean_control": 0.02724339545177361,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.02724339545177361,
+            "mean_control": 0.00838704400032928,
+            "control_minus_full": -0.01885635145144433,
+            "ci95": [
+              -0.020476505417339422,
+              -0.01738338312258879
+            ],
+            "improvement_percent": -224.82714351688176
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.02724339545177361,
+            "mean_control": 0.020811302100042006,
+            "control_minus_full": -0.006432093351731602,
+            "ci95": [
+              -0.008397890788126184,
+              -0.0047626607232614405
+            ],
+            "improvement_percent": -30.90673193254265
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.02724339545177361,
+            "mean_control": 0.020737498244032752,
+            "control_minus_full": -0.00650589720774086,
+            "ci95": [
+              -0.008460656528215647,
+              -0.004893735868502159
+            ],
+            "improvement_percent": -31.37262330866233
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.02724339545177361,
+            "mean_control": 0.015319851102445284,
+            "control_minus_full": -0.011923544349328328,
+            "ci95": [
+              -0.013589624465765197,
+              -0.010393915340331534
+            ],
+            "improvement_percent": -77.83068040018448
+          }
+        },
+        "delay_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.04882180813921103,
+            "mean_control": 0.04882180813921103,
+            "control_minus_full": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improvement_percent": 0.0
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.04882180813921103,
+            "mean_control": 0.008494888940744969,
+            "control_minus_full": -0.040326919198466066,
+            "ci95": [
+              -0.04394754471885427,
+              -0.03655150699252
+            ],
+            "improvement_percent": -474.71979303980817
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.04882180813921103,
+            "mean_control": 0.026054028283992763,
+            "control_minus_full": -0.022767779855218273,
+            "ci95": [
+              -0.026388345234346352,
+              -0.01894185052589368
+            ],
+            "improvement_percent": -87.38679334744748
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.04882180813921103,
+            "mean_control": 0.02681516042092592,
+            "control_minus_full": -0.02200664771828512,
+            "ci95": [
+              -0.025249360660103172,
+              -0.01865094128939014
+            ],
+            "improvement_percent": -82.06793236676536
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.04882180813921103,
+            "mean_control": 0.029416441780256382,
+            "control_minus_full": -0.019405366358954654,
+            "ci95": [
+              -0.022470923815265113,
+              -0.016023693155569965
+            ],
+            "improvement_percent": -65.96775539310494
+          }
+        }
+      }
+    },
+    "mean_A2": {
+      "pooled": {
+        "aeon_no_retrieval": {
+          "control": "aeon_no_retrieval",
+          "mean_full": 0.011439158787754672,
+          "mean_control": 0.021612466943931173,
+          "control_minus_full": 0.010173308156176498,
+          "ci95": [
+            0.008833627231484911,
+            0.011485245816497252
+          ],
+          "improvement_percent": 47.071480468050794
+        },
+        "oracle": {
+          "control": "oracle",
+          "mean_full": 0.011439158787754672,
+          "mean_control": 0.008333921097892617,
+          "control_minus_full": -0.003105237689862054,
+          "ci95": [
+            -0.0033814966980532197,
+            -0.002873653831711477
+          ],
+          "improvement_percent": -37.26022424963046
+        },
+        "mpc_known": {
+          "control": "mpc_known",
+          "mean_full": 0.011439158787754672,
+          "mean_control": 0.009784171383844803,
+          "control_minus_full": -0.001654987403909868,
+          "ci95": [
+            -0.001851933960821791,
+            -0.0014627679814106721
+          ],
+          "improvement_percent": -16.914946999421037
+        },
+        "mmac": {
+          "control": "mmac",
+          "mean_full": 0.011439158787754672,
+          "mean_control": 0.010070057174652706,
+          "control_minus_full": -0.0013691016131019637,
+          "ci95": [
+            -0.0015240980500715023,
+            -0.0011944955431025916
+          ],
+          "improvement_percent": -13.595768021537385
+        },
+        "pid": {
+          "control": "pid",
+          "mean_full": 0.011439158787754672,
+          "mean_control": 0.01314506277088314,
+          "control_minus_full": 0.001705903983128467,
+          "ci95": [
+            0.0011577714418291095,
+            0.0022303198473368076
+          ],
+          "improvement_percent": 12.977526337166797
+        }
+      },
+      "by_family": {
+        "variable_delay": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.01127297281721859,
+            "mean_control": 0.0230647437287478,
+            "control_minus_full": 0.011791770911529212,
+            "ci95": [
+              0.009024445744445683,
+              0.014878744614444031
+            ],
+            "improvement_percent": 51.12465609939554
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.01127297281721859,
+            "mean_control": 0.00833795325821118,
+            "control_minus_full": -0.00293501955900741,
+            "ci95": [
+              -0.0032372874150968134,
+              -0.0026574966753067026
+            ],
+            "improvement_percent": -35.20071974638398
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.01127297281721859,
+            "mean_control": 0.009795562655973561,
+            "control_minus_full": -0.0014774101612450281,
+            "ci95": [
+              -0.001749714323192022,
+              -0.0011939152556644248
+            ],
+            "improvement_percent": -15.082443072773051
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.01127297281721859,
+            "mean_control": 0.01008584850452855,
+            "control_minus_full": -0.001187124312690038,
+            "ci95": [
+              -0.0015560286948539243,
+              -0.0008392894488137797
+            ],
+            "improvement_percent": -11.770197739506187
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.01127297281721859,
+            "mean_control": 0.013387257180401176,
+            "control_minus_full": 0.0021142843631825874,
+            "ci95": [
+              0.0016129033681328696,
+              0.002614906670427262
+            ],
+            "improvement_percent": 15.79326022269805
+          }
+        },
+        "sensor_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.011699605730255351,
+            "mean_control": 0.01938184511042922,
+            "control_minus_full": 0.007682239380173867,
+            "ci95": [
+              0.006496611938253232,
+              0.00895067915442537
+            ],
+            "improvement_percent": 39.63626443408173
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.011699605730255351,
+            "mean_control": 0.008325856777255496,
+            "control_minus_full": -0.0033737489529998554,
+            "ci95": [
+              -0.003667555474101954,
+              -0.0031113235916837264
+            ],
+            "improvement_percent": -40.5213426468761
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.011699605730255351,
+            "mean_control": 0.009814512426009192,
+            "control_minus_full": -0.001885093304246159,
+            "ci95": [
+              -0.002086680631106272,
+              -0.00168952228679831
+            ],
+            "improvement_percent": -19.207202787277755
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.011699605730255351,
+            "mean_control": 0.00985038142018609,
+            "control_minus_full": -0.0018492243100692596,
+            "ci95": [
+              -0.0020480649431961384,
+              -0.0016555068569385773
+            ],
+            "improvement_percent": -18.77312391456944
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.011699605730255351,
+            "mean_control": 0.013092808293934494,
+            "control_minus_full": 0.001393202563679143,
+            "ci95": [
+              0.000682867908763422,
+              0.0021201935123536884
+            ],
+            "improvement_percent": 10.64097581207671
+          }
+        },
+        "delay_dropout": {
+          "aeon_no_retrieval": {
+            "control": "aeon_no_retrieval",
+            "mean_full": 0.011344897815790072,
+            "mean_control": 0.02239081199261649,
+            "control_minus_full": 0.011045914176826415,
+            "ci95": [
+              0.009270786583920587,
+              0.013359995878136431
+            ],
+            "improvement_percent": 49.332351950741554
+          },
+          "oracle": {
+            "control": "oracle",
+            "mean_full": 0.011344897815790072,
+            "mean_control": 0.00833795325821118,
+            "control_minus_full": -0.0030069445575788933,
+            "ci95": [
+              -0.003327299761103792,
+              -0.002757832347084283
+            ],
+            "improvement_percent": -36.06334149951809
+          },
+          "mpc_known": {
+            "control": "mpc_known",
+            "mean_full": 0.011344897815790072,
+            "mean_control": 0.009742439069551658,
+            "control_minus_full": -0.0016024587462384159,
+            "ci95": [
+              -0.0018882108544322981,
+              -0.0013717016090166844
+            ],
+            "improvement_percent": -16.4482295942361
+          },
+          "mmac": {
+            "control": "mmac",
+            "mean_full": 0.011344897815790072,
+            "mean_control": 0.01027394159924348,
+            "control_minus_full": -0.0010709562165465924,
+            "ci95": [
+              -0.0013169955710176158,
+              -0.0008477258558139248
+            ],
+            "improvement_percent": -10.424005297299452
+          },
+          "pid": {
+            "control": "pid",
+            "mean_full": 0.011344897815790072,
+            "mean_control": 0.012955122838313743,
+            "control_minus_full": 0.0016102250225236703,
+            "ci95": [
+              0.0008572981914235607,
+              0.0023477436761251552
+            ],
+            "improvement_percent": 12.429253219904316
+          }
+        }
+      }
+    }
+  },
+  "wall_seconds": 4.291172845012625,
+  "ended_at": "2026-10-28T12:08:26.342746+00:00"
+}

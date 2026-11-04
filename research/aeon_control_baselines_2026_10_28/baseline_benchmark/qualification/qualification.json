@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": {
+    "pid_tuned": {
+      "pid": {
+        "kp": 0.3,
+        "ki": 0.01,
+        "kd": 0.1
+      },
+      "overall": 0.01976392144341241
+    },
+    "members_identified": true,
+    "gain_error_max": 0.00326127267445131,
+    "overall_variable_delay": {
+      "oracle": 0.009676514761008424,
+      "mpc_known": 0.014020029284715223,
+      "mmac": 0.014297288576958856,
+      "pid": 0.021812717023802677
+    },
+    "oracle_best_variable_delay": true,
+    "mmac_delay_accuracy_variable_delay": 0.9625,
+    "overall_sensor_dropout": {
+      "oracle": 0.009640243324681866,
+      "mpc_known": 0.017028342347896068,
+      "mmac": 0.017028342347896068,
+      "pid": 0.016319382690108065
+    },
+    "oracle_best_sensor_dropout": true,
+    "mmac_delay_accuracy_sensor_dropout": 1.0,
+    "overall_delay_dropout": {
+      "oracle": 0.009676514761008424,
+      "mpc_known": 0.018925395477349314,
+      "mmac": 0.01915991972015957,
+      "pid": 0.021159664616326502
+    },
+    "oracle_best_delay_dropout": true,
+    "mmac_delay_accuracy_delay_dropout": 0.953125
+  }
+}
